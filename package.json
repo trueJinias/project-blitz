@@ -10,15 +10,18 @@
     "add-images": "node scripts/add-images.mjs",
     "add-images:all": "node scripts/add-images.mjs src/content/articles/*.md",
     "deploy": "node scripts/deploy.mjs",
-    "translate": "node scripts/translate.mjs"
+    "translate": "node scripts/translate.mjs",
+    "localize": "node scripts/localize.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
+    "@google/generative-ai": "^0.24.1",
     "astro": "^5.17.1",
     "astro-i18next": "^1.0.0-beta.21",
     "deepl-node": "^1.24.0",
     "dotenv": "^16.6.1",
+    "gray-matter": "^4.0.3",
     "i18next": "^25.8.1"
   }
 }
