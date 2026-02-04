@@ -6,6 +6,7 @@ date: 2026-02-04
 tags: ["Xiaomi 17", "iPhone 17", "比較", "リーク", "2026"]
 author: "なも兄"
 draft: false
+image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"
 ---
 
 ## 2026年、スマホ選びの「正解」はこれだ
@@ -35,10 +36,12 @@ draft: false
 
 ## 2. カメラ：画素数競争 vs 実用性のApple
 
-Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂されています。メイン、超広角、そしてペリスコープ望遠。どこで撮っても隙がない。
-
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
 *Photo by Andrey Matveev on Pexels*
+
+Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂されています。メイン、超広角、そしてペリスコープ望遠。どこで撮っても隙がない。
+
+
 
 
 
@@ -48,10 +51,12 @@ Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂
 
 ## 3. バッテリー：7500mAhの衝撃
 
-ここが今回最大の争点です。
-
 ![Close-up of hands holding a smartphone connected to a power bank outdoors.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-2.jpg)
 *Photo by DEBRAJ  ROY on Pexels*
+
+ここが今回最大の争点です。
+
+
 
 
 
