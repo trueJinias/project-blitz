@@ -38,7 +38,7 @@
     "common": {
         "readMore": "Read More",
         "articles": "articles",
-        "selectGenre": "Choose a Genre",
-        "selectGenreDesc": "Click on a genre to explore articles"
+        "selectGenre": "Choose a Category",
+        "selectGenreDesc": "Click on a category to explore articles"
     }
 }
