@@ -251,23 +251,109 @@ function extractH2Sections(body) {
     return sections;
 }
 
+// Japanese to English keyword mapping for better image search
+const KEYWORD_MAP = {
+    // Devices
+    'スマートフォン': 'smartphone',
+    'スマホ': 'smartphone',
+    '携帯': 'mobile phone',
+    'タブレット': 'tablet',
+    'パソコン': 'computer',
+    'ノートPC': 'laptop',
+    'ヘッドホン': 'headphones',
+    'イヤホン': 'earbuds',
+    'キーボード': 'keyboard',
+    'マウス': 'mouse',
+    'モニター': 'monitor',
+    'カメラ': 'camera',
+    'レンズ': 'lens',
+    'ガジェット': 'gadget technology',
+    // Brands
+    'Xiaomi': 'Xiaomi smartphone',
+    'シャオミ': 'Xiaomi smartphone',
+    'iPhone': 'iPhone',
+    'Samsung': 'Samsung phone',
+    'Sony': 'Sony electronics',
+    'Apple': 'Apple device',
+    // Topics
+    '価格': 'price tag money',
+    'レビュー': 'review hands-on',
+    '比較': 'comparison versus',
+    'スペック': 'specifications tech',
+    'バッテリー': 'battery charging',
+    '充電': 'charging cable',
+    'デスク': 'desk workspace',
+    'リモートワーク': 'work from home office',
+    '生産性': 'productivity workspace',
+    // Actions
+    '購入': 'shopping buy',
+    'おすすめ': 'recommendation best',
+    '方法': 'how to guide',
+    '使い方': 'how to use tutorial',
+    // General
+    '日本': 'Japan',
+    '2026': 'technology 2026',
+    '最新': 'latest new',
+    'プロ': 'professional pro',
+    'Ultra': 'flagship premium',
+};
+
+/**
+ * Translate Japanese keywords to English for better image search
+ */
+function translateToEnglish(text) {
+    let result = text;
+    for (const [ja, en] of Object.entries(KEYWORD_MAP)) {
+        if (result.includes(ja)) {
+            result = result.replace(ja, en);
+        }
+    }
+    // Remove remaining Japanese characters for cleaner search
+    result = result.replace(/[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/g, ' ');
+    return result.trim().replace(/\s+/g, ' ');
+}
+
 /**
  * Generate search query from article metadata
  */
 function generateThumbnailQuery(frontmatter) {
     const parts = [];
 
-    if (frontmatter.title) {
-        // Extract key nouns from title
-        const title = frontmatter.title.replace(/[「」『』【】]/g, '');
-        parts.push(title.split(/\s+/)[0]);
+    // Use first tag as primary search term
+    if (frontmatter.tags && Array.isArray(frontmatter.tags)) {
+        parts.push(frontmatter.tags[0]);
+        if (frontmatter.tags[1]) {
+            parts.push(frontmatter.tags[1]);
+        }
     }
 
+    const query = parts.join(' ') || 'technology';
+    return translateToEnglish(query);
+}
+
+/**
+ * Generate search query for inline images based on section and article context
+ */
+function generateSectionQuery(heading, frontmatter) {
+    const parts = [];
+
+    // Add main topic from tags
     if (frontmatter.tags && Array.isArray(frontmatter.tags)) {
         parts.push(frontmatter.tags[0]);
     }
 
-    return parts.join(' ') || 'technology';
+    // Add section-specific context
+    parts.push(heading);
+
+    const query = parts.join(' ');
+    const translated = translateToEnglish(query);
+
+    // If translation is too short, add generic tech context
+    if (translated.split(' ').length < 2) {
+        return translated + ' technology';
+    }
+
+    return translated;
 }
 
 /**
@@ -386,7 +472,8 @@ async function main() {
             continue;
         }
 
-        const imageData = await searchImage(section.heading);
+        const query = generateSectionQuery(section.heading, frontmatter);
+        const imageData = await searchImage(query);
 
         if (imageData) {
             const filename = `${slug}-${inlineImages.length + 1}`;
