@@ -1,0 +1,44 @@
+{
+    "site": {
+        "name": "BLITZ",
+        "tagline": "Discover articles by genre, a new reading experience",
+        "hero": {
+            "title": "Trendy",
+            "subtitle": "Wikipedia",
+            "description": "Scroll to explore categories"
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "genres": {
+            "tech": "Tech",
+            "lifestyle": "Lifestyle",
+            "review": "Review",
+            "news": "News"
+        }
+    },
+    "genres": {
+        "tech": {
+            "label": "Tech",
+            "description": "Latest technology & gadget news"
+        },
+        "lifestyle": {
+            "label": "Lifestyle",
+            "description": "Lifestyle, hobbies & living tips"
+        },
+        "review": {
+            "label": "Review",
+            "description": "Honest reviews of products we've actually used"
+        },
+        "news": {
+            "label": "News",
+            "description": "Trending news & updates"
+        }
+    },
+    "common": {
+        "readMore": "Read More",
+        "articles": "articles",
+        "selectGenre": "Choose a Genre",
+        "selectGenreDesc": "Click on a genre to explore articles"
+    }
+}

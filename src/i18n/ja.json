@@ -1,0 +1,44 @@
+{
+    "site": {
+        "name": "BLITZ",
+        "tagline": "ジャンルから記事を探す、新しい読書体験",
+        "hero": {
+            "title": "トレンディな",
+            "subtitle": "Wikipedia",
+            "description": "スクロールしてカテゴリから探す"
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "genres": {
+            "tech": "Tech",
+            "lifestyle": "Lifestyle",
+            "review": "Review",
+            "news": "News"
+        }
+    },
+    "genres": {
+        "tech": {
+            "label": "Tech",
+            "description": "テクノロジー・ガジェットの最新情報"
+        },
+        "lifestyle": {
+            "label": "Lifestyle",
+            "description": "ライフスタイル・趣味・暮らしのヒント"
+        },
+        "review": {
+            "label": "Review",
+            "description": "実際に使った製品の正直レビュー"
+        },
+        "news": {
+            "label": "News",
+            "description": "注目のニュース・トレンド情報"
+        }
+    },
+    "common": {
+        "readMore": "続きを読む",
+        "articles": "記事",
+        "selectGenre": "ジャンルを選ぶ",
+        "selectGenreDesc": "気になるジャンルをクリックして記事を探索しよう"
+    }
+}

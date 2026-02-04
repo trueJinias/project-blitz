@@ -9,12 +9,16 @@
     "astro": "astro",
     "add-images": "node scripts/add-images.mjs",
     "add-images:all": "node scripts/add-images.mjs src/content/articles/*.md",
-    "deploy": "node scripts/deploy.mjs"
+    "deploy": "node scripts/deploy.mjs",
+    "translate": "node scripts/translate.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.17.1",
-    "dotenv": "^16.6.1"
+    "astro-i18next": "^1.0.0-beta.21",
+    "deepl-node": "^1.24.0",
+    "dotenv": "^16.6.1",
+    "i18next": "^25.8.1"
   }
 }

@@ -8,6 +8,13 @@ export default defineConfig({
   // 例: 'https://your-project.vercel.app' または 'https://yourdomain.com'
   site: 'https://project-blitz.vercel.app',
   integrations: [sitemap()],
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja', 'en-us'],
+    routing: {
+      prefixDefaultLocale: true
+    }
+  },
   markdown: {
     shikiConfig: {
       theme: 'github-dark',

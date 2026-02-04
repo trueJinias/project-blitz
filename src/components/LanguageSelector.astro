@@ -1,0 +1,109 @@
+---
+interface Props {
+  currentLang: string;
+}
+
+import { languages } from '../i18n/utils';
+
+const { currentLang } = Astro.props;
+---
+
+<div class="language-selector">
+  <button class="lang-button" aria-label="言語選択">
+    <span class="lang-icon">🌐</span>
+    <span class="lang-current">{languages[currentLang as keyof typeof languages]}</span>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </button>
+  
+  <div class="lang-dropdown">
+    {Object.entries(languages).map(([code, name]) => (
+      <a 
+        href={`/${code}/`} 
+        class:list={['lang-option', { active: code === currentLang }]}
+        data-lang={code}
+      >
+        {name}
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .language-selector {
+    position: relative;
+  }
+  
+  .lang-button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-size: var(--font-size-sm);
+  }
+  
+  .lang-button:hover {
+    border-color: var(--color-tech);
+    color: var(--color-text-primary);
+  }
+  
+  .lang-icon {
+    font-size: 1.2em;
+  }
+  
+  .lang-dropdown {
+    position: absolute;
+    top: calc(100% + var(--spacing-2));
+    right: 0;
+    min-width: 200px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all var(--transition-fast);
+    z-index: 100;
+  }
+  
+  .language-selector:hover .lang-dropdown,
+  .language-selector:focus-within .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .lang-option {
+    display: block;
+    padding: var(--spacing-3) var(--spacing-4);
+    color: var(--color-text-secondary);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+  }
+  
+  .lang-option:first-child {
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+  
+  .lang-option:last-child {
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
+  
+  .lang-option:hover {
+    background: var(--color-surface-elevated);
+    color: var(--color-text-primary);
+  }
+  
+  .lang-option.active {
+    color: var(--color-tech);
+    font-weight: var(--font-weight-semibold);
+  }
+</style>
