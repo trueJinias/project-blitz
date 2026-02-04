@@ -1,20 +1,24 @@
 ---
 const currentPath = Astro.url.pathname;
+const isEnglish = currentPath.startsWith('/en-us');
+const currentLang = isEnglish ? 'en-us' : 'ja';
 
 const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Tech', href: '/genre/tech' },
-  { label: 'Lifestyle', href: '/genre/lifestyle' },
-  { label: 'Review', href: '/genre/review' },
-  { label: 'News', href: '/genre/news' },
+  { label: 'Home', href: isEnglish ? '/en-us/' : '/' },
+  { label: 'Tech', href: isEnglish ? '/en-us/genre/tech' : '/genre/tech' },
+  { label: 'Lifestyle', href: isEnglish ? '/en-us/genre/lifestyle' : '/genre/lifestyle' },
+  { label: 'Review', href: isEnglish ? '/en-us/genre/review' : '/genre/review' },
+  { label: 'News', href: isEnglish ? '/en-us/genre/news' : '/genre/news' },
 ];
+
+const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
 ---
 
 <header class="header">
   <div class="header-container">
-    <a href="/" class="logo">
-      <span class="logo-text">BLITZ</span>
-      <span class="logo-dot">.</span>
+    <a href={isEnglish ? '/en-us/' : '/'} class="logo">
+      <span class="logo-text">{siteName.split('.')[0]}</span>
+      <span class="logo-dot">.{siteName.split('.')[1]}</span>
     </a>
     
     <nav class="nav">
@@ -24,7 +28,7 @@ const navItems = [
           <li>
             <a 
               href={item.href} 
-              class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) }]}
+              class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && item.href !== '/en-us/' && currentPath.startsWith(item.href)) }]}
               data-astro-prefetch
             >
               {item.label}
@@ -33,6 +37,15 @@ const navItems = [
         ))}
       </ul>
     </nav>
+    
+    <div class="lang-toggle">
+      <a href="/" class:list={['lang-btn', { active: !isEnglish }]} title="日本語">
+        🇯🇵
+      </a>
+      <a href="/en-us/" class:list={['lang-btn', { active: isEnglish }]} title="English">
+        🇺🇸
+      </a>
+    </div>
     
     <button class="menu-toggle" aria-label="メニュー">
       <span class="menu-icon"></span>
@@ -129,6 +142,39 @@ const navItems = [
   
   .nav-link.active {
     color: white;
+  }
+  
+  .lang-toggle {
+    display: flex;
+    gap: var(--spacing-1);
+    margin-left: var(--spacing-4);
+  }
+  
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    font-size: 1.2rem;
+    text-decoration: none;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+    opacity: 0.6;
+  }
+  
+  .lang-btn:hover {
+    opacity: 1;
+    border-color: var(--color-tech);
+    transform: scale(1.1);
+  }
+  
+  .lang-btn.active {
+    opacity: 1;
+    background: var(--color-tech);
+    border-color: var(--color-tech);
   }
   
   .menu-toggle {
