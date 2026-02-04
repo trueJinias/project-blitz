@@ -13,5 +13,5 @@ draft: false
 
 ### 2. Lighter Feel Despite the weight staying at 250g (strangely feels lighter). Improved ear pads reduce pressure. ### 3. Enhanced Call Quality Eight mics clearly pick up your voice. Great for remote meetings. ## Concerns
 
-- No longer foldable - Price exceeds ¥50,000 - Minimal difference from XM4 ## Comparison with Previous Model (XM4) | Item | XM4 | XM5 | |------|------|------| | Noise Cancellation | ◎ | ◎+ |
-| Comfort | ○ | ◎ | | Portability | ◎ | △ | | Price | ¥35,000 | ¥50,000 | ## Summary If buying new, the XM5 is definitely recommended. XM4 users can keep using theirs until they break. 
+- No longer foldable - Price exceeds $335 - Minimal difference from XM4 ## Comparison with Previous Model (XM4) | Item | XM4 | XM5 | |------|------|------| | Noise Cancellation | ◎ | ◎+ |
+| Comfort | ○ | ◎ | | Portability | ◎ | △ | | Price | $235 | $335 | ## Summary If buying new, the XM5 is definitely recommended. XM4 users can keep using theirs until they break. 

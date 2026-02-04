@@ -18,4 +18,4 @@ draft: false
 
 
 
-## 4. Smart Speaker From playing background music to managing your schedule. Once you experience the convenience of voice control, you won't want to go back. ## 5. Desk Lamp Lighting is crucial for reducing eye strain. Models with adjustable color temperature are recommended. ## Summary While the total cost is around ¥50,000, it's worth investing in these daily essentials. 
+## 4. Smart Speaker From playing background music to managing your schedule. Once you experience the convenience of voice control, you won't want to go back. ## 5. Desk Lamp Lighting is crucial for reducing eye strain. Models with adjustable color temperature are recommended. ## Summary While the total cost is around $335 it's worth investing in these daily essentials. 

@@ -1,0 +1,231 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return [
+    { params: { genre: 'tech' } },
+    { params: { genre: 'lifestyle' } },
+    { params: { genre: 'review' } },
+    { params: { genre: 'news' } },
+  ];
+}
+
+const { genre } = Astro.params;
+
+const genreData: Record<string, { label: string; description: string; color: string }> = {
+  tech: {
+    label: 'Tech',
+    description: 'Latest technology & gadget news',
+    color: 'var(--color-tech)',
+  },
+  lifestyle: {
+    label: 'Lifestyle',
+    description: 'Lifestyle, hobbies & living tips',
+    color: 'var(--color-lifestyle)',
+  },
+  review: {
+    label: 'Review',
+    description: 'Honest reviews of products we\'ve actually used',
+    color: 'var(--color-review)',
+  },
+  news: {
+    label: 'News',
+    description: 'Trending news & updates',
+    color: 'var(--color-news)',
+  },
+};
+
+const currentGenre = genreData[genre as string] || genreData.tech;
+
+// Get English articles only
+const articles = await getCollection('articles', ({ id, data }) => {
+  return id.startsWith('en-us/') && data.genre === genre && !data.draft;
+});
+
+// Sort by date, newest first
+const sortedArticles = articles.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout 
+  title={`${currentGenre.label} - BLITZ.us`}
+  description={currentGenre.description}
+>
+  <Header />
+  
+  <main class="genre-page">
+    <section class="genre-header" style={`--genre-color: ${currentGenre.color}`}>
+      <div class="container">
+        <a href="/en-us/" class="back-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          Back to Genre Selection
+        </a>
+        
+        <h1 class="genre-title">{currentGenre.label}</h1>
+        <p class="genre-description">{currentGenre.description}</p>
+        
+        <div class="article-count">
+          {sortedArticles.length} articles
+        </div>
+      </div>
+    </section>
+    
+    <section class="articles-section">
+      <div class="container">
+        {sortedArticles.length > 0 ? (
+          <div class="articles-grid">
+            {sortedArticles.map((article, index) => (
+              <ArticleCard
+                title={article.data.title}
+                description={article.data.description}
+                href={`/en-us/articles/${article.slug.replace('en-us/', '')}`}
+                genre={article.data.genre}
+                date={article.data.date}
+                image={article.data.image}
+                delay={index * 0.1}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="empty-state">
+            <div class="empty-icon">📝</div>
+            <h2>No articles yet</h2>
+            <p>Articles in this genre are coming soon</p>
+            <a href="/en-us/" class="back-button">Back to Home</a>
+          </div>
+        )}
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .genre-page {
+    padding-top: var(--spacing-16);
+    min-height: 100vh;
+  }
+  
+  .genre-header {
+    padding: var(--spacing-16) 0 var(--spacing-12);
+    background: linear-gradient(180deg, var(--color-surface) 0%, transparent 100%);
+    border-bottom: 1px solid var(--color-border);
+    animation: fadeIn 0.6s ease forwards;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-6);
+    transition: color var(--transition-fast);
+  }
+  
+  .back-link:hover {
+    color: var(--color-text-primary);
+  }
+  
+  .genre-title {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--spacing-3);
+    color: var(--genre-color);
+  }
+  
+  .genre-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .article-count {
+    display: inline-block;
+    padding: var(--spacing-2) var(--spacing-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+  
+  .articles-section {
+    padding: var(--spacing-12) 0 var(--spacing-24);
+  }
+  
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+  }
+  
+  @media (max-width: 1024px) {
+    .articles-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .articles-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .genre-title {
+      font-size: var(--font-size-4xl);
+    }
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: var(--spacing-24) var(--spacing-6);
+  }
+  
+  .empty-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .empty-state h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-2);
+  }
+  
+  .empty-state p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: var(--spacing-3) var(--spacing-6);
+    background: var(--color-tech);
+    color: var(--color-background);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+  }
+  
+  .back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.4);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>

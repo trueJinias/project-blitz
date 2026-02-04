@@ -20,8 +20,8 @@ draft: false
 
 Here's where you need to pay attention. While the Chinese version packs a monster 7,000mAh battery, rumors suggest the **global version will be downsized to 6,330mAh (Ultra to 6,000mAh)**. You might want to yell "Why reduce it?!", but differences in safety standards might be a factor (though it's still plenty big).
 
-### 2. Chipset This is definitely the **Snapdragon 8 Elite Gen 5**. No worries about performance whatsoever. Might even be overkill (lol). ### 3. Price Leaked European prices are as follows: - **Xiaomi 17**: €1,099 (approx. ¥170,000)
-- **Xiaomi 17 Ultra**: €1,499 (approx. ¥240,000) ...Given the weak yen, brace yourself for the Japanese price (your wallet might take a hit). ## [Our Take] What Japanese Users Should Do Now Precisely because there's still time before launch, there are preparations to make.
+### 2. Chipset This is definitely the **Snapdragon 8 Elite Gen 5**. No worries about performance whatsoever. Might even be overkill (lol). ### 3. Price Leaked European prices are as follows: - **Xiaomi 17**: €1,099 (approx. $1,139)
+- **Xiaomi 17 Ultra**: €1,499 (approx. $1,608) ...Given the weak yen, brace yourself for the Japanese price (your wallet might take a hit). ## [Our Take] What Japanese Users Should Do Now Precisely because there's still time before launch, there are preparations to make.
 
 ![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17-release-date-global-3.jpg) *Photo by Andrey Matveev on Pexels* ### 1. Check the Used Market Price for Xiaomi 14/15 Ultra When new models launch, older models' prices drop. If you're thinking "I don't need the latest model," waiting for the price drop of older models right after the Xiaomi 17 announcement might be a smart move. ### 2. Secure a personal import route For those who can't wait for the Japanese release, consider importing the global version (like the Hong Kong model). While there are technical compliance issues, it's the only way to get it the fastest. ## Summary
 
