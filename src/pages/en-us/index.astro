@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import GenreCard from '../../components/GenreCard.astro';
 import { getCollection } from 'astro:content';
 
 // Get English articles
@@ -15,12 +16,7 @@ const genreCounts = allArticles.reduce((acc, article) => {
   return acc;
 }, {} as Record<string, number>);
 
-const genres = [
-  { id: 'tech', label: 'Tech', description: 'Latest technology & gadget news', icon: '⚡', gradient: 'var(--gradient-tech)', color: 'var(--color-tech)' },
-  { id: 'lifestyle', label: 'Lifestyle', description: 'Lifestyle, hobbies & living tips', icon: '✨', gradient: 'var(--gradient-lifestyle)', color: 'var(--color-lifestyle)' },
-  { id: 'review', label: 'Review', description: 'Honest reviews of products', icon: '🎯', gradient: 'var(--gradient-review)', color: 'var(--color-review)' },
-  { id: 'news', label: 'News', description: 'Trending news & updates', icon: '📰', gradient: 'var(--gradient-news)', color: 'var(--color-news)' },
-];
+const genres: Array<'tech' | 'lifestyle' | 'review' | 'news'> = ['tech', 'lifestyle', 'review', 'news'];
 ---
 
 <BaseLayout title="BLITZ.us - Discover Articles by Genre" description="Find the perfect article for you from a variety of genres including gadgets, lifestyle, reviews, and news.">
@@ -74,26 +70,12 @@ const genres = [
         
         <div class="genre-grid">
           {genres.map((genre, index) => (
-            <a 
-              href={`/en-us/genre/${genre.id}`} 
-              class="genre-card"
-              style={`--gradient: ${genre.gradient}; --color: ${genre.color}; --delay: ${index * 0.1}s;`}
-            >
-              <div class="card-glow"></div>
-              <div class="card-content">
-                <div class="card-icon">{genre.icon}</div>
-                <h2 class="card-title">{genre.label}</h2>
-                <p class="card-description">{genre.description}</p>
-                {(genreCounts[genre.id] || 0) > 0 && (
-                  <span class="card-count">{genreCounts[genre.id]} articles</span>
-                )}
-              </div>
-              <div class="card-arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </div>
-            </a>
+            <GenreCard 
+              genre={genre} 
+              count={genreCounts[genre] || 0}
+              delay={index * 0.1}
+              lang="en-us"
+            />
           ))}
         </div>
       </div>

@@ -38,13 +38,22 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
       </ul>
     </nav>
     
-    <div class="lang-toggle">
-      <a href="/" class:list={['lang-btn', { active: !isEnglish }]} title="日本語">
-        🇯🇵
-      </a>
-      <a href="/en-us/" class:list={['lang-btn', { active: isEnglish }]} title="English">
-        🇺🇸
-      </a>
+    <div class="lang-selector">
+      <button class="lang-current" aria-label="言語選択">
+        <span class="lang-flag">{isEnglish ? '🇺🇸' : '🇯🇵'}</span>
+        <span class="lang-name">{isEnglish ? 'EN' : 'JP'}</span>
+        <svg class="lang-arrow" width="12" height="12" viewBox="0 0 12 12">
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+      </button>
+      <div class="lang-dropdown">
+        <a href="/" class:list={['lang-option', { active: !isEnglish }]}>
+          <span>🇯🇵</span> 日本語
+        </a>
+        <a href="/en-us/" class:list={['lang-option', { active: isEnglish }]}>
+          <span>🇺🇸</span> English
+        </a>
+      </div>
     </div>
     
     <button class="menu-toggle" aria-label="メニュー">
@@ -144,37 +153,84 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
     color: white;
   }
   
-  .lang-toggle {
-    display: flex;
-    gap: var(--spacing-1);
+  .lang-selector {
+    position: relative;
     margin-left: var(--spacing-4);
   }
   
-  .lang-btn {
+  .lang-current {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: var(--radius-full);
-    font-size: 1.2rem;
-    text-decoration: none;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-3);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
     transition: all var(--transition-fast);
-    opacity: 0.6;
   }
   
-  .lang-btn:hover {
-    opacity: 1;
+  .lang-current:hover {
     border-color: var(--color-tech);
-    transform: scale(1.1);
+    color: var(--color-text-primary);
   }
   
-  .lang-btn.active {
+  .lang-flag {
+    font-size: 1.1rem;
+  }
+  
+  .lang-arrow {
+    transition: transform var(--transition-fast);
+  }
+  
+  .lang-selector:hover .lang-arrow {
+    transform: rotate(180deg);
+  }
+  
+  .lang-dropdown {
+    position: absolute;
+    top: calc(100% + var(--spacing-2));
+    right: 0;
+    min-width: 140px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all var(--transition-fast);
+    z-index: 100;
+    overflow: hidden;
+  }
+  
+  .lang-selector:hover .lang-dropdown {
     opacity: 1;
-    background: var(--color-tech);
-    border-color: var(--color-tech);
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-4);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    font-size: var(--font-size-sm);
+  }
+  
+  .lang-option:hover {
+    background: var(--color-surface-elevated);
+    color: var(--color-text-primary);
+  }
+  
+  .lang-option.active {
+    color: var(--color-tech);
+    font-weight: var(--font-weight-semibold);
   }
   
   .menu-toggle {

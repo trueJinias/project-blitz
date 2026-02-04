@@ -3,9 +3,10 @@ interface Props {
   genre: 'tech' | 'lifestyle' | 'review' | 'news';
   count?: number;
   delay?: number;
+  lang?: string;
 }
 
-const { genre, count = 0, delay = 0 } = Astro.props;
+const { genre, count = 0, delay = 0, lang = 'ja' } = Astro.props;
 
 const genreData = {
   tech: {
@@ -52,7 +53,7 @@ const data = genreData[genre];
     <h2 class="card-title">{data.label}</h2>
     <p class="card-description">{data.description}</p>
     {count > 0 && (
-      <span class="card-count">{count} 記事</span>
+      <span class="card-count">{count} {countLabel}</span>
     )}
   </div>
   <div class="card-arrow">
