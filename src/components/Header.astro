@@ -19,7 +19,7 @@ const navItems = [
     
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-indicator"></li>
+        <div class="nav-indicator"></div>
         {navItems.map((item) => (
           <li>
             <a 
@@ -105,7 +105,6 @@ const navItems = [
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     opacity: 0;
     pointer-events: none;
-    list-style: none;
   }
   
   .nav-list li {
@@ -226,9 +225,9 @@ const navItems = [
       const listRect = navList.getBoundingClientRect();
       const itemRect = element.getBoundingClientRect();
       
-      // Account for the left padding of nav-list
-      const paddingLeft = parseFloat(window.getComputedStyle(navList).paddingLeft) || 0;
-      const relativeLeft = itemRect.left - listRect.left - paddingLeft;
+      // Calculate position relative to nav-list
+      // Subtract 4px to account for the left: 4px offset in CSS
+      const relativeLeft = itemRect.left - listRect.left - 4;
       
       indicator.style.width = `${itemRect.width}px`;
       indicator.style.transform = `translateX(${relativeLeft}px)`;
