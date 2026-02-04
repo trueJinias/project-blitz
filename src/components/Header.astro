@@ -85,25 +85,27 @@ const navItems = [
     display: flex;
     list-style: none;
     margin: 0;
+    padding: var(--spacing-1) 0;
     gap: var(--spacing-1);
-    position: relative; /* Needed for absolute positioning of indicator */
-    padding: var(--spacing-1);
+    position: relative;
     background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius-full);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
   
   .nav-indicator {
+    display: block;
     position: absolute;
     top: var(--spacing-1);
-    left: 0;
-    height: calc(100% - var(--spacing-2));
+    left: var(--spacing-1);
+    height: calc(100% - calc(var(--spacing-1) * 2));
     background: var(--color-tech);
     border-radius: var(--radius-full);
     z-index: 0;
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    opacity: 0; /* Hidden by default until JS calculates position */
+    opacity: 0;
     pointer-events: none;
+    list-style: none;
   }
   
   .nav-list li {
@@ -221,12 +223,12 @@ const navItems = [
     if (!indicator || !navList) return;
     
     function updateIndicator(element) {
-      // nav-list has padding: var(--spacing-1) = 0.25rem = 4px (approx, depends on root)
-      // We need relative position within the nav-list
       const listRect = navList.getBoundingClientRect();
       const itemRect = element.getBoundingClientRect();
       
-      const relativeLeft = itemRect.left - listRect.left;
+      // Account for the left padding of nav-list
+      const paddingLeft = parseFloat(window.getComputedStyle(navList).paddingLeft) || 0;
+      const relativeLeft = itemRect.left - listRect.left - paddingLeft;
       
       indicator.style.width = `${itemRect.width}px`;
       indicator.style.transform = `translateX(${relativeLeft}px)`;
