@@ -17,7 +17,7 @@ const genreCounts = allArticles.reduce((acc, article) => {
 const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
 ---
 
-<BaseLayout title="BLITZ - ジャンルから記事を探す" description="ガジェット、ライフスタイル、レビュー、ニュースなど、多彩なジャンルからあなたにぴったりの記事が見つかるWebマガジン。">
+<BaseLayout title="BLITZ - カテゴリから記事を探す" description="ガジェット、ライフスタイル、レビュー、ニュースなど、多彩なカテゴリからあなたにぴったりの記事が見つかるWebマガジン。">
   <Header />
   
   <main class="home">
@@ -63,8 +63,8 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
     <!-- Genre Selection -->
     <section class="genres">
       <div class="container">
-        <h2 class="section-title">ジャンルを選ぶ</h2>
-        <p class="section-subtitle">気になるジャンルをクリックして記事を探索しよう</p>
+        <h2 class="section-title">カテゴリーから探す</h2>
+        <p class="section-description">興味のあるテーマを選んでください</p>
         
         <div class="genre-grid">
           {genres.map((genre, index) => (

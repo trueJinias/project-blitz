@@ -11,6 +11,7 @@
     "nav": {
         "home": "Home",
         "genres": {
+            "title": "Category",
             "tech": "Tech",
             "lifestyle": "Lifestyle",
             "news": "News",
