@@ -1,0 +1,45 @@
+---
+interface Props {
+  lang: 'ja' | 'en-us';
+  size?: number;
+}
+
+const { lang, size = 20 } = Astro.props;
+---
+
+{lang === 'ja' && (
+  <svg width={size} height={size * 0.75} viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" class="flag-icon">
+    <rect fill="#ffffff" width="900" height="600" stroke="#eeeeee" stroke-width="1"/>
+    <circle fill="#bc002d" cx="450" cy="300" r="180"/>
+  </svg>
+)}
+
+{lang === 'en-us' && (
+  <svg width={size} height={size * 0.75} viewBox="0 0 7410 3900" xmlns="http://www.w3.org/2000/svg" class="flag-icon">
+    <rect fill="#b22234" width="7410" height="3900"/>
+    <path d="M0,450H7410M0,1350H7410M0,2250H7410M0,3150H7410" stroke="#fff" stroke-width="300"/>
+    <rect fill="#3c3b6e" width="2964" height="2100"/>
+    <g fill="#fff">
+      <g id="s5">
+        <circle cx="247" cy="175" r="111"/>
+        <circle cx="247" cy="525" r="111"/>
+        <circle cx="247" cy="875" r="111"/>
+        <circle cx="247" cy="1225" r="111"/>
+        <circle cx="247" cy="1575" r="111"/>
+      </g>
+      <use href="#s5" x="494"/>
+      <use href="#s5" x="988"/>
+      <use href="#s5" x="1482"/>
+      <use href="#s5" x="1976"/>
+    </g>
+  </svg>
+)}
+
+<style>
+  .flag-icon {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+</style>

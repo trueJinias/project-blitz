@@ -2,6 +2,7 @@
 const currentPath = Astro.url.pathname;
 const isEnglish = currentPath.startsWith('/en-us');
 const currentLang = isEnglish ? 'en-us' : 'ja';
+import Flag from './Flag.astro';
 
 const navItems = [
   { label: 'Home', href: isEnglish ? '/en-us/' : '/' },
@@ -40,7 +41,7 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
     <div class="header-right">
       <div class="lang-selector">
         <button class="lang-current" aria-label="言語選択">
-          <span class="lang-flag">{isEnglish ? '🇺🇸' : '🇯🇵'}</span>
+          <span class="lang-flag"><Flag lang={isEnglish ? 'en-us' : 'ja'} size={24} /></span>
           <span class="lang-name">{isEnglish ? 'EN' : 'JP'}</span>
           <svg class="lang-arrow" width="12" height="12" viewBox="0 0 12 12">
             <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
@@ -48,10 +49,10 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
         </button>
         <div class="lang-dropdown">
           <a href="/" class:list={['lang-option', { active: !isEnglish }]}>
-            <span>🇯🇵</span> 日本語
+            <Flag lang="ja" size={20} /> 日本語
           </a>
           <a href="/en-us/" class:list={['lang-option', { active: isEnglish }]}>
-            <span>🇺🇸</span> English
+            <Flag lang="en-us" size={20} /> English
           </a>
         </div>
       </div>
