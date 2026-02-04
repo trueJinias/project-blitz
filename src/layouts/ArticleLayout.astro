@@ -225,6 +225,41 @@ const formattedDate = new Intl.DateTimeFormat('ja-JP', {
     border-radius: var(--radius-lg);
   }
   
+  .article-content :global(table) {
+    width: 100%;
+    margin: var(--spacing-6) 0;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  
+  .article-content :global(thead) {
+    background: var(--color-surface-elevated);
+  }
+  
+  .article-content :global(th) {
+    padding: var(--spacing-3) var(--spacing-4);
+    text-align: left;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    border-bottom: 2px solid var(--color-border);
+  }
+  
+  .article-content :global(td) {
+    padding: var(--spacing-3) var(--spacing-4);
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+  }
+  
+  .article-content :global(tr:last-child td) {
+    border-bottom: none;
+  }
+  
+  .article-content :global(tr:hover) {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
   @media (max-width: 768px) {
     .article-title {
       font-size: var(--font-size-3xl);
