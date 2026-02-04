@@ -343,10 +343,11 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
     
     /* Control Center Tile Style */
     .nav-link {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(40px) saturate(180%);
-      -webkit-backdrop-filter: blur(40px) saturate(180%);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      /* Apple-like Liquid Glass UI - High Opacity */
+      background: rgba(15, 15, 20, 0.85); /* Much darker/opaque */
+      backdrop-filter: blur(60px) saturate(150%);
+      -webkit-backdrop-filter: blur(60px) saturate(150%);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
       border-radius: 20px;
       
       height: 100px; /* Square-ish tile */
