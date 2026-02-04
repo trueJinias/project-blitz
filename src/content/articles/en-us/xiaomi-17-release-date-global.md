@@ -1,8 +1,5 @@
 ---
-title: "When is the Xiaomi 17 Global Edition release date? [Latest 2026 Leak]"
-description: "When will the global version of the Xiaomi 17 series launch? With an announcement at MWC 2026 looking likely, we've compiled the latest leaked information on its potential Japanese release, pricing, and specs."
-genre: "news"
-date: 2026-02-04
+
 title: "When is the Xiaomi 17 Global Edition release date? [Latest 2026 Leak]"
 description: "When will the global version of the Xiaomi 17 series launch? With an announcement at MWC 2026 looking likely, we've compiled the latest leaked information on its potential Japanese release, pricing, and specs."
 genre: "news"
