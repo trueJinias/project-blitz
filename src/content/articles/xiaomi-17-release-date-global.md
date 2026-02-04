@@ -1,7 +1,7 @@
 ---
 title: "Xiaomi 17 グローバル版の発売日はいつ？【2026年最新リーク】"
 description: "Xiaomi 17シリーズのグローバル版はいつ発売される？MWC 2026での発表が有力視される中、日本発売の可能性や価格、スペックの最新リーク情報をまとめました。"
-genre: "news"
+genre: "tech"
 date: 2026-02-04
 image: "/images/articles/xiaomi-17-release-date-global-thumbnail.jpg"
 tags: ["Xiaomi", "Xiaomi 17", "発売日", "リーク", "2026"]
