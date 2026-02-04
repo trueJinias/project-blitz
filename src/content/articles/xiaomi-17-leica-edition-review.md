@@ -3,7 +3,7 @@ title: "Xiaomi 17 Ultra「By Leica」Edition（噂）：AIに抗う写真家の�
 description: "Xiaomi 17 Ultraには、AI補正を排除し「真の写真」を追求した特化モデルが存在する？噂の機械式コントロールリング、LOFICセンサー、そして「By Leica」エディションの全貌に迫る。"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi 17", "Leica", "カメラ", "レビュー", "噂"]
+tags: ["Xiaomi 17", "Leica", "カメラ"]
 author: "なも兄"
 draft: false
 image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"

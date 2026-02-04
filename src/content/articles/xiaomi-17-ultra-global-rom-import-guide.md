@@ -3,7 +3,7 @@ title: "Xiaomi 17 Ultra グローバルROM導入の罠：中国版を安く買�
 description: "「Xiaomi 17 Ultra」の中国版は安いですが、グローバルROMへの書き換えは現在「無理ゲー」です。HyperOSのブートローダーアンロック規制、Android Auto不可問題、それでも輸入すべき人とは？"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi 17", "個人輸入", "Global ROM", "HyperOS", "解説"]
+tags: ["Xiaomi 17", "個人輸入", "Global ROM"]
 author: "なも兄"
 draft: false
 image: "/images/articles/xiaomi-17-ultra-global-rom-import-guide-thumbnail.jpg"
@@ -23,7 +23,7 @@ Xiaomi 17世代（HyperOS 2.0以降）では、その常識が通用しなくな
 
 ## 1. 悲報：グローバルROMは「ほぼ焼けません」
 
-![Xiaomi smartphone 17 1. ROM](/images/articles/xiaomi-17-ultra-global-rom-import-guide-1.jpg)
+![Xiaomi smartphone 17 1. ROM](image: "")
 *Image from Pixabay*
 
 最大の壁がこれです。

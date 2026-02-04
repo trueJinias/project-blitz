@@ -3,16 +3,9 @@ title: "Xiaomi 17T Pro いつの間に発売？【2026年2月有力】スペッ�
 description: "「T」シリーズがまさかの早期投入？Xiaomi 17T Proのグローバル発表が2026年2月に前倒しされるとの噂が浮上。Dimensity 9500搭載、脅威の7000mAhバッテリーなど、モンスタースペックの全貌を解説します。"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi", "Xiaomi 17T Pro", "リーク", "Dimensity 9500", "発売日"]
+tags: ["Xiaomi 17T Pro", "発売日", "リーク"]
 author: "なも兄"
 draft: false
-image: "/images/articles/xiaomi-17t-pro-release-date-thumbnail.jpg"
----
-
-## はじめに
-
-「Xiaomi 17が出たばかりなのに、もうTシリーズの話！？」
-
 そう思ったあなた、正常です（笑）。
 
 でも、今年のXiaomiは様子が違います。例年なら秋頃に発売される「T」シリーズが、なんと2026年2月にグローバル発表されるという噂が飛び込んできました。

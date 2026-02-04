@@ -3,7 +3,7 @@ title: "Xiaomi 17 Pro vs iPhone 17 Pro Max: 2026年フラッグシップ頂上�
 description: "2026年の最強スマホ決定戦。Xiaomi 17 Proの噂のスペックとiPhone 17 Pro Maxを徹底比較。背面ディスプレイやカメラ性能、バッテリー持ちなど、リーク情報を元にどっちが買いか分析します。"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi 17", "iPhone 17", "比較", "リーク", "2026"]
+tags: ["Xiaomi 17", "iPhone 17", "比較"]
 author: "なも兄"
 draft: false
 image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"

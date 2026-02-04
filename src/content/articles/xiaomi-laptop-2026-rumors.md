@@ -3,7 +3,7 @@ title: "Xiaomiが本気出す。2026年の新型ノートPCは「Tandem OLED」�
 description: "Xiaomiの2026年ノートPC（RedmiBook Pro）に関するリーク情報まとめ。Intel Panther LakeとSnapdragon X Elite Gen 2の二刀流、そしてiPad Proでおなじみの「Tandem OLED」採用の噂に迫る。"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi", "ノートPC", "RedmiBook Pro", "リーク", "2026年モデル"]
+tags: ["Xiaomi", "ノートPC", "RedmiBook", "2026"]
 author: "なも兄"
 draft: false
 image: "/images/articles/xiaomi-laptop-2026-rumors-thumbnail.jpg"

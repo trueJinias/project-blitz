@@ -3,7 +3,7 @@ title: "「育ちが良さそう」と言わせる。オールドマネーな髪
 description: "流行りのフェードやマッシュに飽きていませんか？今、大人の男に求められているのは「オールドマネー」な品格のある髪型です。美容室での頼み方から、セットに必要なアイテムまで徹底解説します。"
 genre: "lifestyle"
 date: 2026-02-04
-tags: ["オールドマネー", "髪型", "メンズ", "ヘアスタイル", "セット方法"]
+tags: ["オールドマネー", "髪型", "メンズ", "セット"]
 author: "なも兄"
 draft: false
 image: "/images/articles/old-money-hairstyle-men-guide-thumbnail.jpg"

@@ -3,7 +3,7 @@ title: "Xiaomi 17の実機バッテリーテスト（噂）：6000mAh時代到�
 description: "Xiaomi 17シリーズのバッテリー容量がついに6000mAhへ。ただし、日本発売のグローバル版は容量ダウンの可能性も？噂の「8000mAh」モデルや、実際の駆動時間テストのリーク情報をまとめました。"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi 17", "バッテリー", "リーク", "6000mAh", "スマホ"]
+tags: ["Xiaomi 17", "バッテリー", "検証"]
 author: "なも兄"
 draft: false
 image: "/images/articles/xiaomi-17-battery-life-test-thumbnail.jpg"

@@ -4,7 +4,7 @@ description: "Xiaomi 17シリーズのグローバル版はいつ発売される
 genre: "tech"
 date: 2026-02-04
 image: "/images/articles/xiaomi-17-release-date-global-thumbnail.jpg"
-tags: ["Xiaomi", "Xiaomi 17", "発売日", "リーク", "2026"]
+tags: ["Xiaomi 17", "発売日", "グローバル版"]
 author: "なも兄"
 draft: false
 ---

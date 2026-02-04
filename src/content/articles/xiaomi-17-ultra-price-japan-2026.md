@@ -4,7 +4,7 @@ description: "Xiaomi 17 Ultraの日本での販売価格を徹底予測。中国
 genre: "tech"
 date: 2026-02-04
 image: "/images/articles/xiaomi-17-ultra-price-japan-2026-thumbnail.jpg"
-tags: ["Xiaomi", "Xiaomi 17 Ultra", "スマートフォン", "価格予測", "2026"]
+tags: ["Xiaomi 17 Ultra", "価格", "日本発売"]
 author: "なも兄"
 draft: false
 ---

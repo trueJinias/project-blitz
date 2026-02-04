@@ -3,7 +3,7 @@ title: "Redmi Note 15 5G 価格予想：歴代「Note」と比較して見えた
 description: "シリーズ通算販売台数4億台突破？Redmi Note 15 5Gの発売日と価格を、歴代モデル（Note 13/14）の推移からガチ予想。今回は「IP68防水」と「5800mAh」が目玉になる？"
 genre: "tech"
 date: 2026-02-04
-tags: ["Xiaomi", "Redmi Note 15", "価格予想", "リーク", "コスパ"]
+tags: ["Redmi Note 15", "価格", "コスパ"]
 author: "なも兄"
 draft: false
 image: "/images/articles/redmi-note-15-5g-price-history-thumbnail.jpg"
