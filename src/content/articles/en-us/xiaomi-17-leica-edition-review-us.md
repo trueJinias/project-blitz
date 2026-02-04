@@ -3,7 +3,7 @@ title: "Xiaomi 17 Ultra \"By Leica\" Edition Rumored: The Anti-AI Camera Phone f
 description: "Does the Xiaomi 17 Ultra include a specialist model designed to reject AI processing and pursue \"true photography\"? We dive into the rumors surrounding the mechanical control ring, LOFIC sensor, and the mysterious \"By Leica\" edition."
 author: 編集部
 date: 2024-06-15
-genre: review
+genre: tech
 image: /images/articles/xiaomi-17-leica-edition-review-1.jpg
 ---
 

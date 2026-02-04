@@ -1,6 +1,6 @@
 ---
 interface Props {
-  genre: 'tech' | 'lifestyle' | 'review' | 'news';
+  genre: 'tech' | 'lifestyle' | 'news';
   count?: number;
   delay?: number;
   lang?: string;
@@ -29,16 +29,7 @@ const genreData = {
     gradient: 'var(--gradient-lifestyle)',
     color: 'var(--color-lifestyle)',
   },
-  review: {
-    label: { ja: 'Review', 'en-us': 'Review' },
-    description: { 
-      ja: '実際に使った製品の正直レビュー', 
-      'en-us': 'Honest reviews of products' 
-    },
-    icon: '🎯',
-    gradient: 'var(--gradient-review)',
-    color: 'var(--color-review)',
-  },
+
   news: {
     label: { ja: 'News', 'en-us': 'News' },
     description: { 

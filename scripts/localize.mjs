@@ -51,7 +51,7 @@ Your task is to REWRITE the following Japanese tech article for a US audience.
    - You can change headers to be more punchy.
 6. **Frontmatter**:
    - Keys must be strictly LOWERCASE (title, description, genre, etc.).
-   - "genre" must be one of: "tech", "lifestyle", "review", "news".
+   - "genre" must be one of: "tech", "lifestyle", "news".
    - "image" path must be exactly the same as original.
    - Translate the title to be catchy. **MUST BE QUOTED**.
    - Translate the description. **MUST BE QUOTED**.
