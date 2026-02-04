@@ -1,0 +1,70 @@
+﻿[2m15:04:51[22m [34m[content][39m Syncing content
+[2m15:04:51[22m [34m[content][39m Astro config changed
+[2m15:04:51[22m [34m[content][39m Content config changed
+[2m15:04:51[22m [34m[content][39m Clearing content store
+node.exe : can not re
+ad a block mapping en
+try; a multiline key 
+may not be an implici
+t key
+発生場所 行:1 文字:1
++ & "C:\Program Files
+\nodejs/node.exe" "C:
+\Program Files\nodejs
+/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (can not   
+  read a ...an im    
+plicit key:Strin    g
+) [], RemoteExc    ep
+tion
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+  [1mLocation:[22m
+    [4mC:\Users\sana
+d\OneDrive\Desktop\Pr
+oject Blitz\src\conte
+nt\articles\smartphon
+e-trends-2026.md:4:4
+[24m
+  [1mStack trace:[2
+2m
+[2m    at generateEr
+ror (file:///C:/Users
+/sanad/OneDrive/Deskt
+op/Project%20Blitz/no
+de_modules/js-yaml/di
+st/js-yaml.mjs:1289:1
+0)
+    at readBlockMappi
+ng (file:///C:/Users/
+sanad/OneDrive/Deskto
+p/Project%20Blitz/nod
+e_modules/js-yaml/dis
+t/js-yaml.mjs:2241:9)
+    at readDocument (
+file:///C:/Users/sana
+d/OneDrive/Desktop/Pr
+oject%20Blitz/node_mo
+dules/js-yaml/dist/js
+-yaml.mjs:2721:3)
+    at load$1 (file:/
+//C:/Users/sanad/OneD
+rive/Desktop/Project%
+20Blitz/node_modules/
+js-yaml/dist/js-yaml.
+mjs:2810:19)
+    at safeParseFront
+matter (file:///C:/Us
+ers/sanad/OneDrive/De
+sktop/Project%20Blitz
+/node_modules/astro/d
+ist/content/utils.js:
+347:12)[22m
