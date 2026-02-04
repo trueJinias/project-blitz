@@ -1,5 +1,4 @@
 
-import { GoogleGenerativeAI } from '@google/generative-ai';
 import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
@@ -8,14 +7,12 @@ import matter from 'gray-matter';
 dotenv.config();
 
 const API_KEY = process.env.GEMINI_API_KEY;
+const MODEL = 'gemini-flash-latest'; // Fallback to latest stable flash
 
 if (!API_KEY) {
     console.error('❌ Error: GEMINI_API_KEY not found in .env');
     process.exit(1);
 }
-
-const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-exp-1206' });
 
 const targetFile = process.argv[2];
 
@@ -36,6 +33,7 @@ async function localizeArticle() {
         const { data: frontmatter, content } = matter(fileContent);
 
         console.log(`🤖 Localizing article: ${frontmatter.title || 'Untitled'}...`);
+        console.log(`Using model: ${MODEL}`);
 
         const prompt = `
 You are a professional tech editor for a popular US tech blog (like The Verge or Android Authority).
@@ -66,18 +64,57 @@ ${content}
 Return ONLY the localized Markdown content (including frontmatter). Do not include colloquial introductions like "Here is the article".
 `;
 
-        const result = await model.generateContent(prompt);
-        const response = await result.response;
-        const localizedText = response.text();
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{ text: prompt }]
+                }]
+            })
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            // Log only first 200 chars to avoid buffer overflow/crash
+            const shortError = errorText.substring(0, 500);
+            throw new Error(`Gemini API Error: ${response.status} ${response.statusText}\n${shortError}...`);
+        }
+
+        const data = await response.json();
+
+        if (!data.candidates || data.candidates.length === 0 || !data.candidates[0].content) {
+            throw new Error('No content generated from Gemini API');
+        }
+
+        const localizedText = data.candidates[0].content.parts[0].text;
 
         // Clean up response if it contains markdown code blocks
         const cleanText = localizedText.replace(/^```markdown\n/, '').replace(/\n```$/, '');
 
         // Determine output path
         const fileName = path.basename(filePath);
-        // Add -us suffix if not present
-        const newFileName = fileName.replace('.md', '-us.md').replace('-us-us', '-us');
-        const outputDir = path.join(process.cwd(), 'src/content/articles/en-us');
+        // Add -us suffix if not present, preventing double suffix
+        const baseName = fileName.replace('.md', '');
+        const newBaseName = baseName.endsWith('-us') ? baseName : `${baseName}-us`;
+        const newFileName = `${newBaseName}.md`;
+
+        // Ensure we are outputting to the correct directory
+        // If input is in src/content/articles, output to src/content/articles/en-us
+        // If input is already in en-us, just overwrite or save alongside (logic here assumes input is source)
+
+        let outputDir;
+        if (filePath.includes('en-us')) {
+            // If running on already localized file, save in same dir
+            outputDir = path.dirname(filePath);
+        } else {
+            // Default to src/content/articles/en-us
+            outputDir = path.join(process.cwd(), 'src/content/articles/en-us');
+        }
 
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
@@ -90,7 +127,7 @@ Return ONLY the localized Markdown content (including frontmatter). Do not inclu
         console.log(`✅ Localization complete! Saved to: ${outputPath}`);
 
     } catch (error) {
-        console.error('❌ Localization failed:', error);
+        console.error('❌ Localization failed:', error.message);
         process.exit(1);
     }
 }
