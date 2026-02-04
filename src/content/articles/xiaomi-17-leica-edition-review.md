@@ -15,7 +15,7 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 
 そんな嘆きをよく耳にします。AIが空を青く塗りたくり、肌をツルツルにし、月を合成する…。綺麗な画像ではあるけれど、それは「記録」でしょうか？
 
-噂されている **Xiaomi 17 Ultra "By Leica" Edition** は、そんな時代への強烈なアンチテーゼかもしれません。
+噂されている Xiaomi 17 Ultra "By Leica" Edition は、そんな時代への強烈なアンチテーゼかもしれません。
 
 今回は、写真好きの私が震えた、この「変態端末（褒め言葉）」の噂を深掘りします。
 
@@ -24,7 +24,7 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 ![Xiaomi smartphone 17 1.](/images/articles/xiaomi-17-leica-edition-review-1.jpg)
 *Image from Pixabay*
 
-最大のトピックは、背面のカメラバンプに搭載されると噂の **「機械式コントロールリング」** です。
+最大のトピックは、背面のカメラバンプに搭載されると噂の 「機械式コントロールリング」 です。
 
 - ズーム
 - フォーカス
@@ -41,12 +41,12 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 *Photo by Andrey Matveev on Pexels*
 
 スペックオタクのみなさん、お待たせしました。
-搭載されるセンサーは、従来のSony製1インチではなく、**LightFusion 1050L** になると言われています。
+搭載されるセンサーは、従来のSony製1インチではなく、LightFusion 1050L になると言われています。
 
-ここで注目すべきは **LOFIC技術**。
+ここで注目すべきは LOFIC技術。
 簡単に言うと、「明暗差が激しいシーンでも白飛び・黒つぶれしない」技術です。
 
-ダイナミックレンジは驚異の **20段**（噂）。
+ダイナミックレンジは驚異の 20段（噂）。
 これ、下手なミラーレス一眼を超えてます。夕暮れのグラデーションや、木漏れ日のような複雑な光も、AIによるHDR合成なしで「一発撮り」で美しく残せるわけです。
 
 ## 3. 「AIお断り」認証
@@ -54,7 +54,7 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 ![A smartphone shows a ChatGPT interface placed on an Apple laptop in a leafy environment.](/images/articles/xiaomi-17-leica-edition-review-3.jpg)
 *Photo by Solen Feyissa on Pexels*
 
-このモデルには、**"Anti-AI Certification"** なるものが付くという噂も。
+このモデルには、"Anti-AI Certification" なるものが付くという噂も。
 これは、「この写真はハードウェアの光学性能だけで撮られたものであり、生成AIによる加筆はない」ことを証明する機能だとか。
 
 フォトジャーナリストや、リアリティを追求するストリートスナップ勢にとっては、これ以上ない機能です。
@@ -63,7 +63,7 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 ## 4. 200MPの可変望遠レンズ
 
 望遠レンズも進化します。
-**200万画素** の高解像度センサーを使い、75mm（3倍）から100mm（4倍）の間を **画質劣化なしで連続ズーム** できるとのこと。
+200万画素 の高解像度センサーを使い、75mm（3倍）から100mm（4倍）の間を 画質劣化なしで連続ズーム できるとのこと。
 
 ポートレート（75mm）から、少し離れた被写体の切り取り（100mm）まで、レンズ交換なしでシームレスに行き来できます。
 

@@ -10,7 +10,7 @@ author: "Namo-Ni"
 
 ## MWC 2026: Mark Your Calendars for March
 
-The smart money is on a global unveiling for the Xiaomi 17 series at **MWC 2026, slated for March 5–6 in Barcelona.**
+The smart money is on a global unveiling for the Xiaomi 17 series at MWC 2026, slated for March 5–6 in Barcelona.
 
 Historically, Xiaomi adheres to a roughly three-month lag between its initial China launch (usually late in the preceding year, Q4 2025) and the full global rollout. This pattern holds true for the 17 series.
 
@@ -25,9 +25,9 @@ While the Chinese market typically sees four distinct models, the global offerin
 
 Based on current whispers, we expect:
 
-- **Xiaomi 17 (Base Model)**: The compact flagship, likely featuring a 6.31-inch display.
-- **Xiaomi 17 Ultra**: The massive, camera-focused apex model.
-- **Pro / Pro Max**: These variations are highly likely to remain exclusive to China (a tough pill to swallow for power users hoping for better global availability).
+- Xiaomi 17 (Base Model): The compact flagship, likely featuring a 6.31-inch display.
+- Xiaomi 17 Ultra: The massive, camera-focused apex model.
+- Pro / Pro Max: These variations are highly likely to remain exclusive to China (a tough pill to swallow for power users hoping for better global availability).
 
 ## Under the Hood: Key Spec Leaks
 
@@ -38,13 +38,13 @@ Here’s where things get tricky, particularly for those familiar with the batte
 ![a close up of the word imoaix on a black surface](/images/articles/xiaomi-17-release-date-global-2.jpg)
 *Photo by Hakim Menikh on Unsplash*
 
-Chinese versions are rumored to pack a monstrous 7,000mAh cell. However, leaks suggest the **global version will see a slight downsize to 6,330mAh (and 6,000mAh for the Ultra).**
+Chinese versions are rumored to pack a monstrous 7,000mAh cell. However, leaks suggest the global version will see a slight downsize to 6,330mAh (and 6,000mAh for the Ultra).
 
 Why the reduction? It often boils down to differing regional safety and certification standards. While disappointing to lose 700mAh, 6,330mAh is still huge and would place the Xiaomi 17 among the top tier for endurance outside of specialized gaming phones.
 
 ### 2. The Chipset
 
-There’s little room for doubt here: the Xiaomi 17 will run on the latest and greatest, the **Snapdragon 8 Elite Gen 5.**
+There’s little room for doubt here: the Xiaomi 17 will run on the latest and greatest, the Snapdragon 8 Elite Gen 5.
 
 Performance anxiety? Forget about it. This silicon is guaranteed to be blistering fast; it might even be overkill for most users.
 
@@ -54,8 +54,8 @@ Leaked prices from European distributors give us an idea of the inevitable stick
 
 | Model | Estimated Euro Price (Retail) | Estimated USD Price (Retail) |
 | :--- | :--- | :--- |
-| **Xiaomi 17** | €1,099 | ~$1,200 |
-| **Xiaomi 17 Ultra** | €1,499 | ~$1,650 |
+| Xiaomi 17 | €1,099 | ~$1,200 |
+| Xiaomi 17 Ultra | €1,499 | ~$1,650 |
 
 These prices reflect European MSRPs, which typically include VAT. US buyers importing the device can expect to pay slightly less than the USD conversion, plus significant import fees and shipping. Prepare your wallets—these are premium prices for premium hardware.
 
@@ -78,6 +78,6 @@ Be ready to deal with grey market sellers (like Wonda Mobile or similar retailer
 
 ## Summary
 
-The Xiaomi 17 Global launch is highly probable for **March 2026.**
+The Xiaomi 17 Global launch is highly probable for March 2026.
 
 With monstrous specs and equally monstrous prices, the hype is building fast. Will you be ready to shell out for the 17 Ultra, or are you waiting for reviews before you smash that import button? (We're already losing sleep over the Ultra.)

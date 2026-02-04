@@ -12,15 +12,15 @@ image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"
 ## 2026年、スマホ選びの「正解」はこれだ
 「次のメイン機、どっちにしよう…」
 
-そう悩んでいるガジェット好きのみなさん、**まだiPhone 17 Pro Maxを一括予約するのは待ってください！** (ポチる前にこの記事を読んで！)
+そう悩んでいるガジェット好きのみなさん、まだiPhone 17 Pro Maxを一括予約するのは待ってください！ (ポチる前にこの記事を読んで！)
 
 2026年のスマホ市場は、まさに「頂上決戦」。Appleの牙城を崩そうと、Xiaomiが"とんでもないモンスター"を用意しているようです。
 
-今回は、リーク情報を元に **Xiaomi 17 Pro** と **iPhone 17 Pro Max** を徹底比較。どっちを待つべきか、個人的な見解マシマシで解説します。
+今回は、リーク情報を元に Xiaomi 17 Pro と iPhone 17 Pro Max を徹底比較。どっちを待つべきか、個人的な見解マシマシで解説します。
 
 ## 1. デザイン：背面画面 vs Dynamic Island
 
-まず目を引くのが、Xiaomi 17 Proに搭載されると噂の **「背面セカンダリディスプレイ」** です。
+まず目を引くのが、Xiaomi 17 Proに搭載されると噂の 「背面セカンダリディスプレイ」 です。
 
 ![Xiaomi 17 Pro concept art showing rear display](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
 *Photo by Conceptual Renders (Generated)*
@@ -28,18 +28,18 @@ image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"
 「背面画面とか誰が使うの？」と思ったそこのあなた。甘いです。
 自撮りをリアカメラで撮れる、通知をサクッと確認できる…これ、意外と便利なんですよ（Xiaomi 11 Ultraの頃からファンです）。
 
-対するiPhone 17 Pro Maxは、Face IDがついに画面下に埋め込まれるとか、Dynamic Islandが小さくなるとか言われていますが、**基本デザインはキープ** でしょう。
+対するiPhone 17 Pro Maxは、Face IDがついに画面下に埋め込まれるとか、Dynamic Islandが小さくなるとか言われていますが、基本デザインはキープ でしょう。
 
-**判定：**
-- **目立ちたいなら**: Xiaomi 17 Pro
-- **安定の洗練さなら**: iPhone 17 Pro Max
+判定：
+- 目立ちたいなら: Xiaomi 17 Pro
+- 安定の洗練さなら: iPhone 17 Pro Max
 
 ## 2. カメラ：画素数競争 vs 実用性のApple
 
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
 *Photo by Andrey Matveev on Pexels*
 
-Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂されています。メイン、超広角、そしてペリスコープ望遠。どこで撮っても隙がない。
+Xiaomi 17 Proのカメラは、3つのレンズ全てが50MP になると噂されています。メイン、超広角、そしてペリスコープ望遠。どこで撮っても隙がない。
 
 
 
@@ -60,11 +60,11 @@ Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂
 
 
 
-Xiaomi 17 Proには、脅威の **7,500mAhバッテリー** が搭載されるという噂が！
+Xiaomi 17 Proには、脅威の 7,500mAhバッテリー が搭載されるという噂が！
 これ、iPad mini並みですよ。（Appleさん、iPhoneもそろそろ5000mAh超えませんか…？）
 
-- **Xiaomi 17 Pro**: 7,500mAh / 120W充電
-- **iPhone 17 Pro Max**: 予想 4,800mAh / 30-45W充電
+- Xiaomi 17 Pro: 7,500mAh / 120W充電
+- iPhone 17 Pro Max: 予想 4,800mAh / 30-45W充電
 
 充電速度も含めて、バッテリー周りはXiaomiの圧勝予感です。1日使って残り50%とかザラにありそう。
 
@@ -72,8 +72,8 @@ Xiaomi 17 Proには、脅威の **7,500mAhバッテリー** が搭載される�
 
 性能に関しては、どちらも「オーバースペック」です（笑）。
 
-- **Snapdragon 8 Elite Gen 5**: Android最強。ゲーム性能はPCに迫る勢い。
-- **A19 Pro**: 省電力性とAI処理能力で右に出るものなし。
+- Snapdragon 8 Elite Gen 5: Android最強。ゲーム性能はPCに迫る勢い。
+- A19 Pro: 省電力性とAI処理能力で右に出るものなし。
 
 正直、WebブラウジングやSNSをする分には違いを感じられないレベル。ただ、「原神」を最高画質で長時間プレイするなら、冷却性能に定評のあるXiaomiに分があるかもしれません。
 
@@ -82,7 +82,7 @@ Xiaomi 17 Proには、脅威の **7,500mAhバッテリー** が搭載される�
 ここまで比較してきましたが、個人的な結論を出します。
 
 ### Xiaomi 17 Proを待つべき人
-- **バッテリー持ちが命** の人
+- バッテリー持ちが命 の人
 - 人とは違うスマホを持ちたい人
 - カメラで「エモい」写真を撮りたい人
 - 安くハイスペックを手に入れたい人（iPhoneよりは安くなるはず！）
