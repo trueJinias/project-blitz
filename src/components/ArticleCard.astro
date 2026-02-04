@@ -1,0 +1,203 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  genre: string;
+  date: Date;
+  image?: string;
+  delay?: number;
+}
+
+const { title, description, href, genre, date, image, delay = 0 } = Astro.props;
+
+const genreColors: Record<string, string> = {
+  tech: 'var(--color-tech)',
+  lifestyle: 'var(--color-lifestyle)',
+  review: 'var(--color-review)',
+  news: 'var(--color-news)',
+};
+
+const genreLabels: Record<string, string> = {
+  tech: 'Tech',
+  lifestyle: 'Lifestyle',
+  review: 'Review',
+  news: 'News',
+};
+
+const formattedDate = new Intl.DateTimeFormat('ja-JP', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+}).format(date);
+---
+
+<article class="article-card" style={`--delay: ${delay}s;`}>
+  <a href={href} class="card-link">
+    {image ? (
+      <div class="card-image">
+        <img src={image} alt={title} loading="lazy" />
+      </div>
+    ) : (
+      <div class="card-image card-image-placeholder">
+        <div class="placeholder-pattern"></div>
+      </div>
+    )}
+    
+    <div class="card-body">
+      <div class="card-meta">
+        <span class="genre-badge" style={`--badge-color: ${genreColors[genre]}`}>
+          {genreLabels[genre]}
+        </span>
+        <time datetime={date.toISOString()}>{formattedDate}</time>
+      </div>
+      
+      <h3 class="card-title">{title}</h3>
+      <p class="card-description">{description}</p>
+      
+      <span class="read-more">
+        続きを読む
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </span>
+    </div>
+  </a>
+</article>
+
+<style>
+  .article-card {
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+  }
+  
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+  }
+  
+  .card-link:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-image {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--color-surface-elevated);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  .card-link:hover .card-image img {
+    transform: scale(1.05);
+  }
+  
+  .card-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .placeholder-pattern {
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(135deg, var(--color-surface-elevated) 25%, transparent 25%),
+      linear-gradient(225deg, var(--color-surface-elevated) 25%, transparent 25%),
+      linear-gradient(45deg, var(--color-surface-elevated) 25%, transparent 25%),
+      linear-gradient(315deg, var(--color-surface-elevated) 25%, var(--color-surface) 25%);
+    background-size: 20px 20px;
+    opacity: 0.5;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--spacing-5);
+  }
+  
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+  }
+  
+  .genre-badge {
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--badge-color);
+    color: var(--color-background);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  
+  .card-meta time {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+  
+  .card-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-2);
+    line-height: var(--line-height-tight);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .card-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: 0 0 var(--spacing-4);
+    line-height: var(--line-height-relaxed);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+    margin-top: auto;
+  }
+  
+  .card-link:hover .read-more {
+    color: var(--color-tech);
+  }
+  
+  .read-more svg {
+    transition: transform var(--transition-fast);
+  }
+  
+  .card-link:hover .read-more svg {
+    transform: translateX(4px);
+  }
+</style>

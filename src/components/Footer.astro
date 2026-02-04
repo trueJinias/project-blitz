@@ -1,0 +1,147 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <span class="logo-text">BLITZ</span>
+          <span class="logo-dot">.</span>
+        </a>
+        <p class="footer-tagline">
+          ジャンルから記事を探す、<br />新しい読書体験
+        </p>
+      </div>
+      
+      <div class="footer-nav">
+        <div class="footer-nav-group">
+          <h4>ジャンル</h4>
+          <ul>
+            <li><a href="/genre/tech">Tech</a></li>
+            <li><a href="/genre/lifestyle">Lifestyle</a></li>
+            <li><a href="/genre/review">Review</a></li>
+            <li><a href="/genre/news">News</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-nav-group">
+          <h4>リンク</h4>
+          <ul>
+            <li><a href="/">ホーム</a></li>
+            <li><a href="/articles">すべての記事</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">
+        © {currentYear} BLITZ. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-16) 0 var(--spacing-8);
+    margin-top: auto;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+  
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-12);
+    padding-bottom: var(--spacing-12);
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .logo-text {
+    color: var(--color-text-primary);
+  }
+  
+  .logo-dot {
+    color: var(--color-tech);
+    font-size: var(--font-size-3xl);
+  }
+  
+  .footer-tagline {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: var(--spacing-12);
+    justify-content: flex-end;
+  }
+  
+  .footer-nav-group h4 {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .footer-nav-group ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+  
+  .footer-nav-group a {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
+  }
+  
+  .footer-nav-group a:hover {
+    color: var(--color-tech);
+  }
+  
+  .footer-bottom {
+    padding-top: var(--spacing-8);
+    text-align: center;
+  }
+  
+  .copyright {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-main {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-8);
+    }
+    
+    .footer-nav {
+      justify-content: flex-start;
+    }
+  }
+</style>

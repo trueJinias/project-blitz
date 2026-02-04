@@ -1,0 +1,181 @@
+---
+interface Props {
+  genre: 'tech' | 'lifestyle' | 'review' | 'news';
+  count?: number;
+  delay?: number;
+}
+
+const { genre, count = 0, delay = 0 } = Astro.props;
+
+const genreData = {
+  tech: {
+    label: 'Tech',
+    description: 'テクノロジー・ガジェットの最新情報',
+    icon: '⚡',
+    gradient: 'var(--gradient-tech)',
+    color: 'var(--color-tech)',
+  },
+  lifestyle: {
+    label: 'Lifestyle',
+    description: 'ライフスタイル・趣味・暮らしのヒント',
+    icon: '✨',
+    gradient: 'var(--gradient-lifestyle)',
+    color: 'var(--color-lifestyle)',
+  },
+  review: {
+    label: 'Review',
+    description: '実際に使った製品の正直レビュー',
+    icon: '🎯',
+    gradient: 'var(--gradient-review)',
+    color: 'var(--color-review)',
+  },
+  news: {
+    label: 'News',
+    description: '注目のニュース・トレンド情報',
+    icon: '📰',
+    gradient: 'var(--gradient-news)',
+    color: 'var(--color-news)',
+  },
+};
+
+const data = genreData[genre];
+---
+
+<a 
+  href={`/genre/${genre}`} 
+  class="genre-card"
+  style={`--gradient: ${data.gradient}; --color: ${data.color}; --delay: ${delay}s;`}
+>
+  <div class="card-glow"></div>
+  <div class="card-content">
+    <div class="card-icon">{data.icon}</div>
+    <h2 class="card-title">{data.label}</h2>
+    <p class="card-description">{data.description}</p>
+    {count > 0 && (
+      <span class="card-count">{count} 記事</span>
+    )}
+  </div>
+  <div class="card-arrow">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </div>
+</a>
+
+<style>
+  .genre-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--spacing-8);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+    min-height: 280px;
+  }
+  
+  .genre-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: var(--gradient);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    filter: blur(40px);
+  }
+  
+  .genre-card:hover .card-glow {
+    opacity: 0.15;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-icon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-4);
+    transition: transform var(--transition-spring);
+  }
+  
+  .genre-card:hover .card-icon {
+    transform: scale(1.2);
+  }
+  
+  .card-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-2);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .card-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: var(--line-height-relaxed);
+  }
+  
+  .card-count {
+    display: inline-block;
+    margin-top: var(--spacing-4);
+    padding: var(--spacing-1) var(--spacing-3);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+  
+  .card-arrow {
+    position: absolute;
+    bottom: var(--spacing-8);
+    right: var(--spacing-8);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-surface-elevated);
+    border-radius: var(--radius-full);
+    color: var(--color-text-secondary);
+    transition: all var(--transition-normal);
+  }
+  
+  .genre-card:hover .card-arrow {
+    background: var(--gradient);
+    color: var(--color-background);
+    transform: translateX(4px);
+  }
+  
+  @media (max-width: 768px) {
+    .genre-card {
+      min-height: 220px;
+      padding: var(--spacing-6);
+    }
+    
+    .card-arrow {
+      bottom: var(--spacing-6);
+      right: var(--spacing-6);
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
