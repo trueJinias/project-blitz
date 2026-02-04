@@ -3,7 +3,7 @@ title: "デスク環境を最適化する5つのガジェット"
 description: "リモートワークが当たり前になった今、デスク環境の最適化は生産性に直結します。実際に使って効果を実感した5つのガジェットを紹介。"
 genre: "lifestyle"
 date: 2026-01-28
-image: ""
+image: "/images/articles/desk-setup-gadgets-thumbnail.jpg"
 tags: ["デスク環境", "ガジェット", "生産性", "リモートワーク"]
 author: "Lifestyle Editor"
 draft: false
@@ -16,6 +16,11 @@ draft: false
 ## 1. モニターアーム
 
 **おすすめポイント：**
+
+![Scenic view of the Quiraing mountain range under dramatic clouds.](/images/articles/desk-setup-gadgets-1.jpg)
+*Photo by Rino Adamo on Pexels*
+
+
 - デスクが広く使える
 - 目線の高さに調整できて肩こり軽減
 - 2画面以上でも対応可能
@@ -24,6 +29,11 @@ draft: false
 
 タイピングの気持ちよさが段違いです。
 
+![brown wooden blocks on white table](/images/articles/desk-setup-gadgets-2.jpg)
+*Photo by Brett Jordan on Unsplash*
+
+
+
 - 長時間タイピングでも疲れにくい
 - キーのカスタマイズが楽しい
 - 耐久性が高い
@@ -31,6 +41,11 @@ draft: false
 ## 3. ノイズキャンセリングヘッドホン
 
 集中力を保つための必須アイテム。
+
+![Modern interior design featuring a stylish armchair and a potted plant in a wooden niche.](/images/articles/desk-setup-gadgets-3.jpg)
+*Photo by Yusuf P on Pexels*
+
+
 
 ## 4. スマートスピーカー
 

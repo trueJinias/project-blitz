@@ -6,7 +6,7 @@ const articlesCollection = defineCollection({
         title: z.string(),
         description: z.string(),
         genre: z.enum(['tech', 'lifestyle', 'review', 'news']),
-        date: z.date(),
+        date: z.coerce.date(),
         image: z.string().optional(),
         tags: z.array(z.string()).optional(),
         author: z.string().optional(),
@@ -17,3 +17,4 @@ const articlesCollection = defineCollection({
 export const collections = {
     articles: articlesCollection,
 };
+

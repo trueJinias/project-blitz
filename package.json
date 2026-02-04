@@ -6,11 +6,15 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "add-images": "node scripts/add-images.mjs",
+    "add-images:all": "node scripts/add-images.mjs src/content/articles/*.md",
+    "deploy": "node scripts/deploy.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
-    "astro": "^5.17.1"
+    "astro": "^5.17.1",
+    "dotenv": "^16.6.1"
   }
 }
