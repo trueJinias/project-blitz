@@ -1,36 +1,53 @@
 ---
 const currentYear = new Date().getFullYear();
+const currentPath = Astro.url.pathname;
+const isEnglish = currentPath.startsWith('/en-us');
+
+const tagline = isEnglish 
+  ? "Find the perfect article for you from a variety of genres including gadgets, lifestyle, reviews, and news."
+  : "ガジェット、ライフスタイル、レビュー、ニュースなど、多彩なジャンルからあなたにぴったりの記事が見つかるWebマガジン。";
+
+const links = {
+  genre: isEnglish ? "Genre" : "ジャンル",
+  links: isEnglish ? "Links" : "リンク",
+  home: isEnglish ? "Home" : "ホーム",
+  allArticles: isEnglish ? "All Articles" : "すべての記事"
+};
+
+const homePath = isEnglish ? "/en-us/" : "/";
+const articlesPath = isEnglish ? "/en-us/articles" : "/articles";
+const genrePrefix = isEnglish ? "/en-us/genre" : "/genre";
 ---
 
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-main">
       <div class="footer-brand">
-        <a href="/" class="footer-logo">
+        <a href={homePath} class="footer-logo">
           <span class="logo-text">BLITZ</span>
           <span class="logo-dot">.</span>
         </a>
         <p class="footer-tagline">
-          ジャンルから記事を探す、<br />新しい読書体験
+          {tagline}
         </p>
       </div>
       
       <div class="footer-nav">
         <div class="footer-nav-group">
-          <h4>ジャンル</h4>
+          <h4>{links.genre}</h4>
           <ul>
-            <li><a href="/genre/tech">Tech</a></li>
-            <li><a href="/genre/lifestyle">Lifestyle</a></li>
-            <li><a href="/genre/review">Review</a></li>
-            <li><a href="/genre/news">News</a></li>
+            <li><a href={`${genrePrefix}/tech`}>Tech</a></li>
+            <li><a href={`${genrePrefix}/lifestyle`}>Lifestyle</a></li>
+            <li><a href={`${genrePrefix}/review`}>Review</a></li>
+            <li><a href={`${genrePrefix}/news`}>News</a></li>
           </ul>
         </div>
         
         <div class="footer-nav-group">
-          <h4>リンク</h4>
+          <h4>{links.links}</h4>
           <ul>
-            <li><a href="/">ホーム</a></li>
-            <li><a href="/articles">すべての記事</a></li>
+            <li><a href={homePath}>{links.home}</a></li>
+            <li><a href={articlesPath}>{links.allArticles}</a></li>
           </ul>
         </div>
       </div>
