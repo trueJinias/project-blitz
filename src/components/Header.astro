@@ -398,6 +398,18 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
   }
 </style>
 
+  /* Global styles for menu interaction */
+  :global(body.menu-open) .hero-gradient {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease;
+  }
+  
+  :global(body.menu-open) .emoji-decoration {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease;
+  }
+</style>
+
 <script>
   function initNav() {
     // ... (previous indicator logic remains)
@@ -444,10 +456,12 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
             e.stopPropagation();
             nav?.classList.toggle('active');
             
-            // Toggle body scroll
+            // Toggle body state
             if (nav?.classList.contains('active')) {
+                document.body.classList.add('menu-open');
                 document.body.style.overflow = 'hidden';
             } else {
+                document.body.classList.remove('menu-open');
                 document.body.style.overflow = '';
             }
         });
@@ -458,6 +472,7 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav?.classList.remove('active');
+            document.body.classList.remove('menu-open');
             document.body.style.overflow = '';
         });
     });
