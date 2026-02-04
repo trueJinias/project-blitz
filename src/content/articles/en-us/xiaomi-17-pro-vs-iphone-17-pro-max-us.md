@@ -1,9 +1,9 @@
 ---
-title: xiaomi 17 pro vs. iphone 17 pro max: which 2026 flagship should you wait for?
-description: The ultimate 2026 flagship showdown. We break down the rumored specs of the Xiaomi 17 Pro against the iPhone 17 Pro Max, analyzing leaked details on the secondary display, camera hardware, and battery life to see which phone is the real winner.
+title: "Xiaomi 17 Pro vs. iPhone 17 Pro Max: Which 2026 Flagship Should You Wait For?"
+description: "The ultimate 2026 flagship showdown. We break down the rumored specs of the Xiaomi 17 Pro against the iPhone 17 Pro Max, analyzing leaked details on the secondary display, camera hardware, and battery life to see which phone is the real winner."
 genre: tech
 author: Tech Editor
-date: 2024-10-28
+date: 2026-02-04
 image: /images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg
 ---
 

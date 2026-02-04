@@ -53,9 +53,10 @@ Your task is to REWRITE the following Japanese tech article for a US audience.
    - Keys must be strictly LOWERCASE (title, description, genre, etc.).
    - "genre" must be one of: "tech", "lifestyle", "review", "news".
    - "image" path must be exactly the same as original.
-   - Translate the title to be catchy.
-   - Translate the description.
+   - Translate the title to be catchy. **MUST BE QUOTED**.
+   - Translate the description. **MUST BE QUOTED**.
    - Keep current date and author.
+   - **IMPORTANT**: If values contain colons (:), they MUST be enclosed in double quotes.
 
 **Original Article (Japanese):**
 Title: ${frontmatter.title}
