@@ -10,29 +10,41 @@ const { genre, count = 0, delay = 0, lang = 'ja' } = Astro.props;
 
 const genreData = {
   tech: {
-    label: 'Tech',
-    description: 'テクノロジー・ガジェットの最新情報',
+    label: { ja: 'Tech', 'en-us': 'Tech' },
+    description: { 
+      ja: 'テクノロジー・ガジェットの最新情報', 
+      'en-us': 'Latest technology & gadget news' 
+    },
     icon: '⚡',
     gradient: 'var(--gradient-tech)',
     color: 'var(--color-tech)',
   },
   lifestyle: {
-    label: 'Lifestyle',
-    description: 'ライフスタイル・趣味・暮らしのヒント',
+    label: { ja: 'Lifestyle', 'en-us': 'Lifestyle' },
+    description: { 
+      ja: 'ライフスタイル・趣味・暮らしのヒント', 
+      'en-us': 'Lifestyle, hobbies & living tips' 
+    },
     icon: '✨',
     gradient: 'var(--gradient-lifestyle)',
     color: 'var(--color-lifestyle)',
   },
   review: {
-    label: 'Review',
-    description: '実際に使った製品の正直レビュー',
+    label: { ja: 'Review', 'en-us': 'Review' },
+    description: { 
+      ja: '実際に使った製品の正直レビュー', 
+      'en-us': 'Honest reviews of products' 
+    },
     icon: '🎯',
     gradient: 'var(--gradient-review)',
     color: 'var(--color-review)',
   },
   news: {
-    label: 'News',
-    description: '注目のニュース・トレンド情報',
+    label: { ja: 'News', 'en-us': 'News' },
+    description: { 
+      ja: '注目のニュース・トレンド情報', 
+      'en-us': 'Trending news & updates' 
+    },
     icon: '📰',
     gradient: 'var(--gradient-news)',
     color: 'var(--color-news)',
@@ -52,8 +64,8 @@ const countLabel = lang === 'en-us' ? 'articles' : '記事';
   <div class="card-glow"></div>
   <div class="card-content">
     <div class="card-icon">{data.icon}</div>
-    <h2 class="card-title">{data.label}</h2>
-    <p class="card-description">{data.description}</p>
+    <h2 class="card-title">{data.label[lang] || data.label['ja']}</h2>
+    <p class="card-description">{data.description[lang] || data.description['ja']}</p>
     {count > 0 && (
       <span class="card-count">{count} {countLabel}</span>
     )}
