@@ -13,7 +13,6 @@
         "genres": {
             "tech": "Tech",
             "lifestyle": "Lifestyle",
-            "review": "Review",
             "news": "News"
         }
     },
@@ -25,10 +24,6 @@
         "lifestyle": {
             "label": "Lifestyle",
             "description": "Lifestyle, hobbies & living tips"
-        },
-        "review": {
-            "label": "Review",
-            "description": "Honest reviews of products we've actually used"
         },
         "news": {
             "label": "News",

@@ -13,7 +13,6 @@
         "genres": {
             "tech": "Tech",
             "lifestyle": "Lifestyle",
-            "review": "Review",
             "news": "News"
         }
     },
@@ -25,10 +24,6 @@
         "lifestyle": {
             "label": "Lifestyle",
             "description": "ライフスタイル・趣味・暮らしのヒント"
-        },
-        "review": {
-            "label": "Review",
-            "description": "実際に使った製品の正直レビュー"
         },
         "news": {
             "label": "News",
