@@ -1,7 +1,7 @@
 ---
 title: "The 106 Million Yen Wall is Falling: What Japan's Massive Social Insurance Overhaul Means for Workers"
 description: "In October 2026, Japan is scrapping the notorious '106 Million Yen Wall' that has long dictated part-time labor decisions. Mandatory social insurance will soon be based on hours worked, regardless of income. We break down the immediate pay decrease versus the long-term benefits."
-genre: "news"
+genre: "economics"
 date: 2024-05-15
 author: Hiroshi Nakamura
 image: /images/articles/106-million-yen-wall-abolition-1.jpg

@@ -3,7 +3,7 @@ title: "Japan's Retirement Revolution: Is Extending iDeCo Contributions to Age 7
 description: "Japan is overhauling its personal pension system (iDeCo) in 2026, extending the contribution age limit to 70 and potentially raising monthly caps. Will this be the ultimate tax-saving tool for seniors who keep working, or does the critical '10-Year Rule' create a major complication?"
 author: John Doe
 date: 2024-05-20
-genre: news
+genre: economics
 image: /images/articles/ideco-2026-reform-guide-1.jpg
 ---
 

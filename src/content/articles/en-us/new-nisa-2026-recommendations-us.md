@@ -1,7 +1,7 @@
 ---
 title: "2026 Investing Strategy: Is the Total World Stock Fund Still King?"
 description: "As we look toward 2026, is the 'just buy everything' index strategy outdated? Financial experts weigh in on the best funds for new investors, diving deep into FANG+ and the explosive potential of Indian markets."
-genre: tech
+genre: economics
 date: 2025-09-01
 author: Tech Insider Staff
 image: /images/articles/new-nisa-2026-recommendations-1.jpg
