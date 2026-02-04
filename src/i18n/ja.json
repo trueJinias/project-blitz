@@ -39,7 +39,7 @@
     "common": {
         "readMore": "続きを読む",
         "articles": "記事",
-        "selectGenre": "ジャンルを選ぶ",
-        "selectGenreDesc": "気になるジャンルをクリックして記事を探索しよう"
+        "selectGenre": "カテゴリを選ぶ",
+        "selectGenreDesc": "気になるカテゴリをクリックして記事を探索しよう"
     }
 }
