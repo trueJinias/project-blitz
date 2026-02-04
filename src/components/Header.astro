@@ -84,6 +84,7 @@ const navItems = [
   .nav-list {
     display: flex;
     list-style: none;
+    margin: 0;
     gap: var(--spacing-1);
     position: relative; /* Needed for absolute positioning of indicator */
     padding: var(--spacing-1);
@@ -123,12 +124,10 @@ const navItems = [
   
   .nav-link:hover {
     color: var(--color-text-primary);
-    /* background removed as indicator handles it */
   }
   
   .nav-link.active {
-    color: var(--color-background);
-    /* background removed as indicator handles it */
+    color: white;
   }
   
   .menu-toggle {
