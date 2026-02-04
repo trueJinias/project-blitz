@@ -11,6 +11,7 @@ export async function getStaticPaths() {
     { params: { genre: 'lifestyle' } },
     { params: { genre: 'review' } },
     { params: { genre: 'news' } },
+    { params: { genre: 'economics' } },
   ];
 }
 
@@ -36,6 +37,11 @@ const genreData: Record<string, { label: string; description: string; color: str
     label: 'News',
     description: '注目のニュース・トレンド情報をピックアップ',
     color: 'var(--color-news)',
+  },
+  economics: {
+    label: 'Economy',
+    description: '金融・投資・ビジネス・マーケット',
+    color: '#FFD700',
   },
 };
 
