@@ -98,7 +98,12 @@ Return ONLY the localized Markdown content (including frontmatter). Do not inclu
         const localizedText = data.candidates[0].content.parts[0].text;
 
         // Clean up response if it contains markdown code blocks
-        const cleanText = localizedText.replace(/^```markdown\n/, '').replace(/\n```$/, '');
+        // Clean up response if it contains markdown code blocks
+        // Remove ```markdown\n ... \n``` or just ``` ... ```
+        const cleanText = localizedText
+            .replace(/^```[a-z]*\r?\n/, '') // Remove opening fence
+            .replace(/\r?\n```$/, '')        // Remove closing fence
+            .trim();                         // Remove extra whitespace
 
         // Determine output path
         const fileName = path.basename(filePath);
