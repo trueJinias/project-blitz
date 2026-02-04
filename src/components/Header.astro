@@ -19,11 +19,13 @@ const navItems = [
     
     <nav class="nav">
       <ul class="nav-list">
+        <li class="nav-indicator"></li>
         {navItems.map((item) => (
           <li>
             <a 
               href={item.href} 
               class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) }]}
+              data-astro-prefetch
             >
               {item.label}
             </a>
@@ -39,6 +41,7 @@ const navItems = [
 </header>
 
 <style>
+  /* ... (Previous styles remain but we override nav-list and add nav-indicator) */
   .header {
     position: fixed;
     top: 0;
@@ -82,26 +85,50 @@ const navItems = [
     display: flex;
     list-style: none;
     gap: var(--spacing-1);
+    position: relative; /* Needed for absolute positioning of indicator */
+    padding: var(--spacing-1);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-indicator {
+    position: absolute;
+    top: var(--spacing-1);
+    left: 0;
+    height: calc(100% - var(--spacing-2));
+    background: var(--color-tech);
+    border-radius: var(--radius-full);
+    z-index: 0;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity: 0; /* Hidden by default until JS calculates position */
+    pointer-events: none;
+  }
+  
+  .nav-list li {
+    position: relative;
+    z-index: 1; /* Above indicator */
   }
   
   .nav-link {
     display: block;
-    padding: var(--spacing-2) var(--spacing-4);
+    padding: var(--spacing-2) var(--spacing-6);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-text-secondary);
     border-radius: var(--radius-full);
-    transition: all var(--transition-fast);
+    transition: color 0.2s ease;
+    text-decoration: none;
   }
   
   .nav-link:hover {
     color: var(--color-text-primary);
-    background: var(--color-surface);
+    /* background removed as indicator handles it */
   }
   
   .nav-link.active {
     color: var(--color-background);
-    background: var(--color-tech);
+    /* background removed as indicator handles it */
   }
   
   .menu-toggle {
@@ -145,7 +172,39 @@ const navItems = [
   
   @media (max-width: 768px) {
     .nav {
-      display: none;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: var(--color-background);
+      padding: var(--spacing-6);
+      border-bottom: 1px solid var(--color-border);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all var(--transition-normal);
+    }
+    
+    .nav.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+    
+    .nav-indicator {
+      display: none; /* Hide sliding indicator on mobile */
+    }
+    
+    .nav-link.active {
+      background: var(--color-tech); /* Fallback for mobile */
+      display: inline-block;
     }
     
     .menu-toggle {
@@ -155,11 +214,61 @@ const navItems = [
 </style>
 
 <script>
-  // Mobile menu toggle (basic functionality)
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-  
-  menuToggle?.addEventListener('click', () => {
-    nav?.classList.toggle('active');
-  });
+  function initNav() {
+    const indicator = document.querySelector('.nav-indicator');
+    const items = document.querySelectorAll('.nav-link');
+    const navList = document.querySelector('.nav-list');
+    
+    if (!indicator || !navList) return;
+    
+    function updateIndicator(element) {
+      // nav-list has padding: var(--spacing-1) = 0.25rem = 4px (approx, depends on root)
+      // We need relative position within the nav-list
+      const listRect = navList.getBoundingClientRect();
+      const itemRect = element.getBoundingClientRect();
+      
+      const relativeLeft = itemRect.left - listRect.left;
+      
+      indicator.style.width = `${itemRect.width}px`;
+      indicator.style.transform = `translateX(${relativeLeft}px)`;
+      indicator.style.opacity = '1';
+    }
+    
+    // Initial position based on active link
+    const activeLink = document.querySelector('.nav-link.active');
+    if (activeLink) {
+      updateIndicator(activeLink);
+    }
+    
+    // Hover effects
+    items.forEach(item => {
+      item.addEventListener('mouseenter', (e) => {
+        updateIndicator(e.target);
+      });
+    });
+    
+    // Return to active on mouse leave
+    navList.addEventListener('mouseleave', () => {
+      const active = document.querySelector('.nav-link.active');
+      if (active) {
+        updateIndicator(active);
+      } else {
+        indicator.style.opacity = '0';
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    
+    menuToggle?.addEventListener('click', () => {
+      nav?.classList.toggle('active');
+    });
+  }
+
+  // Run on initial load
+  initNav();
+
+  // Run on view transitions
+  document.addEventListener('astro:page-load', initNav);
 </script>

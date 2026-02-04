@@ -6,6 +6,8 @@ interface Props {
   type?: string;
 }
 
+import { ClientRouter } from 'astro:transitions';
+
 const {
   title,
   description = "ジャンルから記事を探す、新しい読書体験",
@@ -22,6 +24,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <ClientRouter />
     
     <!-- Primary Meta Tags -->
     <title>{title}</title>
