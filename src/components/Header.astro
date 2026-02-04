@@ -304,13 +304,19 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(10, 10, 15, 0.95);
-      backdrop-filter: blur(20px);
+      
+      /* Apple-like Liquid Glass UI */
+      background: rgba(20, 20, 30, 0.65);
+      backdrop-filter: blur(50px) saturate(180%);
+      -webkit-backdrop-filter: blur(50px) saturate(180%);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+      
       padding: 80px var(--spacing-6) var(--spacing-6); /* Add top padding for header */
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-10px);
-      transition: all var(--transition-normal);
+      transform: scale(0.95) translateY(-20px); /* Subtle zoom and slide */
+      transition: all 0.3s cubic-bezier(0.32, 0.72, 0, 1); /* iOS-like spring easing */
+      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -321,7 +327,7 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
     .nav.active {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: scale(1) translateY(0);
     }
     
     .nav-list {
@@ -329,8 +335,9 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
       background: transparent;
       border: none;
       padding: 0;
-      gap: var(--spacing-6);
+      gap: var(--spacing-8);
       text-align: center;
+      width: 100%;
     }
     
     .nav-indicator {
@@ -338,13 +345,23 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
     }
     
     .nav-link {
-      font-size: var(--font-size-xl);
+      font-size: var(--font-size-2xl);
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      padding: var(--spacing-2);
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:active {
+      transform: scale(0.95);
     }
 
     .nav-link.active {
       background: transparent;
-      color: var(--color-tech); 
+      color: var(--color-text-primary); 
+      text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* Glow effect */
       display: inline-block;
+      transform: scale(1.1);
     }
     
     .menu-toggle {
