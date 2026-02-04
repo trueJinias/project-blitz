@@ -1,10 +1,10 @@
-Title: Xiaomi 17 Global Release Date Leaks: Everything We Know About the 2026 Flagship
-Description: When will the Xiaomi 17 series hit the global market? With an MWC 2026 reveal looking likely, we break down the latest leaks covering specs, expected price points, and whether the Ultra model is worth the inevitable import headache.
-date: 2024-11-20
-genre: rumor
-tags: [Xiaomi, Xiaomi 17, MWC, Leak, Flagship, Snapdragon]
-image: /images/articles/xiaomi-17-release-date-global-1.jpg
-author: Tech Editor
+title: "Xiaomi 17 Global Release Date Leaks: Everything We Know About the 2026 Flagship"
+description: "When will the Xiaomi 17 series hit the global market? With an MWC 2026 reveal looking likely, we break down the latest leaks covering specs, expected price points, and whether the Ultra model is worth the inevitable import headache."
+date: 2026-02-04
+genre: news
+tags: ["Xiaomi", "Xiaomi 17", "MWC", "Leak", "Flagship", "Snapdragon"]
+image: "/images/articles/xiaomi-17-release-date-global-thumbnail.jpg"
+author: "Namo-Ni"
 
 ## MWC 2026: Mark Your Calendars for March
 

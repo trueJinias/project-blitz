@@ -50,9 +50,12 @@ Your task is to REWRITE the following Japanese tech article for a US audience.
    - IMPORTANT: Preserve the original image paths exactly as they are.
    - You can change headers to be more punchy.
 6. **Frontmatter**:
+   - Keys must be strictly LOWERCASE (title, description, genre, etc.).
+   - `genre` must be one of: "tech", "lifestyle", "review", "news".
+   - `image` path must be exactly the same as original.
    - Translate the title to be catchy.
    - Translate the description.
-   - Keep other fields (date, genre, tags, image, author).
+   - Keep current date and author.
 
 **Original Article (Japanese):**
 Title: ${frontmatter.title}
