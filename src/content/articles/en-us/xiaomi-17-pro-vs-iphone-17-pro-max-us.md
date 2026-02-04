@@ -38,6 +38,11 @@ The iPhone 17 Pro Max, meanwhile, is rumored to finally embed Face ID under the 
 
 The Xiaomi 17 Pro’s camera system is rumored to feature **three 50MP lenses**: Main, Ultra-wide, and a Periscope Telephoto. This means high-resolution clarity no matter the focal length.
 
+![A digital camera mounted on a tripod outdoors with a blurred background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-us-1.jpg)
+*Photo by Freddie Addery on Pexels*
+
+
+
 The iPhone 17 Pro Max won't be far behind, expected to unify its entire system around 48MP lenses, with significant enhancements anticipated for telephoto performance.
 
 We know "megapixel count isn’t everything," but Xiaomi’s Leica-tuned color science is incredibly addictive once you experience it. For high-detail stills and vibrant shots, Xiaomi often provides a compelling alternative to Apple's clinical processing.
@@ -45,6 +50,11 @@ We know "megapixel count isn’t everything," but Xiaomi’s Leica-tuned color s
 ## 3. Battery Life: The Shocking 7,500mAh Rumor
 
 This is perhaps the biggest potential differentiator in this competition.
+
+![A technician from Elite Power Group installing a home battery system indoors in New South Wales, Australia.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-us-2.jpg)
+*Photo by Elite Power Group on Pexels*
+
+
 
 Rumors suggest the Xiaomi 17 Pro could pack a staggering **7,500mAh battery**! That’s practically iPad mini territory. (Seriously, Apple, can we get past 5,000mAh already?)
 

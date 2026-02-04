@@ -37,6 +37,11 @@ draft: false
 
 Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂されています。メイン、超広角、そしてペリスコープ望遠。どこで撮っても隙がない。
 
+![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
+*Photo by Andrey Matveev on Pexels*
+
+
+
 対するiPhone 17 Pro Maxも負けていません。全て48MPレンズに統一され、特に望遠性能の強化が期待されています。
 
 「画素数だけが正義じゃない」のは百も承知ですが、Xiaomiのライカ・チューニングの色味…あれは一度ハマると抜け出せません。
@@ -44,6 +49,11 @@ Xiaomi 17 Proのカメラは、**3つのレンズ全てが50MP** になると噂
 ## 3. バッテリー：7500mAhの衝撃
 
 ここが今回最大の争点です。
+
+![Close-up of hands holding a smartphone connected to a power bank outdoors.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-2.jpg)
+*Photo by DEBRAJ  ROY on Pexels*
+
+
 
 Xiaomi 17 Proには、脅威の **7,500mAhバッテリー** が搭載されるという噂が！
 これ、iPad mini並みですよ。（Appleさん、iPhoneもそろそろ5000mAh超えませんか…？）
