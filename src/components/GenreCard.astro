@@ -40,10 +40,12 @@ const genreData = {
 };
 
 const data = genreData[genre];
+const href = lang === 'en-us' ? `/en-us/genre/${genre}` : `/genre/${genre}`;
+const countLabel = lang === 'en-us' ? 'articles' : '記事';
 ---
 
 <a 
-  href={`/genre/${genre}`} 
+  href={href} 
   class="genre-card"
   style={`--gradient: ${data.gradient}; --color: ${data.color}; --delay: ${delay}s;`}
 >

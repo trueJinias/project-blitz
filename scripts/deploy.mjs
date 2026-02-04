@@ -9,16 +9,17 @@
 import { execSync } from 'child_process';
 
 const timestamp = new Date().toISOString().split('T')[0];
+const git = '"C:\\Program Files\\Git\\bin\\git.exe"';
 
 try {
     console.log('📦 Staging changes...');
-    execSync('git add .', { stdio: 'inherit' });
+    execSync(`${git} add .`, { stdio: 'inherit' });
 
     console.log('💾 Committing...');
-    execSync(`git commit -m "Add new article - ${timestamp}"`, { stdio: 'inherit' });
+    execSync(`${git} commit -m "Add new article - ${timestamp}"`, { stdio: 'inherit' });
 
     console.log('🚀 Pushing to GitHub...');
-    execSync('git push', { stdio: 'inherit' });
+    execSync(`${git} push`, { stdio: 'inherit' });
 
     console.log('\n✅ Deploy triggered! Vercel will automatically build.');
     console.log('📊 Check status: https://vercel.com/dashboard');
