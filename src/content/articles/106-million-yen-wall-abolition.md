@@ -1,15 +1,24 @@
 ---
-title: "【2026年10月撤廃】パートの「106万円の壁」がついになくなる。手取り減少と引き換えに手に入るものとは？"
-description: "2026年10月、パート主婦・主夫を悩ませてきた「106万円の壁」が完全に撤廃されます。年収に関係なく「週20時間以上」働けば社会保険に加入義務化。手取りが減るデメリットと、将来の年金が増えるメリットを徹底解説します。"
-genre: "news"
-date: 2026-02-04
-tags: ["年収の壁", "106万円の壁", "社会保険", "厚生年金", "2026年問題"]
-author: "なも兄"
+title: 【2026年10月撤廃】パートの「106万円の壁」がついになくなる。手取り減少と引き換えに手に入るものとは？
+description: >-
+  2026年10月、パート主婦・主夫を悩ませてきた「106万円の壁」が完全に撤廃されます。年収に関係なく「週20時間以上」働けば社会保険に加入義務化。手取りが減るデメリットと、将来の年金が増えるメリットを徹底解説します。
+genre: economics
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - パート
+  - 106万円の壁
+  - 社会保険
+  - 働き方
+  - 年金
+author: なも兄
 draft: false
-image: "/images/articles/106-million-yen-wall-abolition-thumbnail.jpg"
+image: /images/articles/106-million-yen-wall-abolition-thumbnail.jpg
 ---
 
-## はじめに
+## はじめに 
+
+![Colorful tax reminder on clipboard against a pink background for March](/images/articles/106-million-yen-wall-abolition-1.jpg)
+*Photo by Leeloo The First on Pexels*
 
 「働き損」という言葉が、ついに死語になるかもしれません。
 
@@ -22,10 +31,10 @@ image: "/images/articles/106-million-yen-wall-abolition-thumbnail.jpg"
 不安になるのも無理はありません。しかし、これは単なる「負担増」ではなく、働き方の自由を手に入れるチャンスでもあります。
 今回は、この歴史的な制度変更の中身と、私たちの生活への影響をわかりやすく解説します。
 
-## 1. 何が変わる？「年収」から「労働時間」へ
+## 1. 何が変わる？「年収」から「労働時間」へ 
 
-![Detailed view of a Formula 1 car's front wing with Mercedes-Benz logos at Indianapolis.](/images/articles/106-million-yen-wall-abolition-1.jpg)
-*Photo by Adriaan Greyling on Pexels*
+![Top view of a minimalist schedule planner with Monday header. Perfect for organizing daily tasks with goals section.](/images/articles/106-million-yen-wall-abolition-2.jpg)
+*Photo by cottonbro studio on Pexels*
 
 これまでは、社会保険（厚生年金・健康保険）に入る義務があるのは、以下の条件を満たす人でした。
 
@@ -39,10 +48,10 @@ image: "/images/articles/106-million-yen-wall-abolition-thumbnail.jpg"
 
 つまり、時給が高かろうが安かろうが、週20時間（1日4時間×週5日など）働く人は、原則として社会保険に入ることになります。
 
-## 2. 衝撃！手取りはこれだけ減る
+## 2. 衝撃！手取りはこれだけ減る 
 
-![Close-up of a Philips Odyssey 2 gaming console showcasing vintage technology.](/images/articles/106-million-yen-wall-abolition-2.jpg)
-*Photo by Dan Galvani Sommavilla on Pexels*
+![Close-up of a transaction involving a US dollar bill exchanged indoors between two individuals.](/images/articles/106-million-yen-wall-abolition-3.jpg)
+*Photo by Karolina Grabowska www.kaboompics.com on Pexels*
 
 社会保険に入ると、給料から保険料が天引きされます。
 例えば、月収8万円（年収96万円）の人の場合でシミュレーションしてみましょう。
@@ -54,9 +63,6 @@ image: "/images/articles/106-million-yen-wall-abolition-thumbnail.jpg"
 はい、その通りです。年間で約14万円の手取り減。これは家計にとって小さくない打撃です。これが「働き損」と言われる理由でした。
 
 ## 3. でも「払い損」ではない！3つのメリット
-
-![Modern interior design featuring a stylish armchair and a potted plant in a wooden niche.](/images/articles/106-million-yen-wall-abolition-3.jpg)
-*Photo by Yusuf P on Pexels*
 
 しかし、国もただお金を取りたいわけではありません。この保険料は「掛け捨て」ではなく、将来の自分への投資になります。
 

@@ -13,7 +13,8 @@
         "genres": {
             "tech": "Tech",
             "lifestyle": "Lifestyle",
-            "news": "News"
+            "news": "News",
+            "economics": "Economy"
         }
     },
     "genres": {
@@ -27,7 +28,11 @@
         },
         "news": {
             "label": "News",
-            "description": "政治・経済・スポーツなどの一般ニュース"
+            "description": "政治・国際情勢・一般ニュース"
+        },
+        "economics": {
+            "label": "Economy",
+            "description": "金融・投資・ビジネス・マーケット"
         }
     },
     "common": {

@@ -1,17 +1,18 @@
 #!/usr/bin/env node
 /**
- * AI Image Auto-insertion Script
+ * AI Image Auto-insertion Script (AI-Powered)
  * 
- * 記事ファイルを読み込み、自動で画像を検索・挿入する
+ * 記事ファイルを読み込み、Gemini APIを使って内容を分析し、
+ * 最適なタグと画像検索キーワードを生成して画像を挿入する。
  * 
  * Usage: node scripts/add-images.mjs <article-path>
- * Example: node scripts/add-images.mjs src/content/articles/desk-setup-gadgets.md
  */
 
 import 'dotenv/config';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(__dirname, '..');
@@ -24,585 +25,248 @@ const CONFIG = {
     maxInlineImages: 3,
     imageWidth: 800,
     downloadDir: 'public/images/articles',
+    model: 'gemini-flash-latest',
 };
 
+const API_KEY = process.env.GEMINI_API_KEY;
+
+if (!API_KEY) {
+    console.error('❌ Error: GEMINI_API_KEY not set in .env');
+    process.exit(1);
+}
+
 // ============================================
-// Image Search APIs (with fallback)
+// AI Analysis
 // ============================================
 
 /**
- * Search images using Unsplash API
+ * Analyze article content using Gemini API to generate tags and image queries
  */
+async function analyzeContent(title, content) {
+    console.log('🤖 Analyzing content with AI...');
+
+    const prompt = `
+You are an expert editor for a tech/lifestyle/economics blog.
+Analyze the following article content and extract:
+1. **5 Relevant Tags** (Japanese): Keywords that best describe the article content.
+2. **Image Search Queries** (English):
+   - One for the **Thumbnail** (Catchy, representative).
+   - One for each **H2 Section** (Contextually relevant).
+
+**Article Title**: ${title}
+**Content Snippet**:
+${content.substring(0, 2000)}... (truncated)
+
+**H2 Headers**:
+${(content.match(/^##\s+(.+)$/gm) || []).join('\n')}
+
+**Output Format (JSON Only):**
+{
+  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  "thumbnail_query": "english search query for thumbnail",
+  "section_queries": {
+    "Header Text 1": "english search query 1",
+    "Header Text 2": "english search query 2"
+  }
+}
+Return ONLY valid JSON.
+`;
+
+    try {
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${CONFIG.model}:generateContent?key=${API_KEY}`;
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }]
+            })
+        });
+
+        if (!response.ok) throw new Error(`API Error: ${response.status}`);
+
+        const data = await response.json();
+        const text = data.candidates[0].content.parts[0].text;
+
+        // Clean markdown code blocks if present
+        const jsonStr = text.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+        return JSON.parse(jsonStr);
+    } catch (error) {
+        console.error('❌ AI Analysis Failed:', error.message);
+        return null; // Fallback to manual if needed, but for now specific error
+    }
+}
+
+// ============================================
+// Image Search APIs
+// ============================================
+
 async function searchUnsplash(query) {
     const accessKey = process.env.UNSPLASH_ACCESS_KEY;
-    if (!accessKey) {
-        console.log('⚠️  UNSPLASH_ACCESS_KEY not set, skipping...');
-        return null;
-    }
-
+    if (!accessKey) return null;
     try {
         const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`;
-        const response = await fetch(url, {
-            headers: { Authorization: `Client-ID ${accessKey}` }
-        });
-
-        if (response.status === 403) {
-            console.log('⚠️  Unsplash rate limit exceeded');
-            return null;
-        }
-
-        if (!response.ok) return null;
-
-        const data = await response.json();
-        if (data.results && data.results.length > 0) {
-            const photo = data.results[0];
+        const res = await fetch(url, { headers: { Authorization: `Client-ID ${accessKey}` } });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (data.results?.[0]) {
             return {
-                url: photo.urls.regular,
-                alt: photo.alt_description || query,
-                credit: `Photo by ${photo.user.name} on Unsplash`,
-                source: 'unsplash'
+                url: data.results[0].urls.regular,
+                alt: data.results[0].alt_description || query,
+                credit: `Photo by ${data.results[0].user.name} on Unsplash`
             };
         }
-    } catch (error) {
-        console.log('⚠️  Unsplash API error:', error.message);
-    }
+    } catch (e) { console.error('Unsplash Error:', e.message); }
     return null;
 }
 
-/**
- * Search images using Pexels API
- */
 async function searchPexels(query) {
     const apiKey = process.env.PEXELS_API_KEY;
-    if (!apiKey) {
-        console.log('⚠️  PEXELS_API_KEY not set, skipping...');
-        return null;
-    }
-
+    if (!apiKey) return null;
     try {
         const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`;
-        const response = await fetch(url, {
-            headers: { Authorization: apiKey }
-        });
-
-        if (response.status === 429) {
-            console.log('⚠️  Pexels rate limit exceeded');
-            return null;
-        }
-
-        if (!response.ok) return null;
-
-        const data = await response.json();
-        if (data.photos && data.photos.length > 0) {
-            const photo = data.photos[0];
+        const res = await fetch(url, { headers: { Authorization: apiKey } });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (data.photos?.[0]) {
             return {
-                url: photo.src.large,
-                alt: photo.alt || query,
-                credit: `Photo by ${photo.photographer} on Pexels`,
-                source: 'pexels'
+                url: data.photos[0].src.large,
+                alt: data.photos[0].alt || query,
+                credit: `Photo by ${data.photos[0].photographer} on Pexels`
             };
         }
-    } catch (error) {
-        console.log('⚠️  Pexels API error:', error.message);
-    }
+    } catch (e) { console.error('Pexels Error:', e.message); }
     return null;
 }
 
-/**
- * Search images using Pixabay API
- */
 async function searchPixabay(query) {
     const apiKey = process.env.PIXABAY_API_KEY;
-    if (!apiKey) {
-        console.log('⚠️  PIXABAY_API_KEY not set, skipping...');
-        return null;
-    }
-
+    if (!apiKey) return null;
     try {
         const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query)}&per_page=3&orientation=horizontal&image_type=photo`;
-        const response = await fetch(url);
-
-        if (!response.ok) return null;
-
-        const data = await response.json();
-        if (data.hits && data.hits.length > 0) {
-            const photo = data.hits[0];
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (data.hits?.[0]) {
             return {
-                url: photo.largeImageURL,
+                url: data.hits[0].largeImageURL,
                 alt: query,
-                credit: `Image from Pixabay`,
-                source: 'pixabay'
+                credit: 'Image from Pixabay'
             };
         }
-    } catch (error) {
-        console.log('⚠️  Pixabay API error:', error.message);
-    }
+    } catch (e) { console.error('Pixabay Error:', e.message); }
     return null;
 }
 
-/**
- * Search image with fallback strategy
- */
-// Global set to track used image URLs within a run
-const usedImageUrls = new Set();
-
-/**
- * Search image with fallback strategy and duplicate prevention
- */
 async function searchImage(query) {
-    console.log(`🔍 Searching image for: "${query}"`);
+    console.log(`🔍 Searching: "${query}"`);
+    let res = await searchUnsplash(query) || await searchPexels(query) || await searchPixabay(query);
 
-    // Helper to check and mark used
-    const isUnused = (result) => {
-        if (!result) return false;
-        if (usedImageUrls.has(result.url)) {
-            console.log(`   Start duplicate check: ${result.url} (Used)`);
-            return false;
-        }
-        usedImageUrls.add(result.url);
-        return true;
-    };
-
-    // Try Unsplash first
-    // Note: To truly avoid duplicates, we might need to fetch MORE than 1 result
-    // But currently searchUnsplash fetches `per_page=1`. 
-    // For now, if exact duplicate returned, we skip to next provider.
-    // Ideally update search functions to return lists.
-
-    let result = await searchUnsplash(query);
-    if (result && isUnused(result)) {
-        console.log(`✅ Found on Unsplash`);
-        return result;
+    if (!res) {
+        console.log('🤖 Generating fallback image...');
+        return {
+            url: `https://image.pollinations.ai/prompt/${encodeURIComponent(query)}?width=800&height=600&nologo=true`,
+            alt: `${query} (AI Generated)`,
+            credit: 'AI Generated'
+        };
     }
-
-    // Fallback to Pexels
-    result = await searchPexels(query);
-    if (result && isUnused(result)) {
-        console.log(`✅ Found on Pexels`);
-        return result;
-    }
-
-    // Fallback to Pixabay
-    result = await searchPixabay(query);
-    if (result && isUnused(result)) {
-        console.log(`✅ Found on Pixabay`);
-        return result;
-    }
-
-    // Pollinations (Uniqueness hard to guarantee by URL without hash, but prompt varies)
-    // Assume unique if prompt varies.
-
-    // Final Fallback: Generate using Pollinations.ai (Free AI generation)
-    console.log(`🤖 Generatng fallback image via Pollinations.ai...`);
-    const pollinationsUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(query)}?width=800&height=600&nologo=true&seed=${Math.floor(Math.random() * 1000)}`;
-    return {
-        url: pollinationsUrl,
-        alt: `${query} (AI Generated)`,
-        credit: 'AI Generated by Pollinations.ai',
-        source: 'pollinations'
-    };
+    return res;
 }
 
 // ============================================
-// Article Processing
+// File Operations
 // ============================================
 
-/**
- * Parse frontmatter and content from markdown
- */
-function parseMarkdown(content) {
-    const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-    if (!frontmatterMatch) {
-        throw new Error('Invalid markdown: no frontmatter found');
-    }
-
-    const frontmatterStr = frontmatterMatch[1];
-    const body = frontmatterMatch[2];
-
-    // Parse frontmatter (simple YAML parser)
-    const frontmatter = {};
-    frontmatterStr.split(/\r?\n/).forEach(line => {
-        const colonIndex = line.indexOf(':');
-        if (colonIndex > 0) {
-            const key = line.substring(0, colonIndex).trim();
-            let value = line.substring(colonIndex + 1).trim();
-
-            // Remove quotes
-            if ((value.startsWith('"') && value.endsWith('"')) ||
-                (value.startsWith("'") && value.endsWith("'"))) {
-                value = value.slice(1, -1);
-            }
-
-            // Parse arrays
-            if (value.startsWith('[') && value.endsWith(']')) {
-                value = value.slice(1, -1).split(',').map(s =>
-                    s.trim().replace(/^["']|["']$/g, '')
-                );
-            }
-
-            frontmatter[key] = value;
-        }
-    });
-
-    return { frontmatter, body, frontmatterStr };
-}
-
-/**
- * Extract H2 sections from markdown body
- */
-function extractH2Sections(body) {
-    const sections = [];
-    const lines = body.split(/\r?\n/);
-    let currentSection = null;
-    let currentContent = [];
-
-    for (const line of lines) {
-        if (line.startsWith('## ')) {
-            if (currentSection) {
-                sections.push({
-                    heading: currentSection,
-                    content: currentContent.join('\n'),
-                    startLine: currentSection
-                });
-            }
-            currentSection = line.substring(3).trim();
-            currentContent = [];
-        } else if (currentSection) {
-            currentContent.push(line);
-        }
-    }
-
-    if (currentSection) {
-        sections.push({
-            heading: currentSection,
-            content: currentContent.join('\n'),
-            startLine: currentSection
-        });
-    }
-
-    return sections;
-}
-
-// Japanese to English keyword mapping for better image search
-const KEYWORD_MAP = {
-    // Devices & Tech
-    'スマートフォン': 'smartphone',
-    'スマホ': 'smartphone',
-    '携帯': 'mobile phone',
-    'タブレット': 'tablet',
-    'パソコン': 'laptop workspace',
-    'ノートPC': 'laptop',
-    'ヘッドホン': 'headphones',
-    'イヤホン': 'earbuds',
-    'キーボード': 'mechanical keyboard',
-    'マウス': 'computer mouse',
-    'モニター': 'monitor setup',
-    'カメラ': 'camera lens',
-    'レンズ': 'camera lens',
-    'ガジェット': 'tech gadget',
-    'スマートウォッチ': 'smartwatch',
-    'ブレスレット': 'smart band',
-
-    // Brands (Specific models often yield better results than generic terms)
-    'Xiaomi': 'Xiaomi smartphone',
-    'シャオミ': 'Xiaomi',
-    'Redmi': 'Redmi smartphone',
-    'iPhone': 'iPhone 15',
-    'Samsung': 'Samsung Galaxy',
-    'Sony': 'Sony Alpha camera',
-    'Apple': 'Apple products',
-    'Leica': 'Leica camera',
-
-    // Topics
-    '価格': 'price tag concept',
-    'レビュー': 'tech review',
-    '比較': 'comparison',
-    'スペック': 'technology abstract',
-    'バッテリー': 'battery technology',
-    '充電': 'charging phone',
-    'デスク': 'minimal desk setup',
-    'リモートワーク': 'home office',
-    '生産性': 'productivity',
-    'ゲーム': 'gaming setup',
-    'ゲーミング': 'gaming pc',
-
-    // Lifestyle & Fashion (Old Money etc)
-    'オールドマネー': 'old money aesthetic men',
-    '髪型': 'men hairstyle',
-    'ヘアスタイル': 'men haircut',
-    'セット方法': 'grooming men',
-    '整髪料': 'hair pomade',
-    'ドライヤー': 'hair dryer men',
-    'バーバー': 'barber shop',
-    'ワックス': 'hair wax',
-    'ポマード': 'pomade',
-    '七三分け': 'side part hairstyle men',
-    'オールバック': 'slick back hair men',
-    'アイビーリーグ': 'ivy league haircut',
-
-    // General
-    '日本': 'Japan city',
-    '2026': 'future technology',
-    '最新': 'modern technology',
-    'プロ': 'professional',
-    'ウルトラ': 'flagship phone',
-    '発売日': 'calendar concept',
-    'リーク': 'secret folder',
-    '噂': 'rumor concept',
-};
-
-/**
- * Translate Japanese keywords to English for better image search
- */
-function translateToEnglish(text) {
-    let result = text;
-
-    // 1. Prioritize mapped terms
-    for (const [ja, en] of Object.entries(KEYWORD_MAP)) {
-        if (result.includes(ja)) {
-            result = result.replace(ja, en);
-        }
-    }
-
-    // 2. Remove purely Japanese characters if mixed with English
-    // Use a regex to identify Japanese characters
-    const japaneseRegex = /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/g;
-
-    // If the string contains English words (3+ letters), rely on those and remove Japanese noise
-    // This helps when we have "Xiaomi 17T Pro 発売日" -> "Xiaomi 17T Pro" (cleaner search)
-    if (/[a-zA-Z]{3,}/.test(result)) {
-        result = result.replace(japaneseRegex, '');
-    } else {
-        // If mostly Japanese, try to map to generic terms if not already mapped
-        result = result.replace(japaneseRegex, ' ');
-    }
-
-    // Clean up spaces
-    return result.trim().replace(/\s+/g, ' ');
-}
-
-/**
- * Generate search query from article metadata
- */
-function generateThumbnailQuery(frontmatter) {
-    const parts = [];
-
-    // Use first tag as primary search term
-    if (frontmatter.tags && Array.isArray(frontmatter.tags)) {
-        parts.push(frontmatter.tags[0]);
-        if (frontmatter.tags[1]) {
-            parts.push(frontmatter.tags[1]);
-        }
-    }
-
-    const query = parts.join(' ') || 'technology';
-    return translateToEnglish(query);
-}
-
-/**
- * Generate search query for inline images based on section and article context
- */
-function generateSectionQuery(heading, frontmatter) {
-    const parts = [];
-
-    // Add main topic from tags
-    if (frontmatter.tags && Array.isArray(frontmatter.tags)) {
-        parts.push(frontmatter.tags[0]);
-    }
-
-    // Add section-specific context
-    parts.push(heading);
-
-    const query = parts.join(' ');
-    const translated = translateToEnglish(query);
-
-    // If translation is too short, add generic tech context
-    if (translated.split(' ').length < 2) {
-        return translated + ' technology';
-    }
-
-    return translated;
-}
-
-/**
- * Download image and save to public folder
- */
 async function downloadImage(imageData, filename) {
     const downloadDir = path.join(PROJECT_ROOT, CONFIG.downloadDir);
-
-    // Ensure directory exists
     await fs.mkdir(downloadDir, { recursive: true });
 
     const ext = imageData.url.includes('.png') ? '.png' : '.jpg';
     const filepath = path.join(downloadDir, `${filename}${ext}`);
 
     try {
-        const response = await fetch(imageData.url);
-        const buffer = Buffer.from(await response.arrayBuffer());
+        const res = await fetch(imageData.url);
+        const buffer = Buffer.from(await res.arrayBuffer());
         await fs.writeFile(filepath, buffer);
-
         console.log(`💾 Saved: ${filepath}`);
         return `/images/articles/${filename}${ext}`;
-    } catch (error) {
-        console.log(`⚠️  Failed to download image: ${error.message}`);
-        return imageData.url; // Use direct URL as fallback
+    } catch (e) {
+        console.error('Download failed:', e.message);
+        return imageData.url;
     }
-}
-
-/**
- * Insert images into markdown content
- */
-function insertImagesIntoMarkdown(frontmatterStr, body, thumbnailPath, inlineImages) {
-    // Update frontmatter with thumbnail
-    let newFrontmatter = frontmatterStr;
-    if (thumbnailPath) {
-        if (/image:\s*"?[^"\n]*"?/.test(newFrontmatter)) {
-            newFrontmatter = newFrontmatter.replace(
-                /image:\s*"?[^"\n]*"?/,
-                `image: "${thumbnailPath}"`
-            );
-        } else {
-            // Append if missing
-            newFrontmatter += `\nimage: "${thumbnailPath}"`;
-        }
-    }
-
-    // Insert inline images after H2 headings
-    let newBody = body;
-    for (const { heading, imagePath, alt, credit } of inlineImages) {
-        // Escape special regex characters in heading
-        const safeHeading = escapeRegex(heading);
-
-        // Match ## Heading + newline + first paragraph
-        // Capture: 1=(## Heading\n\n), 2=(Paragraph content)
-        // Note: Markdown structure varies, improved regex to be more flexible
-        const h2Pattern = new RegExp(`(## ${safeHeading}\\r?\\n)(?:\\r?\\n)?([\\s\\S]*?)(?=\\r?\\n##|$)`, 'm');
-
-        // Find existing image in this section to avoid duplicates
-        // (Actually, if we are here, we decided to add one. But let's act on the body)
-        // Note: Logic in main() decides whether to add. Here we just replace.
-        // But main() loop check was simple content search.
-
-        // Insert image after the first paragraph of the section
-        // We'll replace the first newline group after some text with image markup
-        // Simplified approach: Append to the end of the section (before next header) or after first paragraph?
-        // User wants "after H2 section" -> usually means "after the first paragraph" or "in the section".
-        // Current logic tried to replace `(## Heading)(firstPara)`. 
-
-        // Let's use a safer insertion: Append after header title
-        // newBody = newBody.replace(
-        //    new RegExp(`(## ${safeHeading}.*\\n)`),
-        //    `$1\n![${alt}](${imagePath})\n*${credit}*\n`
-        // );
-        // Better: insert after the first paragraph so it doesn't break header-text flow?
-        // Let's stick to "After header" for simplicity and robustness, or "End of first paragraph".
-        // The previous regex was: `(## ${escapeRegex(heading)}\r?\n\r?\n)([^\n]+)`
-        // This expects Double Newline + Single Line Paragraph. If paragraph is multi-line, it breaks.
-
-        // Robust replacement: Find the header line. Insert image 2 lines after it.
-        const headerRegex = new RegExp(`(^## ${safeHeading}.*$)`, 'm');
-        newBody = newBody.replace(headerRegex, `$1\n\n![${alt}](${imagePath})\n*${credit}*`);
-    }
-
-    return `---\n${newFrontmatter}\n---\n${newBody}`;
-}
-
-function escapeRegex(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 // ============================================
-// Main
+// Main Logic
 // ============================================
 
 async function main() {
-    const args = process.argv.slice(2);
-
-    if (args.length === 0) {
-        console.log('Usage: node scripts/add-images.mjs <article-path>');
-        console.log('Example: node scripts/add-images.mjs src/content/articles/desk-setup-gadgets.md');
+    const targetFile = process.argv[2];
+    if (!targetFile) {
+        console.error('Usage: node scripts/add-images.mjs <article-path>');
         process.exit(1);
     }
 
-    const articlePath = path.resolve(PROJECT_ROOT, args[0]);
-    console.log(`\n📄 Processing: ${articlePath}\n`);
+    const filePath = path.resolve(PROJECT_ROOT, targetFile);
+    const contentRaw = await fs.readFile(filePath, 'utf-8');
+    const { data: frontmatter, content } = matter(contentRaw);
 
-    // Read article
-    const content = await fs.readFile(articlePath, 'utf-8');
-    const { frontmatter, body, frontmatterStr } = parseMarkdown(content);
+    // 1. Analyze Content with AI
+    const analysis = await analyzeContent(frontmatter.title, content);
+    if (!analysis) return;
 
-    console.log(`📝 Title: ${frontmatter.title}`);
-    console.log(`🏷️  Tags: ${frontmatter.tags?.join(', ') || 'none'}\n`);
+    console.log('💡 AI Suggestions:', analysis);
 
-    // Get article slug for image filenames
-    const slug = path.basename(articlePath, '.md');
-
-    // 1. Get thumbnail image
-    let thumbnailPath = null;
-    if (!frontmatter.image || frontmatter.image === '') {
-        console.log('🖼️  Searching for thumbnail...');
-        const query = generateThumbnailQuery(frontmatter);
-        const imageData = await searchImage(query);
-
-        if (imageData) {
-            thumbnailPath = await downloadImage(imageData, `${slug}-thumbnail`);
-        }
-    } else {
-        console.log('ℹ️  Thumbnail already set, skipping...');
+    // 2. Update Tags
+    if (analysis.tags) {
+        frontmatter.tags = analysis.tags;
     }
 
-    // 2. Get inline images for H2 sections
-    const sections = extractH2Sections(body);
-    const inlineImages = [];
+    const slug = path.basename(filePath, '.md');
+    let modifiedContent = content;
 
-    console.log(`\n📑 Found ${sections.length} H2 sections`);
+    // 3. Thumbnail (if missing)
+    if (!frontmatter.image) {
+        const img = await searchImage(analysis.thumbnail_query);
+        const savedPath = await downloadImage(img, `${slug}-thumbnail`);
+        frontmatter.image = savedPath;
+    }
 
-    // Skip first (intro) and last (summary) sections, limit to max images
-    const sectionsToProcess = sections
-        .slice(1, -1)
-        .slice(0, CONFIG.maxInlineImages);
+    // 4. Inline Images
+    // Extract headers from content to match with queries
+    let sectionCount = 0;
 
-    for (const section of sectionsToProcess) {
-        console.log(`\n📌 Section: "${section.heading}"`);
+    // Replace logic: Find ## Header and insert image after
+    // We iterate through the AI-provided section queries
+    for (const [headerText, query] of Object.entries(analysis.section_queries)) {
+        if (sectionCount >= CONFIG.maxInlineImages) break;
 
-        // Check if section already has an image
-        if (section.content.includes('![')) {
-            console.log('ℹ️  Section already has image, skipping...');
-            continue;
-        }
+        // Clean header text for regex (remove ## if present in key)
+        const cleanHeader = headerText.replace(/^##\s*/, '').trim();
+        // Regex to find the header in the content
+        // Match: ## Header... (end of line)
+        const headerRegex = new RegExp(`^##\\s+${cleanHeader.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}.*$`, 'm');
 
-        const query = generateSectionQuery(section.heading, frontmatter);
-        const imageData = await searchImage(query);
+        if (headerRegex.test(modifiedContent) && !modifiedContent.includes(query)) { // simple check to avoid double insert of same query concept if re-run? 
+            // Actually check if image already exists nearby is hard.
+            // Just check if we haven't processed this file? 
+            // Assuming clean run.
 
-        if (imageData) {
-            const filename = `${slug}-${inlineImages.length + 1}`;
-            const imagePath = await downloadImage(imageData, filename);
+            const img = await searchImage(query);
+            const savedPath = await downloadImage(img, `${slug}-${sectionCount + 1}`);
 
-            inlineImages.push({
-                heading: section.heading,
-                imagePath,
-                alt: imageData.alt,
-                credit: imageData.credit
-            });
+            // Insert after the header line
+            modifiedContent = modifiedContent.replace(
+                headerRegex,
+                `$& \n\n![${img.alt}](${savedPath})\n*${img.credit}*`
+            );
+            sectionCount++;
         }
     }
 
-    // 3. Write updated content
-    if (thumbnailPath || inlineImages.length > 0) {
-        const newContent = insertImagesIntoMarkdown(
-            frontmatterStr,
-            body,
-            thumbnailPath,
-            inlineImages
-        );
-
-        await fs.writeFile(articlePath, newContent, 'utf-8');
-        console.log(`\n✅ Updated: ${articlePath}`);
-        console.log(`   - Thumbnail: ${thumbnailPath ? 'Added' : 'Unchanged'}`);
-        console.log(`   - Inline images: ${inlineImages.length} added`);
-    } else {
-        console.log('\n⚠️  No images added (no API keys or no results)');
-    }
+    // 5. Write back
+    const newFileContent = matter.stringify(modifiedContent, frontmatter);
+    await fs.writeFile(filePath, newFileContent);
+    console.log(`✅ Article updated: ${filePath}`);
 }
 
 main().catch(console.error);

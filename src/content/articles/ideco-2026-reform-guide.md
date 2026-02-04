@@ -1,15 +1,24 @@
 ---
-title: "【iDeCo 2026年改正】「70歳まで拠出可能」は神改正？それとも罠？50代・60代が知るべき全貌"
-description: "2026年のiDeCo制度改正で、加入年齢が70歳まで延長され、拠出限度額も大幅アップする見込みです。「働き続けるシニア」にとって最強の節税ツールとなるのか？注意すべき「10年ルール」とは？"
-genre: "news"
-date: 2026-02-04
-tags: ["iDeCo", "2026年問題", "税制改正", "老後資金", "節税"]
-author: "なも兄"
+title: 【iDeCo 2026年改正】「70歳まで拠出可能」は神改正？それとも罠？50代・60代が知るべき全貌
+description: >-
+  2026年のiDeCo制度改正で、加入年齢が70歳まで延長され、拠出限度額も大幅アップする見込みです。「働き続けるシニア」にとって最強の節税ツールとなるのか？注意すべき「10年ルール」とは？
+genre: economics
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - iDeCo
+  - 制度改正
+  - 老後資金
+  - 節税
+  - 50代60代
+author: なも兄
 draft: false
-image: "/images/articles/ideco-2026-reform-guide-thumbnail.jpg"
+image: /images/articles/ideco-2026-reform-guide-thumbnail.jpg
 ---
 
-## はじめに
+## はじめに 
+
+![Simple illustration of an ATM displaying a $100 withdrawal on a purple background.](/images/articles/ideco-2026-reform-guide-1.jpg)
+*Photo by Monstera Production on Pexels*
 
 「人生100年時代、いつまで働けばいいんだ…」
 
@@ -22,10 +31,10 @@ image: "/images/articles/ideco-2026-reform-guide-thumbnail.jpg"
 
 今回は、政治・経済の視点から、この「iDeCo 2026年改正」のメリットと、裏に潜む注意点を解説します。
 
-## 1. 最大の変更点「加入年齢が70歳まで延長」
+## 1. 最大の変更点「加入年齢が70歳まで延長」 
 
-![Delicious red velvet cake with number 70 candles on a wooden stand against a red backdrop.](/images/articles/ideco-2026-reform-guide-1.jpg)
-*Photo by RDNE Stock project on Pexels*
+![Conceptual image of tax deductions with alphabet blocks and percent symbol on black surface.](/images/articles/ideco-2026-reform-guide-2.jpg)
+*Photo by Nataliya Vaitkevich on Pexels*
 
 これまでは「65歳未満」までしか掛金を拠出できませんでした。
 しかし、2026年からは、国民年金の被保険者（会社員として働いている人など）であれば、70歳になるまで iDeCoを続けられるようになります。
@@ -37,10 +46,10 @@ image: "/images/articles/ideco-2026-reform-guide-thumbnail.jpg"
 約27万円 もの税金（所得税・住民税）が浮きます。
 ただ貯金するだけでは得られない、圧倒的な「確実なリターン」です。
 
-## 2. 拠出限度額が「月6.2万円」に統一？
+## 2. 拠出限度額が「月6.2万円」に統一？ 
 
-![A woman wearing a face mask sits on luggage in an airport terminal amid the pandemic.](/images/articles/ideco-2026-reform-guide-2.jpg)
-*Photo by Anna Shvets on Pexels*
+![Photograph of a road sign indicating a maximum speed limit of 30 in a winter setting.](/images/articles/ideco-2026-reform-guide-3.jpg)
+*Photo by Erik Mclean on Pexels*
 
 もう一つの大きな改正ポイントが、掛金の上限額です。
 
@@ -49,9 +58,6 @@ image: "/images/articles/ideco-2026-reform-guide-thumbnail.jpg"
 もしこれが実現すれば、退職金がない中小企業の会社員でも、自分で強力な退職金を作れるようになります。
 
 ## 3. 老後資金が増えるプロの活用法
-
-![Modern interior design featuring a stylish armchair and a potted plant in a wooden niche.](/images/articles/ideco-2026-reform-guide-3.jpg)
-*Photo by Yusuf P on Pexels*
 
 この改正で最も恩恵を受けるのは、「50代でまだ老後資金が足りない人」です。
 
