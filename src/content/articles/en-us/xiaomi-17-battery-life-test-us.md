@@ -1,9 +1,8 @@
-```yaml
 ---
 title: "Xiaomi 17 Leak: The 6,000mAh Era Is Here, But Is the Global Version Getting Crippled?"
 description: "The Xiaomi 17 series is rumored to standardize 6,000mAh batteries. We look at the potential specs, the rumored 8,000mAh 'Max' model, and why global users might get a serious downgrade."
 author: Tech Editor
-date: 2024-10-27
+date: 2026-02-04
 genre: news
 image: /images/articles/xiaomi-17-battery-life-test-1.jpg
 ---
