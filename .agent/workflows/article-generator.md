@@ -39,8 +39,15 @@ Browser Agentを使用して、選択したキーワードの上位3サイトを
 node scripts/add-images.mjs src/content/articles/{生成したファイル名}.md
 ```
 
-### 6. Vercelにデプロイ
-GitHubにプッシュしてVercelで自動デプロイ：
+### 6. 米国向けローカライズ
+生成した日本語記事を米国向けに自動変換：
+```powershell
+node scripts/localize.mjs src/content/articles/{生成したファイル名}.md
+```
+※ これで `src/content/articles/en-us/` に英語記事も生成されます。
+
+### 7. デプロイ（公開）
+最後にデプロイコマンドを実行して公開完了：
 ```powershell
 npm run deploy
 ```
