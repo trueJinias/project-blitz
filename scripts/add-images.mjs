@@ -285,49 +285,70 @@ function extractH2Sections(body) {
 
 // Japanese to English keyword mapping for better image search
 const KEYWORD_MAP = {
-    // Devices
+    // Devices & Tech
     'スマートフォン': 'smartphone',
     'スマホ': 'smartphone',
     '携帯': 'mobile phone',
     'タブレット': 'tablet',
-    'パソコン': 'computer',
+    'パソコン': 'laptop workspace',
     'ノートPC': 'laptop',
     'ヘッドホン': 'headphones',
     'イヤホン': 'earbuds',
-    'キーボード': 'keyboard',
-    'マウス': 'mouse',
-    'モニター': 'monitor',
-    'カメラ': 'camera',
-    'レンズ': 'lens',
-    'ガジェット': 'gadget technology',
-    // Brands
+    'キーボード': 'mechanical keyboard',
+    'マウス': 'computer mouse',
+    'モニター': 'monitor setup',
+    'カメラ': 'camera lens',
+    'レンズ': 'camera lens',
+    'ガジェット': 'tech gadget',
+    'スマートウォッチ': 'smartwatch',
+    'ブレスレット': 'smart band',
+
+    // Brands (Specific models often yield better results than generic terms)
     'Xiaomi': 'Xiaomi smartphone',
-    'シャオミ': 'Xiaomi smartphone',
-    'iPhone': 'iPhone',
-    'Samsung': 'Samsung phone',
-    'Sony': 'Sony electronics',
-    'Apple': 'Apple device',
+    'シャオミ': 'Xiaomi',
+    'Redmi': 'Redmi smartphone',
+    'iPhone': 'iPhone 15',
+    'Samsung': 'Samsung Galaxy',
+    'Sony': 'Sony Alpha camera',
+    'Apple': 'Apple products',
+    'Leica': 'Leica camera',
+
     // Topics
-    '価格': 'price tag money',
-    'レビュー': 'review hands-on',
-    '比較': 'comparison versus',
-    'スペック': 'specifications tech',
-    'バッテリー': 'battery charging',
-    '充電': 'charging cable',
-    'デスク': 'desk workspace',
-    'リモートワーク': 'work from home office',
-    '生産性': 'productivity workspace',
-    // Actions
-    '購入': 'shopping buy',
-    'おすすめ': 'recommendation best',
-    '方法': 'how to guide',
-    '使い方': 'how to use tutorial',
+    '価格': 'price tag concept',
+    'レビュー': 'tech review',
+    '比較': 'comparison',
+    'スペック': 'technology abstract',
+    'バッテリー': 'battery technology',
+    '充電': 'charging phone',
+    'デスク': 'minimal desk setup',
+    'リモートワーク': 'home office',
+    '生産性': 'productivity',
+    'ゲーム': 'gaming setup',
+    'ゲーミング': 'gaming pc',
+
+    // Lifestyle & Fashion (Old Money etc)
+    'オールドマネー': 'old money aesthetic men',
+    '髪型': 'men hairstyle',
+    'ヘアスタイル': 'men haircut',
+    'セット方法': 'grooming men',
+    '整髪料': 'hair pomade',
+    'ドライヤー': 'hair dryer men',
+    'バーバー': 'barber shop',
+    'ワックス': 'hair wax',
+    'ポマード': 'pomade',
+    '七三分け': 'side part hairstyle men',
+    'オールバック': 'slick back hair men',
+    'アイビーリーグ': 'ivy league haircut',
+
     // General
-    '日本': 'Japan',
-    '2026': 'technology 2026',
-    '最新': 'latest new',
-    'プロ': 'professional pro',
-    'Ultra': 'flagship premium',
+    '日本': 'Japan city',
+    '2026': 'future technology',
+    '最新': 'modern technology',
+    'プロ': 'professional',
+    'ウルトラ': 'flagship phone',
+    '発売日': 'calendar concept',
+    'リーク': 'secret folder',
+    '噂': 'rumor concept',
 };
 
 /**
@@ -335,13 +356,28 @@ const KEYWORD_MAP = {
  */
 function translateToEnglish(text) {
     let result = text;
+
+    // 1. Prioritize mapped terms
     for (const [ja, en] of Object.entries(KEYWORD_MAP)) {
         if (result.includes(ja)) {
             result = result.replace(ja, en);
         }
     }
-    // Remove remaining Japanese characters for cleaner search
-    result = result.replace(/[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/g, ' ');
+
+    // 2. Remove purely Japanese characters if mixed with English
+    // Use a regex to identify Japanese characters
+    const japaneseRegex = /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/g;
+
+    // If the string contains English words (3+ letters), rely on those and remove Japanese noise
+    // This helps when we have "Xiaomi 17T Pro 発売日" -> "Xiaomi 17T Pro" (cleaner search)
+    if (/[a-zA-Z]{3,}/.test(result)) {
+        result = result.replace(japaneseRegex, '');
+    } else {
+        // If mostly Japanese, try to map to generic terms if not already mapped
+        result = result.replace(japaneseRegex, ' ');
+    }
+
+    // Clean up spaces
     return result.trim().replace(/\s+/g, ' ');
 }
 
