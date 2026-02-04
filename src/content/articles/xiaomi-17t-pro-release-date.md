@@ -6,6 +6,13 @@ date: 2026-02-04
 tags: ["Xiaomi 17T Pro", "発売日", "リーク"]
 author: "なも兄"
 draft: false
+image: "/images/articles/xiaomi-17t-pro-release-date-1.jpg"
+---
+
+## はじめに
+
+「え、17シリーズ出たばかりなのに、もうTシリーズの話？」
+
 そう思ったあなた、正常です（笑）。
 
 でも、今年のXiaomiは様子が違います。例年なら秋頃に発売される「T」シリーズが、なんと2026年2月にグローバル発表されるという噂が飛び込んできました。
