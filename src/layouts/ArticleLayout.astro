@@ -175,6 +175,12 @@ const formattedDate = new Intl.DateTimeFormat('ja-JP', {
     margin-bottom: var(--spacing-6);
     line-height: var(--line-height-relaxed);
   }
+
+  .article-content :global(strong) {
+    background: linear-gradient(transparent 60%, rgba(0, 122, 255, 0.3) 60%);
+    font-weight: bold;
+    color: inherit; 
+  }
   
   .article-content :global(ul),
   .article-content :global(ol) {
