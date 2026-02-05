@@ -15,7 +15,7 @@ const labelText = isJp ? "値段を確認" : "Check Price";
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">{labelText}: <strong>{keyword}</strong></span>
+    <span class="label-text">{labelText}: <span class="product-name">{keyword}</span></span>
   </div>
   <div class="buttons">
     <a href={amazonUrl} target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -45,16 +45,24 @@ const labelText = isJp ? "値段を確認" : "Check Price";
     display: flex;
     align-items: center;
     gap: var(--spacing-2);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md); /* Increased base size */
     color: var(--color-text-secondary);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* San Francisco equivalent */
   }
 
-  .label-text strong {
+  .label-text {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+
+  .product-name {
     color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 1.5rem; /* Large text as requested */
+    background: none !important; /* tailored to remove global strong highlighting */
     text-decoration: none !important;
-    border-bottom: none !important;
-    display: inline-block;
+    border: none !important;
+    line-height: 1.2;
   }
 
   .buttons {
