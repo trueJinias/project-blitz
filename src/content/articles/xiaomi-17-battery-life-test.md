@@ -27,14 +27,20 @@ image: /images/articles/xiaomi-17-battery-life-test-thumbnail.jpg
 Xiaomi 17シリーズに関する最新のリーク情報によると、ついに 標準モデルで6000mAh というとんでもない容量が当たり前になりそうです。
 
 今回は、飛び交うバッテリー関連の噂と、気になる「グローバル版のスペックダウン」疑惑について徹底解説します。
+*Photo by Looking For Feferences on Pexels*
+
+「スマホの充電、1日持ちますか？」
+
+そんな悩み、2026年には過去のものになるかもしれません。
+Xiaomi 17シリーズに関する最新のリーク情報によると、ついに 標準モデルで6000mAh というとんでもない容量が当たり前になりそうです。
+
+今回は、飛び交うバッテリー関連の噂と、気になる「グローバル版のスペックダウン」疑惑について徹底解説します。
 
 ## 1. グローバル版は「容量ダウン」の可能性大？ 
 
 ![Close-up of a hand holding a smartphone displaying the XOS interface with specs.](/images/articles/xiaomi-17-battery-life-test-2.jpg)
 *Photo by Andrey Matveev on Pexels*
 
-![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17-battery-life-test-1.jpg)
-*Photo by Andrey Matveev on Pexels*
 
 まず、一番重要な（そして残念な）ニュースから。
 
@@ -50,16 +56,6 @@ Xiaomi 17シリーズに関する最新のリーク情報によると、つい�
 ## 2. 幻の「Xiaomi 17 Max」は8000mAh！？ 
 
 ![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17-battery-life-test-3.jpg)
-*Photo by Looking For Feferences on Pexels*
-
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-battery-life-test-2.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-さらに衝撃的な情報もあります。
-「Xiaomi 17 Max」 という新モデルの存在が囁かれており、なんと 8,000mAh のバッテリーを積むとか。
-
-8000mAhって、一昔前のタブレットですよ？
-もしこれが実現すれば、「3日間充電なし」 が現実味を帯びてきます。キャンプや長時間の動画撮影をする人には最強のサブ機になる予感。
 
 ## 3. 充電速度：90W vs 100W
 

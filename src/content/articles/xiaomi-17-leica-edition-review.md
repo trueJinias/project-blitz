@@ -29,14 +29,21 @@ image: /images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg
 噂されている Xiaomi 17 Ultra "By Leica" Edition は、そんな時代への強烈なアンチテーゼかもしれません。
 
 今回は、写真好きの私が震えた、この「変態端末（褒め言葉）」の噂を深掘りします。
+*Photo by Shantanu Kumar on Pexels*
+
+「スマホの写真は、もう写真じゃない」
+
+そんな嘆きをよく耳にします。AIが空を青く塗りたくり、肌をツルツルにし、月を合成する…。綺麗な画像ではあるけれど、それは「記録」でしょうか？
+
+噂されている Xiaomi 17 Ultra "By Leica" Edition は、そんな時代への強烈なアンチテーゼかもしれません。
+
+今回は、写真好きの私が震えた、この「変態端末（褒め言葉）」の噂を深掘りします。
 
 ## 1. 物理コントロールリング：カチカチ感が欲しいんだよ！ 
 
 ![Detailed close-up of a classic vintage camera lens, emphasizing timeless photography.](/images/articles/xiaomi-17-leica-edition-review-2.jpg)
 *Photo by Grzegorz  Lewandowski on Pexels*
 
-![Xiaomi smartphone 17 1.](/images/articles/xiaomi-17-leica-edition-review-1.jpg)
-*Image from Pixabay*
 
 最大のトピックは、背面のカメラバンプに搭載されると噂の 「機械式コントロールリング」 です。
 
@@ -52,16 +59,6 @@ image: /images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg
 ## 2. センサー革命：LOFIC技術とは？ 
 
 ![Vintage classic car with bold design captured in HDR outdoors under dramatic skies.](/images/articles/xiaomi-17-leica-edition-review-3.jpg)
-*Photo by ClickerHappy on Pexels*
-
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-leica-edition-review-2.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-スペックオタクのみなさん、お待たせしました。
-搭載されるセンサーは、従来のSony製1インチではなく、LightFusion 1050L になると言われています。
-
-ここで注目すべきは LOFIC技術。
-簡単に言うと、「明暗差が激しいシーンでも白飛び・黒つぶれしない」技術です。
 
 ダイナミックレンジは驚異の 20段（噂）。
 これ、下手なミラーレス一眼を超えてます。夕暮れのグラデーションや、木漏れ日のような複雑な光も、AIによるHDR合成なしで「一発撮り」で美しく残せるわけです。
