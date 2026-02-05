@@ -3,7 +3,7 @@ title: "Xiaomi 17 Ultraの日本発売日は3月？価格はまさかの26万円
 description: "「もうカメラじゃん」と言わせるXiaomi 17 Ultraの最新リーク情報。発売時期、価格予測、そして16 Ultraからの進化点を徹底解説。"
 genre: "tech"
 date: 2026-02-06
-image: ""
+image: "/images/articles/xiaomi-17-ultra-price-japan-2026-thumbnail.png"
 tags: ["Xiaomi", "Xiaomi 17 Ultra", "Rumors", "Price", "Camera"]
 author: "なも兄"
 draft: false
