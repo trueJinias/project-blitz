@@ -33,6 +33,7 @@ const labelText = isJp ? "値段を確認" : "Check Price";
     padding: var(--spacing-6);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
+    border-bottom: 8px solid var(--color-border); /* 3D effect for container */
     border-radius: var(--radius-xl);
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ const labelText = isJp ? "値段を確認" : "Check Price";
     align-items: center;
     justify-content: center;
     height: 64px;
-    padding: 0 var(--spacing-6); /* Increased side padding */
+    padding: 0 var(--spacing-8); /* Increased side padding significantly to prevent cutoff */
     border-radius: var(--radius-lg);
     text-decoration: none !important;
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -74,9 +75,9 @@ const labelText = isJp ? "値段を確認" : "Check Price";
   }
 
   .logo-img {
-    max-height: 32px; /* Reduced max-height for better fit */
-    max-width: 120px;
-    width: auto;
+    max-height: 32px;
+    width: 100%; /* Allow width to scale */
+    max-width: 160px; /* Cap width */
     height: auto;
     object-fit: contain;
     transition: transform 0.2s ease;
@@ -93,9 +94,9 @@ const labelText = isJp ? "値段を確認" : "Check Price";
   }
   
   .amazon-img {
-    /* Amazon logo specifics to avoid cutting off */
     display: block;
     margin: 0 auto;
+    max-width: 80%; /* Constrain to 80% of button width to absolutely prevent cutoff */
   }
 
   .amazon:hover {
@@ -114,21 +115,21 @@ const labelText = isJp ? "値段を確認" : "Check Price";
   /* Rakuten Styles */
   .rakuten {
     background: #FFFFFF;
-    border-bottom: 5px solid #BF0000;
+    border-bottom: 5px solid #e5e5e5; /* Changed from red (#BF0000) to grey/white shade */
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
     border-top: 1px solid #eee;
   }
 
   .rakuten-img {
-     max-height: 34px; /* Slightly larger for Rakuten */
+     max-height: 38px;
   }
 
   .rakuten:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(191, 0, 0, 0.4);
-    border-bottom: 5px solid #BF0000;
-    border-color: #BF0000;
+    border-bottom: 5px solid #e5e5e5;
+    border-color: #e5e5e5;
     background: #fffafa;
   }
 
