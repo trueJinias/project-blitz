@@ -1,36 +1,37 @@
 ---
 const currentPath = Astro.url.pathname;
-const isEnglish = currentPath.startsWith('/en-us');
-const currentLang = isEnglish ? 'en-us' : 'ja';
+const isUs = currentPath.startsWith('/en-us');
+const isIn = currentPath.startsWith('/en-in');
+const currentLang = isUs ? 'en-us' : (isIn ? 'en-in' : 'ja');
+
 import Flag from './Flag.astro';
+import LanguageSelector from './LanguageSelector.astro';
 
 const navItems = [
-  { label: 'Home', href: isEnglish ? '/en-us/' : '/' },
-  { label: 'Tech', href: isEnglish ? '/en-us/genre/tech' : '/genre/tech' },
-  { label: 'Lifestyle', href: isEnglish ? '/en-us/genre/lifestyle' : '/genre/lifestyle' },
-  { label: 'Economy', href: isEnglish ? '/en-us/genre/economics' : '/genre/economics' },
-  { label: 'News', href: isEnglish ? '/en-us/genre/news' : '/genre/news' },
+  { label: 'Home', href: isUs ? '/en-us/' : (isIn ? '/en-in/' : '/') },
+  { label: 'Tech', href: isUs ? '/en-us/genre/tech' : (isIn ? '/en-in/genre/tech' : '/genre/tech') },
+  { label: 'Lifestyle', href: isUs ? '/en-us/genre/lifestyle' : (isIn ? '/en-in/genre/lifestyle' : '/genre/lifestyle') },
+  { label: 'Economy', href: isUs ? '/en-us/genre/economics' : (isIn ? '/en-in/genre/economics' : '/genre/economics') },
+  { label: 'News', href: isUs ? '/en-us/genre/news' : (isIn ? '/en-in/genre/news' : '/genre/news') },
 ];
 
-const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
+let siteName = 'BLITZ.jp';
+if (isUs) siteName = 'BLITZ.us';
+if (isIn) siteName = 'BLITZ.in';
 
 // Detect if we're on an article page and calculate language switch URLs
-const articleMatch = currentPath.match(/\/(en-us\/)?articles\/(.+?)\/?$/);
-let jaUrl = '/';
-let enUsUrl = '/en-us/';
+// Note: LanguageSelector now handles URL generation, we just need the slug.
+const articleMatch = currentPath.match(/\/(en-us\/|en-in\/)?articles\/(.+?)\/?$/);
+let articleSlug = undefined;
 
 if (articleMatch) {
-  const slug = articleMatch[2];
-  // Generate URLs for both languages
-  const baseSlug = slug.replace(/-us$/, ''); // Remove -us suffix if present
-  jaUrl = `/articles/${baseSlug}`;
-  enUsUrl = `/en-us/articles/${baseSlug}-us`;
+  articleSlug = articleMatch[2];
 }
 ---
 
 <header class="header">
   <div class="header-container">
-    <a href={isEnglish ? '/en-us/' : '/'} class="logo">
+    <a href={isUs ? '/en-us/' : (isIn ? '/en-in/' : '/')} class="logo">
       <span class="logo-text">{siteName.split('.')[0]}</span>
       <span class="logo-dot">.{siteName.split('.')[1]}</span>
     </a>
@@ -42,7 +43,7 @@ if (articleMatch) {
           <li>
             <a 
               href={item.href} 
-              class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && item.href !== '/en-us/' && currentPath.startsWith(item.href)) }]}
+              class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && item.href !== '/en-us/' && item.href !== '/en-in/' && currentPath.startsWith(item.href)) }]}
               data-astro-prefetch
             >
               {item.label}
@@ -53,23 +54,9 @@ if (articleMatch) {
     </nav>
     
     <div class="header-right">
-      <div class="lang-selector">
-        <button class="lang-current" aria-label="言語選択">
-          <span class="lang-flag"><Flag lang={isEnglish ? 'en-us' : 'ja'} size={24} /></span>
-          <span class="lang-name">{isEnglish ? 'EN' : 'JP'}</span>
-          <svg class="lang-arrow" width="12" height="12" viewBox="0 0 12 12">
-            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
-          </svg>
-        </button>
-        <div class="lang-dropdown">
-          <a href={jaUrl} class:list={['lang-option', { active: !isEnglish }]}>
-            <Flag lang="ja" size={20} /> 日本語
-          </a>
-          <a href={enUsUrl} class:list={['lang-option', { active: isEnglish }]}>
-            <Flag lang="en-us" size={20} /> English
-          </a>
-        </div>
-      </div>
+      <LanguageSelector currentLang={currentLang} articleSlug={articleSlug} />
+      
+      <button class="menu-toggle" aria-label="メニュー" id="menuToggle">
       
       <button class="menu-toggle" aria-label="メニュー" id="menuToggle">
         <span class="menu-icon"></span>
