@@ -1,14 +1,26 @@
 ---
-title: "Xiaomi AI Glassesの翻訳機能は使える？日本での実用性と未来感を徹底分析"
-description: "Xiaomiの新しいAIスマートグラスは、軽量デザインと強力なリアルタイム翻訳機能で話題です。日本での使い勝手や、Ray-Ban Metaとの違い、そして気になるプライバシーまで徹底解説。"
-genre: "tech"
-date: 2026-02-06
-tags: ["Xiaomi", "Smart Glasses", "AI", "Translation", "Wearable"]
-author: "なも兄"
+title: Xiaomi AI Glassesの翻訳機能は使える？日本での実用性と未来感を徹底分析
+description: >-
+  Xiaomiの新しいAIスマートグラスは、軽量デザインと強力なリアルタイム翻訳機能で話題です。日本での使い勝手や、Ray-Ban
+  Metaとの違い、そして気になるプライバシーまで徹底解説。
+genre: tech
+date: 2026-02-06T00:00:00.000Z
+tags:
+  - スマートグラス
+  - Xiaomi
+  - リアルタイム翻訳
+  - AIガジェット
+  - インバウンド需要
+author: なも兄
 draft: false
+product: Xiaomi AI Glasses
+image: /images/articles/xiaomi-ai-glasses-translation-features-thumbnail.jpg
 ---
 
-## はじめに
+## はじめに 
+
+![Abstract glass surfaces reflecting digital text create a mysterious tech ambiance.](/images/articles/xiaomi-ai-glasses-translation-features-1.png)
+*Photo by Google DeepMind on Pexels*
 
 「未来、これか？」と思わず声が出ました。
 
@@ -16,7 +28,10 @@ Xiaomiが発表した新しい「Xiaomi AI Glasses」。重さたったの49g（
 
 特に注目なのが**リアルタイム翻訳機能**。これ、海外旅行だけじゃなく、日本にいてもインバウンド需要でめちゃくちゃ使えるんじゃないか？と思ったので、今回はその実力と「日本で使うならどうなの？」という視点で深掘りしていきます。
 
-## 1. デザイン：普通のメガネと変わらない衝撃
+## 1. デザイン：普通のメガネと変わらない衝撃 
+
+![Close-up of stylish rimless eyeglasses with golden temples on a white background.](/images/articles/xiaomi-ai-glasses-translation-features-2.jpg)
+*Photo by Saliem Moeslan on Pexels*
 
 まず驚いたのが、その見た目です。
 
@@ -29,7 +44,10 @@ Ray-Ban Metaも自然ですが、Xiaomiのこれはさらに一歩進んでい�
 
 正直、カフェで仕事していても、誰もこれがAIグラスだとは気づかないでしょう。
 
-## 2. リアルタイム翻訳：目の前に字幕が出る世界
+## 2. リアルタイム翻訳：目の前に字幕が出る世界 
+
+![Humorous skeleton with VR headset, blending technology and anatomy in a unique portrait.](/images/articles/xiaomi-ai-glasses-translation-features-3.jpg)
+*Photo by Andrea Piacquadio on Pexels*
 
 これが今回の目玉機能です。
 
