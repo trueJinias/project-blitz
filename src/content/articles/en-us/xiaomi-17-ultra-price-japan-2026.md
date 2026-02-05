@@ -4,7 +4,7 @@ description: "Leaked specs for the 2026 Xiaomi 17 Ultra flagship suggest a phone
 author: John Smith
 date: 2024-06-25
 genre: tech
-image: /path/to/image.jpg
+image: "/images/articles/xiaomi-17-ultra-price-japan-2026-thumbnail.png"
 ---
 
 ## Introduction: The New Ultra Benchmark
