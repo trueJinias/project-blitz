@@ -10,6 +10,7 @@ const articlesCollection = defineCollection({
         image: z.string().optional(),
         tags: z.array(z.string()).optional(),
         author: z.string().optional(),
+        product: z.string().optional(),
         draft: z.boolean().optional().default(false),
     }),
 });

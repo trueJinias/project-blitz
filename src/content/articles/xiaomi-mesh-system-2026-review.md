@@ -14,13 +14,12 @@ tags:
 author: なも兄
 draft: false
 image: /images/articles/xiaomi-mesh-system-2026-review-thumbnail.jpg
+product: "Xiaomi Mesh System BE3600 Pro"
 ---
 
 ## 1万円で「Wi-Fi 7」の世界へようこそ 
 
 ![Yellow torn paper revealing 'Off price' for sale and discount promos.](/images/articles/xiaomi-mesh-system-2026-review-1.jpg)
-*Photo by Adriana Beckova on Pexels*
-
 「Wi-Fi 7、気にはなるけど3万円も出せないよ…」
 そんな我々の救世主となるのが、Xiaomi Mesh System BE3600 Proです。
 

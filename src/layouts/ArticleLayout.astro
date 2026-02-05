@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ProductLinks from '../components/ProductLinks.astro';
 
 interface Props {
   title: string;
@@ -11,9 +12,10 @@ interface Props {
   image?: string;
   author?: string;
   tags?: string[];
+  product?: string;
 }
 
-const { title, description, date, genre, image, author, tags } = Astro.props;
+const { title, description, date, genre, image, author, tags, product } = Astro.props;
 
 const genreColors: Record<string, string> = {
   tech: 'var(--color-tech)',
@@ -69,6 +71,14 @@ const formattedDate = new Intl.DateTimeFormat('ja-JP', {
       
       <div class="article-content">
         <slot />
+        
+        {Astro.props.frontmatter?.product && (
+          <ProductLinks keyword={Astro.props.frontmatter.product} />
+        )}
+        {/* Support passing product via props if frontmatter isn't directly available in layout props context (depends on astro version) */}
+        {!Astro.props.frontmatter?.product && (Astro.props as any).product && (
+           <ProductLinks keyword={(Astro.props as any).product} />
+        )}
       </div>
     </article>
   </main>

@@ -1,0 +1,95 @@
+---
+const { keyword } = Astro.props;
+
+const amazonTag = import.meta.env.AMAZON_ASSOCIATE_TAG || 'blitz011-22';
+const rakutenId = import.meta.env.RAKUTEN_AFFILIATE_ID || '50b8fe39.c32fe89a.50b8fe3a.60c7ccae';
+
+const amazonUrl = `https://www.amazon.co.jp/s?k=${encodeURIComponent(keyword)}&tag=${amazonTag}`;
+const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}?scid=${rakutenId}`;
+---
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">Check Price: <strong>{keyword}</strong></span>
+  </div>
+  <div class="buttons">
+    <a href={amazonUrl} target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <span class="icon">a</span>
+      Amazon
+    </a>
+    <a href={rakutenUrl} target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <span class="icon">R</span>
+      Rakuten
+    </a>
+  </div>
+</div>
+
+<style>
+  .product-links {
+    margin: var(--spacing-8) 0;
+    padding: var(--spacing-6);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .product-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .label-text strong {
+    color: var(--color-text-primary);
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-4);
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3);
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .amazon {
+    background: #FF9900;
+    color: white;
+  }
+
+  .rakuten {
+    background: #BF0000;
+    color: white;
+  }
+
+  .icon {
+    font-family: serif;
+    font-weight: 900;
+  }
+  
+  @media (max-width: 640px) {
+    .buttons {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -223,9 +223,12 @@ async function main() {
 
     console.log('💡 AI Suggestions:', analysis);
 
-    // 2. Update Tags
+    // 2. Update Tags & Product Info
     if (analysis.tags) {
         frontmatter.tags = analysis.tags;
+    }
+    if (analysis.is_product_review && analysis.product_name) {
+        frontmatter.product = analysis.product_name;
     }
 
     const slug = path.basename(filePath, '.md');
