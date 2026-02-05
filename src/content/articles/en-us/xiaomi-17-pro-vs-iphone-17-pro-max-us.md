@@ -25,8 +25,7 @@ We’re diving deep into the leaked specs for the rumored Xiaomi 17 Pro and comp
 
 The most eye-catching feature rumored for the Xiaomi 17 Pro is the return of the **rear secondary display**.
 
-![Xiaomi 17 Pro concept art showing rear display](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
-*Photo by Conceptual Renders (Generated)*
+
 
 Think a rear screen is a gimmick? Think again. The ability to snap high-quality rear-cam selfies or check quick notifications without flipping the phone has a serious workflow advantage—it's a feature that’s surprisingly useful (Xiaomi 11 Ultra fans know the flavor).
 
@@ -41,8 +40,7 @@ The iPhone 17 Pro Max, meanwhile, is expected to continue its journey toward a t
 ![Close-up of two smartphones with camera focus on a textured wooden surface.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-3.jpg)
 *Photo by Andrey Matveev on Pexels*
 
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
-*Photo by Andrey Matveev on Pexels*
+
 
 The Xiaomi 17 Pro’s camera setup is rumored to be an overkill trifecta: **three lenses, all 50MP**. That means the main sensor, the ultrawide, and the periscope telephoto will all offer flagship resolution, leaving no weak spots in the focal range.
 

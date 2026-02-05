@@ -33,7 +33,7 @@ So, where will the Redmi Note 15 5G (Base/Pro) land?
 ## 2. Our Redmi Note 15 5G Price Prediction
 
 ![Xiaomi smartphone 2. Redmi Note 15 5G price tag money](/images/articles/redmi-note-15-5g-price-history-2.jpg)
-*Image from Pixabay*
+*Photo by Michael Kim on Pexels*
 
 Our prediction for the introductory global pricing (8GB/128GB configuration, unlocked) is starkly aggressive:
 
@@ -47,7 +47,7 @@ Xiaomi has historically priced the standard Note aggressively, often targeting t
 ## 3. What Features Justify the Cost?
 
 ![Xiaomi smartphone 3. price tag money](/images/articles/redmi-note-15-5g-price-history-3.jpg)
-*Image from Pixabay*
+*Photo by Zain Ali on Pexels*
 
 Value doesn't mean compromises. If the leaks hold true, the Note 15 lineup is bringing flagship features to the mid-range:
 

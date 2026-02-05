@@ -23,8 +23,7 @@ The Xiaomi 17 Ultra launched in China in December 2025, with wider global availa
 
 First, let's look at the confirmed pricing from China and the established European MSRP, which typically sets the standard for global unlocked pricing.
 
-![Explore a traditional Chinese architectural gate nestled in a serene Moscow park.](/images/articles/xiaomi-17-ultra-price-japan-2026-1.jpg)
-*Photo by Hans Anders on Pexels*
+
 
 | Region | Configuration | Price | USD Conversion (Approx.) |
 |------|------|------|-----------|
@@ -44,8 +43,7 @@ The dramatic jump from the Chinese price to the global price isn't just about ta
 
 ### 1. Past Flagship Pricing Trends
 
-![Street food stall with takoyaki and price tags.](/images/articles/xiaomi-17-ultra-price-japan-2026-2.jpg)
-*Photo by Perry Merrity II on Unsplash*
+
 
 Looking at previous Xiaomi Ultra series launches gives us a clear baseline for global expectations:
 
@@ -68,8 +66,7 @@ For US consumers relying on importing, two scenarios apply:
 
 Since Xiaomi doesn't partner with AT&T or T-Mobile, dedicated US enthusiasts must look overseas to grab the 17 Ultra. Here are three ways to minimize the cost.
 
-![Energetic French Bulldog running outdoors on a grassy field.](/images/articles/xiaomi-17-ultra-price-japan-2026-3.jpg)
-*Photo by Koji Kikuhara on Pexels*
+
 
 ### 1. Buy the China Version Early
 

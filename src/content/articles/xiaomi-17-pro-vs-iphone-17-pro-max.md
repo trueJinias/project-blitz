@@ -35,8 +35,7 @@ image: /images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg
 
 まず目を引くのが、Xiaomi 17 Proに搭載されると噂の 「背面セカンダリディスプレイ」 です。
 
-![Xiaomi 17 Pro concept art showing rear display](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
-*Photo by Conceptual Renders (Generated)*
+
 
 「背面画面とか誰が使うの？」と思ったそこのあなた。甘いです。
 自撮りをリアカメラで撮れる、通知をサクッと確認できる…これ、意外と便利なんですよ（Xiaomi 11 Ultraの頃からファンです）。
@@ -50,31 +49,6 @@ image: /images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg
 ## 2. カメラ：画素数競争 vs 実用性のApple 
 
 ![Close-up of two smartphones with camera focus on a textured wooden surface.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-3.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-Xiaomi 17 Proのカメラは、3つのレンズ全てが50MP になると噂されています。メイン、超広角、そしてペリスコープ望遠。どこで撮っても隙がない。
-
-
-
-
-
-対するiPhone 17 Pro Maxも負けていません。全て48MPレンズに統一され、特に望遠性能の強化が期待されています。
-
-「画素数だけが正義じゃない」のは百も承知ですが、Xiaomiのライカ・チューニングの色味…あれは一度ハマると抜け出せません。
-
-## 3. バッテリー：7500mAhの衝撃
-
-![Close-up of hands holding a smartphone connected to a power bank outdoors.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-2.jpg)
-*Photo by DEBRAJ  ROY on Pexels*
-
-ここが今回最大の争点です。
-
-
-
-
 
 Xiaomi 17 Proには、脅威の 7,500mAhバッテリー が搭載されるという噂が！
 これ、iPad mini並みですよ。（Appleさん、iPhoneもそろそろ5000mAh超えませんか…？）

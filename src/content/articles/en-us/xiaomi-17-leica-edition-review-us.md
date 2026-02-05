@@ -20,7 +20,7 @@ As a photography enthusiast myself, I'm genuinely hyped about this potential dev
 ## 1. Dials and Tactile Feel: Give Me the Clicks!
 
 ![Xiaomi smartphone 17 1.](/images/articles/xiaomi-17-leica-edition-review-1.jpg)
-*Image from Pixabay*
+*Photo by Shantanu Kumar on Pexels*
 
 The biggest talking point is the rumored inclusion of a mechanical control ring built directly into the rear camera bump.
 

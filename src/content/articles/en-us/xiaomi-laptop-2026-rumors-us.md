@@ -22,8 +22,7 @@ This is a direct, calculated attack on the supremacy of the MacBook Air and Pro 
 ![Detailed image of a vintage motherboard featuring an Intel 486 chip, showcasing the complexity of retro computing components.](/images/articles/xiaomi-laptop-2026-rumors-1.jpg)
 *Photo by Nicolas Foster on Pexels*
 
-![Xiaomi smartphone 1. IntelSnapdragon](/images/articles/xiaomi-laptop-2026-rumors-1.jpg)
-*Image from Pixabay*
+
 
 The biggest conversation driver for the 2026 models is the choice of processors.
 
@@ -40,8 +39,7 @@ The goal is unmistakable: take down the MacBook Air. With the rumored incredible
 ![A smartphone displaying Google Search trends on a table at night.](/images/articles/xiaomi-laptop-2026-rumors-2.jpg)
 *Photo by Jethro C. on Pexels*
 
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-laptop-2026-rumors-2.jpg)
-*Photo by Andrey Matveev on Pexels*
+
 
 Higher-end models, likely the 16-inch Pro variant, are rumored to adopt Tandem OLED technology.
 
@@ -58,8 +56,7 @@ For users who demand a gorgeous, color-accurate Windows screen but are wary of b
 ![Detailed view of a stylish alloy wheel on a classic blue car, showcasing design and craftsmanship.](/images/articles/xiaomi-laptop-2026-rumors-3.jpg)
 *Photo by Wijs (Wise) on Pexels*
 
-![Xiaomi smartphone 3.](/images/articles/xiaomi-laptop-2026-rumors-3.jpg)
-*Image from Pixabay*
+
 
 Increased specs are useless if the machine turns into a heavy brick. Xiaomi knows this and is reportedly prioritizing weight reduction.
 

@@ -28,13 +28,22 @@ image: /images/articles/xiaomi-laptop-2026-rumors-thumbnail.jpg
 
 これ、完全にMacBook Air（とPro）を殺しに来てます。詳しく解説しましょう。
 
+## はじめに
+
+「WindowsのノートPC、どれも似たり寄ったりじゃない？」
+
+そんな閉塞感を、2026年のXiaomiがぶち破ってくれるかもしれません。
+次期 RedmiBook Pro 2026 シリーズに関する、かなり具体的でワクワクするリーク情報が入ってきました。
+
+キーワードは3つ。
+「Panther Lake」「Snapdragon」「Tandem OLED」。
+
+これ、完全にMacBook Air（とPro）を殺しに来てます。詳しく解説しましょう。
+
 ## 1. 頭脳は「Intel」と「Snapdragon」の二刀流？ 
 
 ![Detailed image of a vintage motherboard featuring an Intel 486 chip, showcasing the complexity of retro computing components.](/images/articles/xiaomi-laptop-2026-rumors-1.jpg)
 *Photo by Nicolas  Foster on Pexels*
-
-![Xiaomi smartphone 1. IntelSnapdragon](/images/articles/xiaomi-laptop-2026-rumors-1.jpg)
-*Image from Pixabay*
 
 2026年モデルの最大のトピックは、プロセッサの選択肢です。
 
@@ -52,9 +61,6 @@ AI処理能力（NPU）が爆上がりしており、バッテリー持ちとパ
 ![A smartphone displaying Google Search trends on a table at night.](/images/articles/xiaomi-laptop-2026-rumors-2.jpg)
 *Photo by Jethro C. on Pexels*
 
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-laptop-2026-rumors-2.jpg)
-*Photo by Andrey Matveev on Pexels*
-
 上位モデル（Pro 16インチなど）には、「Tandem OLED（タンデム有機EL）」 が採用されるとの噂があります。
 
 これ、新型iPad Proにも搭載された技術で、簡単に言うと「有機ELパネルを2枚重ねた」もの。
@@ -68,16 +74,6 @@ AI処理能力（NPU）が爆上がりしており、バッテリー持ちとパ
 ## 3. デザイン：マグネシウム合金で「軽さは正義」へ 
 
 ![Detailed view of a stylish alloy wheel on a classic blue car, showcasing design and craftsmanship.](/images/articles/xiaomi-laptop-2026-rumors-3.jpg)
-*Photo by Wijs (Wise) on Pexels*
-
-![Xiaomi smartphone 3.](/images/articles/xiaomi-laptop-2026-rumors-3.jpg)
-*Image from Pixabay*
-
-スペックが上がっても、重くなったら意味がありません。
-Xiaomiはその点も抜かりないようです。
-
-筐体素材にマグネシウム・アルミニウム合金を積極的に採用し、軽量化を図っています。
-リークによる目標重量は以下の通り。
 
 - 14インチモデル: 1.5kg切り → 1.3kg台へ？
 - 16インチモデル: 1.8kg台へ？

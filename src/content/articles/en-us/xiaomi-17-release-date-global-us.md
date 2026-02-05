@@ -25,8 +25,7 @@ But what does this mean for US consumers? Since Xiaomi rarely launches directly 
 
 While the Chinese market typically sees a four-model spread, the global release usually gets slightly condensed.
 
-![a black cell phone](/images/articles/xiaomi-17-release-date-global-1.jpg)
-*Photo by He Junhui on Unsplash*
+
 
 Here is the likely global lineup:
 
@@ -41,8 +40,7 @@ Here is the likely global lineup:
 
 ### 1. The Battery Downgrade Rumor
 
-![a close up of the word imoaix on a black surface](/images/articles/xiaomi-17-release-date-global-2.jpg)
-*Photo by Hakim Menikh on Unsplash*
+
 
 This is the one spec leak you need to pay attention to.
 
@@ -69,8 +67,7 @@ If these numbers hold, prepare to pay a flagship premium. These prices put the X
 
 With the launch still months away, now is the time to prepare your budget—and your strategy.
 
-![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17-release-date-global-3.jpg)
-*Photo by Andrey Matveev on Pexels*
+
 
 ### 1. Monitor Used Prices for the Xiaomi 14/15 Ultra
 

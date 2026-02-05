@@ -47,8 +47,7 @@ For most enthusiasts, using the device with the stock Chinese ROM is currently t
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-3.jpg)
 *Photo by Andrey Matveev on Pexels*
 
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-2.jpg)
-*Photo by Andrey Matveev on Pexels*
+
 
 Okay, so you decide to stick with the Chinese ROM. Are you ready for these major limitations in the US market?
 
@@ -58,8 +57,7 @@ Okay, so you decide to stick with the Chinese ROM. Are you ready for these major
 
 ## 3. So, Is Importing Ever Worth It?
 
-![Xiaomi smartphone 17 3.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-3.jpg)
-*Image from Pixabay*
+
 
 I’ve listed serious flaws, but here’s why some (myself included) will still choose to import the device:
 

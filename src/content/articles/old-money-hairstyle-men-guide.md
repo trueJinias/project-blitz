@@ -26,13 +26,21 @@ image: /images/articles/old-money-hairstyle-men-guide-thumbnail.jpg
 
 今回は、誰でも「育ちが良さそう」になれる、オールドマネーなヘアスタイルとセット方法を紹介します。
 
+## はじめに
+
+「なんか、チャラチャラした髪型はもう卒業したいな...」
+
+鏡を見てそう思ったこと、ありませんか？（私は30代になって痛感しました）
+
+今、Z世代から大人世代まで静かなブームになっているのが「オールドマネー（Old Money）」スタイル。
+富裕層のような、余裕と品格を感じさせるファッションのことですが、これは服だけでなく髪型が超重要なんです。
+
+今回は、誰でも「育ちが良さそう」になれる、オールドマネーなヘアスタイルとセット方法を紹介します。
+
 ## 1. オールドマネーな髪型とは？ 
 
 ![Back view of a man receiving a haircut with clipper in a barber shop.](/images/articles/old-money-hairstyle-men-guide-1.jpg)
 *Photo by Antoni Shkraba Studio on Pexels*
-
-![Detailed view of a Formula 1 car's front wing with Mercedes-Benz logos at Indianapolis.](/images/articles/old-money-hairstyle-men-guide-1.jpg)
-*Photo by Adriaan Greyling on Pexels*
 
 一言で言うと、「時代に流されない、クラシックな清潔感」です。
 
@@ -49,9 +57,6 @@ image: /images/articles/old-money-hairstyle-men-guide-thumbnail.jpg
 
 ![View of historic brick building with slate roofs and Gothic architectural features.](/images/articles/old-money-hairstyle-men-guide-2.jpg)
 *Photo by david hou on Pexels*
-
-![Close-up of a classic Mercedes-Benz 2.3-16 car tail light in a street scene in Ankara, Türkiye.](/images/articles/old-money-hairstyle-men-guide-2.jpg)
-*Photo by Emre Gokceoglu on Pexels*
 
 美容室でオーダーするなら、この3つが鉄板です。
 
@@ -70,16 +75,6 @@ image: /images/articles/old-money-hairstyle-men-guide-thumbnail.jpg
 ## 3. セットの手順（これが一番大事！） 
 
 ![Flat lay of men's grooming accessories including watch, brush, comb, and pomade.](/images/articles/old-money-hairstyle-men-guide-3.jpg)
-*Photo by Castorly Stock on Pexels*
-
-![A vintage typewriter with a paper displaying the text 'SPATIAL COMPUTING' on a wooden desk.](/images/articles/old-money-hairstyle-men-guide-3.jpg)
-*Photo by Markus Winkler on Pexels*
-
-「美容室ではかっこいいのに、家でやるとペタンコになる...」
-あるあるですよね（泣）。オールドマネーヘアは、整髪料をつける前のドライヤーで9割決まります。
-
-1.  髪を濡らす
-    寝癖直しウォーターではなく、一度シャワーでしっかり濡らしましょう。
 2.  プレスタイリング（重要！）
     ここで「シーソルトスプレー」を吹きかけます。これがと自然なボリュームと束感の秘密です。
 3.  ドライヤーで型を作る

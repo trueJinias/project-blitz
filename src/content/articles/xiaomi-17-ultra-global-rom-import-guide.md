@@ -31,14 +31,22 @@ Xiaomi 17 Ultra、グローバル版の予想価格は約22万円。対して中
 Xiaomi 17世代（HyperOS 2.0以降）では、その常識が通用しなくなっています。
 
 今回は、人柱覚悟で購入を検討しているあなたのために、最新の輸入事情とリスクを徹底解説します。
+*Photo by Monstera Production on Pexels*
+
+Xiaomi 17 Ultra、グローバル版の予想価格は約22万円。対して中国版の輸入価格は約16万円。
+その差、約6万円。 魅力的ですよね。
+
+「安い中国版を買って、グローバルROMを焼けばいいじゃん！」
+
+そう思ったあなた。ちょっと待ってください。
+Xiaomi 17世代（HyperOS 2.0以降）では、その常識が通用しなくなっています。
+
+今回は、人柱覚悟で購入を検討しているあなたのために、最新の輸入事情とリスクを徹底解説します。
 
 ## 1. 悲報：グローバルROMは「ほぼ焼けません」 
 
 ![Detailed close-up of a smartphone screen highlighting the screen mirroring feature and controls.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-2.jpg)
 *Photo by Brett Jordan on Pexels*
-
-![Xiaomi smartphone 17 1. ROM](image: "")
-*Image from Pixabay*
 
 最大の壁がこれです。
 かつては簡単にできた「ブートローダーアンロック（BLU）」が、現在は極めて困難になっています。
@@ -53,27 +61,6 @@ Xiaomi 17世代（HyperOS 2.0以降）では、その常識が通用しなくな
 ## 2. 中国版ROMで「できないこと」リスト 
 
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-3.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-2.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-「じゃあ中国版のまま使うよ」という方。以下の制限に耐えられますか？
-
-1. Android Autoが使えない: 車のナビにスマホ画面を映す機能は、中国版では完全に削除されています。Googleマップはスマホ単体でしか使えません。
-2. 通知が来ない: 中国版の強力な省電力機能により、LINEやGmailの通知が遅れる（または来ない）ことが多々あります。設定でかなり粘る必要があります。
-3. Google系機能の一部制限: Google Pay（タッチ決済）は多くの機種で動作しますが、「OK Google」などの音声アシスタント連携（Gemini含む）が不安定な場合があります。
-
-## 3. それでも輸入するメリットは？
-
-![Xiaomi smartphone 17 3.](/images/articles/xiaomi-17-ultra-global-rom-import-guide-3.jpg)
-*Image from Pixabay*
-
-デメリットばかり書きましたが、それでも私は輸入します（笑）。理由は3つ。
-
-- 圧倒的な安さ: 6万円あればハイエンドクラスのサブ機が買えます。
-- 最新機能へのアクセス: HyperOSの最新機能は常に中国版に最初に来ます。
-- ハードウェアは同じ（場合によっては上）: 時々、中国版の方がバッテリー容量が多いなどの「逆差別」があります。
 
 ## 4. どこで買うのが安全？
 

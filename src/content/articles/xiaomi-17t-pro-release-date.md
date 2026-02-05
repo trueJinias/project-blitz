@@ -28,13 +28,22 @@ image: /images/articles/xiaomi-17t-pro-release-date-1.jpg
 
 今回は、Xiaomi 17T Proの最新リーク情報を、興奮気味にお届けします。
 
+## はじめに
+
+「え、17シリーズ出たばかりなのに、もうTシリーズの話？」
+
+そう思ったあなた、正常です（笑）。
+
+でも、今年のXiaomiは様子が違います。例年なら秋頃に発売される「T」シリーズが、なんと2026年2月にグローバル発表されるという噂が飛び込んできました。
+
+「早すぎるだろ！」とツッコミを入れつつ、リークされているスペックを見ると...これ、本家17 Proを食ってしまうのでは？というレベルの仕上がり。
+
+今回は、Xiaomi 17T Proの最新リーク情報を、興奮気味にお届けします。
+
 ## 1. 発売日：まさかのMWC 2026で発表？ 
 
 ![Microphone on stand with blurred background, ideal for music or speech themes.](/images/articles/xiaomi-17t-pro-release-date-1.jpg)
 *Photo by freestocks.org on Pexels*
-
-![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17t-pro-release-date-1.jpg)
-*Photo by Andrey Matveev on Pexels*
 
 これまでの「T」シリーズは、9月〜10月頃に発表されるのが通例でした。しかし、今年は異なります。
 
@@ -52,9 +61,6 @@ IMEIデータベースの情報によると、Xiaomiはグローバル展開の�
 ![Close-up of multiple computer CPUs stacked on a wooden surface, showcasing technology components.](/images/articles/xiaomi-17t-pro-release-date-2.jpg)
 *Photo by Shawn Stutzman on Pexels*
 
-![Xiaomi smartphone 2. specifications tech Dimensity 9500](/images/articles/xiaomi-17t-pro-release-date-2.jpg)
-*Image from Pixabay*
-
 Xiaomi 17T Proの目玉は、なんといってもSoC（頭脳）です。
 
 噂通りであれば、MediaTekの最新フラッグシップ「Dimensity 9500」が搭載される見込みです。
@@ -66,16 +72,6 @@ Snapdragon 8 Elite（Gen 5）と比較しても、マルチコア性能では互
 ## 3. バッテリー：7000mAh時代の到来 
 
 ![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17t-pro-release-date-3.jpg)
-*Photo by Looking For Feferences on Pexels*
-
-![Close-up of hands holding a smartphone connected to a power bank outdoors.](/images/articles/xiaomi-17t-pro-release-date-3.jpg)
-*Photo by DEBRAJ  ROY on Pexels*
-
-これが一番の衝撃かもしれません。
-
-Xiaomi 17T Proには、6500mAh〜7000mAhという、タブレット級の超大容量バッテリーが搭載される可能性があります。
-
-「そんなに積んだら重くなるでしょ...」
 
 心配無用です。最新のシリコンカーボン負極材技術により、バッテリー密度が向上しているため、厚みや重量は現行機とほぼ変わらない（むしろ薄くなる？）との噂。
 

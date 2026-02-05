@@ -24,8 +24,7 @@ Here is the latest, most exciting breakdown of everything we know about the Xiao
 ![Microphone on stand with blurred background, ideal for music or speech themes.](/images/articles/xiaomi-17t-pro-release-date-1.jpg)
 *Photo by freestocks.org on Pexels*
 
-![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17t-pro-release-date-1.jpg)
-*Photo by Andrey Matveev on Pexels*
+
 
 The "T" series usually lands between September and October. However, IMEI database information suggests Xiaomi is accelerating its global deployment schedule, heavily pointing toward a February 2026 announcement, likely coinciding with MWC in Barcelona.
 
@@ -41,8 +40,7 @@ If this timeline holds true, it's fantastic news for consumers—though our wall
 ![Close-up of multiple computer CPUs stacked on a wooden surface, showcasing technology components.](/images/articles/xiaomi-17t-pro-release-date-2.jpg)
 *Photo by Shawn Stutzman on Pexels*
 
-![Xiaomi smartphone 2. specifications tech Dimensity 9500](/images/articles/xiaomi-17t-pro-release-date-2.jpg)
-*Image from Pixabay*
+
 
 The star of the Xiaomi 17T Pro specs sheet is undoubtedly the SoC.
 
@@ -57,8 +55,7 @@ Interestingly, the vanilla Xiaomi 17T is rumored to use the Snapdragon 8s Gen 5.
 ![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17t-pro-release-date-3.jpg)
 *Photo by Looking For Feferences on Pexels*
 
-![Close-up of hands holding a smartphone connected to a power bank outdoors.](/images/articles/xiaomi-17t-pro-release-date-3.jpg)
-*Photo by DEBRAJ  ROY on Pexels*
+
 
 This might be the most shocking leak yet: the Xiaomi 17T Pro could feature a massive 6,500mAh to **7,000mAh** battery—a capacity usually reserved for tablets.
 

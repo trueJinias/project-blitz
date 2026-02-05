@@ -30,9 +30,6 @@ Xiaomi 17 Ultraの日本での販売価格は、22万円〜25万円程度にな�
 
 まずは現時点で判明している価格をチェックしましょう。
 
-![Explore a traditional Chinese architectural gate nestled in a serene Moscow park.](/images/articles/xiaomi-17-ultra-price-japan-2026-1.jpg)
-*Photo by Hans Anders on Pexels*
-
 
 | 地域 | 構成 | 価格 | 日本円換算 |
 |------|------|------|-----------|
@@ -46,41 +43,6 @@ Xiaomi 17 Ultraの日本での販売価格は、22万円〜25万円程度にな�
 ## 日本価格を予測する3つの根拠 
 
 ![A trader reviewing cryptocurrency charts on a tablet in a modern office setting.](/images/articles/xiaomi-17-ultra-price-japan-2026-3.jpg)
-*Photo by AlphaTradeZone on Pexels*
-
-### 1. 過去モデルの日本価格傾向
-
-![Street food stall with takoyaki and price tags.](/images/articles/xiaomi-17-ultra-price-japan-2026-2.jpg)
-*Photo by Perry Merrity II on Unsplash*
-
-
-Xiaomiの過去のUltraシリーズの日本価格を見てみましょう：
-
-- Xiaomi 14 Ultra: 199,900円（16GB+512GB）
-- Xiaomi 15 Ultra: 220,000円
-
-日本では常に中国価格の1.4〜1.6倍で設定されています。
-
-### 2. 欧州価格からの推定
-
-欧州での€1,499という価格は、Xiaomiのグローバル戦略を反映しています。日本価格は欧州価格と近い水準になることが多く、約22〜24万円と推定できます。
-
-### 3. 為替と輸入コスト
-
-2026年2月現在の円安傾向を考慮すると、24〜25万円になる可能性も十分あります。
-
-## 【独自視点】お得に購入する3つの方法
-
-競合サイトでは触れられていない、お得にXiaomi 17 Ultraを購入する方法をご紹介します。
-
-![Energetic French Bulldog running outdoors on a grassy field.](/images/articles/xiaomi-17-ultra-price-japan-2026-3.jpg)
-*Photo by Koji Kikuhara on Pexels*
-
-
-### 1. 発売直後のキャンペーンを狙う
-
-Xiaomi Japanは発売直後にポイント還元やギフト付きキャンペーンを実施する傾向があります。過去のXiaomi 14 Ultraでは最大2万円相当のポイント還元がありました。
-
 ### 2. グローバル版を個人輸入
 
 技適マークの問題はありますが、グローバル版を海外ECサイトから購入すると、最大5万円以上節約できる場合があります。

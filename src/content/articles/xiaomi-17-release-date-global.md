@@ -36,9 +36,6 @@ Xiaomi 17シリーズのグローバル版は、2026年3月5日〜6日にバル�
 
 中国では4モデル展開ですが、グローバル版は少し絞られるかも？
 
-![a black cell phone](/images/articles/xiaomi-17-release-date-global-1.jpg)
-*Photo by He Junhui on Unsplash*
-
 
 
 - Xiaomi 17（無印）: 6.31インチのコンパクトフラッグシップ
@@ -48,46 +45,6 @@ Xiaomi 17シリーズのグローバル版は、2026年3月5日〜6日にバル�
 ## スペックの見どころ 
 
 ![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17-release-date-global-3.jpg)
-*Photo by Looking For Feferences on Pexels*
-
-### 1. バッテリー容量の変化
-
-![a close up of the word imoaix on a black surface](/images/articles/xiaomi-17-release-date-global-2.jpg)
-*Photo by Hakim Menikh on Unsplash*
-
-
-
-ここ、ちょっと注意が必要です。
-
-中国版は7,000mAhというバケモノ級バッテリーを積んでいますが、グローバル版は6,330mAh（Ultraは6,000mAh）にダウンサイズされるという噂が。
-
-「なんで減らすんや！」って言いたくなりますが、安全基準の違いなどが影響しているのかもしれません（それでも十分デカいけどね）。
-
-### 2. チップセット
-
-これは間違いなくSnapdragon 8 Elite Gen 5。性能に関しては全く心配いりません。むしろオーバースペックかも（笑）。
-
-### 3. 価格
-
-欧州でのリーク価格は以下の通り。
-
-- Xiaomi 17: €1,099（約17万円）
-- Xiaomi 17 Ultra: €1,499（約24万円）
-
-…円安の影響もあって、日本価格は覚悟が必要そうです（財布の紐が千切れそう）。
-
-## 【独自視点】日本ユーザーが今やるべきこと
-
-発売までまだ時間がある今だからこそ、準備しておきたいことがあります。
-
-![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17-release-date-global-3.jpg)
-*Photo by Andrey Matveev on Pexels*
-
-
-
-### 1. Xiaomi 14/15 Ultraの中古相場をチェック
-
-最新モデルが出ると旧モデルの相場が下がります。「最新じゃなくてもいいや」という人は、Xiaomi 17発表直後の旧モデル値崩れを狙うのが賢い選択かも。
 
 ### 2. 個人輸入のルート確保
 

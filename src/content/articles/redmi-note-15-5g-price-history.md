@@ -28,13 +28,22 @@ image: /images/articles/redmi-note-15-5g-price-history-thumbnail.jpg
 円安や部材高騰が続く中、Xiaomiは果たして「コスパ最強」の座を守り切れるのか？
 歴代モデルの価格推移というデータをもとに、Redmi Note 15 5Gの日本発売価格を大胆予想します！
 
+## はじめに
+
+「今年のRedmi Noteは買いなのか？」
+
+毎年恒例、Xiaomiのドル箱「Redmi Note」シリーズ。
+次期モデルRedmi Note 15 5Gについて、リーク情報が出揃ってきました。
+
+私が特に注目しているのは、スペックもさることながら、その「価格設定」です。
+
+円安や部材高騰が続く中、Xiaomiは果たして「コスパ最強」の座を守り切れるのか？
+歴代モデルの価格推移というデータをもとに、Redmi Note 15 5Gの日本発売価格を大胆予想します！
+
 ## 1. 歴代モデルの価格推移から読む 
 
 ![Detailed view of a stock report displaying a market performance graph with data trends.](/images/articles/redmi-note-15-5g-price-history-1.jpg)
 *Photo by RDNE Stock project on Pexels*
-
-![Vibrant shopping bags and red sale tags on a dark background, perfect for retail promotions.](/images/articles/redmi-note-15-5g-price-history-1.jpg)
-*Photo by Tamanna Rumee on Pexels*
 
 まずは過去のデータを振り返ってみましょう。日本国内版（SIMフリー）の発売時価格です。
 
@@ -51,9 +60,6 @@ image: /images/articles/redmi-note-15-5g-price-history-thumbnail.jpg
 ![Outdoor market stall featuring seafood and beef skewers on sale with vibrant signage in Japanese Yen.](/images/articles/redmi-note-15-5g-price-history-2.jpg)
 *Photo by Michael Kim on Pexels*
 
-![Xiaomi smartphone 2. Redmi Note 15 5G price tag money](/images/articles/redmi-note-15-5g-price-history-2.jpg)
-*Image from Pixabay*
-
 私の予想はずばり...
 
 - Redmi Note 15 5G（無印）: 39,800円
@@ -69,16 +75,6 @@ image: /images/articles/redmi-note-15-5g-price-history-thumbnail.jpg
 ## 3. 価格に見合う「進化点」はあるか？ 
 
 ![A close-up view of Kodak Pixpro SP360 sports camera with a wide lens on a clean white background.](/images/articles/redmi-note-15-5g-price-history-3.jpg)
-*Photo by Zain Ali on Pexels*
-
-![Xiaomi smartphone 3. price tag money](/images/articles/redmi-note-15-5g-price-history-3.jpg)
-*Image from Pixabay*
-
-「安かろう悪かろう」では意味がありません。しかし、今回のNote 15はスペックも妥協なしです。
-
-1.  IP68防水・防塵
-    なんと、ついにミドルレンジど真ん中のNoteシリーズに、完全防水（IP68）が搭載されるとの噂！これは日本市場では最強の武器になります。
-
 2.  5,800mAhバッテリー
     前作からさらに増量。SoC（Snapdragon 6s Gen 3）の省電力性と相まって、2日は余裕で持つスタミナを実現しそうです。
 

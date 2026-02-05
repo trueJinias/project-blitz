@@ -18,7 +18,7 @@ Based on the latest leaks, the answer is a resounding *no*. Here is a deep dive 
 ## How 6,500mAh Fits in a Sleek Chassis: The Magic of Silicon-Carbon
 
 ![Xiaomi smartphone 1. 6500mAh](/images/articles/xiaomi-17t-6500mah-battery-1.jpg)
-*Image from Pixabay*
+*Photo by Looking For Feferences on Pexels*
 
 For years, traditional smartphone batteries (which use graphite anodes) hit a physical ceiling around the 5,000mAh mark. To go significantly higher meant making the device drastically thicker and heavier.
 
