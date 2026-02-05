@@ -10,20 +10,22 @@ const { genre, count = 0, delay = 0, lang = 'ja' } = Astro.props;
 
 const genreData = {
   tech: {
-    label: { ja: 'Tech', 'en-us': 'Tech' },
+    label: { ja: 'Tech', 'en-us': 'Tech', 'en-in': 'Tech' },
     description: { 
       ja: 'テクノロジー・ガジェットの最新情報', 
-      'en-us': 'Latest technology & gadget news' 
+      'en-us': 'Latest technology & gadget news',
+      'en-in': 'Latest technology & gadget news'
     },
     icon: '⚡',
     gradient: 'var(--gradient-tech)',
     color: 'var(--color-tech)',
   },
   lifestyle: {
-    label: { ja: 'Lifestyle', 'en-us': 'Lifestyle' },
+    label: { ja: 'Lifestyle', 'en-us': 'Lifestyle', 'en-in': 'Lifestyle' },
     description: { 
       ja: 'ライフスタイル・趣味・暮らしのヒント', 
-      'en-us': 'Lifestyle, hobbies & living tips' 
+      'en-us': 'Lifestyle, hobbies & living tips',
+      'en-in': 'Lifestyle, hobbies & living tips'
     },
     icon: '✨',
     gradient: 'var(--gradient-lifestyle)',
@@ -31,10 +33,11 @@ const genreData = {
   },
 
   news: {
-    label: { ja: 'News', 'en-us': 'News' },
+    label: { ja: 'News', 'en-us': 'News', 'en-in': 'News' },
     description: { 
       ja: '政治・国際情勢・一般ニュース', 
-      'en-us': 'Politics, World Affairs & General News' 
+      'en-us': 'Politics, World Affairs & General News',
+      'en-in': 'Politics, World Affairs & General News'
     },
     icon: '📰',
     gradient: 'var(--gradient-news)',
@@ -42,10 +45,11 @@ const genreData = {
   },
 
   economics: {
-    label: { ja: 'Economy', 'en-us': 'Economy' },
+    label: { ja: 'Economy', 'en-us': 'Economy', 'en-in': 'Economy' },
     description: {
       ja: '金融・投資・ビジネス・マーケット',
-      'en-us': 'Finance, Investment, Business & Markets'
+      'en-us': 'Finance, Investment, Business & Markets',
+      'en-in': 'Finance, Investment, Business & Markets'
     },
     icon: '📈',
     gradient: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
@@ -54,8 +58,17 @@ const genreData = {
 };
 
 const data = genreData[genre];
-const href = lang === 'en-us' ? `/en-us/genre/${genre}` : `/genre/${genre}`;
-const countLabel = lang === 'en-us' ? 'articles' : '記事';
+let href = `/genre/${genre}`;
+let countLabel = '記事';
+
+// Determine href and labels based on lang
+if (lang === 'en-us') {
+  href = `/en-us/genre/${genre}`;
+  countLabel = 'articles';
+} else if (lang === 'en-in') {
+  href = `/en-in/genre/${genre}`;
+  countLabel = 'articles';
+}
 ---
 
 <a 
