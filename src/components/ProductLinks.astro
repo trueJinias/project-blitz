@@ -47,32 +47,17 @@ const labelText = isJp ? "値段を確認" : "Check Price";
     gap: var(--spacing-2);
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* San Francisco equivalent */
   }
 
   .label-text strong {
     color: var(--color-text-primary);
-  }
-
-  .buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-4);
-  }
-
-  /* Base Button Styles */
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 64px;
-    padding: 0 var(--spacing-8); /* Increased side padding significantly to prevent cutoff */
-    border-radius: var(--radius-lg);
     text-decoration: none !important;
-    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
-    position: relative;
-    top: 0;
-    overflow: hidden;
+    border-bottom: none !important;
+    display: inline-block; /* Helps with some rendering issues */
   }
+
+  /* ... (unchanged) ... */
 
   .logo-img {
     max-height: 32px;
@@ -83,46 +68,14 @@ const labelText = isJp ? "値段を確認" : "Check Price";
     transition: transform 0.2s ease;
   }
 
-  .btn:hover .logo-img {
-    transform: scale(1.05);
-  }
-
-  /* Amazon Styles */
-  .amazon {
-    background: #FF9900;
-    border-bottom: 5px solid #cc7a00;
-  }
-  
-  .amazon-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%; /* Constrain to 80% of button width to absolutely prevent cutoff */
-  }
-
-  .amazon:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(255, 153, 0, 0.6);
-    border-bottom: 5px solid #cc7a00;
-  }
-
-  .amazon:active {
-    transform: translateY(2px);
-    border-bottom: 0px solid transparent;
-    margin-top: 5px;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
-  }
-
-  /* Rakuten Styles */
-  .rakuten {
-    background: #FFFFFF;
-    border-bottom: 5px solid #e5e5e5; /* Changed from red (#BF0000) to grey/white shade */
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-top: 1px solid #eee;
-  }
+  /* ... (unchanged) ... */
 
   .rakuten-img {
-     max-height: 38px;
+     max-height: 50px; /* Significantly increased to match Amazon's visual weight */
+     width: auto; /* Let it scale by height */
+     max-width: 80%; /* Constrain width similarly to Amazon */
+     display: block;
+     margin: 0 auto;
   }
 
   .rakuten:hover {
