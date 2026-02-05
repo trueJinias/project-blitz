@@ -6,12 +6,16 @@ const rakutenId = import.meta.env.RAKUTEN_AFFILIATE_ID || '50b8fe39.c32fe89a.50b
 
 const amazonUrl = `https://www.amazon.co.jp/s?k=${encodeURIComponent(keyword)}&tag=${amazonTag}`;
 const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}?scid=${rakutenId}`;
+
+const currentPath = Astro.url.pathname;
+const isJp = !currentPath.includes('/en-us/') && !currentPath.includes('/en-in/');
+const labelText = isJp ? "値段を確認" : "Check Price";
 ---
 
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">Check Price: <strong>{keyword}</strong></span>
+    <span class="label-text">{labelText}: <strong>{keyword}</strong></span>
   </div>
   <div class="buttons">
     <a href={amazonUrl} target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -60,7 +64,7 @@ const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponen
     align-items: center;
     justify-content: center;
     height: 64px;
-    padding: 0 var(--spacing-4);
+    padding: 0 var(--spacing-6); /* Increased side padding */
     border-radius: var(--radius-lg);
     text-decoration: none !important;
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -70,8 +74,8 @@ const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponen
   }
 
   .logo-img {
-    max-height: 40px;
-    max-width: 140px;
+    max-height: 32px; /* Reduced max-height for better fit */
+    max-width: 120px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -89,8 +93,9 @@ const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponen
   }
   
   .amazon-img {
-    /* Amazon logo tends to be wide, ensure it doesn't overflow */
-    max-height: 36px;
+    /* Amazon logo specifics to avoid cutting off */
+    display: block;
+    margin: 0 auto;
   }
 
   .amazon:hover {
@@ -116,8 +121,7 @@ const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponen
   }
 
   .rakuten-img {
-     /* Rakuten logo might need to be slightly larger to look balanced */
-     max-height: 44px;
+     max-height: 34px; /* Slightly larger for Rakuten */
   }
 
   .rakuten:hover {
