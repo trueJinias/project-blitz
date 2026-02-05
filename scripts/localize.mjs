@@ -87,27 +87,33 @@ async function localizeArticle(filePathStr, locale) {
 
         const prompt = `
 You are a professional tech editor for a popular ${currentConfig.audience} blog.
-Your task is to REWRITE the following Japanese tech article for a **${currentConfig.audience}**.
+Your task is to **WRITE A BRAND NEW ARTICLE** for **${currentConfig.audience}** based on the topic and facts from the provided Japanese source text.
 
-**Localization Rules:**
+**CRITICAL INSTRUCTION: DO NOT TRANSLATE.**
+- Use the provided Japanese text ONLY as a source of facts/specs/rumors.
+- Write a completely original article tailored to the ${currentConfig.audience} context.
+- The structure and flow should be natural for an English speaker in that region.
+
+**Market Adaptation Rules:**
 1. **Target Audience**: ${currentConfig.audience}.
 2. **Context**: Change "Japan release" context to "**${currentConfig.context}**".
-   - If the device is not sold officially, mention import options or expected launch.
+   - **US Market**: Compare with iPhone, Samsung Galaxy, and Google Pixel. Focus on "Is it worth importing?" or "Global release hopes".
+   - **India Market**: Compare with OnePlus, iQOO, Realme, and Samsung. Focus on "Value for Money", "Heating issues (hot climate)", and "Service center availability".
 3. **Currency**: Convert JPY/CNY prices to **${currentConfig.currency}**.
    - Use approximate market rates.
    - Example (India): "6,999 yuan" -> "~₹85,000" (Estimate based on current rates + tax).
    - Example (US): "6,999 yuan" -> "~$970".
 4. **Tone**: Casual, authoritative, engaging. Use **${currentConfig.spelling}**.
-5. **Structure**: Keep the markdown structure (headers, tables, images).
-   - IMPORTANT: Preserve the original image paths exactly as they are.
+5. **Structure**: You may change the H2 headers to better suit the market, but keep the overall length similar (~1500 words).
+   - **IMAGES**: You MUST include the exact same image links \`![alt](/path/to/image.jpg)\` from the source text at appropriate places.
 6. **Frontmatter**:
    - Keys must be strictly LOWERCASE.
    - **CRITICAL: "genre" MUST be EXACTLY "${frontmatter.genre || 'tech'}".**
    - "image" path must be exactly the same as original.
-   - Translate title and description to be catchy and culturally relevant. **MUST BE QUOTED**.
+   - Generate a **NEW Title** and **Description** that clicks with ${currentConfig.audience}. **MUST BE QUOTED**.
    - Keep current date and author.
 
-**Original Article (Japanese):**
+**Source Information (Japanese):**
 Title: ${frontmatter.title}
 Description: ${frontmatter.description}
 Genre: ${frontmatter.genre || 'tech'}

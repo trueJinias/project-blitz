@@ -98,9 +98,59 @@ Return ONLY valid JSON.
         const jsonStr = text.replace(/^```json\s*/, '').replace(/\s*```$/, '');
         return JSON.parse(jsonStr);
     } catch (error) {
-        console.error('❌ AI Analysis Failed:', error.message);
-        return null;
+        console.warn('⚠️ AI Analysis Failed:', error.message);
+        console.log('🔄 Switching to Rule-Based Fallback...');
+        return fallbackAnalysis(title, content);
     }
+}
+
+/**
+ * Fallback analysis using heuristics and regex
+ */
+function fallbackAnalysis(title, content) {
+    // 1. Generate Tags from Title (Simple matching)
+    const knownTags = ['Xiaomi', 'Review', 'Rumors', 'Guide', 'Tech', 'AI', 'Battery', 'Camera', 'HyperOS'];
+    const tags = knownTags.filter(tag => title.toLowerCase().includes(tag.toLowerCase()));
+    if (tags.length === 0) tags.push('Xiaomi', 'Tech'); // Default tags
+
+    // 2. Thumbnail Query
+    // Use the file slug if possible, otherwise generic. 
+    // Since we don't have the slug here yet, we'll try to extract English words from title or default.
+    // Actually, the caller has the title. Let's send a generic "tech" query + extracted English words.
+    const englishWords = title.match(/[a-zA-Z0-9]+/g) || [];
+    const thumbnailQuery = englishWords.length > 0 ? `${englishWords.join(' ')} tech` : 'smartphone technology concept';
+
+    // 3. Section Queries
+    const sectionQueries = {};
+    const headers = (content.match(/^##\s+(.+)$/gm) || []).map(h => h.replace(/^##\s+/, '').trim());
+
+    for (const header of headers) {
+        let query = 'technology minimalist background'; // Default
+
+        // Simple Dictionary Mapping
+        if (header.includes('はじめに') || header.includes('Introduction')) query = 'futuristic technology abstract';
+        else if (header.includes('まとめ') || header.includes('Conclusion')) query = 'coffee workspace laptop';
+        else if (header.includes('バッテリー') || header.includes('Battery')) query = 'battery charging icon';
+        else if (header.includes('カメラ') || header.includes('Camera')) query = 'camera lens photography';
+        else if (header.includes('ディスプレイ') || header.includes('Display')) query = 'smartphone screen abstract';
+        else if (header.includes('デザイン') || header.includes('Design')) query = 'product design sketch';
+        else if (header.includes('スペック') || header.includes('Spec')) query = 'microchip processor';
+        else if (header.includes('発売') || header.includes('Release')) query = 'calendar event planning';
+        else {
+            // For unknown headers, use the thumbnail query + abstract
+            query = `${thumbnailQuery} abstract`;
+        }
+
+        sectionQueries[header] = query;
+    }
+
+    return {
+        tags: tags,
+        is_product_review: title.includes('レビュー') || title.includes('Review'),
+        product_name: null, // Hard to extract reliably without AI
+        thumbnail_query: thumbnailQuery,
+        section_queries: sectionQueries
+    };
 }
 
 // ============================================
