@@ -1,3 +1,4 @@
+---
 title: "Xiaomi 17 Global Release Date Leaked: Prepare for the 2026 Flagship Showdown"
 description: "When will the Xiaomi 17 series finally go global? As an MWC 2026 announcement looks certain, we break down the latest leaks covering specs, price, and whether it's worth the import hassle."
 date: 2024-10-27
