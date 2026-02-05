@@ -8,11 +8,13 @@
  * Usage: node scripts/add-images.mjs <article-path>
  */
 
+
 import 'dotenv/config';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
+import { searchAndFetchProductImage } from './fetch-product-image.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = path.resolve(__dirname, '..');
@@ -49,7 +51,10 @@ async function analyzeContent(title, content) {
 You are an expert editor for a tech/lifestyle/economics blog.
 Analyze the following article content and extract:
 1. **5 Relevant Tags** (Japanese): Keywords that best describe the article content.
-2. **Image Search Queries** (English):
+2. **Product Identification**:
+   - Is this primarily a **Product Review** or **Product Introduction**? (true/false)
+   - If YES, what is the **Exact Product Name**? (e.g., "Xiaomi 14 Ultra", "Anker Nano II 65W")
+3. **Image Search Queries** (English):
    - One for the **Thumbnail** (Catchy, representative).
    - One for each **H2 Section** (Contextually relevant).
 
@@ -63,6 +68,8 @@ ${(content.match(/^##\s+(.+)$/gm) || []).join('\n')}
 **Output Format (JSON Only):**
 {
   "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  "is_product_review": true,
+  "product_name": "Xiaomi 14 Ultra", /* null if not a review */
   "thumbnail_query": "english search query for thumbnail",
   "section_queries": {
     "Header Text 1": "english search query 1",
@@ -92,7 +99,7 @@ Return ONLY valid JSON.
         return JSON.parse(jsonStr);
     } catch (error) {
         console.error('❌ AI Analysis Failed:', error.message);
-        return null; // Fallback to manual if needed, but for now specific error
+        return null;
     }
 }
 
@@ -158,7 +165,7 @@ async function searchPixabay(query) {
 }
 
 async function searchImage(query) {
-    console.log(`🔍 Searching: "${query}"`);
+    console.log(`🔍 Searching Stock Photos: "${query}"`);
     let res = await searchUnsplash(query) || await searchPexels(query) || await searchPixabay(query);
 
     if (!res) {
@@ -176,7 +183,7 @@ async function searchImage(query) {
 // File Operations
 // ============================================
 
-async function downloadImage(imageData, filename) {
+async function downloadStockImage(imageData, filename) {
     const downloadDir = path.join(PROJECT_ROOT, CONFIG.downloadDir);
     await fs.mkdir(downloadDir, { recursive: true });
 
@@ -224,37 +231,47 @@ async function main() {
     const slug = path.basename(filePath, '.md');
     let modifiedContent = content;
 
-    // 3. Thumbnail (if missing)
+    // 3. Thumbnail
     if (!frontmatter.image) {
-        const img = await searchImage(analysis.thumbnail_query);
-        const savedPath = await downloadImage(img, `${slug}-thumbnail`);
-        frontmatter.image = savedPath;
+        let savedPath = null;
+
+        // Try Product Image if it's a review
+        if (analysis.is_product_review && analysis.product_name) {
+            console.log(`🛒 Detected Product Review: ${analysis.product_name}`);
+            try {
+                // Try to search and fetch from Rakuten
+                savedPath = await searchAndFetchProductImage(analysis.product_name, `${slug}-thumbnail`);
+            } catch (e) {
+                console.error('Product fetch failed:', e);
+            }
+        }
+
+        // Fallback to stock photo
+        if (!savedPath) {
+            const img = await searchImage(analysis.thumbnail_query);
+            savedPath = await downloadStockImage(img, `${slug}-thumbnail`);
+        }
+
+        if (savedPath) {
+            frontmatter.image = savedPath;
+        }
     }
 
     // 4. Inline Images
-    // Extract headers from content to match with queries
     let sectionCount = 0;
 
-    // Replace logic: Find ## Header and insert image after
-    // We iterate through the AI-provided section queries
     for (const [headerText, query] of Object.entries(analysis.section_queries)) {
         if (sectionCount >= CONFIG.maxInlineImages) break;
 
-        // Clean header text for regex (remove ## if present in key)
         const cleanHeader = headerText.replace(/^##\s*/, '').trim();
-        // Regex to find the header in the content
-        // Match: ## Header... (end of line)
         const headerRegex = new RegExp(`^##\\s+${cleanHeader.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}.*$`, 'm');
 
-        if (headerRegex.test(modifiedContent) && !modifiedContent.includes(query)) { // simple check to avoid double insert of same query concept if re-run? 
-            // Actually check if image already exists nearby is hard.
-            // Just check if we haven't processed this file? 
-            // Assuming clean run.
-
+        if (headerRegex.test(modifiedContent) && !modifiedContent.includes(query)) {
+            // For inline images, we usually stick to stock photos as product shots might be repetitive
+            // unless the section is about a specific feature that stock photos cover well.
             const img = await searchImage(query);
-            const savedPath = await downloadImage(img, `${slug}-${sectionCount + 1}`);
+            const savedPath = await downloadStockImage(img, `${slug}-${sectionCount + 1}`);
 
-            // Insert after the header line
             modifiedContent = modifiedContent.replace(
                 headerRegex,
                 `$& \n\n![${img.alt}](${savedPath})\n*${img.credit}*`
@@ -270,3 +287,4 @@ async function main() {
 }
 
 main().catch(console.error);
+
