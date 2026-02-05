@@ -8,7 +8,13 @@ author: "なも兄"
 draft: false
 ---
 
+image: "/images/articles/hyperos-4-hidden-features-thumbnail.jpg"
+---
+
 ## はじめに
+
+![Futuristic coding interface](/images/articles/hyperos-4-hidden-features-1.jpg)
+*Photo by Kevin Ku on Pexels*
 
 「スマホのOSなんて、どれも同じでしょ？」
 
@@ -28,6 +34,9 @@ draft: false
 
 ## 2. HyperAI：あなたの行動を予知するOS
 
+![AI Neural Network](/images/articles/hyperos-4-hidden-features-2.jpg)
+*Photo by Tara Winstead on Pexels*
+
 「AI機能」はもはや当たり前ですが、HyperOS 4.0は次元が違います。
 
 これまでのAIは「頼んだことをやる」だけでしたが、次世代の**HyperAI**は「頼む前にやる」ことを目指しています。
@@ -39,6 +48,9 @@ draft: false
 スマホが「道具」から「秘書」に進化する瞬間です。
 
 ## 3. ユーザーの悲願：広告とブロートウェアの排除
+
+![Clean smartphone screen](/images/articles/hyperos-4-hidden-features-3.jpg)
+*Photo by NordWood Themes on Pexels*
 
 これはまだ噂の域を出ませんが、多くのXiaomiファンが最も期待している点です。
 
