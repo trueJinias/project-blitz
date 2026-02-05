@@ -6,7 +6,7 @@ date: 2026-02-06
 tags: ["Xiaomi", "Smart Band 11", "FeliCa", "Suica", "ウェアラブル", "2026年予想"]
 author: "なも兄"
 draft: false
-image: "https://images.unsplash.com/photo-1576243345690-8e41f0e30d1f?q=80&w=2670&auto=format&fit=crop"
+image: "/images/articles/xiaomi-smart-band-11-thumbnail.jpg"
 product: "Xiaomi Smart Band 10"
 ---
 
