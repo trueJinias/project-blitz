@@ -1,11 +1,30 @@
 ---
 interface Props {
   currentLang: string;
+  articleSlug?: string; // Optional: if provided, language switch will go to the article in the other language
 }
 
 import { languages } from '../i18n/utils';
 
-const { currentLang } = Astro.props;
+const { currentLang, articleSlug } = Astro.props;
+
+// Function to get the URL for a given language
+function getLangUrl(langCode: string): string {
+  if (articleSlug) {
+    // We are on an article page
+    if (langCode === 'ja') {
+      // Going to JP version: Remove -us suffix if present
+      const jpSlug = articleSlug.replace(/-us$/, '');
+      return `/articles/${jpSlug}`;
+    } else if (langCode === 'en-us') {
+      // Going to EN-US version: Add -us suffix if not already present
+      const usSlug = articleSlug.endsWith('-us') ? articleSlug : `${articleSlug}-us`;
+      return `/en-us/articles/${usSlug}`;
+    }
+  }
+  // Default: go to language homepage
+  return langCode === 'ja' ? '/' : `/${langCode}/`;
+}
 ---
 
 <div class="language-selector">
@@ -20,7 +39,7 @@ const { currentLang } = Astro.props;
   <div class="lang-dropdown">
     {Object.entries(languages).map(([code, name]) => (
       <a 
-        href={`/${code}/`} 
+        href={getLangUrl(code)} 
         class:list={['lang-option', { active: code === currentLang }]}
         data-lang={code}
       >

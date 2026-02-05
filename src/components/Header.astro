@@ -12,6 +12,19 @@ const navItems = [
 ];
 
 const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
+
+// Detect if we're on an article page and calculate language switch URLs
+const articleMatch = currentPath.match(/\/(en-us\/)?articles\/(.+?)\/?$/);
+let jaUrl = '/';
+let enUsUrl = '/en-us/';
+
+if (articleMatch) {
+  const slug = articleMatch[2];
+  // Generate URLs for both languages
+  const baseSlug = slug.replace(/-us$/, ''); // Remove -us suffix if present
+  jaUrl = `/articles/${baseSlug}`;
+  enUsUrl = `/en-us/articles/${baseSlug}-us`;
+}
 ---
 
 <header class="header">
@@ -48,10 +61,10 @@ const siteName = isEnglish ? 'BLITZ.us' : 'BLITZ.jp';
           </svg>
         </button>
         <div class="lang-dropdown">
-          <a href="/" class:list={['lang-option', { active: !isEnglish }]}>
+          <a href={jaUrl} class:list={['lang-option', { active: !isEnglish }]}>
             <Flag lang="ja" size={20} /> 日本語
           </a>
-          <a href="/en-us/" class:list={['lang-option', { active: isEnglish }]}>
+          <a href={enUsUrl} class:list={['lang-option', { active: isEnglish }]}>
             <Flag lang="en-us" size={20} /> English
           </a>
         </div>
