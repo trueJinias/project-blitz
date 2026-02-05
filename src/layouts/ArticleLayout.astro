@@ -13,9 +13,10 @@ interface Props {
   author?: string;
   tags?: string[];
   product?: string;
+  lang?: string;
 }
 
-const { title, description, date, genre, image, author, tags, product } = Astro.props;
+const { title, description, date, genre, image, author, tags, product, lang = 'ja' } = Astro.props;
 
 const genreColors: Record<string, string> = {
   tech: 'var(--color-tech)',
@@ -33,14 +34,20 @@ const genreLabels: Record<string, string> = {
   news: 'News',
 };
 
-const formattedDate = new Intl.DateTimeFormat('ja-JP', {
+const dateLocales: Record<string, string> = {
+  ja: 'ja-JP',
+  'en-us': 'en-US',
+  'en-in': 'en-IN',
+};
+
+const formattedDate = new Intl.DateTimeFormat(dateLocales[lang] || 'ja-JP', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 }).format(date);
 ---
 
-<BaseLayout title={`${title} | Blog`} description={description} image={image} type="article">
+<BaseLayout title={`${title} | Blog`} description={description} image={image} type="article" lang={lang}>
   <Header />
   
   <main class="article-layout">
