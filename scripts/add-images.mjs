@@ -271,17 +271,32 @@ async function main() {
     let analysis;
     const analysisArg = process.argv[3];
 
-    // Check if the 3rd arg is a JSON string (starts with curly brace)
-    if (analysisArg && analysisArg.trim().startsWith('{')) {
-        console.log('🤖 Using Agent-Provided Analysis (Internal AI)');
-        try {
-            analysis = JSON.parse(analysisArg);
-        } catch (e) {
-            console.error('❌ Failed to parse provided JSON:', e.message);
-            process.exit(1);
+    // Check if the 3rd arg is a JSON string or File Path
+    if (analysisArg) {
+        if (analysisArg.trim().startsWith('{')) {
+            // It's a raw JSON string
+            console.log('🤖 Using Agent-Provided Analysis (JSON String)');
+            try {
+                analysis = JSON.parse(analysisArg);
+            } catch (e) {
+                console.error('❌ Failed to parse provided JSON String:', e.message);
+                process.exit(1);
+            }
+        } else if (analysisArg.endsWith('.json')) {
+            // It's a file path
+            console.log(`📂 Reading Analysis from file: ${analysisArg}`);
+            try {
+                const jsonContent = await fs.readFile(analysisArg, 'utf-8');
+                analysis = JSON.parse(jsonContent);
+            } catch (e) {
+                console.error('❌ Failed to read/parse JSON file:', e.message);
+                process.exit(1);
+            }
         }
-    } else {
-        // Fallback to internal Gemini API or Heuristics
+    }
+
+    if (!analysis) {
+        // Fallback to internal Gemini API
         analysis = await analyzeContent(frontmatter.title, content);
     }
 

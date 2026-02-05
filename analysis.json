@@ -1,0 +1,19 @@
+{
+    "predefined_thumbnail": "/images/articles/xiaomi-17-ultra-price-japan-2026-thumbnail.png",
+    "tags": [
+        "Xiaomi",
+        "Xiaomi 17 Ultra",
+        "Rumors",
+        "Camera",
+        "Flagship"
+    ],
+    "is_product_review": true,
+    "product_name": "Xiaomi 17 Ultra",
+    "thumbnail_query": "xiaomi 17 ultra concept",
+    "section_queries": {
+        "日本発売日はいつ？": "calendar timeline event",
+        "気になる価格…26万円コースか": "expensive luxury price tag",
+        "進化点：もはや「電話ができるデジカメ」": "camera lens technology sensor",
+        "まとめ：待つべき？": "thinking decision making"
+    }
+}
