@@ -267,8 +267,24 @@ async function main() {
     const contentRaw = await fs.readFile(filePath, 'utf-8');
     const { data: frontmatter, content } = matter(contentRaw);
 
-    // 1. Analyze Content with AI
-    const analysis = await analyzeContent(frontmatter.title, content);
+    // 1. Determine Analysis Source
+    let analysis;
+    const analysisArg = process.argv[3];
+
+    // Check if the 3rd arg is a JSON string (starts with curly brace)
+    if (analysisArg && analysisArg.trim().startsWith('{')) {
+        console.log('🤖 Using Agent-Provided Analysis (Internal AI)');
+        try {
+            analysis = JSON.parse(analysisArg);
+        } catch (e) {
+            console.error('❌ Failed to parse provided JSON:', e.message);
+            process.exit(1);
+        }
+    } else {
+        // Fallback to internal Gemini API or Heuristics
+        analysis = await analyzeContent(frontmatter.title, content);
+    }
+
     if (!analysis) return;
 
     console.log('💡 AI Suggestions:', analysis);
@@ -288,8 +304,14 @@ async function main() {
     if (!frontmatter.image) {
         let savedPath = null;
 
-        // Try Product Image if it's a review
-        if (analysis.is_product_review && analysis.product_name) {
+        // 0. Check for Predefined Thumbnail (Agent Generated)
+        if (analysis.predefined_thumbnail) {
+            console.log(`🎨 Using Predefined Thumbnail: ${analysis.predefined_thumbnail}`);
+            savedPath = analysis.predefined_thumbnail;
+        }
+
+        // 1. Try Product Image if it's a review
+        else if (analysis.is_product_review && analysis.product_name) {
             console.log(`🛒 Detected Product Review: ${analysis.product_name}`);
             try {
                 // Try to search and fetch from Rakuten
@@ -299,7 +321,7 @@ async function main() {
             }
         }
 
-        // Fallback to stock photo
+        // 2. Fallback to stock photo
         if (!savedPath) {
             const img = await searchImage(analysis.thumbnail_query);
             savedPath = await downloadStockImage(img, `${slug}-thumbnail`);
