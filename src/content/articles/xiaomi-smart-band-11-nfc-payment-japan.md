@@ -6,7 +6,7 @@ date: 2026-02-06
 tags: ["Xiaomi", "Smart Band 11", "FeliCa", "Suica", "ウェアラブル", "2026年予想"]
 author: "なも兄"
 draft: false
-image: "/images/articles/xiaomi-mesh-system-2026-review-thumbnail.jpg"
+image: "https://images.unsplash.com/photo-1576243345690-8e41f0e30d1f?q=80&w=2670&auto=format&fit=crop"
 product: "Xiaomi Smart Band 10"
 ---
 
@@ -26,6 +26,9 @@ product: "Xiaomi Smart Band 10"
 
 ## 1. なぜXiaomi Smart Band 10日本版はFeliCa非対応だったのか？
 
+![Smart Watch on wrist](https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=2727&auto=format&fit=crop)
+*Photo by Unsplash*
+
 期待されていたBand 10でのFeliCa搭載が見送られた最大の理由は、<strong>「コスト」と「グローバル共通化の壁」</strong>だと推測されます。
 
 ### コストの壁
@@ -35,6 +38,9 @@ FeliCaチップを搭載するには、ソニーへのライセンス料やハ�
 Xiaomiにとって日本市場は重要ですが、巨大なグローバル市場の一部に過ぎません。日本のためだけに<strong>「日本専用基板」</strong>を作って管理するのは、製造ラインの効率を落とす行為です。「そのまま持ってくる」のが一番安上がりなのです。
 
 ## 2. Xiaomi Smart Band 11でSuica対応する確率は「50%」？
+
+![Subway turnstile](https://images.unsplash.com/photo-1555848962-6e79363ec58f?q=80&w=2666&auto=format&fit=crop)
+*Photo by Unsplash*
 
 では、2026年登場予想のBand 11はどうなるか。私は<strong>「50%の確率で対応する」</strong>と見ています。
 
