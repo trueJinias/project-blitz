@@ -6,8 +6,6 @@ date: 2026-02-06
 tags: ["Xiaomi", "HyperOS", "HyperOS 4", "Update", "Rumors"]
 author: "なも兄"
 draft: false
----
-
 image: "/images/articles/hyperos-4-hidden-features-thumbnail.jpg"
 ---
 
