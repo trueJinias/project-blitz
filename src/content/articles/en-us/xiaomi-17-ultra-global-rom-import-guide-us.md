@@ -1,10 +1,11 @@
+---
 title: "The Import Trap: Why Buying the Xiaomi 17 Ultra China Version Isn't Worth the Hassle"
 description: "The China version of the Xiaomi 17 Ultra looks cheap, but flashing the Global ROM is now nearly impossible. We break down the HyperOS bootloader lockdown, Android Auto limitations, and whether saving $400 is worth the headache."
 date: 2024-06-01
 author: Tech Editor
 genre: tech
 image: /images/articles/xiaomi-17-ultra-global-rom-import-guide-1.jpg
-```
+---
 
 ## $400 Cheaper: Are You Willing to Live with the Limitations?
 

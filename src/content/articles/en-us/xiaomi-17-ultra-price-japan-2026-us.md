@@ -1,9 +1,11 @@
+---
 title: "The Xiaomi 17 Ultra Price Prediction: How Much Will Xiaomi's 2026 Flagship Cost?"
 description: "We dive deep into the expected global pricing for the upcoming Xiaomi 17 Ultra, analyzing import costs, past trends, and whether this camera monster is worth the premium price tag."
 author: "Kenji Tanaka"
 date: 2026-02-15
 genre: tech
 image: /images/articles/xiaomi-17-ultra-price-japan-2026-1.jpg
+---
 
 ## The Verdict: Expect to Pay $1,500 to $1,750 for the Global Ultra
 
