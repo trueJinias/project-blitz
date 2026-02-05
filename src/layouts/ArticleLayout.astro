@@ -44,6 +44,7 @@ const formattedDate = new Intl.DateTimeFormat(dateLocales[lang] || 'ja-JP', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  timeZone: 'UTC',
 }).format(date);
 ---
 
