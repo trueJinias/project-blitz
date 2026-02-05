@@ -1,9 +1,11 @@
 import ja from './ja.json';
 import enUS from './en-us.json';
+import enIN from './en-in.json';
 
 export const languages = {
     ja: '日本語',
-    'en-us': 'English'
+    'en-us': 'English (US)',
+    'en-in': 'English (India)'
 };
 
 export const defaultLang = 'ja';
@@ -11,6 +13,7 @@ export const defaultLang = 'ja';
 export const ui = {
     ja,
     'en-us': enUS,
+    'en-in': enIN,
 } as const;
 
 export function getLangFromUrl(url: URL) {

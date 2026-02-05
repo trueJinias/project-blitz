@@ -13,13 +13,17 @@ function getLangUrl(langCode: string): string {
   if (articleSlug) {
     // We are on an article page
     if (langCode === 'ja') {
-      // Going to JP version: Remove -us suffix if present
-      const jpSlug = articleSlug.replace(/-us$/, '');
+      // Going to JP version: Remove -us or -in suffix
+      const jpSlug = articleSlug.replace(/-us$/, '').replace(/-in$/, '');
       return `/articles/${jpSlug}`;
     } else if (langCode === 'en-us') {
-      // Going to EN-US version: Add -us suffix if not already present
-      const usSlug = articleSlug.endsWith('-us') ? articleSlug : `${articleSlug}-us`;
+      // Going to EN-US version: Add -us suffix
+      const usSlug = articleSlug.endsWith('-us') ? articleSlug : `${articleSlug.replace(/-in$/, '')}-us`;
       return `/en-us/articles/${usSlug}`;
+    } else if (langCode === 'en-in') {
+      // Going to EN-IN version: Add -in suffix
+      const inSlug = articleSlug.endsWith('-in') ? articleSlug : `${articleSlug.replace(/-us$/, '')}-in`;
+      return `/en-in/articles/${inSlug}`;
     }
   }
   // Default: go to language homepage

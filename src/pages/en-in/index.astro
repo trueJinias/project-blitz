@@ -1,0 +1,391 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import GenreCard from '../../components/GenreCard.astro';
+import { getCollection } from 'astro:content';
+
+// Get English (India) articles
+const allArticles = await getCollection('articles', ({ id, data }) => 
+  id.startsWith('en-in/') && !data.draft
+);
+
+const genreCounts = allArticles.reduce((acc, article) => {
+  const genre = article.data.genre;
+  acc[genre] = (acc[genre] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
+const genres: Array<'tech' | 'lifestyle' | 'news' | 'economics'> = ['tech', 'lifestyle', 'news', 'economics'];
+---
+
+<BaseLayout title="BLITZ.us - Discover Articles by Genre" description="Find the perfect article for you from a variety of genres including gadgets, lifestyle, reviews, and news.">
+  <Header />
+  
+  <main class="home">
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-particles"></div>
+      </div>
+      
+      <div class="emoji-decoration">
+        <span class="emoji" style="top: 15%; left: 5%;">⚡</span>
+        <span class="emoji" style="top: 25%; right: 8%;">📱</span>
+        <span class="emoji" style="top: 40%; left: 3%;">💻</span>
+        <span class="emoji" style="top: 55%; right: 5%;">🎯</span>
+        <span class="emoji" style="top: 70%; left: 10%;">✨</span>
+        <span class="emoji" style="top: 85%; right: 12%;">📰</span>
+        <span class="emoji" style="top: 10%; right: 10%;">🎮</span>
+        <span class="emoji" style="top: 30%; left: 90%;">📷</span>
+        <span class="emoji" style="top: 50%; left: 95%;">🚀</span>
+        <span class="emoji" style="top: 75%; right: 3%;">⌚</span>
+        <span class="emoji" style="top: 20%; left: 15%;">🎧</span>
+        <span class="emoji" style="top: 60%; right: 15%;">⌨️</span>
+        <span class="emoji" style="top: 35%; left: 8%;">🖱</span>
+        <span class="emoji" style="top: 80%; left: 20%;">💡</span>
+      </div>
+      
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-line title-highlight">Trendy</span>
+          <span class="title-line">Wikipedia</span>
+        </h1>
+        <p class="hero-description">
+          Scroll to explore categories
+        </p>
+        
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Genre Selection -->
+    <section class="genres">
+      <div class="container">
+        <h2 class="section-title">Choose a Category</h2>
+        <p class="section-subtitle">Click on a category to explore articles</p>
+        
+        <div class="genre-grid">
+          {genres.map((genre, index) => (
+            <GenreCard 
+              genre={genre} 
+              count={genreCounts[genre] || 0}
+              delay={index * 0.1}
+              lang="en-in"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .home {
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+  
+  .hero {
+    position: relative;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  
+  .hero-gradient {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+  
+  .hero-particles {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 100px 100px, 150px 150px, 200px 200px;
+  }
+  
+  .emoji-decoration {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .emoji {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0.4;
+    animation: floatEmoji 4s ease-in-out infinite;
+    filter: blur(0.5px);
+  }
+  
+  .emoji:nth-child(1) { animation-delay: 0s; }
+  .emoji:nth-child(2) { animation-delay: 0.4s; }
+  .emoji:nth-child(3) { animation-delay: 0.8s; }
+  .emoji:nth-child(4) { animation-delay: 1.2s; }
+  .emoji:nth-child(5) { animation-delay: 1.6s; }
+  .emoji:nth-child(6) { animation-delay: 2s; }
+  .emoji:nth-child(7) { animation-delay: 2.4s; }
+  .emoji:nth-child(8) { animation-delay: 2.8s; }
+  .emoji:nth-child(9) { animation-delay: 3.2s; }
+  .emoji:nth-child(10) { animation-delay: 3.6s; }
+  .emoji:nth-child(11) { animation-delay: 0.2s; }
+  .emoji:nth-child(12) { animation-delay: 0.6s; }
+  .emoji:nth-child(13) { animation-delay: 1s; }
+  .emoji:nth-child(14) { animation-delay: 1.4s; }
+  
+  @keyframes floatEmoji {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-30px) rotate(10deg);
+    }
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: var(--spacing-6);
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .title-line {
+    display: block;
+  }
+  
+  .title-highlight {
+    background: linear-gradient(135deg, var(--color-tech) 0%, var(--color-review) 50%, var(--color-lifestyle) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    max-width: 500px;
+    margin: 0 auto var(--spacing-12);
+  }
+  
+  .scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--color-text-muted), transparent);
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .genres {
+    padding: var(--spacing-20) 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-bottom: var(--spacing-2);
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-12);
+  }
+  
+  .genre-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+  }
+  
+  .genre-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--spacing-8);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+    min-height: 280px;
+    text-decoration: none;
+  }
+  
+  .genre-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: var(--gradient);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    filter: blur(40px);
+  }
+  
+  .genre-card:hover .card-glow {
+    opacity: 0.15;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-icon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-4);
+    transition: transform var(--transition-spring);
+    display: inline-block;
+  }
+  
+  .genre-card:hover .card-icon {
+    transform: translateY(-8px);
+    animation: iconBounce 0.6s ease;
+  }
+  
+  @keyframes iconBounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(-8px); }
+  }
+  
+  .card-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-2);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .card-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: var(--line-height-relaxed);
+  }
+  
+  .card-count {
+    display: inline-block;
+    margin-top: var(--spacing-4);
+    padding: var(--spacing-1) var(--spacing-3);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+  }
+  
+  .card-arrow {
+    position: absolute;
+    bottom: var(--spacing-8);
+    right: var(--spacing-8);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-surface-elevated);
+    border-radius: var(--radius-full);
+    color: var(--color-text-secondary);
+    transition: all var(--transition-normal);
+  }
+  
+  .genre-card:hover .card-arrow {
+    background: var(--gradient);
+    color: var(--color-background);
+    transform: translateX(4px);
+  }
+  
+  @media (max-width: 768px) {
+    .genre-card {
+      min-height: 220px;
+      padding: var(--spacing-6);
+    }
+    
+    .card-arrow {
+      bottom: var(--spacing-6);
+      right: var(--spacing-6);
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
