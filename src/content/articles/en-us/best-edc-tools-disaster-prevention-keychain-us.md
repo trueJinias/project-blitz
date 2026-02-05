@@ -3,7 +3,7 @@ title: "The Ultimate Keychain EDC: 5 Must-Have Tools That Could Save Your Life (
 description: "Disasters strike without warning. We review five thumb-sized, powerful Every Day Carry (EDC) tools you can attach directly to your house keys. This is the ultimate discreet survival setup, guaranteed to be legal to carry."
 date: 2024-06-19
 author: Tech Editor
-genre: tech
+genre: lifestyle
 image: /images/articles/best-edc-tools-disaster-prevention-keychain-1.jpg
 ---
 
