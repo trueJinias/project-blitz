@@ -2,8 +2,29 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import sharp from 'sharp';
+import { exec } from 'child_process';
+import util from 'util';
+import os from 'os';
 
+const execPromise = util.promisify(exec);
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+
+// ==========================================
+// Settings
+// ==========================================
+const SETTINGS = {
+    // Elegant, calm background colors (Soft Grays/Beiges)
+    bgColors: [
+        '#F5F5F7', // Apple Light Gray
+        '#EBEBEB', // Neutral Gray
+        '#F2F0EB', // Soft Beige
+        '#E8E8ED', // Cool White
+    ],
+    width: 1200,
+    height: 630, // OGP Ratio
+    padding: 0.8, // Product occupies 80% of height
+};
 
 async function fetchHtml(url) {
     try {
@@ -43,27 +64,121 @@ function extractImage(html, url) {
     return null;
 }
 
+/**
+ * Process the image buffer:
+ * 1. Save temp file
+ * 2. Run isolated bg-remover.mjs
+ * 3. Read result or fallback
+ * 4. Composite
+ */
+async function processAndCompositeImage(imageBuffer) {
+    console.log('🤖 Removing background (via isolated process)...');
+
+    // Create temp paths
+    const tmpDir = os.tmpdir();
+    const uniqueId = Date.now().toString(36) + Math.random().toString(36).substr(2);
+    const inputTmp = path.join(tmpDir, `input-${uniqueId}.jpg`);
+    const outputTmp = path.join(tmpDir, `output-${uniqueId}.png`);
+
+    let processedBuffer = imageBuffer; // Default to original
+
+    try {
+        await fs.writeFileSync(inputTmp, imageBuffer);
+
+        // Call the isolated script
+        const scriptPath = path.join(fileURLToPath(import.meta.url), '../../scripts/bg-remover.mjs');
+
+        // Run with timeout (2 mins for potential model download)
+        await execPromise(`node "${scriptPath}" "${inputTmp}" "${outputTmp}"`, { timeout: 120000 });
+
+        if (fs.existsSync(outputTmp)) {
+            processedBuffer = fs.readFileSync(outputTmp);
+            console.log('✨ Background removed. Compositing...');
+        } else {
+            throw new Error("Output file not created");
+        }
+
+    } catch (e) {
+        console.error('⚠️ Background removal failed:', e.message);
+        if (e.stderr) console.error(e.stderr);
+        console.log('↩️  Falling back to original image.');
+        // processedBuffer remains raw image
+    } finally {
+        // Cleanup
+        try {
+            if (fs.existsSync(inputTmp)) fs.unlinkSync(inputTmp);
+            if (fs.existsSync(outputTmp)) fs.unlinkSync(outputTmp);
+        } catch (cleanupErr) { /* ignore */ }
+    }
+
+    try {
+        // 2. Prepare Product Image (Resize to fit)
+        const product = sharp(processedBuffer);
+        const metadata = await product.metadata();
+
+        // Calculate resize dimensions to fit within padding
+        const targetHeight = Math.floor(SETTINGS.height * SETTINGS.padding);
+        const targetWidth = Math.floor(SETTINGS.width * SETTINGS.padding);
+
+        const resizedProduct = await product
+            .resize({
+                height: targetHeight,
+                width: targetWidth,
+                fit: 'inside', // Maintain Aspect Ratio
+                background: { r: 0, g: 0, b: 0, alpha: 0 }
+            })
+            .toBuffer();
+
+        // 3. Create Background
+        // Pick a random calm color
+        const bgColor = SETTINGS.bgColors[Math.floor(Math.random() * SETTINGS.bgColors.length)];
+
+        const finalImage = await sharp({
+            create: {
+                width: SETTINGS.width,
+                height: SETTINGS.height,
+                channels: 4,
+                background: bgColor
+            }
+        })
+            .composite([
+                {
+                    input: resizedProduct,
+                    gravity: 'center'
+                }
+            ])
+            .jpeg({ quality: 90 })
+            .toBuffer();
+
+        return finalImage;
+
+    } catch (e) {
+        console.error('⚠️ Composition failed:', e);
+        return imageBuffer;
+    }
+}
+
 export async function downloadImage(url, filename) {
     try {
         const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT } });
         if (!res.ok) throw new Error(`Image fetch failed: ${res.status}`);
 
-        const buffer = Buffer.from(await res.arrayBuffer());
+        const initialBuffer = Buffer.from(await res.arrayBuffer());
 
-        const contentType = res.headers.get('content-type');
-        let ext = '.jpg';
-        if (contentType && contentType.includes('png')) ext = '.png';
-        if (contentType && contentType.includes('webp')) ext = '.webp';
+        // Process the image (Background Removal + Composite)
+        const finalBuffer = await processAndCompositeImage(initialBuffer);
 
+        // Always save as JPG for consistency now
+        const ext = '.jpg';
         if (!filename.endsWith(ext)) filename += ext;
 
         const outputPath = path.join('public/images/articles', filename);
         const dir = path.dirname(outputPath);
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-        fs.writeFileSync(outputPath, buffer);
-        console.log(`✅ Image saved to: ${outputPath}`);
-        return `/images/articles/${filename}`; // Return relative path for markdown
+        fs.writeFileSync(outputPath, finalBuffer);
+        console.log(`✅ Image processed & saved to: ${outputPath}`);
+        return `/images/articles/${filename}`;
     } catch (e) {
         console.error(`❌ Download error: ${e.message}`);
         return null;
@@ -76,8 +191,6 @@ export async function searchRakuten(keyword) {
     const html = await fetchHtml(url);
     if (!html) return null;
 
-    // Find first organic item link (starts with item.rakuten.co.jp)
-    // We look for href="https://item.rakuten.co.jp/..." inside an anchor tag
     const match = html.match(/href="(https:\/\/item\.rakuten\.co\.jp\/[^"]+)"/);
     if (match && match[1]) {
         return match[1];
