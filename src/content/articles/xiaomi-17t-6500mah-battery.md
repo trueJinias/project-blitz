@@ -1,12 +1,19 @@
 ---
-title: "Xiaomi 17Tは「電池持ち」の化け物になる？6500mAh搭載でも薄型・軽量な理由"
-description: "Xiaomi 17Tシリーズは「バッテリー革命」の年になる？噂される6500mAhの超大容量バッテリーと、それを実現する「シリコンカーボン」技術、そして犠牲になった120W充電について解説します。"
-genre: "tech"
-date: 2026-02-04
-tags: ["Xiaomi 17T", "バッテリー", "6500mAh"]
-author: "なも兄"
+title: Xiaomi 17Tは「電池持ち」の化け物になる？6500mAh搭載でも薄型・軽量な理由
+description: >-
+  Xiaomi
+  17Tシリーズは「バッテリー革命」の年になる？噂される6500mAhの超大容量バッテリーと、それを実現する「シリコンカーボン」技術、そして犠牲になった120W充電について解説します。
+genre: tech
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - シャオミ
+  - バッテリー
+  - スマートフォン
+  - シリコンカーボン
+  - 電池持ち
+author: なも兄
 draft: false
-image: "/images/articles/xiaomi-17t-6500mah-battery-thumbnail.jpg"
+image: /images/articles/xiaomi-17t-6500mah-battery-thumbnail.jpg
 ---
 
 「スマホの進化、もう頭打ちじゃね？」

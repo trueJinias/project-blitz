@@ -1,12 +1,18 @@
 ---
-title: "「育ちが良さそう」と言わせる。オールドマネーな髪型メンズ完全ガイド【セット方法・整髪料】"
-description: "流行りのフェードやマッシュに飽きていませんか？今、大人の男に求められているのは「オールドマネー」な品格のある髪型です。美容室での頼み方から、セットに必要なアイテムまで徹底解説します。"
-genre: "lifestyle"
-date: 2026-02-04
-tags: ["オールドマネー", "髪型", "メンズ", "セット"]
-author: "なも兄"
+title: 「育ちが良さそう」と言わせる。オールドマネーな髪型メンズ完全ガイド【セット方法・整髪料】
+description: >-
+  流行りのフェードやマッシュに飽きていませんか？今、大人の男に求められているのは「オールドマネー」な品格のある髪型です。美容室での頼み方から、セットに必要なアイテムまで徹底解説します。
+genre: lifestyle
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - オールドマネー
+  - メンズヘア
+  - ヘアセット
+  - 身だしなみ
+  - 大人スタイル
+author: なも兄
 draft: false
-image: "/images/articles/old-money-hairstyle-men-guide-thumbnail.jpg"
+image: /images/articles/old-money-hairstyle-men-guide-thumbnail.jpg
 ---
 
 ## はじめに
@@ -20,7 +26,10 @@ image: "/images/articles/old-money-hairstyle-men-guide-thumbnail.jpg"
 
 今回は、誰でも「育ちが良さそう」になれる、オールドマネーなヘアスタイルとセット方法を紹介します。
 
-## 1. オールドマネーな髪型とは？
+## 1. オールドマネーな髪型とは？ 
+
+![Back view of a man receiving a haircut with clipper in a barber shop.](/images/articles/old-money-hairstyle-men-guide-1.jpg)
+*Photo by Antoni Shkraba Studio on Pexels*
 
 ![Detailed view of a Formula 1 car's front wing with Mercedes-Benz logos at Indianapolis.](/images/articles/old-money-hairstyle-men-guide-1.jpg)
 *Photo by Adriaan Greyling on Pexels*
@@ -36,7 +45,10 @@ image: "/images/articles/old-money-hairstyle-men-guide-thumbnail.jpg"
 
 これらがキーワードです。「ケネディ家の休日」をイメージしてください（笑）。
 
-## 2. おすすめスタイル3選
+## 2. おすすめスタイル3選 
+
+![View of historic brick building with slate roofs and Gothic architectural features.](/images/articles/old-money-hairstyle-men-guide-2.jpg)
+*Photo by david hou on Pexels*
 
 ![Close-up of a classic Mercedes-Benz 2.3-16 car tail light in a street scene in Ankara, Türkiye.](/images/articles/old-money-hairstyle-men-guide-2.jpg)
 *Photo by Emre Gokceoglu on Pexels*
@@ -55,7 +67,10 @@ image: "/images/articles/old-money-hairstyle-men-guide-thumbnail.jpg"
 ジェルでガチガチに固めるのではなく、手櫛でラフにかき上げたようなスタイル。
 大人の色気を出したいならこれ一択です。
 
-## 3. セットの手順（これが一番大事！）
+## 3. セットの手順（これが一番大事！） 
+
+![Flat lay of men's grooming accessories including watch, brush, comb, and pomade.](/images/articles/old-money-hairstyle-men-guide-3.jpg)
+*Photo by Castorly Stock on Pexels*
 
 ![A vintage typewriter with a paper displaying the text 'SPATIAL COMPUTING' on a wooden desk.](/images/articles/old-money-hairstyle-men-guide-3.jpg)
 *Photo by Markus Winkler on Pexels*

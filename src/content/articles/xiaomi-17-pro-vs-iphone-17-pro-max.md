@@ -1,15 +1,25 @@
 ---
-title: "Xiaomi 17 Pro vs iPhone 17 Pro Max: 2026年フラッグシップ頂上決戦！どっちを待つべき？"
-description: "2026年の最強スマホ決定戦。Xiaomi 17 Proの噂のスペックとiPhone 17 Pro Maxを徹底比較。背面ディスプレイやカメラ性能、バッテリー持ちなど、リーク情報を元にどっちが買いか分析します。"
-genre: "tech"
-date: 2026-02-04
-tags: ["Xiaomi 17", "iPhone 17", "比較"]
-author: "なも兄"
+title: 'Xiaomi 17 Pro vs iPhone 17 Pro Max: 2026年フラッグシップ頂上決戦！どっちを待つべき？'
+description: >-
+  2026年の最強スマホ決定戦。Xiaomi 17 Proの噂のスペックとiPhone 17 Pro
+  Maxを徹底比較。背面ディスプレイやカメラ性能、バッテリー持ちなど、リーク情報を元にどっちが買いか分析します。
+genre: tech
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - シャオミ
+  - iPhone
+  - スマホ
+  - 比較
+  - リーク
+author: なも兄
 draft: false
-image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"
+image: /images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg
 ---
 
-## 2026年、スマホ選びの「正解」はこれだ
+## 2026年、スマホ選びの「正解」はこれだ 
+
+![Close-up of hands holding red and blue pills, symbolizing a choice. Conceptual studio shot.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
+*Photo by Ron Lach on Pexels*
 「次のメイン機、どっちにしよう…」
 
 そう悩んでいるガジェット好きのみなさん、まだiPhone 17 Pro Maxを一括予約するのは待ってください！ (ポチる前にこの記事を読んで！)
@@ -18,7 +28,10 @@ image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"
 
 今回は、リーク情報を元に Xiaomi 17 Pro と iPhone 17 Pro Max を徹底比較。どっちを待つべきか、個人的な見解マシマシで解説します。
 
-## 1. デザイン：背面画面 vs Dynamic Island
+## 1. デザイン：背面画面 vs Dynamic Island 
+
+![Close-up of a car's dashboard showing a rearview camera display for parking assistance.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-2.jpg)
+*Photo by Erik Mclean on Pexels*
 
 まず目を引くのが、Xiaomi 17 Proに搭載されると噂の 「背面セカンダリディスプレイ」 です。
 
@@ -34,7 +47,10 @@ image: "/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-thumbnail.jpg"
 - 目立ちたいなら: Xiaomi 17 Pro
 - 安定の洗練さなら: iPhone 17 Pro Max
 
-## 2. カメラ：画素数競争 vs 実用性のApple
+## 2. カメラ：画素数競争 vs 実用性のApple 
+
+![Close-up of two smartphones with camera focus on a textured wooden surface.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-3.jpg)
+*Photo by Andrey Matveev on Pexels*
 
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-1.jpg)
 *Photo by Andrey Matveev on Pexels*

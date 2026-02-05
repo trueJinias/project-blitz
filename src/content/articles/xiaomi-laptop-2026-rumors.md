@@ -1,12 +1,19 @@
 ---
-title: "Xiaomiが本気出す。2026年の新型ノートPCは「Tandem OLED」と「次世代Snapdragon」でMacBookを殺しに来る？"
-description: "Xiaomiの2026年ノートPC（RedmiBook Pro）に関するリーク情報まとめ。Intel Panther LakeとSnapdragon X Elite Gen 2の二刀流、そしてiPad Proでおなじみの「Tandem OLED」採用の噂に迫る。"
-genre: "tech"
-date: 2026-02-04
-tags: ["Xiaomi", "ノートPC", "RedmiBook", "2026"]
-author: "なも兄"
+title: Xiaomiが本気出す。2026年の新型ノートPCは「Tandem OLED」と「次世代Snapdragon」でMacBookを殺しに来る？
+description: >-
+  Xiaomiの2026年ノートPC（RedmiBook Pro）に関するリーク情報まとめ。Intel Panther LakeとSnapdragon X
+  Elite Gen 2の二刀流、そしてiPad Proでおなじみの「Tandem OLED」採用の噂に迫る。
+genre: tech
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - Xiaomi (シャオミ)
+  - ノートPC
+  - Snapdragon
+  - Tandem OLED
+  - MacBook対抗
+author: なも兄
 draft: false
-image: "/images/articles/xiaomi-laptop-2026-rumors-thumbnail.jpg"
+image: /images/articles/xiaomi-laptop-2026-rumors-thumbnail.jpg
 ---
 
 ## はじめに
@@ -21,7 +28,10 @@ image: "/images/articles/xiaomi-laptop-2026-rumors-thumbnail.jpg"
 
 これ、完全にMacBook Air（とPro）を殺しに来てます。詳しく解説しましょう。
 
-## 1. 頭脳は「Intel」と「Snapdragon」の二刀流？
+## 1. 頭脳は「Intel」と「Snapdragon」の二刀流？ 
+
+![Detailed image of a vintage motherboard featuring an Intel 486 chip, showcasing the complexity of retro computing components.](/images/articles/xiaomi-laptop-2026-rumors-1.jpg)
+*Photo by Nicolas  Foster on Pexels*
 
 ![Xiaomi smartphone 1. IntelSnapdragon](/images/articles/xiaomi-laptop-2026-rumors-1.jpg)
 *Image from Pixabay*
@@ -37,7 +47,10 @@ AI処理能力（NPU）が爆上がりしており、バッテリー持ちとパ
 狙いは明白、「打倒 MacBook Air」。
 驚異的な省電力性で、「24時間バッテリー」を実現してくる可能性があります。カフェでドヤるならこっちですね。
 
-## 2. ディスプレイ革命：Tandem OLEDって何？
+## 2. ディスプレイ革命：Tandem OLEDって何？ 
+
+![A smartphone displaying Google Search trends on a table at night.](/images/articles/xiaomi-laptop-2026-rumors-2.jpg)
+*Photo by Jethro C. on Pexels*
 
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-laptop-2026-rumors-2.jpg)
 *Photo by Andrey Matveev on Pexels*
@@ -52,7 +65,10 @@ AI処理能力（NPU）が爆上がりしており、バッテリー持ちとパ
 
 「画面が綺麗なWindowsノートが欲しいけど、焼き付きが怖い」という層には、これ以上ない朗報です。
 
-## 3. デザイン：マグネシウム合金で「軽さは正義」へ
+## 3. デザイン：マグネシウム合金で「軽さは正義」へ 
+
+![Detailed view of a stylish alloy wheel on a classic blue car, showcasing design and craftsmanship.](/images/articles/xiaomi-laptop-2026-rumors-3.jpg)
+*Photo by Wijs (Wise) on Pexels*
 
 ![Xiaomi smartphone 3.](/images/articles/xiaomi-laptop-2026-rumors-3.jpg)
 *Image from Pixabay*

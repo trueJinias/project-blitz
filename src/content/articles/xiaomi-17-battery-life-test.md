@@ -1,15 +1,25 @@
 ---
-title: "Xiaomi 17の実機バッテリーテスト（噂）：6000mAh時代到来も、グローバル版には残酷な罠が？"
-description: "Xiaomi 17シリーズのバッテリー容量がついに6000mAhへ。ただし、日本発売のグローバル版は容量ダウンの可能性も？噂の「8000mAh」モデルや、実際の駆動時間テストのリーク情報をまとめました。"
-genre: "tech"
-date: 2026-02-04
-tags: ["Xiaomi 17", "バッテリー", "検証"]
-author: "なも兄"
+title: Xiaomi 17の実機バッテリーテスト（噂）：6000mAh時代到来も、グローバル版には残酷な罠が？
+description: >-
+  Xiaomi
+  17シリーズのバッテリー容量がついに6000mAhへ。ただし、日本発売のグローバル版は容量ダウンの可能性も？噂の「8000mAh」モデルや、実際の駆動時間テストのリーク情報をまとめました。
+genre: tech
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - Xiaomi
+  - バッテリー
+  - 大容量バッテリー
+  - リーク情報
+  - スマートフォン
+author: なも兄
 draft: false
-image: "/images/articles/xiaomi-17-battery-life-test-thumbnail.jpg"
+image: /images/articles/xiaomi-17-battery-life-test-thumbnail.jpg
 ---
 
-## ついに来た「6000mAh」標準化の波
+## ついに来た「6000mAh」標準化の波 
+
+![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17-battery-life-test-1.jpg)
+*Photo by Looking For Feferences on Pexels*
 
 「スマホの充電、1日持ちますか？」
 
@@ -18,7 +28,10 @@ Xiaomi 17シリーズに関する最新のリーク情報によると、つい�
 
 今回は、飛び交うバッテリー関連の噂と、気になる「グローバル版のスペックダウン」疑惑について徹底解説します。
 
-## 1. グローバル版は「容量ダウン」の可能性大？
+## 1. グローバル版は「容量ダウン」の可能性大？ 
+
+![Close-up of a hand holding a smartphone displaying the XOS interface with specs.](/images/articles/xiaomi-17-battery-life-test-2.jpg)
+*Photo by Andrey Matveev on Pexels*
 
 ![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17-battery-life-test-1.jpg)
 *Photo by Andrey Matveev on Pexels*
@@ -34,7 +47,10 @@ Xiaomi 17シリーズに関する最新のリーク情報によると、つい�
 「なんで減らすの！？」と言いたくなりますよね。
 理由は各国の安全基準や、バッテリーの密度規制の違いなどが挙げられますが…800mAhの差は正直デカイです。
 
-## 2. 幻の「Xiaomi 17 Max」は8000mAh！？
+## 2. 幻の「Xiaomi 17 Max」は8000mAh！？ 
+
+![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17-battery-life-test-3.jpg)
+*Photo by Looking For Feferences on Pexels*
 
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-battery-life-test-2.jpg)
 *Photo by Andrey Matveev on Pexels*

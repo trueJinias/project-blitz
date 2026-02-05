@@ -1,12 +1,19 @@
 ---
-title: "Xiaomi 17T Pro いつの間に発売？【2026年2月有力】スペック・価格の最新リークまとめ"
-description: "「T」シリーズがまさかの早期投入？Xiaomi 17T Proのグローバル発表が2026年2月に前倒しされるとの噂が浮上。Dimensity 9500搭載、脅威の7000mAhバッテリーなど、モンスタースペックの全貌を解説します。"
-genre: "tech"
-date: 2026-02-04
-tags: ["Xiaomi 17T Pro", "発売日", "リーク"]
-author: "なも兄"
+title: Xiaomi 17T Pro いつの間に発売？【2026年2月有力】スペック・価格の最新リークまとめ
+description: >-
+  「T」シリーズがまさかの早期投入？Xiaomi 17T Proのグローバル発表が2026年2月に前倒しされるとの噂が浮上。Dimensity
+  9500搭載、脅威の7000mAhバッテリーなど、モンスタースペックの全貌を解説します。
+genre: tech
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - シャオミ
+  - スマートフォン
+  - リーク情報
+  - スペック
+  - フラッグシップ
+author: なも兄
 draft: false
-image: "/images/articles/xiaomi-17t-pro-release-date-1.jpg"
+image: /images/articles/xiaomi-17t-pro-release-date-1.jpg
 ---
 
 ## はじめに
@@ -21,7 +28,10 @@ image: "/images/articles/xiaomi-17t-pro-release-date-1.jpg"
 
 今回は、Xiaomi 17T Proの最新リーク情報を、興奮気味にお届けします。
 
-## 1. 発売日：まさかのMWC 2026で発表？
+## 1. 発売日：まさかのMWC 2026で発表？ 
+
+![Microphone on stand with blurred background, ideal for music or speech themes.](/images/articles/xiaomi-17t-pro-release-date-1.jpg)
+*Photo by freestocks.org on Pexels*
 
 ![Modern Xiaomi smartphone displaying HyperOS on a rustic wooden surface, showcasing technology innovation.](/images/articles/xiaomi-17t-pro-release-date-1.jpg)
 *Photo by Andrey Matveev on Pexels*
@@ -37,7 +47,10 @@ IMEIデータベースの情報によると、Xiaomiはグローバル展開の�
 
 もしこれが本当なら、我々ユーザーにとっては嬉しい悲鳴ですね（財布の準備が...）。
 
-## 2. スペック：Dimensity 9500の実力はいかに
+## 2. スペック：Dimensity 9500の実力はいかに 
+
+![Close-up of multiple computer CPUs stacked on a wooden surface, showcasing technology components.](/images/articles/xiaomi-17t-pro-release-date-2.jpg)
+*Photo by Shawn Stutzman on Pexels*
 
 ![Xiaomi smartphone 2. specifications tech Dimensity 9500](/images/articles/xiaomi-17t-pro-release-date-2.jpg)
 *Image from Pixabay*
@@ -50,7 +63,10 @@ Snapdragon 8 Elite（Gen 5）と比較しても、マルチコア性能では互
 
 一方で、無印のXiaomi 17Tには「Snapdragon 8s Gen 5」が搭載されるとの情報も。ゲーム性能重視ならPro一択になりそうです。
 
-## 3. バッテリー：7000mAh時代の到来
+## 3. バッテリー：7000mAh時代の到来 
+
+![Top view of batteries on a blue grid design surface with a charger, showcasing organization and technology.](/images/articles/xiaomi-17t-pro-release-date-3.jpg)
+*Photo by Looking For Feferences on Pexels*
 
 ![Close-up of hands holding a smartphone connected to a power bank outdoors.](/images/articles/xiaomi-17t-pro-release-date-3.jpg)
 *Photo by DEBRAJ  ROY on Pexels*

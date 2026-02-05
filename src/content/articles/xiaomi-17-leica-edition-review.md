@@ -1,15 +1,26 @@
 ---
-title: "Xiaomi 17 Ultra「By Leica」Edition（噂）：AIに抗う写真家のための最終兵器"
-description: "Xiaomi 17 Ultraには、AI補正を排除し「真の写真」を追求した特化モデルが存在する？噂の機械式コントロールリング、LOFICセンサー、そして「By Leica」エディションの全貌に迫る。"
-genre: "tech"
-date: 2026-02-04
-tags: ["Xiaomi 17", "Leica", "カメラ"]
-author: "なも兄"
+title: Xiaomi 17 Ultra「By Leica」Edition（噂）：AIに抗う写真家のための最終兵器
+description: >-
+  Xiaomi 17
+  Ultraには、AI補正を排除し「真の写真」を追求した特化モデルが存在する？噂の機械式コントロールリング、LOFICセンサー、そして「By
+  Leica」エディションの全貌に迫る。
+genre: tech
+date: 2026-02-04T00:00:00.000Z
+tags:
+  - Xiaomi
+  - Leica
+  - スマートフォン
+  - カメラ
+  - AIフォトグラフィー
+author: なも兄
 draft: false
-image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
+image: /images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg
 ---
 
-## AI全盛時代への「反逆児」、現る
+## AI全盛時代への「反逆児」、現る 
+
+![Woman using smartphone and book for study, highlighting digital learning.](/images/articles/xiaomi-17-leica-edition-review-1.jpg)
+*Photo by Shantanu Kumar on Pexels*
 
 「スマホの写真は、もう写真じゃない」
 
@@ -19,7 +30,10 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 
 今回は、写真好きの私が震えた、この「変態端末（褒め言葉）」の噂を深掘りします。
 
-## 1. 物理コントロールリング：カチカチ感が欲しいんだよ！
+## 1. 物理コントロールリング：カチカチ感が欲しいんだよ！ 
+
+![Detailed close-up of a classic vintage camera lens, emphasizing timeless photography.](/images/articles/xiaomi-17-leica-edition-review-2.jpg)
+*Photo by Grzegorz  Lewandowski on Pexels*
 
 ![Xiaomi smartphone 17 1.](/images/articles/xiaomi-17-leica-edition-review-1.jpg)
 *Image from Pixabay*
@@ -35,7 +49,10 @@ image: "/images/articles/xiaomi-17-leica-edition-review-thumbnail.jpg"
 
 正直、これだけで買う価値があります。
 
-## 2. センサー革命：LOFIC技術とは？
+## 2. センサー革命：LOFIC技術とは？ 
+
+![Vintage classic car with bold design captured in HDR outdoors under dramatic skies.](/images/articles/xiaomi-17-leica-edition-review-3.jpg)
+*Photo by ClickerHappy on Pexels*
 
 ![Close-up of a smartphone displaying Xiaomi HyperOS interface, held by a hand against a bright yellow background.](/images/articles/xiaomi-17-leica-edition-review-2.jpg)
 *Photo by Andrey Matveev on Pexels*
