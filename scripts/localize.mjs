@@ -7,19 +7,10 @@ import matter from 'gray-matter';
 dotenv.config();
 
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = 'gemini-1.5-flash-latest';
+const MODEL = 'gemini-flash-latest';
 
 if (!API_KEY) {
     console.error('❌ Error: GEMINI_API_KEY not found in .env');
-    process.exit(1);
-}
-
-const targetFile = process.argv[2];
-const targetLocale = process.argv[3] || 'en-us'; // Default to en-us, accept 'en-in'
-
-if (!targetFile) {
-    console.error('❌ Please specify a file path.');
-    console.log('Usage: node scripts/localize.mjs <file-path> [locale: en-us|en-in]');
     process.exit(1);
 }
 
@@ -44,37 +35,69 @@ const LOCALE_CONFIG = {
     }
 };
 
-const config = LOCALE_CONFIG[targetLocale];
-if (!config) {
-    console.error(`❌ Unsupported locale: ${targetLocale}. Supported: ${Object.keys(LOCALE_CONFIG).join(', ')}`);
+// Main execution
+const articlePath = process.argv[2];
+const specificTarget = process.argv[3]; // Optional: e.g. 'en-us' or 'en-in'
+const LOCALE_LIST = ['en-us', 'en-in'];
+
+if (!articlePath) {
+    console.error('❌ Usage: node scripts/localize.mjs <src/content/articles/path/to/article.md> [target-locale]');
     process.exit(1);
 }
 
-async function localizeArticle() {
+(async () => {
+    if (specificTarget) {
+        // Single target mode
+        await localizeArticle(articlePath, specificTarget);
+    } else {
+        // Bulk mode: Localize to all supported locales (except source 'ja' if implicit)
+        console.log(`🌍 Localizing for all targets: ${LOCALE_LIST.join(', ')}`);
+        for (const locale of LOCALE_LIST) {
+            try {
+                await localizeArticle(articlePath, locale);
+            } catch (error) {
+                console.error(`❌ Global error processing ${locale}:`, error);
+                // Continue to next locale even if one fails
+            }
+        }
+    }
+})();
+
+// Config check moved inside function
+
+
+async function localizeArticle(filePathStr, locale) {
     try {
-        const filePath = path.resolve(targetFile);
+        const filePath = path.resolve(filePathStr);
         if (!fs.existsSync(filePath)) {
             throw new Error(`File not found: ${filePath}`);
+        }
+
+        // Get config for this specific locale execution
+        const currentConfig = LOCALE_CONFIG[locale];
+        if (!currentConfig) {
+            console.error(`❌ Unsupported locale: ${locale}`);
+            return;
         }
 
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data: frontmatter, content } = matter(fileContent);
 
-        console.log(`🤖 Localizing article (${targetLocale}): ${frontmatter.title || 'Untitled'}...`);
+        console.log(`🤖 Localizing article (${locale}): ${frontmatter.title || 'Untitled'}...`);
 
         const prompt = `
-You are a professional tech editor for a popular ${config.audience} blog.
-Your task is to REWRITE the following Japanese tech article for a **${config.audience}**.
+You are a professional tech editor for a popular ${currentConfig.audience} blog.
+Your task is to REWRITE the following Japanese tech article for a **${currentConfig.audience}**.
 
 **Localization Rules:**
-1. **Target Audience**: ${config.audience}.
-2. **Context**: Change "Japan release" context to "**${config.context}**".
+1. **Target Audience**: ${currentConfig.audience}.
+2. **Context**: Change "Japan release" context to "**${currentConfig.context}**".
    - If the device is not sold officially, mention import options or expected launch.
-3. **Currency**: Convert JPY/CNY prices to **${config.currency}**.
+3. **Currency**: Convert JPY/CNY prices to **${currentConfig.currency}**.
    - Use approximate market rates.
    - Example (India): "6,999 yuan" -> "~₹85,000" (Estimate based on current rates + tax).
    - Example (US): "6,999 yuan" -> "~$970".
-4. **Tone**: Casual, authoritative, engaging. Use **${config.spelling}**.
+4. **Tone**: Casual, authoritative, engaging. Use **${currentConfig.spelling}**.
 5. **Structure**: Keep the markdown structure (headers, tables, images).
    - IMPORTANT: Preserve the original image paths exactly as they are.
 6. **Frontmatter**:
@@ -141,9 +164,9 @@ Return ONLY the localized Markdown content (including frontmatter).
         // Determine output path
         const fileName = path.basename(filePath);
         const baseName = fileName.replace(/-us\.md|-in\.md|\.md$/, ''); // Strip existing suffixes
-        const newFileName = `${baseName}${config.suffix}.md`;
+        const newFileName = `${baseName}${currentConfig.suffix}.md`;
 
-        const outputDir = path.join(process.cwd(), `src/content/articles/${targetLocale}`);
+        const outputDir = path.join(process.cwd(), `src/content/articles/${locale}`);
 
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
@@ -156,9 +179,10 @@ Return ONLY the localized Markdown content (including frontmatter).
 
     } catch (error) {
         console.error('❌ Localization failed:', error.message);
-        process.exit(1);
+        // Do not process.exit(1) here to allow loop to continue in bulk mode
+        throw error;
     }
 }
 
-localizeArticle();
+// Auto-executed by IIFE above
 
