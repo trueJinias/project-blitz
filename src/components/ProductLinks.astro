@@ -5,7 +5,8 @@ const amazonTag = import.meta.env.AMAZON_ASSOCIATE_TAG || 'blitz011-22';
 const rakutenId = import.meta.env.RAKUTEN_AFFILIATE_ID || '50b8fe39.c32fe89a.50b8fe3a.60c7ccae';
 
 const amazonUrl = `https://www.amazon.co.jp/s?k=${encodeURIComponent(keyword)}&tag=${amazonTag}`;
-const rakutenUrl = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}?scid=${rakutenId}`;
+const rakutenBase = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}`;
+const rakutenUrl = `https://hb.afl.rakuten.co.jp/hgc/${rakutenId}/?pc=${encodeURIComponent(rakutenBase)}`;
 
 const currentPath = Astro.url.pathname;
 const isJp = !currentPath.includes('/en-us/') && !currentPath.includes('/en-in/');
