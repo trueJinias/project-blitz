@@ -12,19 +12,24 @@ const { currentLang, articleSlug } = Astro.props;
 // Function to get the URL for a given language
 function getLangUrl(langCode: string): string {
   if (articleSlug) {
-    // We are on an article page
+    // Clean the slug: remove any existing suffixes if they exist (backward compatibility) AND remove any locale prefix
+    // Actually, articleSlug passed from Header.astro (via match) is likely just the filename part if the URL is /articles/foo or /en-us/articles/foo
+    // Let's look at Header.astro logic again.
+    // articleMatch = currentPath.match(/\/(en-us\/|en-in\/)?articles\/(.+?)\/?$/);
+    // articleSlug = articleMatch[2];
+    
+    // So if URL is /en-us/articles/foo, articleSlug is "foo".
+    // If URL is /articles/foo, articleSlug is "foo".
+    
+    // We just need to construct the new URL based on langCode.
+    const cleanSlug = articleSlug; 
+    
     if (langCode === 'ja') {
-      // Going to JP version: Remove -us or -in suffix
-      const jpSlug = articleSlug.replace(/-us$/, '').replace(/-in$/, '');
-      return `/articles/${jpSlug}`;
+      return `/articles/${cleanSlug}`;
     } else if (langCode === 'en-us') {
-      // Going to EN-US version: Add -us suffix
-      const usSlug = articleSlug.endsWith('-us') ? articleSlug : `${articleSlug.replace(/-in$/, '')}-us`;
-      return `/en-us/articles/${usSlug}`;
+      return `/en-us/articles/${cleanSlug}`;
     } else if (langCode === 'en-in') {
-      // Going to EN-IN version: Add -in suffix
-      const inSlug = articleSlug.endsWith('-in') ? articleSlug : `${articleSlug.replace(/-us$/, '')}-in`;
-      return `/en-in/articles/${inSlug}`;
+      return `/en-in/articles/${cleanSlug}`;
     }
   }
   // Default: go to language homepage
