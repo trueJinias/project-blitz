@@ -5,6 +5,7 @@ interface Props {
 }
 
 import { languages } from '../i18n/utils';
+import Flag from './Flag.astro';
 
 const { currentLang, articleSlug } = Astro.props;
 
@@ -33,8 +34,8 @@ function getLangUrl(langCode: string): string {
 
 <div class="language-selector">
   <button class="lang-button" aria-label="言語選択">
-    <span class="lang-icon">🌐</span>
-    <span class="lang-current">{languages[currentLang as keyof typeof languages]}</span>
+    <span class="lang-flag"><Flag lang={currentLang as any} size={24} /></span>
+    <span class="lang-current">{currentLang === 'ja' ? 'JP' : (currentLang === 'en-us' ? 'EN' : 'IN')}</span>
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
       <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2"/>
     </svg>
@@ -47,6 +48,7 @@ function getLangUrl(langCode: string): string {
         class:list={['lang-option', { active: code === currentLang }]}
         data-lang={code}
       >
+        <Flag lang={code as any} size={20} />
         {name}
       </a>
     ))}
