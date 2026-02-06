@@ -4,7 +4,7 @@ description: >-
   It’s not just about buying an island. With China’s 'Polar Silk Road'
   encroaching on the Arctic, Greenland has become America’s most critical
   defense line. Here is the 2026 situation report.
-genre: politics
+genre: news
 date: 2026-02-06T00:00:00.000Z
 image: /images/articles/greenland-resource-geopolitics-2026-thumbnail.jpg
 tags:

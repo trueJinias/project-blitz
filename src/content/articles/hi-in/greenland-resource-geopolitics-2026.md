@@ -3,7 +3,7 @@ title: ग्रीनलैंड पर किसका कब्जा हो
 description: >-
   ग्रीनलैंड सिर्फ बर्फ का पहाड़ नहीं, बल्कि खजाने की तिजोरी है। चीन की 'पोलर
   सिल्क रोड' और अमेरिका की 'सुरक्षा नीति' के बीच भारत के लिए क्या सबक हैं?
-genre: politics
+genre: news
 date: 2026-02-06T00:00:00.000Z
 image: /images/articles/greenland-resource-geopolitics-2026-thumbnail.jpg
 tags:

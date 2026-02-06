@@ -2,7 +2,7 @@
 title: グリーンランド争奪戦 2026：中国の「氷のシルクロード」vs アメリカの「裏庭防衛」
 description: >-
   「21世紀の火薬庫」は氷の下にあった。トランプ大統領の「買収」発言の真意、中国の北極進出、そして数千兆円規模のレアアース資源。日本も無関係ではない、北極圏の最新地政学レポート。
-genre: politics
+genre: news
 date: 2026-02-06T00:00:00.000Z
 image: /images/articles/greenland-resource-geopolitics-2026-thumbnail.jpg
 tags:
