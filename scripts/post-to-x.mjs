@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { exec } from 'child_process';
 
 // Load environment variables
 dotenv.config();
@@ -217,8 +218,47 @@ async function postToX() {
         console.log(`🔗 https://x.com/user/status/${tweet.data.id}`);
 
     } catch (error) {
-        console.error('❌ Failed to post to X:', error);
-        process.exit(1);
+        console.error('❌ Failed to post to X:');
+        if (error.data) {
+            console.error(JSON.stringify(error.data, null, 2));
+        } else {
+            console.error(error);
+        }
+
+        // Fallback: Open browser for semi-automatic posting
+        console.log('\n' + '='.repeat(40));
+        console.log('🔄 Switching to Semi-Automatic Mode...');
+        console.log('='.repeat(40));
+
+        const intentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+
+        console.log('🌐 Opening tweet intent in browser...');
+
+        // Command to open URL based on OS (Assuming Windows for this user context, but being slightly generic)
+        const openCommand = process.platform === 'win32' ? `start "${intentUrl}"` : (process.platform === 'darwin' ? `open "${intentUrl}"` : `xdg-open "${intentUrl}"`);
+
+        // Windows 'start' acts weird with '&' in URL if not escaped or quoted properly, 
+        // but encodingURIComponent handles special chars. 
+        // For 'start', the first quoted argument is treated as title if there are spaces, 
+        // so we use `start "" "URL"` syntax for safety.
+        const winCommand = `start "" "${intentUrl}"`;
+
+        exec(process.platform === 'win32' ? winCommand : openCommand, (err) => {
+            if (err) {
+                console.error('⚠️ Failed to open browser:', err);
+                console.log('🔗 Please open this URL manually:');
+                console.log(intentUrl);
+            }
+        });
+
+        if (localImagePath && fs.existsSync(localImagePath)) {
+            console.log('\n📸 \x1b[33mACTION REQUIRED: DRAG & DROP THIS IMAGE\x1b[0m');
+            console.log(`📂 Image Path: \x1b[36m${localImagePath}\x1b[0m`);
+            console.log('(Copy this path or drag the file from Explorer to the browser window)');
+        }
+
+        // Exit gracefully as "success" for the workflow, since we handled it manually
+        process.exit(0);
     }
 }
 
