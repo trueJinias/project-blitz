@@ -1,18 +1,24 @@
 ---
-title: "Xiaomi Mesh System BE3600 Pro Review (2026): The Ultimate \"Budget Wi-Fi 7\" Router?"
-description: "Xiaomi's Mesh System BE3600 Pro brings Wi-Fi 7 to the masses at a destructive price point. Can a sub-$100 router really deliver next-gen performance? We test gaming, VR, and smart home capabilities."
+title: >-
+  Xiaomi Mesh System BE3600 Pro Review (2026): The Ultimate "Budget Wi-Fi 7"
+  Router?
+description: >-
+  Xiaomi's Mesh System BE3600 Pro brings Wi-Fi 7 to the masses at a destructive
+  price point. Can a sub-$100 router really deliver next-gen performance? We
+  test gaming, VR, and smart home capabilities.
 genre: tech
 date: 2026-02-05T00:00:00.000Z
-tags: 
+tags:
   - Xiaomi
   - Wi-Fi 7
   - Router
   - Review
   - Gaming
   - Smart Home
-author: "Tech Editor"
+author: Tech Editor
 draft: false
 image: /images/articles/xiaomi-mesh-system-2026-review-thumbnail.jpg
+product: Xiaomi Mesh System BE3600 Pro
 ---
 
 ## Welcome to the World of Wi-Fi 7 for Under $100

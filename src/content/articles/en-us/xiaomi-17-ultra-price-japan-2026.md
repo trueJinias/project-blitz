@@ -1,10 +1,16 @@
 ---
-title: "Xiaomi 17 Ultra Rumors: Snapdragon 8 Gen 5, 200MP Zoom, and Why This Camera Monster Might Cost $1,750"
-description: "Leaked specs for the 2026 Xiaomi 17 Ultra flagship suggest a phone that could end mobile photography as we know it. But is the price tag going to give Apple a run for its money?"
+title: >-
+  Xiaomi 17 Ultra Rumors: Snapdragon 8 Gen 5, 200MP Zoom, and Why This Camera
+  Monster Might Cost $1,750
+description: >-
+  Leaked specs for the 2026 Xiaomi 17 Ultra flagship suggest a phone that could
+  end mobile photography as we know it. But is the price tag going to give Apple
+  a run for its money?
 author: John Smith
-date: 2024-06-25
+date: 2024-06-25T00:00:00.000Z
 genre: tech
-image: "/images/articles/xiaomi-17-ultra-price-japan-2026-thumbnail.png"
+image: /images/articles/xiaomi-17-ultra-price-japan-2026-thumbnail.png
+product: Xiaomi 17 Ultra
 ---
 
 ## Introduction: The New Ultra Benchmark

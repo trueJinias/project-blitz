@@ -10,6 +10,7 @@ author: Tech Guru
 date: 2026-02-06T00:00:00.000Z
 genre: tech
 image: /images/articles/xiaomi-16-ultra-long-term-review-2026-thumbnail.jpg
+product: Xiaomi 16 Ultra (予想)
 ---
 
 ## Xiaomi 16 Ultra का महासंग्राम: हम क्यों हैं इतने उत्साहित?

@@ -18,7 +18,8 @@ jaFiles.forEach(file => {
     slugMap[slug] = {
         image: data.image,
         genre: data.genre,
-        date: data.date
+        date: data.date,
+        product: data.product
     };
 });
 
@@ -69,6 +70,13 @@ function fixDirectory(targetDir, suffixRef) {
             fileMatter.data.genre = sourceData.genre;
             modified = true;
             console.log(`  🏷️ Fixed genre for ${slug}`);
+        }
+
+        // Fix Product
+        if (!fileMatter.data.product && sourceData.product) {
+            fileMatter.data.product = sourceData.product;
+            modified = true;
+            console.log(`  🛍️ Fixed product for ${slug}`);
         }
 
         // Save if modified

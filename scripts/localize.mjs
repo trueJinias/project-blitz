@@ -175,7 +175,8 @@ Return ONLY the localized Markdown content (including frontmatter).
             ...generatedMatter.data,
             image: frontmatter.image || generatedMatter.data.image, // Prefer original image if available
             genre: frontmatter.genre || 'tech', // Keep original genre
-            date: frontmatter.date // Keep original date
+            date: frontmatter.date, // Keep original date
+            product: frontmatter.product || generatedMatter.data.product // Keep product if exists
         };
 
         const finalContent = matter.stringify(generatedMatter.content, finalData);
