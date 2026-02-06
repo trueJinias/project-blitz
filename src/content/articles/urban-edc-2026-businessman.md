@@ -42,10 +42,10 @@ product: Urban EDC 2026 Essentials
     <span class="label-text">値段を確認: <span class="product-name">ESR MagSafe ウォレット（探す対応）</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=ESR+MagSafe+%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88+%E6%8E%A2%E3%81%99&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B0BYN66N8Y?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FESR%2520MagSafe%2520%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2588%2520%25E6%258E%25A2%25E3%2581%2599" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fesr-case-jp%2Fcard-9%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -69,10 +69,10 @@ product: Urban EDC 2026 Essentials
     <span class="label-text">値段を確認: <span class="product-name">Anker 735 Charger (65W)</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=Anker+735+Charger&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B09C5RG6KV?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FAnker%2520735%2520Charger" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa2668%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -91,10 +91,10 @@ product: Urban EDC 2026 Essentials
     <span class="label-text">値段を確認: <span class="product-name">Orbitkey キーオーガナイザー</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=Orbitkey+Key+Organizer&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B08C6VYCMM?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOrbitkey%2520%25E3%2582%25AD%25E3%2583%25BC%25E3%2582%25AA%25E3%2583%25BC%25E3%2582%25AC%25E3%2583%258A%25E3%2582%25A4%25E3%2582%25B6%25E3%2583%25BC" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Farktrading%2Fkpr1%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -112,10 +112,10 @@ product: Urban EDC 2026 Essentials
     <span class="label-text">値段を確認: <span class="product-name">Bose Ultra Open Earbuds</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=Bose+Ultra+Open+Earbuds&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B0CSPMVD1G?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBose%2520Ultra%2520Open%2520Earbuds" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbose%2Fultra-open-eb%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -136,10 +136,10 @@ product: Urban EDC 2026 Essentials
     <span class="label-text">値段を確認: <span class="product-name">ビクトリノックス ジェットセッター</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=%E3%83%93%E3%82%AF%E3%83%88%E3%83%AA%E3%83%8E%E3%83%83%E3%82%AF%E3%82%B9+%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%BB%E3%83%83%E3%82%BF%E3%83%BC&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B00932GT00?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2593%25E3%2582%25AF%25E3%2583%2588%25E3%2583%25AA%25E3%2583%258B%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%2520%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%2583%25E3%2583%2588%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25BF%25E3%2583%25BC" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvictorinox%2F06263%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>

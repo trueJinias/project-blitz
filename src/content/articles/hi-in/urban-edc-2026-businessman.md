@@ -35,7 +35,7 @@ product: "Urban EDC 2026 Essentials"
     <span class="label-text">कीमत देखें: <span class="product-name">ESR MagSafe Wallet Stand (Find My)</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.in/s?k=ESR+MagSafe+Wallet" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.in/dp/B0BN2L95M3" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -56,7 +56,7 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
     <span class="label-text">कीमत देखें: <span class="product-name">Anker 735 Charger (65W)</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.in/s?k=Anker+735+Charger" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.in/dp/B09C5RG6KV" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -75,7 +75,7 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
     <span class="label-text">कीमत देखें: <span class="product-name">Orbitkey Key Organizer Pro</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.in/s?k=Orbitkey+Key+Organizer" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.in/dp/B08C6VYCMM" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -94,7 +94,7 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
     <span class="label-text">कीमत देखें: <span class="product-name">Bose Ultra Open Earbuds</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.in/s?k=Bose+Ultra+Open+Earbuds" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.in/dp/B0CSPMVD1G" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -115,7 +115,7 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
     <span class="label-text">कीमत देखें: <span class="product-name">Victorinox Jetsetter (Bladeless)</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.in/s?k=Victorinox+Jetsetter" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.in/dp/B00932GT00" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
