@@ -17,20 +17,20 @@ draft: false
 
 We've all been there—standing at the register, freezing in panic. (I do this about once a month, honestly.)
 
-But by 2026, that panic might be a thing of the past. **Face Authentication Payment** is finally hitting mainstream convenience stores in Japan.
+But by 2026, that panic might be a thing of the past. <strong>Face Authentication Payment</strong> is finally hitting mainstream convenience stores in Japan.
 
 Here is the lowdown on the "Face Pass" revolution accelerating toward 2026, and how we should prepare for a wallet-free future.
 
 ## 1. FamilyMart is Going All-In (FY2026 Rollout)
 
-The clear leader in this space is **FamilyMart**.
+The clear leader in this space is <strong>FamilyMart</strong>.
 
-In partnership with Hitachi, they have announced plans to roll out a biometric payment system to stores nationwide starting in **Fiscal Year 2026 (April 2026 onwards)**.
+In partnership with Hitachi, they have announced plans to roll out a biometric payment system to stores nationwide starting in <strong>Fiscal Year 2026 (April 2026 onwards)</strong>.
 
 ### What Does This Mean?
-- **Truly Hands-Free**: No wallet, no smartphone. Your face is your credit card.
-- **Face-Based Loyalty Points**: No need to open an app and hunt for a barcode.
-- **Age Verification**: Buying alcohol or tobacco? Your face data could handle the age check automatically.
+- <strong>Truly Hands-Free</strong>: No wallet, no smartphone. Your face is your credit card.
+- <strong>Face-Based Loyalty Points</strong>: No need to open an app and hunt for a barcode.
+- <strong>Age Verification</strong>: Buying alcohol or tobacco? Your face data could handle the age check automatically.
 
 Just order your "Famichiki," smile at the camera, and you're done. That future is right around the corner.
 
@@ -38,7 +38,7 @@ Just order your "Famichiki," smile at the camera, and you're done. That future i
 
 The king of conbini, Seven-Eleven, isn't sitting still.
 
-They are exploring a face authentication service linked to **Seven Bank ATMs**, targeting a launch around**2026**.
+They are exploring a face authentication service linked to <strong>Seven Bank ATMs</strong>, targeting a launch around<strong>2026</strong>.
 
 ### Different Strategies
 While FamilyMart focuses on "in-store payment," Seven-Eleven approaches it as "financial infrastructure."
@@ -60,8 +60,8 @@ If your phone dies or you lose your wallet during a disaster, as long as you are
 
 "Registering my face data sounds scary..." That's a valid concern.
 
-- **Data Management**: Typically, the raw image isn't stored. It's converted into encrypted numerical feature data.
-- **Accuracy**: Modern tech can distinguish identical twins with over 99% accuracy and can't be fooled by photographs.
+- <strong>Data Management</strong>: Typically, the raw image isn't stored. It's converted into encrypted numerical feature data.
+- <strong>Accuracy</strong>: Modern tech can distinguish identical twins with over 99% accuracy and can't be fooled by photographs.
 
 Of course, many will be hesitant at first. It likely won't be mandatory, but rather a "convenient option" that slowly gains adoption.
 
@@ -69,12 +69,12 @@ Of course, many will be hesitant at first. It likely won't be mandatory, but rat
 
 In 2026, the convenience store landscape will change.
 
-It might feel embarrassing to "pay with your face" initially, but just like tapping a card or scanning a QR code became normal, we might soon say, **"Wait, you still take your phone out to pay?"**
+It might feel embarrassing to "pay with your face" initially, but just like tapping a card or scanning a QR code became normal, we might soon say, <strong>"Wait, you still take your phone out to pay?"</strong>
 
 Are you ready to pay with a smile?
 I... might still wear a mask and hat when making late-night snack runs (lol).
 
 ---
-**References**:
+<strong>References</strong>:
 - FamilyMart plans full rollout around FY2026.
 - Prior registration of credit card info will likely be required.

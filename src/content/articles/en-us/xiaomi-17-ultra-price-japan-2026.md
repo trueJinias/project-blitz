@@ -17,7 +17,7 @@ product: Xiaomi 17 Ultra
 
 Every year, the conversation around flagship phones centers on one question: just how much closer are we getting to replacing dedicated cameras?
 
-If the latest leaks regarding the future **Xiaomi 17 Ultra** are true, Xiaomi isn't just getting closer—they might be ending the conversation entirely. Expected to drop in early 2026, the 17 Ultra is already generating buzz over specs and, perhaps more controversially, a price tag that positions it squarely against the highest-end iPhones and Galaxy Ultras.
+If the latest leaks regarding the future <strong>Xiaomi 17 Ultra</strong> are true, Xiaomi isn't just getting closer—they might be ending the conversation entirely. Expected to drop in early 2026, the 17 Ultra is already generating buzz over specs and, perhaps more controversially, a price tag that positions it squarely against the highest-end iPhones and Galaxy Ultras.
 
 We've compiled the most credible overseas rumors, dissecting the anticipated release schedule, the shocking price point, and the evolutionary leaps that promise to make this device the definitive camera phone of 2026.
 
@@ -25,7 +25,7 @@ We've compiled the most credible overseas rumors, dissecting the anticipated rel
 
 For US consumers, the timeline focuses less on domestic carrier sales (which rarely happen for Xiaomi's true flagships) and more on the crucial import window.
 
-**Expected Global Announcement:**February 2026 (MWC)**Expected Import Availability:** March–April 2026
+<strong>Expected Global Announcement:</strong>February 2026 (MWC)<strong>Expected Import Availability:</strong> March–April 2026
 
 Rumors suggest the Chinese launch will occur late in December 2025. This timing is critical, as it means the global stage debut will almost certainly happen at the Mobile World Congress (MWC) in Barcelona in February 2026.
 
@@ -39,16 +39,16 @@ For those eager to grab this photographic absolute unit, mark your calendars for
 
 If you thought $1,500 for a flagship was painful, you might want to brace yourself.
 
-The most aggressive rumors peg the European starting price (for the highest-end variant) at **€1,499**.
+The most aggressive rumors peg the European starting price (for the highest-end variant) at <strong>€1,499</strong>.
 
 ### Estimated US Pricing Breakdown:
 
 | Metric | Source Price | Estimated USD Conversion | Notes |
 | :--- | :--- | :--- | :--- |
 | European RRP | €1,499 | ~$1,605 | Direct exchange rate estimate. |
-| **Projected US Retail Price**| N/A |**$1,749 – $1,799** | Accounting for US import tariffs, shipping, component inflation (especially the 1-inch sensor and Gen 5 chip), and typical markup for this premium tier. |
+| <strong>Projected US Retail Price</strong>| N/A |<strong>$1,749 – $1,799</strong> | Accounting for US import tariffs, shipping, component inflation (especially the 1-inch sensor and Gen 5 chip), and typical markup for this premium tier. |
 
-This places the Xiaomi 17 Ultra not just in the "premium" bracket, but firmly in the **"Hyper-Premium"** category—a space currently dominated by the highest-spec Pro Max/Ultra models from Apple and Samsung.
+This places the Xiaomi 17 Ultra not just in the "premium" bracket, but firmly in the <strong>"Hyper-Premium"</strong> category—a space currently dominated by the highest-spec Pro Max/Ultra models from Apple and Samsung.
 
 Why the sudden jump? Inflation aside, two key components are driving the cost: the inevitable (and power-hungry) Snapdragon 8 Gen 5 silicon and the continuation of the massive 1-inch camera sensor standard. Xiaomi is not building a phone; they are building a pocket camera that happens to make calls. And that level of specialization costs serious money.
 
@@ -58,13 +58,13 @@ If you’re spending nearly $1,800 on a phone, the specs list had better read li
 
 ### Snapdragon 8 Gen 5: The AI Revolution
 
-The move to the **Snapdragon 8 Gen 5** is more than just a performance boost; it’s an AI paradigm shift. Leaks suggest the dedicated AI Processing Unit (APU) on the Gen 5 will be so significantly enhanced that it fulfills the claim of making manual photo retouching almost obsolete.
+The move to the <strong>Snapdragon 8 Gen 5</strong> is more than just a performance boost; it’s an AI paradigm shift. Leaks suggest the dedicated AI Processing Unit (APU) on the Gen 5 will be so significantly enhanced that it fulfills the claim of making manual photo retouching almost obsolete.
 
 Imagine capturing a challenging scene—high dynamic range, tricky lighting—and the NPU instantly applying corrections, depth mapping, and selective sharpening so perfectly that the resulting JPEG is print-ready right out of the digital chute. This is where Xiaomi is betting its high price point will pay off.
 
 ### 200MP Periscope: Extreme Zoom Redefined
 
-The centerpiece of the hardware package is undoubtedly the improved telephoto lens. Rumors indicate a move to a whopping **200MP Periscope Zoom** setup.
+The centerpiece of the hardware package is undoubtedly the improved telephoto lens. Rumors indicate a move to a whopping <strong>200MP Periscope Zoom</strong> setup.
 
 Current telephoto lenses rely heavily on pixel binning and computational techniques to achieve quality at high magnification. By jumping to 200MP, Xiaomi is achieving true optical clarity at extreme distances. The source leaks claim the quality will be so high you can clearly "read the text on a sign far away."
 

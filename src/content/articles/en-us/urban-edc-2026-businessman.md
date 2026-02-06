@@ -19,7 +19,7 @@ draft: false
 In 2026, with the complete fusion of remote and office work, a businessman's carry has become more minimal than ever.
 But simply reducing items isn't the answer. You need to be prepared.
 
-The goal is **"Maximum performance with minimum gear."**
+The goal is <strong>"Maximum performance with minimum gear."</strong>
 Here are 5 EDC (Everyday Carry) items selected for the urban businessman in his 30s who values functional beauty.
 
 ## 1. MagSafe Slim Wallet
@@ -30,7 +30,7 @@ Here are 5 EDC (Everyday Carry) items selected for the urban businessman in his 
 The era of carrying a bulky wallet is over.
 A MagSafe-compatible wallet that snaps onto the back of your phone is all you need for your ID and main credit card.
 
-**Why it's great:**-**ESR Aura MagSafe Wallet & Stand**(supports "Find My") or**MOFT**'s stand-equipped versions are the gold standard.
+<strong>Why it's great:</strong>-<strong>ESR Aura MagSafe Wallet & Stand</strong>(supports "Find My") or<strong>MOFT</strong>'s stand-equipped versions are the gold standard.
 
 <div class="product-links">
   <div class="product-header">
@@ -62,7 +62,7 @@ A MagSafe-compatible wallet that snaps onto the back of your phone is all you ne
 But carrying a brick-like AC adapter is not smart.
 
 Gallium Nitride (GaN) chargers are now golf-ball sized yet powerful enough to charge a PC.
-The **Anker 735 Charger (Nano II 65W)** is invincible even when cafe outlets are full.
+The <strong>Anker 735 Charger (Nano II 65W)</strong> is invincible even when cafe outlets are full.
 
 <div class="product-links">
   <div class="product-header">
@@ -89,7 +89,7 @@ The **Anker 735 Charger (Nano II 65W)** is invincible even when cafe outlets are
 
 Stop the "jingle-jangle".
 A key organizer that smartly stores your keys is a mark of a refined adult.
-The **Orbitkey Key Organizer Pro** lets you integrate tracking tags beautifully while keeping a slim profile.
+The <strong>Orbitkey Key Organizer Pro</strong> lets you integrate tracking tags beautifully while keeping a slim profile.
 
 <div class="product-links">
   <div class="product-header">
@@ -116,7 +116,7 @@ The **Orbitkey Key Organizer Pro** lets you integrate tracking tags beautifully 
 
 You want to block out city noise, but not miss important info.
 Bone conduction or open-ear earbuds let you listen to music while still noticing a colleague calling your name.
-The **Bose Ultra Open Earbuds** offer premium sound and total situational awareness without ear fatigue.
+The <strong>Bose Ultra Open Earbuds</strong> offer premium sound and total situational awareness without ear fatigue.
 
 <div class="product-links">
   <div class="product-header">
@@ -144,7 +144,7 @@ The **Bose Ultra Open Earbuds** offer premium sound and total situational awaren
 Think "Multi-tool = Knife"?
 You can't carry a knife in the city (it scares people in the office, aside from legal issues).
 
-A "Bladeless" multi-tool like the **Victorinox Jetsetter** is safe for travel and solves those daily "little problems" like cutting tags or tightening screws.
+A "Bladeless" multi-tool like the <strong>Victorinox Jetsetter</strong> is safe for travel and solves those daily "little problems" like cutting tags or tightening screws.
 
 <div class="product-links">
   <div class="product-header">
@@ -176,4 +176,4 @@ The items introduced here balance "function" and "design".
 Why not empty your pockets and re-select only what you truly need?
 
 ---
-**※This article is a lifestyle proposal based on 2026 trends.**
+<strong>※This article is a lifestyle proposal based on 2026 trends.</strong>

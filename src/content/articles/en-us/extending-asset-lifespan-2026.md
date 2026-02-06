@@ -27,10 +27,10 @@ The famous US-born "4% Rule"—withdrawing 4% of your portfolio annually ensures
 
 ### From Fixed Rate to Dynamic Guardrails
 
-The latest trend among financial planners is **Dynamic Spending**, which adjusts your withdrawal rate based on the current market environment. This is often called the "Guardrail Strategy."
+The latest trend among financial planners is <strong>Dynamic Spending</strong>, which adjusts your withdrawal rate based on the current market environment. This is often called the "Guardrail Strategy."
 
-*   **Good Market Years:** Increase withdrawals up to 4.5%–4.7%, budgeting for travel, experiences, or large purchases.
-*   **Bad Market Years:** Reduce withdrawals down to 3.5%–3.7%, covering only minimum essential living expenses.
+*   <strong>Good Market Years:</strong> Increase withdrawals up to 4.5%–4.7%, budgeting for travel, experiences, or large purchases.
+*   <strong>Bad Market Years:</strong> Reduce withdrawals down to 3.5%–3.7%, covering only minimum essential living expenses.
 
 Since 2026 is expected to feature sustained higher US interest rates, bond yields are solid, allowing for a slightly more aggressive starting position (closer to the 4.7% mark) for those implementing guardrails.
 
@@ -43,9 +43,9 @@ The concept promoted by the bestseller *Die with Zero* suggests you should aim t
 
 ### Set Your Asset Peak at Age 60
 
-Instead of increasing your wealth until the very end, the strategy dictates that you should treat **age 60 (or your peak years of cognitive ability)** as the high-water mark for your net worth. From there, you consciously and intentionally decrease it.
+Instead of increasing your wealth until the very end, the strategy dictates that you should treat <strong>age 60 (or your peak years of cognitive ability)</strong> as the high-water mark for your net worth. From there, you consciously and intentionally decrease it.
 
-Money held when your cognitive function is declining cannot be fully enjoyed or effectively used. The key decision is whether you can commit to **converting 30% of your assets into memories and experiences during your active years (Ages 60–75)**. This proactive approach is the defining characteristic of a fulfilling retirement.
+Money held when your cognitive function is declining cannot be fully enjoyed or effectively used. The key decision is whether you can commit to <strong>converting 30% of your assets into memories and experiences during your active years (Ages 60–75)</strong>. This proactive approach is the defining characteristic of a fulfilling retirement.
 
 ## 3. The Power of a Reinforced Safety Net (And Why You Can Spend More)
 
@@ -64,12 +64,12 @@ The mental shift is crucial: "Since Social Security covers my basic needs until 
 
 What specific steps should you take right now?
 
-1.  **Re-evaluate the Three-Bucket Strategy*****Short-Term (Cash):** Two years of living expenses.
-    *   **Mid-Term (Bonds/Fixed Income):** Five years of expenses. (*Crucially, 2026 allows you to operate this bucket with high-yield bonds/CDs, generating higher returns than previous decades.*)
-    *   **Long-Term (Equities):** Everything else.
-2.  **Maximize Late-Stage Tax Advantages**
+1.  <strong>Re-evaluate the Three-Bucket Strategy</strong><strong>*Short-Term (Cash):</strong> Two years of living expenses.
+    *   <strong>Mid-Term (Bonds/Fixed Income):</strong> Five years of expenses. (*Crucially, 2026 allows you to operate this bucket with high-yield bonds/CDs, generating higher returns than previous decades.*)
+    *   <strong>Long-Term (Equities):</strong> Everything else.
+2.  <strong>Maximize Late-Stage Tax Advantages</strong>
     *   If still working, fully utilize catch-up contributions (e.g., to 401k/IRA) as late as the rules allow, often into your late 60s or 70s. This provides ongoing tax deductions while giving your retirement savings one last push.
-3.  **Budget for "Memory Dividends"**
+3.  <strong>Budget for "Memory Dividends"</strong>
     *   At the start of every year, earmark a specific sum (e.g., $25,000) that *must* be spent on travel, gifts, or experiences. This forces intentional spending and prevents "spending paralysis."
 
 ## Summary

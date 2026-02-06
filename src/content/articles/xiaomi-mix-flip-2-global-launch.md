@@ -34,11 +34,11 @@ image: /images/articles/xiaomi-mix-flip-2-global-launch-thumbnail.jpg
 
 一番の衝撃ニュースはこれです。
 
-リークによると、Mix Flip 2のバッテリー容量は**5,165mAh**になると言われています。
+リークによると、Mix Flip 2のバッテリー容量は<strong>5,165mAh</strong>になると言われています。
 これ、Galaxy Z Flipシリーズどころか、その辺の普通のハイエンドスマホよりも大容量です。
 
-- **初代 Mix Flip**: 4,780mAh
-- **Mix Flip 2 (予想)**: 5,165mAh
+- <strong>初代 Mix Flip</strong>: 4,780mAh
+- <strong>Mix Flip 2 (予想)</strong>: 5,165mAh
 
 これなら「一日中使っても余裕」どころか、モバイルバッテリーを持ち歩く必要すらなくなるかもしれません。
 
@@ -48,7 +48,7 @@ image: /images/articles/xiaomi-mix-flip-2-global-launch-thumbnail.jpg
 *Photo by Rann Vijay on Pexels*
 
 初代モデルで唯一とも言える弱点が「ワイヤレス充電非対応」でした。
-しかし、Mix Flip 2では**50Wのワイヤレス充電**に対応するという情報が有力です。
+しかし、Mix Flip 2では<strong>50Wのワイヤレス充電</strong>に対応するという情報が有力です。
 
 デスクに置くだけで急速充電。これができるようになれば、もはや死角なしの最強フリップ端末の誕生です。
 
@@ -62,17 +62,17 @@ image: /images/articles/xiaomi-mix-flip-2-global-launch-thumbnail.jpg
 
 ## 4. 発売時期と日本展開の可能性
 
-**発売時期（予想）**-**中国発表**: 2025年6月〜7月
-- **グローバル展開**: 2025年後半
+<strong>発売時期（予想）</strong>-<strong>中国発表</strong>: 2025年6月〜7月
+- <strong>グローバル展開</strong>: 2025年後半
 
 初代Mix Flipは当初中国限定でしたが、後にグローバル版（日本版含む）が発売されました。
-この流れを見るに、Mix Flip 2も**日本での発売はほぼ確実**だと思われます。
+この流れを見るに、Mix Flip 2も<strong>日本での発売はほぼ確実</strong>だと思われます。
 
 ## まとめ：待つ価値はある？
 
 今すぐ折りたたみスマホが欲しいなら初代Mix Flip（またはGalaxy Z Flip6）も素晴らしい選択肢ですが、もし「あと半年待てる」なら、Mix Flip 2を待つ価値は十分にあります。
 
-**Mix Flip 2を待つべき人：**
+<strong>Mix Flip 2を待つべき人：</strong>
 - バッテリー持ちを最優先する人
 - ワイヤレス充電が必須な人
 - 最新スペックでサクサクゲームをしたい人

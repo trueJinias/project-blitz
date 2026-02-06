@@ -51,9 +51,9 @@ For most enthusiasts, using the device with the stock Chinese ROM is currently t
 
 Okay, so you decide to stick with the Chinese ROM. Are you ready for these major limitations in the US market?
 
-1.  **Android Auto is Unavailable:** The functionality to mirror your phone screen to your car’s head unit for navigation (a basic feature in the US) is completely removed from the Chinese version of the OS. Google Maps only works directly on the phone screen.
-2.  **Notification Chaos:** China ROMs include aggressively optimized power-saving features. This means notifications for critical apps like Gmail, WhatsApp, and Discord are often delayed or simply do not show up. You will spend hours fighting the settings menu just to get basic push notifications working reliably.
-3.  **Partial Google Restrictions:** While Google Pay (tap-to-pay) usually works on many imported models, core voice assistant features like "OK Google" and integration with Google's Gemini platform can be unstable or non-functional.
+1.  <strong>Android Auto is Unavailable:</strong> The functionality to mirror your phone screen to your car’s head unit for navigation (a basic feature in the US) is completely removed from the Chinese version of the OS. Google Maps only works directly on the phone screen.
+2.  <strong>Notification Chaos:</strong> China ROMs include aggressively optimized power-saving features. This means notifications for critical apps like Gmail, WhatsApp, and Discord are often delayed or simply do not show up. You will spend hours fighting the settings menu just to get basic push notifications working reliably.
+3.  <strong>Partial Google Restrictions:</strong> While Google Pay (tap-to-pay) usually works on many imported models, core voice assistant features like "OK Google" and integration with Google's Gemini platform can be unstable or non-functional.
 
 ## 3. So, Is Importing Ever Worth It?
 
@@ -61,17 +61,17 @@ Okay, so you decide to stick with the Chinese ROM. Are you ready for these major
 
 I’ve listed serious flaws, but here’s why some (myself included) will still choose to import the device:
 
--   **The Aggressive Price:** Saving $400 is enough money to buy an excellent mid-range second device or accessories.
--   **Access to Cutting-Edge Features:** New HyperOS features and updates always land on the China version first. If you want to be on the bleeding edge of Xiaomi software, this is how you do it.
--   **Identical (or Superior) Hardware:** The underlying hardware is the same as the Global version, and sometimes, the China model gets "reverse discrimination" perks—like a slightly larger battery capacity—not found on the global release.
+-   <strong>The Aggressive Price:</strong> Saving $400 is enough money to buy an excellent mid-range second device or accessories.
+-   <strong>Access to Cutting-Edge Features:</strong> New HyperOS features and updates always land on the China version first. If you want to be on the bleeding edge of Xiaomi software, this is how you do it.
+-   <strong>Identical (or Superior) Hardware:</strong> The underlying hardware is the same as the Global version, and sometimes, the China model gets "reverse discrimination" perks—like a slightly larger battery capacity—not found on the global release.
 
 ## 4. Where to Buy (If You Must)
 
 If you have decided the risks are worth the reward, stick to reputable, established importers known for quality support:
 
--   **TradingShenzhen:** Excellent reputation, meticulous packing, and often offers an optional tariff/customs compensation service. (Note: Support is usually in English/German, not Japanese or Chinese.)
--   **Giztop:** Focused on speed. If you need the phone days after its release, Giztop is often the fastest option.
--   **Wonda Mobile:**Slightly pricier, but their customer service quality is considered top-tier among importers.**CRITICAL WARNING:** Avoid anonymous sellers on platforms like AliExpress. They frequently sell devices with "Fake Global ROMs" (also known as "Shop ROMs"). These heavily modified operating systems are unstable, buggy, and will *never* receive official updates.
+-   <strong>TradingShenzhen:</strong> Excellent reputation, meticulous packing, and often offers an optional tariff/customs compensation service. (Note: Support is usually in English/German, not Japanese or Chinese.)
+-   <strong>Giztop:</strong> Focused on speed. If you need the phone days after its release, Giztop is often the fastest option.
+-   <strong>Wonda Mobile:</strong>Slightly pricier, but their customer service quality is considered top-tier among importers.<strong>CRITICAL WARNING:</strong> Avoid anonymous sellers on platforms like AliExpress. They frequently sell devices with "Fake Global ROMs" (also known as "Shop ROMs"). These heavily modified operating systems are unstable, buggy, and will *never* receive official updates.
 
 ## The Takeaway: You Pay for Peace of Mind
 

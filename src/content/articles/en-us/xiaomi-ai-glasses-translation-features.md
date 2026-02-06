@@ -19,7 +19,7 @@ image: "/images/articles/xiaomi-ai-glasses-translation-features-thumbnail.jpg"
 
 Xiaomi has announced its new "Xiaomi AI Glasses." Weighing in at just 49g (light!), they look like ordinary glasses. But inside, they are a full-blown sci-fi gadget.
 
-Especially notable is the **real-time translation feature**. I thought this would be incredibly useful not just for overseas travel, but also for the booming inbound tourism demand. So, let's dig deep into its capabilities and see "how practical is it really?"
+Especially notable is the <strong>real-time translation feature</strong>. I thought this would be incredibly useful not just for overseas travel, but also for the booming inbound tourism demand. So, let's dig deep into its capabilities and see "how practical is it really?"
 
 ## 1. Design: The Shock of Looking "Normal"
 
@@ -31,8 +31,8 @@ The first surprise is the appearance.
 There's absolutely none of that bulky "I'm wearing smart glasses" look.
 Ray-Ban Meta is also natural, but Xiaomi seems to have taken a step further.
 
-**Why it's amazing:**-**Weight 49g**: Just slightly heavier than normal glasses. Your nose won't hurt even after long hours.
-- **Zero Awkwardness**: Cameras and sensors blend seamlessly into the frame, lowering the risk of being suspected as a "spy camera" (this is important).
+<strong>Why it's amazing:</strong>-<strong>Weight 49g</strong>: Just slightly heavier than normal glasses. Your nose won't hurt even after long hours.
+- <strong>Zero Awkwardness</strong>: Cameras and sensors blend seamlessly into the frame, lowering the risk of being suspected as a "spy camera" (this is important).
 
 Honestly, nobody would notice these are AI glasses even if you were working in a cafe.
 
@@ -43,21 +43,21 @@ Honestly, nobody would notice these are AI glasses even if you were working in a
 
 This is the headline feature.
 
-The microphone picks up spoken words and **displays them as subtitles in real-time** on the inside of the lens.
+The microphone picks up spoken words and <strong>displays them as subtitles in real-time</strong> on the inside of the lens.
 
 ### How accurate is it?
 According to official announcements, it supports major languages.
 Overseas reviewers who tried it claim the "translation speed is lightning fast."
 
-It is specifically designed for **face-to-face conversation**, so that awkward silence where you pull out a translation app and say "Umm, please speak into this phone" disappears.
+It is specifically designed for <strong>face-to-face conversation</strong>, so that awkward silence where you pull out a translation app and say "Umm, please speak into this phone" disappears.
 You can talk while looking at each other's eyes. That alone changes the quality of communication drastically.
 
 ## 3. Camera and AI: Calorie Counting too?!
 
 It's not just translation.
 
-Equipped with a **12MP camera**, you can capture what you see as photos or videos.
-And the interesting part is the **AI recognition feature**.
+Equipped with a <strong>12MP camera</strong>, you can capture what you see as photos or videos.
+And the interesting part is the <strong>AI recognition feature</strong>.
 
 For example, look at the meal in front of you...
 "Hamburger: Approx 550kcal"
@@ -70,30 +70,30 @@ Identifying plant names, translating signboards... completing tasks by "just loo
 The biggest weakness of smart glasses has been battery life.
 But Xiaomi is attacking this front as well.
 
-- **Continuous usage time**: Approx. 8.5 hours (Official claim)
+- <strong>Continuous usage time</strong>: Approx. 8.5 hours (Official claim)
 
-Since Ray-Ban Meta is said to last about 4 hours, this has **more than double the stamina**.
+Since Ray-Ban Meta is said to last about 4 hours, this has <strong>more than double the stamina</strong>.
 With this, you can rest assured wearing them from morning till night. You are freed from the gadget cliché of "battery dying right when it matters."
 
 ## 5. Practicality and Concerns
 
 Now, here are my personal thoughts and concerns.
 
-**① Privacy Issues**
+<strong>① Privacy Issues</strong>
 Because they are so natural, it's hard for others to tell if they are being recorded.
 People are sensitive about privacy, so using them in crowded trains or restaurants might require extra care (although an LED likely lights up during recording).
 
-**② The "Kanji" Barrier**Even if voice translation is excellent, the recognition accuracy for**handwritten text (signs and menus)** is unknown.
+<strong>② The "Kanji" Barrier</strong>Even if voice translation is excellent, the recognition accuracy for<strong>handwritten text (signs and menus)</strong> is unknown.
 Whether it can handle cursive scripts or vertical writing will be a key point for usability in Asia.
 
-**③ "Isn't a smartphone enough?"**
+<strong>③ "Isn't a smartphone enough?"</strong>
 I can hear people saying this, but "having both hands free" is a benefit beyond imagination.
 When carrying luggage, cooking, or simply when you "don't want to look at a screen."
 You want information, but don't want to be tied to a smartphone. It's a device that fulfills such selfish desires.
 
 ## Conclusion
 
-I felt that Xiaomi AI Glasses are not just a "translator," but an **entryway to a "smartphone-free life."****Summary of Merits:**
+I felt that Xiaomi AI Glasses are not just a "translator," but an <strong>entryway to a "smartphone-free life."</strong><strong>Summary of Merits:</strong>
 - Natural design that looks like normal glasses
 - Futuristic feel of subtitles appearing before your eyes
 - All-day battery life

@@ -29,7 +29,7 @@ It’s a conversation happening at kitchen tables across America. From Florida t
 As we look toward 2026, the trend isn't slowing down. But why?
 It's not just "corporate greed." There are massive structural shifts at play.
 
-Here is the deep dive into why your premiums are surging and, more importantly, **how you can defend your wallet.**
+Here is the deep dive into why your premiums are surging and, more importantly, <strong>how you can defend your wallet.</strong>
 
 ## The 4 Engines Driving the 2026 Rate Hikes 
 
@@ -57,16 +57,16 @@ Don't just auto-pay. Fight back with these strategies.
 
 ### Strategy 1: The "Catastrophe-Only" Mindset (Raise Deductibles)
 Stop using insurance for $1,000 repairs.
-Raising your deductible from $500 to **$2,500 or even $5,000** can drop your premium by 25-40%.
-*   **The Logic:** Insurance is for financial ruin (fire, total loss), not maintenance. Keep an emergency fund for the small stuff and save huge on premiums.
+Raising your deductible from $500 to <strong>$2,500 or even $5,000</strong> can drop your premium by 25-40%.
+*   <strong>The Logic:</strong> Insurance is for financial ruin (fire, total loss), not maintenance. Keep an emergency fund for the small stuff and save huge on premiums.
 
 ### Strategy 2: Bundle Harder
 It sounds basic, but it’s powerful. Moving your Auto + Home + Umbrella policy to one carrier can trigger "multi-line discounts" of up to 20%.
 
 ### Strategy 3: Fortify Your Home
 Insurers love "mitigation."
-*   **Roof:** Impact-resistant shingles (Class 4) can net deep discounts in hail-prone areas.
-*   **Water:** Installing a smart water shut-off valve (like Moen or Phyn) can prevent the most common claim (water damage) and earn you a credit.
+*   <strong>Roof:</strong> Impact-resistant shingles (Class 4) can net deep discounts in hail-prone areas.
+*   <strong>Water:</strong> Installing a smart water shut-off valve (like Moen or Phyn) can prevent the most common claim (water damage) and earn you a credit.
 
 ## Summary: Be Proactive, Not Passive
 

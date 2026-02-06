@@ -29,9 +29,9 @@ While the Chinese market typically sees a four-model spread, the global release 
 
 Here is the likely global lineup:
 
--   **Xiaomi 17 (Standard):** The compact flagship featuring a rumored 6.31-inch display.
--   **Xiaomi 17 Ultra:** The absolute top-tier, camera-focused monster model.
--   **Pro / Pro Max:** Highly likely to remain exclusive to China (a bummer, but expected).
+-   <strong>Xiaomi 17 (Standard):</strong> The compact flagship featuring a rumored 6.31-inch display.
+-   <strong>Xiaomi 17 Ultra:</strong> The absolute top-tier, camera-focused monster model.
+-   <strong>Pro / Pro Max:</strong> Highly likely to remain exclusive to China (a bummer, but expected).
 
 ## Key Specs That Matter
 

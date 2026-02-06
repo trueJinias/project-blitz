@@ -23,7 +23,7 @@ We’re diving deep into the leaked specs for the rumored Xiaomi 17 Pro and comp
 ![Close-up of a car's dashboard showing a rearview camera display for parking assistance.](/images/articles/xiaomi-17-pro-vs-iphone-17-pro-max-2.jpg)
 *Photo by Erik Mclean on Pexels*
 
-The most eye-catching feature rumored for the Xiaomi 17 Pro is the return of the **rear secondary display**.
+The most eye-catching feature rumored for the Xiaomi 17 Pro is the return of the <strong>rear secondary display</strong>.
 
 
 
@@ -31,7 +31,7 @@ Think a rear screen is a gimmick? Think again. The ability to snap high-quality 
 
 The iPhone 17 Pro Max, meanwhile, is expected to continue its journey toward a truly all-screen design. Rumors suggest Face ID components will finally move under the display, potentially shrinking or eliminating the Dynamic Island. But the fundamental squared-off aesthetic will likely remain.
 
-**The Verdict:**
+<strong>The Verdict:</strong>
 *   If you want to stand out: Xiaomi 17 Pro
 *   If you prefer established, refined engineering: iPhone 17 Pro Max
 
@@ -42,7 +42,7 @@ The iPhone 17 Pro Max, meanwhile, is expected to continue its journey toward a t
 
 
 
-The Xiaomi 17 Pro’s camera setup is rumored to be an overkill trifecta: **three lenses, all 50MP**. That means the main sensor, the ultrawide, and the periscope telephoto will all offer flagship resolution, leaving no weak spots in the focal range.
+The Xiaomi 17 Pro’s camera setup is rumored to be an overkill trifecta: <strong>three lenses, all 50MP</strong>. That means the main sensor, the ultrawide, and the periscope telephoto will all offer flagship resolution, leaving no weak spots in the focal range.
 
 The iPhone 17 Pro Max is also expected to unify its system, perhaps moving all primary lenses to 48MP sensors, with significant upgrades expected for telephoto zoom capability.
 
@@ -55,12 +55,12 @@ While we know "megapixel count isn't everything," the combination of huge sensor
 
 This is the key battleground.
 
-Rumors suggest the Xiaomi 17 Pro will pack a shocking **7,500mAh battery**! That’s basically iPad mini territory crammed into a phone chassis. (Seriously, Apple, can we please break 5,000mAh soon?)
+Rumors suggest the Xiaomi 17 Pro will pack a shocking <strong>7,500mAh battery</strong>! That’s basically iPad mini territory crammed into a phone chassis. (Seriously, Apple, can we please break 5,000mAh soon?)
 
 | Feature | Xiaomi 17 Pro (Rumored) | iPhone 17 Pro Max (Estimated) |
 | :--- | :--- | :--- |
-| **Capacity** | 7,500mAh | 4,800mAh |
-| **Wired Charging** | 120W HyperCharge | 30W–45W |
+| <strong>Capacity</strong> | 7,500mAh | 4,800mAh |
+| <strong>Wired Charging</strong> | 120W HyperCharge | 30W–45W |
 
 Between the massive capacity and Xiaomi's blazing-fast 120W charging (full charge in minutes, not hours), the battery category is a near-certain landslide victory for Xiaomi. You could easily end a heavy-use day with 50% battery remaining.
 
@@ -68,8 +68,8 @@ Between the massive capacity and Xiaomi's blazing-fast 120W charging (full charg
 
 When it comes to raw processing power, both devices will hit levels that are, frankly, overkill for the average user.
 
-*   **Snapdragon 8 Elite Gen 5:** The undisputed king of the Android ecosystem. Graphics performance is nearing PC territory.
-*   **A19 Pro:** Unrivaled efficiency and superior AI processing capabilities.
+*   <strong>Snapdragon 8 Elite Gen 5:</strong> The undisputed king of the Android ecosystem. Graphics performance is nearing PC territory.
+*   <strong>A19 Pro:</strong> Unrivaled efficiency and superior AI processing capabilities.
 
 For typical web browsing and social media, you won't notice a difference. However, if you are a hardcore gamer running demanding titles like *Genshin Impact* at max settings for extended periods, Xiaomi’s superior internal cooling systems might give it the edge over the iPhone.
 

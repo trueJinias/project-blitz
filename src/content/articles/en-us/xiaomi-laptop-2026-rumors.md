@@ -45,9 +45,9 @@ Higher-end models, likely the 16-inch Pro variant, are rumored to adopt Tandem O
 
 This tech is already featured in the latest iPad Pro. Simply put, it involves stacking two OLED panels.
 
-*   **Brighter**: Significantly higher peak brightness than traditional single-stack OLEDs.
-*   **More Durable**: Load is distributed, dramatically reducing the risk of screen burn-in, a common OLED fear.
-*   **More Efficient**: Requires less power to achieve the same brightness level.
+*   <strong>Brighter</strong>: Significantly higher peak brightness than traditional single-stack OLEDs.
+*   <strong>More Durable</strong>: Load is distributed, dramatically reducing the risk of screen burn-in, a common OLED fear.
+*   <strong>More Efficient</strong>: Requires less power to achieve the same brightness level.
 
 For users who demand a gorgeous, color-accurate Windows screen but are wary of burn-in issues, this is fantastic news.
 
@@ -62,8 +62,8 @@ Increased specs are useless if the machine turns into a heavy brick. Xiaomi know
 
 The company will leverage magnesium-aluminum alloys aggressively for the chassis structure. The target weights cited in the leak are impressive:
 
-*   **14-inch Model**: Aiming for sub-1.5kg (potentially landing in the 1.3kg range, or around 2.87 lbs).
-*   **16-inch Model**: Targeting below 1.8kg (around 3.97 lbs).
+*   <strong>14-inch Model</strong>: Aiming for sub-1.5kg (potentially landing in the 1.3kg range, or around 2.87 lbs).
+*   <strong>16-inch Model</strong>: Targeting below 1.8kg (around 3.97 lbs).
 
 If they hit 1.8kg for a 16-inch laptop with a powerful chip and a Tandem OLED screen, that would place it firmly among the most portable large-screen machines on the market.
 

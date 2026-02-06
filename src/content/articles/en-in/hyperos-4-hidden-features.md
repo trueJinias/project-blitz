@@ -22,13 +22,13 @@ Rumors are flying about Xiaomi's next OS, "HyperOS 4.0," expected in 2026. Infor
 
 ## 1. "Zero-Legacy" Design: The Decision to Dump the Past
 
-The biggest headline is the bold overhaul called **"Zero-Legacy."**
+The biggest headline is the bold overhaul called <strong>"Zero-Legacy."</strong>
 
 From MIUI to current HyperOS, the system has carried a massive amount of "old code" to maintain compatibility with older Android versions. This legacy code has likely been the cause of system heaviness and bugs.
 
 ### What changes?
-- **Massive Weight Reduction**: By deleting unnecessary code, system size will drop dramatically (more storage for you!).
-- **Fast Even on Old Phones**: By rewriting the core in modern programming languages (like Rust or Flutter), even devices from a few years ago could run like new.
+- <strong>Massive Weight Reduction</strong>: By deleting unnecessary code, system size will drop dramatically (more storage for you!).
+- <strong>Fast Even on Old Phones</strong>: By rewriting the core in modern programming languages (like Rust or Flutter), even devices from a few years ago could run like new.
 
 ## 2. HyperAI: The OS That Predicts Your Moves
 
@@ -37,7 +37,7 @@ From MIUI to current HyperOS, the system has carried a massive amount of "old co
 
 "AI features" are common now, but HyperOS 4.0 is on a different level.
 
-Until now, AI did "what you asked." The next-gen **HyperAI**aims to do "what you need before you ask."**Imagine this future:**
+Until now, AI did "what you asked." The next-gen <strong>HyperAI</strong>aims to do "what you need before you ask."<strong>Imagine this future:</strong>
 - It detects you are commuting and pre-loads your news app before you even open it.
 - It senses you are in a meeting and automatically silences notifications to "minimal" mode.
 
@@ -54,9 +54,9 @@ Along with the "Zero-Legacy" renewal, there is a possibility that the massive am
 
 ## Summary: Can't Wait for August 2026
 
-According to leaks, the release of HyperOS 4.0 is expected around **August 2026**.
+According to leaks, the release of HyperOS 4.0 is expected around <strong>August 2026</strong>.
 
-- **Courage to dump the past (Zero-Legacy)**-**AI that predicts the future (HyperAI)**
+- <strong>Courage to dump the past (Zero-Legacy)</strong>-<strong>AI that predicts the future (HyperAI)</strong>
 
 When these two combine, how will our smartphone experience change?
 It's definitely worth keeping an eye on Xiaomi's moves from now on!

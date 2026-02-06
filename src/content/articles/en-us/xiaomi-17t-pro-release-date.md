@@ -30,8 +30,8 @@ The "T" series usually lands between September and October. However, IMEI databa
 
 Why the rush? There are two primary theories:
 
-1.  **Competitive Pressure:** Xiaomi needs to counter powerful mid-to-high-tier devices launched by rivals like OnePlus and Realme early in the year.
-2.  **Mediatek Partnership:** They want to launch the powerful Dimensity 9500 chip onto the market quickly to leverage its marketing strength.
+1.  <strong>Competitive Pressure:</strong> Xiaomi needs to counter powerful mid-to-high-tier devices launched by rivals like OnePlus and Realme early in the year.
+2.  <strong>Mediatek Partnership:</strong> They want to launch the powerful Dimensity 9500 chip onto the market quickly to leverage its marketing strength.
 
 If this timeline holds true, it's fantastic news for consumers—though our wallets might scream a little.
 
@@ -44,7 +44,7 @@ If this timeline holds true, it's fantastic news for consumers—though our wall
 
 The star of the Xiaomi 17T Pro specs sheet is undoubtedly the SoC.
 
-If rumors are accurate, the phone will feature MediaTek’s new flagship, the **Dimensity 9500**.
+If rumors are accurate, the phone will feature MediaTek’s new flagship, the <strong>Dimensity 9500</strong>.
 
 This chip is expected to fight on equal footing—or potentially beat—the Snapdragon 8 Elite (Gen 5) in multi-core performance. This solidifies the 17T Pro’s status as the reigning "flagship killer" focused on maximum performance for minimum outlay.
 
@@ -57,7 +57,7 @@ Interestingly, the vanilla Xiaomi 17T is rumored to use the Snapdragon 8s Gen 5.
 
 
 
-This might be the most shocking leak yet: the Xiaomi 17T Pro could feature a massive 6,500mAh to **7,000mAh** battery—a capacity usually reserved for tablets.
+This might be the most shocking leak yet: the Xiaomi 17T Pro could feature a massive 6,500mAh to <strong>7,000mAh</strong> battery—a capacity usually reserved for tablets.
 
 "Wait, won't that make the phone a brick?"
 
@@ -69,7 +69,7 @@ Coupled with the persistent, life-changing 120W fast charging speeds, the term "
 
 The crucial question for US consumers is cost. The initial global pricing is projected to land between 799 EUR and 899 EUR.
 
-Converting that to a likely US market or import price, we're looking at an estimated MSRP of **$850 to $950 USD**.
+Converting that to a likely US market or import price, we're looking at an estimated MSRP of <strong>$850 to $950 USD</strong>.
 
 While that price tag isn't cheap, consider the context: the full-blooded Xiaomi 17 Pro flagship is expected to push $1,300 or more. For a device packing these specs—Dimensity 9500, 7,000mAh battery, 120W charging—a sub-$1,000 price point makes the 17T Pro look like an incredible bargain.
 
@@ -77,10 +77,10 @@ While that price tag isn't cheap, consider the context: the full-blooded Xiaomi 
 
 Based on current leaks, the Xiaomi 17T Pro appears tailor-made for the tech enthusiast who demands top-tier performance but isn't ready to pay the premium for a true "Ultra" flagship.
 
-**Quick Specs Summary:*****Launch:** February 2026 (Rumored MWC Debut)
-*   **SoC:** MediaTek Dimensity 9500
-*   **Battery:** Up to 7,000mAh
-*   **Price:** ~$850 – $950 USD (Global/Import)
+<strong>Quick Specs Summary:</strong><strong>*Launch:</strong> February 2026 (Rumored MWC Debut)
+*   <strong>SoC:</strong> MediaTek Dimensity 9500
+*   <strong>Battery:</strong> Up to 7,000mAh
+*   <strong>Price:</strong> ~$850 – $950 USD (Global/Import)
 
 We are eagerly awaiting the official announcement. We will update you as soon as more concrete details emerge!
 

@@ -21,7 +21,7 @@ draft: false
 2026年、リモートワークとオフィスワークが完全に融合した今、ビジネスマンの持ち物はかつてないほどミニマルになっています。
 しかし、ただ減らすだけではいざという時に困る。
 
-必要なのは「**最小限の装備で、最大限のパフォーマンスを発揮する**」こと。
+必要なのは「<strong>最小限の装備で、最大限のパフォーマンスを発揮する</strong>」こと。
 今回は、30代の都会派ビジネスマンにおすすめしたい、機能美あふれるEDC（Everyday Carry＝毎日持ち歩くもの）を5つ厳選しました。
 
 ## 1. MagSafe対応スリムウォレット 
@@ -32,7 +32,7 @@ draft: false
 もはや財布を持ち歩く時代は終わりました（暴論ですが、半分本気です）。
 スマホの背面にピタッとつくMagSafe対応ウォレットがあれば、免許証とメインのクレカ1枚で事足ります。
 
-**おすすめポイント：**-**ESR HaloLock Geo Wallet Stand**（Find My対応）や**MOFT**のスタンド機能付きが最強。
+<strong>おすすめポイント：</strong>-<strong>ESR HaloLock Geo Wallet Stand</strong>（Find My対応）や<strong>MOFT</strong>のスタンド機能付きが最強。
 
 <div class="product-links">
   <div class="product-header">
@@ -67,7 +67,7 @@ draft: false
 しかし、レンガみたいなACアダプタを持ち歩くのはスマートじゃない。
 
 窒化ガリウム（GaN）採用の充電器なら、ゴルフボールサイズでスマホからPCまでこれ一つ。
-**Anker 735 Charger (GaNPrime 65W)** があれば、カフェの電源争奪戦も怖くありません。
+<strong>Anker 735 Charger (GaNPrime 65W)</strong> があれば、カフェの電源争奪戦も怖くありません。
 モバイルバッテリー機能付きの2-in-1タイプなら無敵です。
 
 <div class="product-links">
@@ -98,7 +98,7 @@ draft: false
 
 「ジャラジャラ」音、させてませんか？
 鍵束をスマートに収納するキーオーガナイザーは、大人の嗜みです。
-**Orbitkey Key Organizer Pro**なら、紛失防止タグも美しく収まります。夜間の帰宅時に手元を照らす極小LED付きも便利。
+<strong>Orbitkey Key Organizer Pro</strong>なら、紛失防止タグも美しく収まります。夜間の帰宅時に手元を照らす極小LED付きも便利。
 
 <div class="product-links">
   <div class="product-header">
@@ -127,7 +127,7 @@ draft: false
 ## 4. オープンイヤー型ワイヤレスイヤホン
 
 都会のノイズは遮断したいけれど、必要な情報は逃したくない。
-**Bose Ultra Open Earbuds**なら、最高級のサウンドと situational awareness を両立。長時間つけていても耳が疲れないので、もはや体の一部と言っても過言ではありません。
+<strong>Bose Ultra Open Earbuds</strong>なら、最高級のサウンドと situational awareness を両立。長時間つけていても耳が疲れないので、もはや体の一部と言っても過言ではありません。
 
 <div class="product-links">
   <div class="product-header">
@@ -159,7 +159,7 @@ draft: false
 都会でナイフは持ち歩けません（銃刀法以前に、オフィスで出すと引かれます）。
 
 ハサミ、パッケージオープナー、プラスドライバー、栓抜き。
-**Victorinox Jetsetter**のような「ブレードレス（刃なし）」のマルチツールなら、飛行機の手荷物検査も安心（※製品によります）で、タグを切ったりネジを締めたりする日常の「ちょっとした困った」を解決してくれます。
+<strong>Victorinox Jetsetter</strong>のような「ブレードレス（刃なし）」のマルチツールなら、飛行機の手荷物検査も安心（※製品によります）で、タグを切ったりネジを締めたりする日常の「ちょっとした困った」を解決してくれます。
 
 <div class="product-links">
   <div class="product-header">
@@ -194,4 +194,4 @@ draft: false
 まずはポケットの中身を全部出して、本当に必要なモノだけを選び直してみませんか？
 
 ---
-**※この記事は2026年のトレンド予測に基づいたライフスタイル提案です。**
+<strong>※この記事は2026年のトレンド予測に基づいたライフスタイル提案です。</strong>

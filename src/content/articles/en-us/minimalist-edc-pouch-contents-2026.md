@@ -22,9 +22,9 @@ draft: false
 "Is your pouch working for you, or are you working for your pouch?"
 
 In 2026, the definition of minimalism has shifted. It's no longer about carrying *less*; it's about carrying *smarter*.
-With AI assistants on our phones draining batteries faster than ever, the new luxury is **reliability**.
+With AI assistants on our phones draining batteries faster than ever, the new luxury is <strong>reliability</strong>.
 
-That's why the most cutting-edge EDC (Everyday Carry) setups this year are ditching the wireless chargers for something shocking: **Wires.**
+That's why the most cutting-edge EDC (Everyday Carry) setups this year are ditching the wireless chargers for something shocking: <strong>Wires.</strong>
 
 ## 2026 Trends: The Wired Revival & Material Science 
 
@@ -32,13 +32,13 @@ That's why the most cutting-edge EDC (Everyday Carry) setups this year are ditch
 *Photo by Jordan Rushton on Pexels*
 
 ### 1. The Death of Battery Anxiety
-We reached "Peak Wireless" in 2025. Now, we are seeing a **Wired Revival**.
+We reached "Peak Wireless" in 2025. Now, we are seeing a <strong>Wired Revival</strong>.
 USB-C EarPods and retractable cables are back. Why? Because a cable generally doesn't die.
 Eliminating the mental load of "did I charge my earbuds?" is the ultimate minimalist hack.
 
 ### 2. X-Pac is the New Leather
 Forget heavy leather. The US EDC community has fully embraced technical fabrics.
-**X-Pac (VX21)**and**Dyneema**—originally used for racing sails—are now the gold standard. They are waterproof, impossibly light, and look incredible in a flat-lay photo.
+<strong>X-Pac (VX21)</strong>and<strong>Dyneema</strong>—originally used for racing sails—are now the gold standard. They are waterproof, impossibly light, and look incredible in a flat-lay photo.
 
 ## The Holy Trinity of 2026 Minimalist EDC 
 
@@ -47,7 +47,7 @@ Forget heavy leather. The US EDC community has fully embraced technical fabrics.
 
 If you only carry three things, make it these:
 
-1.  **The Charger**:**CIO NovaPort DUO II**
+1.  <strong>The Charger</strong>:<strong>CIO NovaPort DUO II</strong>
     It's the size of an AirTag case but pumps out 65W. The definition of high density.
     <div class="product-links">
       <div class="product-header">
@@ -68,7 +68,7 @@ If you only carry three things, make it these:
         </a>
       </div>
     </div>
-2.  **The Cable**:**Anker USB-C Reel**
+2.  <strong>The Cable</strong>:<strong>Anker USB-C Reel</strong>
     Retractable cables used to be cheap junk. In 2026, they are premium engineered tools. No tangles, instant deployment.
     <div class="product-links">
       <div class="product-header">
@@ -89,16 +89,16 @@ If you only carry three things, make it these:
         </a>
       </div>
     </div>
-3.  **The Hub**:**Hybrid SSD Hub**
+3.  <strong>The Hub</strong>:<strong>Hybrid SSD Hub</strong>
     With local LLMs running on laptops, you need fast storage. A hub that doubles as an external drive is essential.
 
 ## Top 5 Pouch Loadouts
 
 ### 1. The Ultralight Hiker (Dyneema)
-For those who count grams. A semi-transparent **Dyneema sacoche** that weighs less than a letter. Holds just the essentials.
+For those who count grams. A semi-transparent <strong>Dyneema sacoche</strong> that weighs less than a letter. Holds just the essentials.
 
 ### 2. The Knoller (X-Pac)
-**Alpaka Elements Tech Case**.
+<strong>Alpaka Elements Tech Case</strong>.
 If you love organizing your gear in perfect grids (knolling), this is for you. High-vis orange interiors make finding black cables easy.
 <div class="product-links">
   <div class="product-header">
@@ -121,19 +121,19 @@ If you love organizing your gear in perfect grids (knolling), this is for you. H
 </div>
 
 ### 3. The Digital Nomad (Gorpcore)
-**Topologie Wares**.
+<strong>Topologie Wares</strong>.
 Rugged, modular, and ready for a sudden downpour. It clips onto your backpack or belt.
 
 ### 4. The Cyberpunk (Transparent)
-**Sharge Pouch**.
+<strong>Sharge Pouch</strong>.
 Clear PVC with neon accents. Show off your circuits. It’s a statement piece that says you live in the future.
 
 ### 5. The Analogue Rebel
-**Leather Roll**.
+<strong>Leather Roll</strong>.
 In a world of screens, carrying a fountain pen and a Field Notes notebook is an act of rebellion.
 
 ## Summary
 
 Your EDC pouch is your toolkit for navigating the modern world.
-In 2026, the best setup is the one that gives you **peace of mind**.
+In 2026, the best setup is the one that gives you <strong>peace of mind</strong>.
 Whether that’s a bulletproof cable or a waterproof pouch, choose gear that lets you focus on creating, not maintaining.

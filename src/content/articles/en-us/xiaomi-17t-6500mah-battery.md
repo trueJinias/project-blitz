@@ -62,8 +62,8 @@ A summary of the Xiaomi 17T battery leaks:
 
 | Feature | Spec | Notes |
 | :--- | :--- | :--- |
-| **Capacity** | 6,500mAh | Achieved via Silicon-Carbon technology |
-| **Charging Speed** | 67W (Downgrade) | Trade-off for increased battery volume |
-| **Form Factor** | Slim/Standard | Expected to remain around 8.5mm thick |
+| <strong>Capacity</strong> | 6,500mAh | Achieved via Silicon-Carbon technology |
+| <strong>Charging Speed</strong> | 67W (Downgrade) | Trade-off for increased battery volume |
+| <strong>Form Factor</strong> | Slim/Standard | Expected to remain around 8.5mm thick |
 
 If you despise carrying a portable battery pack or hate the stress of monitoring your charge percentage while traveling, the rumored Xiaomi 17T could be the device you've been waiting for. We eagerly await confirmation of these monster specs.
