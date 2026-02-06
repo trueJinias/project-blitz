@@ -52,7 +52,7 @@ If you only carry three things, make it these:
     <div class="product-links">
       <div class="product-header">
         <div class="product-thumb">
-          <img src="https://m.media-amazon.com/images/I/61K-q-v7lTL._AC_SX679_.jpg" alt="CIO NovaPort DUO II" />
+          <img src="/images/products/cio-novaport-duo-ii.jpg" alt="CIO NovaPort DUO II" />
         </div>
         <div class="product-info">
           <div class="product-label">
@@ -73,7 +73,7 @@ If you only carry three things, make it these:
     <div class="product-links">
       <div class="product-header">
         <div class="product-thumb">
-          <img src="https://m.media-amazon.com/images/I/61+9fK3N1ZL._AC_SX679_.jpg" alt="Anker Nano Charger with Cable" />
+          <img src="/images/products/anker-usb-c-reel.jpg" alt="Anker Nano Charger with Cable" />
         </div>
         <div class="product-info">
           <div class="product-label">
@@ -103,7 +103,7 @@ If you love organizing your gear in perfect grids (knolling), this is for you. H
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/71R2o58-9jL._AC_SX679_.jpg" alt="ALPAKA Elements Tech Case" />
+      <img src="/images/products/alpaka-elements-tech-case.jpg" alt="ALPAKA Elements Tech Case" />
     </div>
     <div class="product-info">
       <div class="product-label">

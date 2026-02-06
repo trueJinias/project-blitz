@@ -55,7 +55,7 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
     <div class="product-links">
       <div class="product-header">
         <div class="product-thumb">
-          <img src="https://m.media-amazon.com/images/I/61K-q-v7lTL._AC_SX679_.jpg" alt="CIO NovaPort DUO II" />
+          <img src="/images/products/cio-novaport-duo-ii.jpg" alt="CIO NovaPort DUO II" />
         </div>
         <div class="product-info">
           <div class="product-label">
@@ -79,7 +79,7 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
     <div class="product-links">
       <div class="product-header">
         <div class="product-thumb">
-          <img src="https://m.media-amazon.com/images/I/61+9fK3N1ZL._AC_SX679_.jpg" alt="Anker Nano Charger (30W) with Cable" />
+          <img src="/images/products/anker-usb-c-reel.jpg" alt="Anker Nano Charger (30W) with Cable" />
         </div>
         <div class="product-info">
           <div class="product-label">
@@ -114,7 +114,7 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/71R2o58-9jL._AC_SX679_.jpg" alt="ALPAKA Elements Tech Case" />
+      <img src="/images/products/alpaka-elements-tech-case.jpg" alt="ALPAKA Elements Tech Case" />
     </div>
     <div class="product-info">
       <div class="product-label">
@@ -141,7 +141,7 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/71Y-Vv-8M0L._AC_SX679_.jpg" alt="Bellroy Desk Caddy" />
+      <img src="/images/products/bellroy-desk-caddy.jpg" alt="Bellroy Desk Caddy" />
     </div>
     <div class="product-info">
       <div class="product-label">
@@ -166,7 +166,7 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/61B+X+U8KKL._AC_SX679_.jpg" alt="SHARGEEK 140W" />
+      <img src="/images/products/shargeek-140w.jpg" alt="SHARGEEK 140W" />
     </div>
     <div class="product-info">
       <div class="product-label">
