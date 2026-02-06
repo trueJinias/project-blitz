@@ -6,7 +6,7 @@ import GenreCard from '../components/GenreCard.astro';
 import { getCollection } from 'astro:content';
 
 // Get article counts per genre (Japanese only)
-const allArticles = await getCollection('articles', ({ id, data }) => !id.startsWith('en-us/') && !data.draft);
+const allArticles = await getCollection('articles', ({ id, data }) => !id.startsWith('en-us/') && !id.startsWith('en-in/') && !id.startsWith('hi-in/') && !data.draft);
 
 const genreCounts = allArticles.reduce((acc, article) => {
   const genre = article.data.genre;
