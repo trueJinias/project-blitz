@@ -52,8 +52,52 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
 
 1.  **超小型GaN充電器**: **CIO NovaPort DUO II**
     クレジットカードサイズでPCも充電できる傑作。これ一つで全てまかなえます。
+    <div class="product-links">
+      <div class="product-header">
+        <div class="product-thumb">
+          <img src="https://m.media-amazon.com/images/I/61K-q-v7lTL._AC_SX679_.jpg" alt="CIO NovaPort DUO II" />
+        </div>
+        <div class="product-info">
+          <div class="product-label">
+            <span class="label-icon">🛍️</span>
+            <span class="label-text">値段を確認:</span>
+          </div>
+          <div class="product-name">CIO NovaPort DUO II</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="https://www.amazon.co.jp/dp/B0D53T41CB?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+          <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+        </a>
+        <a href="https://search.rakuten.co.jp/search/mall/CIO+NovaPort+DUO+II/" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+          <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+        </a>
+      </div>
+    </div>
 2.  **巻き取り式ケーブル**: **Anker USB-C Reel**
     「ケーブルが絡まるストレス」を物理的に消滅させます。2026年モデルは耐久性が段違いです。
+    <div class="product-links">
+      <div class="product-header">
+        <div class="product-thumb">
+          <img src="https://m.media-amazon.com/images/I/61+9fK3N1ZL._AC_SX679_.jpg" alt="Anker Nano Charger (30W) with Cable" />
+        </div>
+        <div class="product-info">
+          <div class="product-label">
+            <span class="label-icon">🛍️</span>
+            <span class="label-text">値段を確認:</span>
+          </div>
+          <div class="product-name">Anker Nano Charger with Cable</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="https://www.amazon.co.jp/dp/B0DPL7Q5WP?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+          <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+        </a>
+        <a href="https://search.rakuten.co.jp/search/mall/Anker+Nano+Charger+Built-in+Cable/" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+          <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+        </a>
+      </div>
+    </div>
 3.  **魔法のテープ**: **3M デュアルロック**
     ポーチの中でガジェットが暴れないよう、壁面に固定するための最強ツール。
 
@@ -67,14 +111,80 @@ AppleのEarPods（USB-C）が見直されているように、「**充電不要�
 
 ### 2. 【テック特化】Alpaka Elements Tech Case
 「**整理整頓の鬼**」になれる。X-Pac素材で完全防水。
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71R2o58-9jL._AC_SX679_.jpg" alt="ALPAKA Elements Tech Case" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">ALPAKA Elements Tech Case</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0B3M7WSLD?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://search.rakuten.co.jp/search/mall/ALPAKA+Elements+Tech+Case/" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 中身が透けて見えるメッシュポケットが多く、どこに何があるか一瞬でわかります。
 
 ### 3. 【デスクワーク】Bellroy Desk Caddy
 カフェが自分のオフィスになる。
 ファスナーを開くと「**自立する**」のが最大の特徴。狭いカフェのテーブルでも場所を取りません。
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71Y-Vv-8M0L._AC_SX679_.jpg" alt="Bellroy Desk Caddy" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Bellroy Desk Caddy</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0B7VQNBBP?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://search.rakuten.co.jp/search/mall/Bellroy+Desk+Caddy/" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ### 4. 【サイバーパンク】Sharge Transparent Pouch
 中身を「**見せる**」美学。透明なボディにネオンカラーの基盤が見えるバッテリーと合わせると最高にクールです。
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61B+X+U8KKL._AC_SX679_.jpg" alt="SHARGEEK 140W" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">SHARGEEK 140W (Transparent)</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0D5H6TMGS?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://search.rakuten.co.jp/search/mall/SHARGEEK+140W/" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 2026年のストリートテックファッションのアイコンです。
 
 ### 5. 【経年変化】土屋鞄 レザーロールポーチ

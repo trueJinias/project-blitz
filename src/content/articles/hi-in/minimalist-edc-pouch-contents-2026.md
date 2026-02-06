@@ -46,6 +46,25 @@ draft: false
 
 47. 1.  **पावर बैंक + चार्जर**: **CIO NovaPort DUO II**
     यह छोटा सा चार्जर आपके लैपटॉप और फोन दोनों को फटाफट चार्ज कर देता है। साइज में छोटा, काम में बड़ा।
+    <div class="product-links">
+      <div class="product-header">
+        <div class="product-thumb">
+          <img src="https://m.media-amazon.com/images/I/61K-q-v7lTL._AC_SX679_.jpg" alt="CIO NovaPort DUO II" />
+        </div>
+        <div class="product-info">
+          <div class="product-label">
+            <span class="label-icon">🛍️</span>
+            <span class="label-text">Check Price:</span>
+          </div>
+          <div class="product-name">CIO NovaPort DUO II</div>
+        </div>
+      </div>
+      <div class="buttons single-col">
+        <a href="https://www.amazon.in/s?k=CIO+NovaPort+DUO+II" target="_blank" rel="noopener noreferrer" class="btn amazon">
+          <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+        </a>
+      </div>
+    </div>
 49. 2.  **मजबूत केबल**: **Braided USB-C Cable**
     सस्ती केबल जल्दी खराब होती है। एक अच्छी, रग्ड (Rugged) केबल खरीदें जो सालों साल चले।
 51. 3.  **यूनिवर्सल हब**: **Compact USB Hub**
@@ -60,6 +79,25 @@ draft: false
 ### 2. द टेक प्रो (The Tech Pro)
 अगर आप IT या मीडिया में हैं।
 **Alpaka Elements Tech Case** जैसा पाउच, जिसमें हर छोटी चीज के लिए अलग जेब हो। पेन ड्राइव और मेमोरी कार्ड खोने का डर नहीं।
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71R2o58-9jL._AC_SX679_.jpg" alt="ALPAKA Elements Tech Case" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">ALPAKA Elements Tech Case</div>
+    </div>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.in/s?k=ALPAKA+Elements+Tech+Case" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
 
 ### 3. द मॉनसून वारियर (The Monsoon Warrior)
 बारिश के लिए तैयार।

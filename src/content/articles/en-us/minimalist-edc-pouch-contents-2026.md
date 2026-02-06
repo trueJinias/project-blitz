@@ -49,8 +49,46 @@ If you only carry three things, make it these:
 
 1.  **The Charger**: **CIO NovaPort DUO II**
     It's the size of an AirTag case but pumps out 65W. The definition of high density.
+    <div class="product-links">
+      <div class="product-header">
+        <div class="product-thumb">
+          <img src="https://m.media-amazon.com/images/I/61K-q-v7lTL._AC_SX679_.jpg" alt="CIO NovaPort DUO II" />
+        </div>
+        <div class="product-info">
+          <div class="product-label">
+            <span class="label-icon">🛍️</span>
+            <span class="label-text">Check Price:</span>
+          </div>
+          <div class="product-name">CIO NovaPort DUO II</div>
+        </div>
+      </div>
+      <div class="buttons single-col">
+        <a href="https://www.amazon.com/s?k=CIO+NovaPort+DUO+II" target="_blank" rel="noopener noreferrer" class="btn amazon">
+          <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+        </a>
+      </div>
+    </div>
 2.  **The Cable**: **Anker USB-C Reel**
     Retractable cables used to be cheap junk. In 2026, they are premium engineered tools. No tangles, instant deployment.
+    <div class="product-links">
+      <div class="product-header">
+        <div class="product-thumb">
+          <img src="https://m.media-amazon.com/images/I/61+9fK3N1ZL._AC_SX679_.jpg" alt="Anker Nano Charger with Cable" />
+        </div>
+        <div class="product-info">
+          <div class="product-label">
+            <span class="label-icon">🛍️</span>
+            <span class="label-text">Check Price:</span>
+          </div>
+          <div class="product-name">Anker Nano Charger with Cable</div>
+        </div>
+      </div>
+      <div class="buttons single-col">
+        <a href="https://www.amazon.com/s?k=Anker+Retractable+USB-C" target="_blank" rel="noopener noreferrer" class="btn amazon">
+          <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+        </a>
+      </div>
+    </div>
 3.  **The Hub**: **Hybrid SSD Hub**
     With local LLMs running on laptops, you need fast storage. A hub that doubles as an external drive is essential.
 
@@ -62,6 +100,25 @@ For those who count grams. A semi-transparent **Dyneema sacoche** that weighs le
 ### 2. The Knoller (X-Pac)
 **Alpaka Elements Tech Case**.
 If you love organizing your gear in perfect grids (knolling), this is for you. High-vis orange interiors make finding black cables easy.
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71R2o58-9jL._AC_SX679_.jpg" alt="ALPAKA Elements Tech Case" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">ALPAKA Elements Tech Case</div>
+    </div>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.com/s?k=ALPAKA+Elements+Tech+Case" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
 
 ### 3. The Digital Nomad (Gorpcore)
 **Topologie Wares**.
