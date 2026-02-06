@@ -19,8 +19,7 @@ product: Xiaomi 16 Ultra (予想)
 
 ## はじめに 
 
-![Bustling indoor market with people and vibrant sunlight beams, capturing daily life ambiance.](/images/articles/xiaomi-16-ultra-long-term-review-2026-1.jpg)
-*Photo by Vietnam  Hidden Light on Pexels*
+
 
 みなさん、スマホのカメラで満足してますか？
 
