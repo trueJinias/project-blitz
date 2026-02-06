@@ -176,9 +176,15 @@ const showRakuten = region === 'JP';
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  @media (max-width: 640px) {
     .buttons {
       grid-template-columns: 1fr;
     }
+  }
+
+  .buttons.single-col {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
   }
 </style>
