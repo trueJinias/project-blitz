@@ -32,6 +32,7 @@ Browser Agentを使用して、選択したキーワードの上位3サイトを
 - ファイル名: `src/content/articles/{slug}.md`
 - 文字数: 約1,500文字
 - frontmatter含む
+- **文字装飾**: 重要な箇所（青の下線を引きたい箇所）は `**` で囲むこと（例: `**重要ポイント**`）。自動的に青いマーカー風の下線が適用されます。
 
 ### 5. 画像自動挿入
 生成した記事に画像を自動挿入：
@@ -82,3 +83,14 @@ node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
 ```powershell
 node scripts/manage-keywords.mjs remove "{今回のキーワード}"
 ```
+
+### 10. 完了報告（必須）
+ワークフロー完了時には、以下の形式でSNS投稿用のリンクを必ず出力する：
+- **公開記事URL**: `https://project-blitz.vercel.app/articles/{slug}`
+- **X投稿推奨文**: 記事のタイトル + URL
+- **(推奨) AI要約付き投稿リンク生成**:
+    以下のコマンドを実行すると、「読みたくなる一文」を含んだX投稿リンク（Intent URL）が生成されます。
+    ```powershell
+    node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
+    ```
+
