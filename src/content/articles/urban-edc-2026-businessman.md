@@ -41,9 +41,12 @@ product: Urban EDC 2026 Essentials
     <span class="label-icon">🛍️</span>
     <span class="label-text">値段を確認: <span class="product-name">ESR MagSafe ウォレット（探す対応）</span></span>
   </div>
-  <div class="buttons single-col">
-    <a href="https://www.amazon.co.jp/s?k=ESR+MagSafe+%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88+%E6%8E%A2%E3%81%99&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0DWZQM9KD?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmsquall%2Fes26391%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -88,9 +91,12 @@ product: Urban EDC 2026 Essentials
     <span class="label-icon">🛍️</span>
     <span class="label-text">値段を確認: <span class="product-name">Orbitkey キーオーガナイザー</span></span>
   </div>
-  <div class="buttons single-col">
-    <a href="https://www.amazon.co.jp/s?k=Orbitkey+Key+Organizer&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0FB38GZ8H?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffremtiden%2F332131590006166%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -106,9 +112,12 @@ product: Urban EDC 2026 Essentials
     <span class="label-icon">🛍️</span>
     <span class="label-text">値段を確認: <span class="product-name">Bose Ultra Open Earbuds</span></span>
   </div>
-  <div class="buttons single-col">
-    <a href="https://www.amazon.co.jp/s?k=Bose+Ultra+Open+Earbuds&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0CSKFY1Q2?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F1592981012%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -127,9 +136,12 @@ product: Urban EDC 2026 Essentials
     <span class="label-icon">🛍️</span>
     <span class="label-text">値段を確認: <span class="product-name">ビクトリノックス ジェットセッター</span></span>
   </div>
-  <div class="buttons single-col">
-    <a href="https://www.amazon.co.jp/s?k=%E3%83%93%E3%82%AF%E3%83%88%E3%83%AA%E3%83%8E%E3%83%83%E3%82%AF%E3%82%B9+%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%BB%E3%83%83%E3%82%BF%E3%83%BC&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B082FJ2WVQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvictorinox%2F06263%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>

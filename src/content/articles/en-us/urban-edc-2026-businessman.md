@@ -34,7 +34,7 @@ A MagSafe-compatible wallet that snaps onto the back of your phone is all you ne
     <span class="label-text">Check Price: <span class="product-name">ESR MagSafe Wallet Stand (Find My)</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.com/s?k=ESR+MagSafe+Wallet+Find+My" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.com/dp/B0FSJLYZLP" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -55,7 +55,7 @@ The **Anker 735 Charger (Nano II 65W)** is invincible even when cafe outlets are
     <span class="label-text">Check Price: <span class="product-name">Anker 735 Charger (65W)</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.com/s?k=Anker+735+Charger+65W" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.com/dp/B09C5RG6KV" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -74,7 +74,7 @@ The **Orbitkey Key Organizer Pro** lets you integrate tracking tags beautifully 
     <span class="label-text">Check Price: <span class="product-name">Orbitkey Key Organizer Pro</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.com/s?k=Orbitkey+Key+Organizer+Pro" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.com/dp/B0D8WGJYH4" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -93,7 +93,7 @@ The **Bose Ultra Open Earbuds** offer premium sound and total situational awaren
     <span class="label-text">Check Price: <span class="product-name">Bose Ultra Open Earbuds</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.com/s?k=Bose+Ultra+Open+Earbuds" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.com/dp/B0CPFV77W4" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -113,7 +113,7 @@ A "Bladeless" multi-tool like the **Victorinox Jetsetter** is safe for travel an
     <span class="label-text">Check Price: <span class="product-name">Victorinox Jetsetter (Bladeless)</span></span>
   </div>
   <div class="buttons single-col">
-    <a href="https://www.amazon.com/s?k=Victorinox+Jetsetter" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.com/dp/B006260SZO" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
