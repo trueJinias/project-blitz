@@ -7,7 +7,7 @@ image: ""
 tags: ["Face Authentication", "Retail Tech", "Cashless", "Japan Trends 2026", "FamilyMart"]
 author: "Namo-ni (Tech Editor)"
 draft: false
-product: "Face Authentication Payment 2026"
+
 ---
 
 ## Introduction

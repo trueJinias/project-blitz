@@ -9,7 +9,7 @@ tags:
   - Tech
 author: なも兄
 draft: false
-product: Face Authentication Payment 2026
+
 ---
 
 ## はじめに 
