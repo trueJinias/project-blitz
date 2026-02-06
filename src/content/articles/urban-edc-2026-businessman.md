@@ -5,7 +5,6 @@ genre: lifestyle
 date: 2026-02-06T00:00:00.000Z
 image: /images/articles/urban-edc-2026-businessman-thumbnail.jpg
 tags:
-  - Xiaomi
   - Tech
 author: なも兄
 draft: false

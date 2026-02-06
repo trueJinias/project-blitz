@@ -5,7 +5,6 @@ genre: tech
 date: 2026-02-06T00:00:00.000Z
 image: /images/articles/face-auth-payment-convenience-stores-2026-thumbnail.jpg
 tags:
-  - Xiaomi
   - Tech
 author: なも兄
 draft: false

@@ -53,7 +53,7 @@ Analyze the following article content and extract:
 1. **5 Relevant Tags** (Japanese): Keywords that best describe the article content.
 2. **Product Identification**:
    - Is this primarily a **Product Review** or **Product Introduction**? (true/false)
-   - If YES, what is the **Exact Product Name**? (e.g., "Xiaomi 14 Ultra", "Anker Nano II 65W")
+   - If YES, what is the **Exact Product Name**? (e.g., "iPhone 15 Pro", "Anker Nano II 65W")
 3. **Image Search Queries** (English):
    - One for the **Thumbnail** (Catchy, representative).
    - One for each **H2 Section** (Contextually relevant).
@@ -69,7 +69,7 @@ ${(content.match(/^##\s+(.+)$/gm) || []).join('\n')}
 {
   "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
   "is_product_review": true,
-  "product_name": "Xiaomi 14 Ultra", /* null if not a review */
+  "product_name": "Product Name", /* null if not a review */
   "thumbnail_query": "english search query for thumbnail",
   "section_queries": {
     "Header Text 1": "english search query 1",
@@ -109,9 +109,9 @@ Return ONLY valid JSON.
  */
 function fallbackAnalysis(title, content) {
     // 1. Generate Tags from Title (Simple matching)
-    const knownTags = ['Xiaomi', 'Review', 'Rumors', 'Guide', 'Tech', 'AI', 'Battery', 'Camera', 'HyperOS'];
+    const knownTags = ['Tech', 'Lifestyle', 'Review', 'Rumors', 'Guide', 'AI', 'Battery', 'Camera', 'Gadget'];
     const tags = knownTags.filter(tag => title.toLowerCase().includes(tag.toLowerCase()));
-    if (tags.length === 0) tags.push('Xiaomi', 'Tech'); // Default tags
+    if (tags.length === 0) tags.push('Tech', 'Gadget'); // Default tags
 
     // 2. Thumbnail Query
     // Use the file slug if possible, otherwise generic. 
