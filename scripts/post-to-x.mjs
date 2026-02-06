@@ -48,6 +48,61 @@ function getRegionConfig(filePath) {
     }
 }
 
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const MODEL = 'gemini-flash-latest';
+
+async function generateSocialPost(title, content, region) {
+    if (!GEMINI_API_KEY) {
+        console.warn('⚠️ GEMINI_API_KEY not found. Skipping AI summary generation.');
+        return null;
+    }
+
+    const language = region === 'JP' ? 'Japanese' : (region === 'IN' ? 'Hindi' : 'English');
+    const audience = region === 'JP' ? 'Japan' : (region === 'IN' ? 'India' : 'global/US');
+
+    // Truncate content to avoid token limits
+    const truncatedContent = content.substring(0, 3000);
+
+    const prompt = `
+You are a social media manager for a tech blog targeting ${audience}.
+Your task is to write an engaging X (Twitter) post in **${language}** to promote the following article.
+
+**Article Title:** ${title}
+**Article Content (Snippet):**
+${truncatedContent}
+
+**Requirements:**
+1.  **Hook:** Start with a catchy line or question that grabs attention.
+2.  **Summary:** Briefly tease the most interesting finding or conclusion (don't give everything away, make them click).
+3.  **Tone:** Enthusiastic, professional, yet accessible (like a tech influencer).
+4.  **Length:** Keep the text under 200 characters (excluding URL).
+5.  **Format:** Return ONLY the post text. Do NOT include the URL or title in your output (I will add them). Do NOT use hashtags unless they are extremely relevant (max 1).
+6.  **Language:** Strictly write in **${language}**.
+`;
+
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+        });
+
+        if (!response.ok) {
+            throw new Error(`Gemini API Error: ${response.status} ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        const text = data.candidates[0]?.content?.parts[0]?.text;
+
+        return text ? text.trim() : null;
+    } catch (error) {
+        console.error('⚠️ Failed to generate AI summary:', error.message);
+        return null;
+    }
+}
+
 async function postToX() {
     // 1. Get file path from args
     const filePath = process.argv[2];
@@ -76,13 +131,29 @@ async function postToX() {
 
     // 3. Read article metadata
     const fileContent = fs.readFileSync(filePath, 'utf-8');
-    const { data: frontmatter } = matter(fileContent);
+    const { data: frontmatter, content } = matter(fileContent);
     const slug = path.basename(filePath, path.extname(filePath));
 
     // Construct URL and content
     const articleUrl = `${config.urlPrefix}${slug}`;
-    const cleanTitle = frontmatter.title.replace(/['"]/g, ''); // Simple cleanup
-    const tweetText = `${cleanTitle}\n\n${articleUrl}`;
+    const cleanTitle = frontmatter.title.replace(/['"]/g, '');
+
+    // Generate AI Summary
+    console.log('🤖 Generating AI summary...');
+    const aiSummary = await generateSocialPost(cleanTitle, content, config.region);
+
+    let tweetText;
+    if (aiSummary) {
+        tweetText = `【${cleanTitle}】\n\n${aiSummary}\n\n👉 Read more: ${articleUrl}`;
+        // Adjust "Read more" based on language
+        if (config.region === 'JP') tweetText = `【${cleanTitle}】\n\n${aiSummary}\n\n⬇️ 記事を読む\n${articleUrl}`;
+        if (config.region === 'IN') tweetText = `【${cleanTitle}】\n\n${aiSummary}\n\n👉 देखें: ${articleUrl}`;
+    } else {
+        // Fallback
+        tweetText = `${cleanTitle}\n\n${articleUrl}`;
+    }
+
+    console.log('📝 Tweet Content:\n' + '-'.repeat(20) + '\n' + tweetText + '\n' + '-'.repeat(20));
 
     // Image handling
     let mediaId = null;
