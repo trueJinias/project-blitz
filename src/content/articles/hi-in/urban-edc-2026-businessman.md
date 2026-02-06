@@ -7,7 +7,6 @@ image: ""
 tags: ["EDC", "Gadgets", "Minimalist", "2026 Trends", "Business Gear"]
 author: "Namo-ni (Tech Editor)"
 draft: false
-product: "Urban EDC 2026 Essentials"
 ---
 
 ## परिचय

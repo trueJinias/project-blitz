@@ -9,8 +9,8 @@ tags:
   - Tech
 author: なも兄
 draft: false
-product: Urban EDC 2026 Essentials
 ---
+
 
 ## はじめに 
 
