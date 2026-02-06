@@ -62,7 +62,20 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - 100均のものより音が通りやすい高周波設計
 - デザインがシンプルで「防災グッズ感」がない
 
-正直、これだけは全員につけてほしい必須アイテムです。
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">チタン製ホイッスル（高周波）</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B07L5P49W3?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmonomichi%2Ftiswh-01%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ### 2. 暗闇を制する「超小型LEDライト」
 
@@ -74,7 +87,20 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - USB充電式なら電池交換の手間なし
 - クリップ付きなら帽子のツバにつけてヘッドライト代わりになる
 
-RovyVonなどのブランドが有名ですが、とにかく「小さくて明るい」ものを選びましょう。
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">RovyVon Aurora A1 (超小型LEDライト)</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0CKZ1YV7S?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fholkin-shop%2Frovyvon-a1-g4%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ### 3. 職務質問もOK「ブレードレスマルチツール」
 
@@ -83,7 +109,22 @@ RovyVonなどのブランドが有名ですが、とにかく「小さくて明�
 **実際に使ってわかったメリット：**
 - 刃物がついていないので、堂々と持ち歩ける安心感
 - キーホルダーとして馴染むデザイン（Nite Izeとかかっこいいですよね）
-- いざという時の「栓抜き」としても活躍（これ、意外と重要）
+- いざという時の「栓抜き」としても活躍
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">Nite Ize DoohicKey (ブレードレス)</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0FIX126K?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvic2rak%2Fniteize_0146%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ### 4. スマホのバッテリーを守る「超短ケーブル」
 
@@ -95,7 +136,20 @@ RovyVonなどのブランドが有名ですが、とにかく「小さくて明�
 - ケーブルが絡まるストレスから解放される
 - 友達に「充電器貸して」と言われた時にドヤ顔できる
 
-Rolling SquareのinChargeなどが有名ですね。
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">inCharge X (キーホルダー型ケーブル)</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B09C2C39FQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-shiz%2Frollingsquare-inchargex-all%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ### 5. 最終手段「紙幣カプセル」
 
@@ -107,13 +161,22 @@ Rolling SquareのinChargeなどが有名ですね。
 - 完全防水なので、大雨でずぶ濡れになってもお札は無事
 - 「隠し財産」を持っているようなスパイ気分が味わえる
 
-## まとめ：5000円で買える「安心」を持ち歩こう
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">防水キャッシュカプセル</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0C39LND5C?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpuchi-ark%2Fss-030%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
-1. チタン製ホイッスル
-2. 超小型LEDライト
-3. ブレードレスマルチツール
-4. キーホルダー型ケーブル
-5. 紙幣カプセル
+## まとめ：5000円で買える「安心」を持ち歩こう
 
 これら全部揃えても、重さは数10グラム、予算は5000円〜1万円程度です。
 たったこれだけで、万が一の時に自分と大切な人の命を守れる確率はグンと上がります。

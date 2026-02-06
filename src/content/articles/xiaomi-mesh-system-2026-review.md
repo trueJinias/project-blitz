@@ -14,7 +14,6 @@ tags:
 author: なも兄
 draft: false
 image: /images/articles/xiaomi-mesh-system-2026-review-thumbnail.jpg
-product: "Xiaomi Mesh System BE3600 Pro"
 ---
 
 ## 1万円で「Wi-Fi 7」の世界へようこそ 
@@ -87,4 +86,20 @@ Xiaomi Mesh System BE3600 Proは、**「80点のWi-Fi 7体験を、30点の価�
 - **見送るべき人**: FPSガチ勢（6GHz必須）、ルーター設定マニア
 
 「とりあえずWi-Fi 7にしてみたい」という入門機としては、これ以上の選択肢は2026年現在でも存在しません。
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">Xiaomi Mesh System BE3600 Pro</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0DFT29L8M?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fxiaomiofficial%2Fbe3600-pro%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
+
 浮いたお金で、新しいゲームでも買いましょう！

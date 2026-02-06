@@ -7,7 +7,6 @@ tags: ["Xiaomi", "Smart Band 11", "FeliCa", "Suica", "ウェアラブル", "2026
 author: "なも兄"
 draft: false
 image: "/images/articles/xiaomi-smart-band-11-thumbnail.jpg"
-product: "Xiaomi Smart Band 10"
 ---
 
 ## はじめに：僕らはいつまで「Suica対応」を待ち続ければいいのか
@@ -78,6 +77,21 @@ Xiaomiは近年、日本市場で急激に存在感を増しています。ス�
 
 現行の<strong>Xiaomi Smart Band 10</strong>は、決済機能を除けば、画面の明るさ、ヌルヌル動く操作感、バッテリー持ち、どれをとっても完成形に近いです。それが5,000円台で買えるのですから、2026年のBand 11を待つ間、1年間使い倒すだけでも十分に元は取れます。
 
-まずはBand 10で「手首に秘書がいる生活」に慣れておき、Band 11で「・改札ダッシュ」が追加される夢を見ながら待つのが、最も賢いガジェット好きの振る舞いかもしれません。
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">値段を確認: <span class="product-name">Xiaomi Smart Band 10</span></span>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0DFT29L8M?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fxiaomiofficial%2Fm2411b1-jp%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
+
+まずはBand 10で「手首に秘書がいる生活」に慣れておき、Band 11で「改札ダッシュ」が追加される夢を見ながら待つのが、最も賢いガジェット好きの振る舞いかもしれません。
 
 みなさんは、いくらまでなら「Suica付きXiaomi Band」にお金を出せますか？
