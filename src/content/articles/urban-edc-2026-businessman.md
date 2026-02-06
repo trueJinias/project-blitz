@@ -70,7 +70,7 @@ draft: false
     <span class="label-text">値段を確認: <span class="product-name">Anker 735 Charger (65W)</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=Anker+735+Charger&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B09W9M89WS?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa2668%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
