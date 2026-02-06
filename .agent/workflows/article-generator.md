@@ -39,14 +39,22 @@ Browser Agentを使用して、選択したキーワードの上位3サイトを
 node scripts/add-images.mjs src/content/articles/{生成したファイル名}.md
 ```
 
-### 6. 米国向けローカライズ
-生成した日本語記事を米国向けに自動変換：
-```powershell
-node scripts/localize.mjs src/content/articles/{生成したファイル名}.md
-```
-※ これで `src/content/articles/en-us/` に英語記事も生成されます。
+### 6. 米国・インド向けローカライズ（内製作成）
+**APIスクリプトは使用せず**、Agent自身が内部でローカライズ記事を作成する：
+- アイデア（キーワード）を元に、その国（米国・インド）の事情に合わせた独自の構成で記事を作成する。
+- 日本語記事の直訳ではなく、カルチャライズ・再構成を行う。
+- ファイル作成先：
+    - 米国版: `src/content/articles/en-us/{slug}.md`
+    - インド版: `src/content/articles/hi-in/{slug}.md`
 
-### 7. デプロイ（公開）
+### 7. 画像自動挿入（全言語）
+日本語版同様、作成した米国・インド版記事にも画像を挿入する：
+```powershell
+node scripts/add-images.mjs src/content/articles/en-us/{生成したファイル名}.md
+node scripts/add-images.mjs src/content/articles/hi-in/{生成したファイル名}.md
+```
+
+### 8. デプロイ（公開）
 最後にデプロイコマンドを実行して公開完了：
 ```powershell
 npm run deploy
