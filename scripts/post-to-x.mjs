@@ -22,7 +22,7 @@ function getRegionConfig(filePath) {
             appSecret: process.env.X_API_SECRET_US,
             accessToken: process.env.X_ACCESS_TOKEN_US,
             accessSecret: process.env.X_ACCESS_SECRET_US,
-            urlPrefix: 'https://project-blitz.vercel.app/en-us/articles/'
+            urlPrefix: 'https://www.blitz-blog.com/en-us/articles/'
         };
     } else if (normalizedPath.includes('/en-in/') || normalizedPath.includes('/hi-in/')) {
         return {
@@ -33,8 +33,8 @@ function getRegionConfig(filePath) {
             accessSecret: process.env.X_ACCESS_SECRET_IN,
             // Adjust URL prefix based on detected path
             urlPrefix: normalizedPath.includes('/hi-in/')
-                ? 'https://project-blitz.vercel.app/hi-in/articles/'
-                : 'https://project-blitz.vercel.app/en-in/articles/'
+                ? 'https://www.blitz-blog.com/hi-in/articles/'
+                : 'https://www.blitz-blog.com/en-in/articles/'
         };
     } else {
         // Default to Japan
@@ -44,7 +44,7 @@ function getRegionConfig(filePath) {
             appSecret: process.env.X_API_SECRET_JP,
             accessToken: process.env.X_ACCESS_TOKEN_JP,
             accessSecret: process.env.X_ACCESS_SECRET_JP,
-            urlPrefix: 'https://project-blitz.vercel.app/articles/'
+            urlPrefix: 'https://www.blitz-blog.com/articles/'
         };
     }
 }
