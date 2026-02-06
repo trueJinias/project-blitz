@@ -4,7 +4,7 @@ description: "Tired of fades and messy mops? It's time to upgrade your look. The
 date: 2024-05-27
 author: Kenji Tanaka
 genre: lifestyle
-image: /images/articles/old-money-hairstyle-men-guide-1.jpg
+image: /images/articles/old-money-hairstyle-men-guide-thumbnail.jpg
 ---
 
 ## Introduction: Why You Need to Level Up Your Hair
