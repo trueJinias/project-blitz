@@ -30,7 +30,19 @@ product: "Urban EDC 2026 Essentials"
 - यह आपकी डेस्क पर एक फोन स्टैंड है, और चलते-फिरते एक वॉलेट।
 - ट्रैकिंग टैग वाले मॉडल मन की शांति देते हैं।
 
-[👉 Amazon पर "MagSafe Wallet Stand" देखें](https://www.amazon.in/s?k=MagSafe+Wallet+Stand)
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">कीमत देखें: <span class="product-name">MagSafe Wallet Stand</span></span>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.in/s?k=MagSafe+Wallet+Stand" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 
 ## 2. GaN कॉम्पैक्ट चार्जर
 
@@ -40,7 +52,19 @@ product: "Urban EDC 2026 Essentials"
 Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के आकार के हैं फिर भी पीसी को चार्ज करने के लिए पर्याप्त शक्तिशाली हैं।
 एक 2-in-1 टाइप जो पावर बैंक के रूप में भी काम करता है, तब भी काम आता है जब कैफे के प्लग भरे हों।
 
-[👉 Amazon पर "GaN Fast Charger 2in1" देखें](https://www.amazon.in/s?k=GaN+Fast+Charger+2in1)
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">कीमत देखें: <span class="product-name">GaN Fast Charger 2in1</span></span>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.in/s?k=GaN+Fast+Charger+2in1" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 
 ## 3. की (Key) ऑर्गनाइज़र
 
@@ -48,7 +72,19 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 एक की ऑर्गनाइज़र जो आपकी चाबियों को स्मार्ट तरीके से स्टोर करता है, एक सुलझे हुए इंसान की पहचान है।
 2026 के मॉडल में, बिल्ट-इन ट्रैकिंग टैग स्टैंडर्ड बन रहे हैं। रात में दरवाजा खोलने के लिए एक छोटी एलईडी लाइट भी एक आसान सुविधा है।
 
-[👉 Amazon पर "Key Organizer LED" देखें](https://www.amazon.in/s?k=Key+Organizer+LED)
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">कीमत देखें: <span class="product-name">Key Organizer LED</span></span>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.in/s?k=Key+Organizer+LED" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 
 ## 4. ओपन-ईयर वायरलेस ईयरबड्स
 
@@ -56,7 +92,19 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 बोन कंडक्शन या ओपन-ईयर ईयरबड्स आपको संगीत सुनने देते हैं जबकि आप अभी भी किसी सहकर्मी की पुकार या स्टेशन की घोषणा सुन सकते हैं।
 लंबे समय तक पहनने पर भी ये कानों को नहीं थकाते।
 
-[👉 Amazon पर "Open Ear Earbuds" देखें](https://www.amazon.in/s?k=Open+Ear+Earbuds)
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">कीमत देखें: <span class="product-name">Open Ear Earbuds</span></span>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.in/s?k=Open+Ear+Earbuds" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 
 ## 5. बिना ब्लेड वाला मल्टी-टूल
 
@@ -66,7 +114,19 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 कैंची, पैकेज ओपनर, स्क्रूड्राइवर, बोतल ओपनर।
 इन कार्यों वाला एक "ब्लेडलेस" मल्टी-टूल यात्रा के लिए सुरक्षित है (उत्पाद पर निर्भर करता है) और टैग काटने या पेंच कसने जैसी रोजमर्रा की छोटी समस्याओं को हल करता है।
 
-[👉 Amazon पर "Bladeless Multi Tool" देखें](https://www.amazon.in/s?k=Bladeless+Multi+Tool)
+
+<div class="product-links">
+  <div class="product-label">
+    <span class="label-icon">🛍️</span>
+    <span class="label-text">कीमत देखें: <span class="product-name">Bladeless Multi Tool</span></span>
+  </div>
+  <div class="buttons single-col">
+    <a href="https://www.amazon.in/s?k=Bladeless+Multi+Tool" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 
 ## निष्कर्ष: आपका गियर आपके काम को परिभाषित करता है
 
