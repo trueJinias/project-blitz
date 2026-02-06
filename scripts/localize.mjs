@@ -24,21 +24,21 @@ const LOCALE_CONFIG = {
         spelling: 'American English',
         suffix: '-us'
     },
-    'en-in': {
-        audience: 'Indian tech enthusiasts',
+    'hi-in': {
+        audience: 'Hindi-speaking Indian tech enthusiasts',
         currency: 'INR',
-        rate: '0.55 JPY', // 1 JPY = ~0.55 INR (Reciprocal: 1 INR = ~1.8 JPY) -> Logic below
+        rate: '0.55 JPY',
         currencySymbol: '₹',
         context: 'India launch, Global import, or "Grey Market" availability',
-        spelling: 'British/Indian English (e.g. colour, centre)',
-        suffix: '-in'
+        spelling: 'Hindi (Devanagari script), Use English for technical terms where common (e.g. "Smartphone", "Processor")',
+        suffix: '-in' // Note: This will result in [slug]-in.md, likely inside hi-in folder
     }
 };
 
 // Main execution
 const articlePath = process.argv[2];
-const specificTarget = process.argv[3]; // Optional: e.g. 'en-us' or 'en-in'
-const LOCALE_LIST = ['en-us', 'en-in'];
+const specificTarget = process.argv[3]; // Optional: e.g. 'en-us' or 'hi-in'
+const LOCALE_LIST = ['en-us', 'hi-in'];
 
 if (!articlePath) {
     console.error('❌ Usage: node scripts/localize.mjs <src/content/articles/path/to/article.md> [target-locale]');

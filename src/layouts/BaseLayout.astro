@@ -12,14 +12,17 @@ const {
   title,
   description = "カテゴリから記事を探す、新しい読書体験",
   image = "/ogp.png",
-  type = "website"
+  type = "website",
+  lang = "ja"
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const ogLocale = lang === 'en-us' ? 'en_US' : (lang === 'hi-in' ? 'hi_IN' : 'ja_JP');
 ---
 
 <!DOCTYPE html>
-<html lang="ja">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +42,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.site)} />
-    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale" content={ogLocale} />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />

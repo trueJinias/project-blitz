@@ -5,15 +5,15 @@ import Footer from '../../../components/Footer.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 
-// Get all EN-IN articles, sorted by date
-const allArticles = await getCollection('articles', ({ id, data }) => id.startsWith('en-in/') && !data.draft);
+// Get all Hindi (India) articles, sorted by date
+const allArticles = await getCollection('articles', ({ id, data }) => id.startsWith('hi-in/') && !data.draft);
 const sortedArticles = allArticles.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const title = "All Articles";
-const description = "Browse all articles covering gadgets, lifestyle, and news.";
+const title = "सभी लेख";
+const description = "गैजेट्स, लाइफस्टाइल और समाचारों को कवर करने वाले सभी लेख ब्राउज़ करें।";
 ---
 
-<BaseLayout title={`BLITZ - ${title}`} description={description} lang="en-in">
+<BaseLayout title={`BLITZ - ${title}`} description={description} lang="hi-in">
   <Header />
   
   <main class="articles-index">
@@ -31,7 +31,7 @@ const description = "Browse all articles covering gadgets, lifestyle, and news."
             <ArticleCard 
               title={article.data.title}
               description={article.data.description}
-              href={`/en-in/articles/${article.slug.replace('en-in/', '')}`}
+              href={`/hi-in/articles/${article.slug.replace('hi-in/', '')}`}
               genre={article.data.genre}
               date={article.data.date}
               image={article.data.image}

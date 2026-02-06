@@ -19,37 +19,37 @@ const { genre } = Astro.params;
 
 const genreData: Record<string, { label: string; description: string; color: string }> = {
   tech: {
-    label: 'Tech',
-    description: 'Latest technology & gadget news',
+    label: 'टेक',
+    description: 'नवीनतम तकनीक और गैजेट समाचार',
     color: 'var(--color-tech)',
   },
   lifestyle: {
-    label: 'Lifestyle',
-    description: 'Lifestyle, hobbies & living tips',
+    label: 'जीवन शैली',
+    description: 'जीवन शैली, शौक और रहने के टिप्स',
     color: 'var(--color-lifestyle)',
   },
   review: {
-    label: 'Review',
-    description: 'Honest reviews of products we\'ve actually used',
+    label: 'समीक्षा',
+    description: 'उन उत्पादों की ईमानदार समीक्षा जिनका हमने वास्तव में उपयोग किया है',
     color: 'var(--color-review)',
   },
   news: {
-    label: 'News',
-    description: 'Trending news & updates',
+    label: 'समाचार',
+    description: 'रुझान वाले समाचार और अपडेट',
     color: 'var(--color-news)',
   },
   economics: {
-    label: 'Economy',
-    description: 'Finance, Investment, Business & Markets',
+    label: 'अर्थव्यवस्था',
+    description: 'वित्त, निवेश, व्यापार और बाजार',
     color: '#FFD700',
   },
 };
 
 const currentGenre = genreData[genre as string] || genreData.tech;
 
-// Get English (India) articles only
+// Get Hindi (India) articles only
 const articles = await getCollection('articles', ({ id, data }) => {
-  return id.startsWith('en-in/') && data.genre === genre && !data.draft;
+  return id.startsWith('hi-in/') && data.genre === genre && !data.draft;
 });
 
 // Sort by date, newest first
@@ -67,18 +67,19 @@ const sortedArticles = articles.sort((a, b) =>
   <main class="genre-page">
     <section class="genre-header" style={`--genre-color: ${currentGenre.color}`}>
       <div class="container">
-        <a href="/en-in/" class="back-link">
+      <div class="container">
+        <a href="/hi-in/" class="back-link">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M19 12H5M12 19l-7-7 7-7"/>
           </svg>
-          Back to Category Selection
+          श्रेणी चयन पर वापस जाएं
         </a>
         
         <h1 class="genre-title">{currentGenre.label}</h1>
         <p class="genre-description">{currentGenre.description}</p>
         
         <div class="article-count">
-          {sortedArticles.length} articles
+          {sortedArticles.length} लेख
         </div>
       </div>
     </section>
@@ -91,7 +92,7 @@ const sortedArticles = articles.sort((a, b) =>
               <ArticleCard
                 title={article.data.title}
                 description={article.data.description}
-                href={`/en-in/articles/${article.slug.replace('en-in/', '')}`}
+                href={`/hi-in/articles/${article.slug.replace('hi-in/', '')}`}
                 genre={article.data.genre}
                 date={article.data.date}
                 image={article.data.image}
@@ -102,9 +103,9 @@ const sortedArticles = articles.sort((a, b) =>
         ) : (
           <div class="empty-state">
             <div class="empty-icon">📝</div>
-            <h2>No articles yet</h2>
-            <p>Articles in this genre are coming soon</p>
-            <a href="/en-in/" class="back-button">Back to Home</a>
+            <h2>अभी तक कोई लेख नहीं</h2>
+            <p>इस शैली में लेख जल्द ही आ रहे हैं</p>
+            <a href="/hi-in/" class="back-button">होम पर वापस जाएं</a>
           </div>
         )}
       </div>

@@ -56,3 +56,15 @@ npm run deploy
 ブラウザで記事を確認：
 - ローカル: http://localhost:4321/articles/{slug}
 - 本番: https://project-blitz.vercel.app/articles/{slug}
+
+### 8. SNS投稿 (X)
+記事がデプロイされたら、Xに自動投稿します。
+※ Vercelのビルド完了まで数分待ってから実行することをお勧めします。
+
+```powershell
+node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
+```
+```powershell
+node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
+```
+※ 米国版、インド版（ヒンディー語）の記事も同様に、それぞれのファイルパスを指定して実行すれば、自動的に対象国のアカウントで投稿されます。

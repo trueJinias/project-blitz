@@ -5,9 +5,9 @@ import Footer from '../../components/Footer.astro';
 import GenreCard from '../../components/GenreCard.astro';
 import { getCollection } from 'astro:content';
 
-// Get English (India) articles
+// Get Hindi (India) articles
 const allArticles = await getCollection('articles', ({ id, data }) => 
-  id.startsWith('en-in/') && !data.draft
+  id.startsWith('hi-in/') && !data.draft
 );
 
 const genreCounts = allArticles.reduce((acc, article) => {
@@ -19,7 +19,7 @@ const genreCounts = allArticles.reduce((acc, article) => {
 const genres: Array<'tech' | 'lifestyle' | 'news' | 'economics'> = ['tech', 'lifestyle', 'news', 'economics'];
 ---
 
-<BaseLayout title="BLITZ.us - Discover Articles by Genre" description="Find the perfect article for you from a variety of genres including gadgets, lifestyle, reviews, and news.">
+<BaseLayout title="BLITZ.us - शैलियों द्वारा लेख खोजें" description="गैजेट्स, लाइफस्टाइल, रिव्यूज़ और समाचार सहित विभिन्न शैलियों के अपने पसंदीदा लेख खोजें।">
   <Header />
   
   <main class="home">
@@ -30,6 +30,7 @@ const genres: Array<'tech' | 'lifestyle' | 'news' | 'economics'> = ['tech', 'lif
       </div>
       
       <div class="emoji-decoration">
+        {/* Emojis kept same */}
         <span class="emoji" style="top: 15%; left: 5%;">⚡</span>
         <span class="emoji" style="top: 25%; right: 8%;">📱</span>
         <span class="emoji" style="top: 40%; left: 3%;">💻</span>
@@ -48,15 +49,15 @@ const genres: Array<'tech' | 'lifestyle' | 'news' | 'economics'> = ['tech', 'lif
       
       <div class="hero-content">
         <h1 class="hero-title">
-          <span class="title-line title-highlight">Trendy</span>
-          <span class="title-line">Wikipedia</span>
+          <span class="title-line title-highlight">ट्रेंडी</span>
+          <span class="title-line">विकिपीडिया</span>
         </h1>
         <p class="hero-description">
-          Scroll to explore categories
+          श्रेणियों का पता लगाने के लिए स्क्रॉल करें
         </p>
         
         <div class="scroll-indicator">
-          <span>Scroll</span>
+          <span>स्क्रॉल करें</span>
           <div class="scroll-line"></div>
         </div>
       </div>
@@ -65,8 +66,8 @@ const genres: Array<'tech' | 'lifestyle' | 'news' | 'economics'> = ['tech', 'lif
     <!-- Genre Selection -->
     <section class="genres">
       <div class="container">
-        <h2 class="section-title">Choose a Category</h2>
-        <p class="section-subtitle">Click on a category to explore articles</p>
+        <h2 class="section-title">एक श्रेणी चुनें</h2>
+        <p class="section-subtitle">लेखों का पता लगाने के लिए एक श्रेणी पर क्लिक करें</p>
         
         <div class="genre-grid">
           {genres.map((genre, index) => (
@@ -74,7 +75,7 @@ const genres: Array<'tech' | 'lifestyle' | 'news' | 'economics'> = ['tech', 'lif
               genre={genre} 
               count={genreCounts[genre] || 0}
               delay={index * 0.1}
-              lang="en-in"
+              lang="hi-in"
             />
           ))}
         </div>

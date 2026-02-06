@@ -1,18 +1,18 @@
 ---
 const currentPath = Astro.url.pathname;
 const isUs = currentPath.startsWith('/en-us');
-const isIn = currentPath.startsWith('/en-in');
-const currentLang = isUs ? 'en-us' : (isIn ? 'en-in' : 'ja');
+const isIn = currentPath.startsWith('/hi-in');
+const currentLang = isUs ? 'en-us' : (isIn ? 'hi-in' : 'ja');
 
 import Flag from './Flag.astro';
 import LanguageSelector from './LanguageSelector.astro';
 
 const navItems = [
-  { label: 'Home', href: isUs ? '/en-us/' : (isIn ? '/en-in/' : '/') },
-  { label: 'Tech', href: isUs ? '/en-us/genre/tech' : (isIn ? '/en-in/genre/tech' : '/genre/tech') },
-  { label: 'Lifestyle', href: isUs ? '/en-us/genre/lifestyle' : (isIn ? '/en-in/genre/lifestyle' : '/genre/lifestyle') },
-  { label: 'Economy', href: isUs ? '/en-us/genre/economics' : (isIn ? '/en-in/genre/economics' : '/genre/economics') },
-  { label: 'News', href: isUs ? '/en-us/genre/news' : (isIn ? '/en-in/genre/news' : '/genre/news') },
+  { label: isIn ? 'होम' : 'Home', href: isUs ? '/en-us/' : (isIn ? '/hi-in/' : '/') },
+  { label: isIn ? 'टेक' : 'Tech', href: isUs ? '/en-us/genre/tech' : (isIn ? '/hi-in/genre/tech' : '/genre/tech') },
+  { label: isIn ? 'जीवन शैली' : 'Lifestyle', href: isUs ? '/en-us/genre/lifestyle' : (isIn ? '/hi-in/genre/lifestyle' : '/genre/lifestyle') },
+  { label: isIn ? 'अर्थव्यवस्था' : 'Economy', href: isUs ? '/en-us/genre/economics' : (isIn ? '/hi-in/genre/economics' : '/genre/economics') },
+  { label: isIn ? 'समाचार' : 'News', href: isUs ? '/en-us/genre/news' : (isIn ? '/hi-in/genre/news' : '/genre/news') },
 ];
 
 let siteName = 'BLITZ.jp';
@@ -21,7 +21,7 @@ if (isIn) siteName = 'BLITZ.in';
 
 // Detect if we're on an article page and calculate language switch URLs
 // Note: LanguageSelector now handles URL generation, we just need the slug.
-const articleMatch = currentPath.match(/\/(en-us\/|en-in\/)?articles\/(.+?)\/?$/);
+const articleMatch = currentPath.match(/\/(en-us\/|hi-in\/)?articles\/(.+?)\/?$/);
 let articleSlug = undefined;
 
 if (articleMatch) {
@@ -31,7 +31,7 @@ if (articleMatch) {
 
 <header class="header">
   <div class="header-container">
-    <a href={isUs ? '/en-us/' : (isIn ? '/en-in/' : '/')} class="logo">
+    <a href={isUs ? '/en-us/' : (isIn ? '/hi-in/' : '/')} class="logo">
       <span class="logo-text">{siteName.split('.')[0]}</span>
       <span class="logo-dot">.{siteName.split('.')[1]}</span>
     </a>
@@ -43,7 +43,7 @@ if (articleMatch) {
           <li>
             <a 
               href={item.href} 
-              class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && item.href !== '/en-us/' && item.href !== '/en-in/' && currentPath.startsWith(item.href)) }]}
+              class:list={['nav-link', { active: currentPath === item.href || (item.href !== '/' && item.href !== '/en-us/' && item.href !== '/hi-in/' && currentPath.startsWith(item.href)) }]}
               data-astro-prefetch
             >
               {item.label}

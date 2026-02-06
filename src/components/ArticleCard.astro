@@ -11,25 +11,34 @@ interface Props {
 
 const { title, description, href, genre, date, image, delay = 0 } = Astro.props;
 
+// Infer lang from href
+const isEnglish = href.startsWith('/en-us');
+const isHindi = href.startsWith('/hi-in');
+const lang = isEnglish ? 'en-US' : (isHindi ? 'hi-IN' : 'ja-JP');
+
 const genreColors: Record<string, string> = {
   tech: 'var(--color-tech)',
   lifestyle: 'var(--color-lifestyle)',
   review: 'var(--color-review)',
   news: 'var(--color-news)',
+  economics: '#FFD700',
 };
 
 const genreLabels: Record<string, string> = {
-  tech: 'Tech',
-  lifestyle: 'Lifestyle',
-  review: 'Review',
-  news: 'News',
+  tech: isEnglish ? 'Tech' : (isHindi ? 'टेक' : 'Tech'),
+  lifestyle: isEnglish ? 'Lifestyle' : (isHindi ? 'जीवन शैली' : 'Lifestyle'),
+  review: isEnglish ? 'Review' : (isHindi ? 'समीक्षा' : 'Review'),
+  news: isEnglish ? 'News' : (isHindi ? 'समाचार' : 'News'),
+  economics: isEnglish ? 'Economy' : (isHindi ? 'अर्थव्यवस्था' : 'Economy'),
 };
 
-const formattedDate = new Intl.DateTimeFormat('ja-JP', {
+const formattedDate = new Intl.DateTimeFormat(lang, {
   year: 'numeric',
   month: 'short',
   day: 'numeric',
 }).format(date);
+
+const readMoreText = isEnglish ? "Read More" : (isHindi ? "और पढ़ें" : "続きを読む");
 ---
 
 <article class="article-card" style={`--delay: ${delay}s;`}>
@@ -47,7 +56,7 @@ const formattedDate = new Intl.DateTimeFormat('ja-JP', {
     <div class="card-body">
       <div class="card-meta">
         <span class="genre-badge" style={`--badge-color: ${genreColors[genre]}`}>
-          {genreLabels[genre]}
+          {genreLabels[genre] || genre}
         </span>
         <time datetime={date.toISOString()}>{formattedDate}</time>
       </div>
@@ -56,7 +65,7 @@ const formattedDate = new Intl.DateTimeFormat('ja-JP', {
       <p class="card-description">{description}</p>
       
       <span class="read-more">
-        続きを読む
+        {readMoreText}
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>

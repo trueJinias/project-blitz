@@ -2,21 +2,24 @@
 const currentYear = new Date().getFullYear();
 const currentPath = Astro.url.pathname;
 const isEnglish = currentPath.startsWith('/en-us');
+const isHindi = currentPath.startsWith('/hi-in');
 
 const tagline = isEnglish 
   ? "Find the perfect article for you from a variety of genres including gadgets, lifestyle, reviews, and news."
-  : "ガジェット、ライフスタイル、レビュー、ニュースなど、多彩なカテゴリからあなたにぴったりの記事が見つかるWebマガジン。";
+  : (isHindi 
+    ? "गैजेट्स, लाइफस्टाइल, समीक्षा, समाचार और बहुत कुछ सहित विभिन्न शैलियों से आपके लिए सही लेख खोजें।" 
+    : "ガジェット、ライフスタイル、レビュー、ニュースなど、多彩なカテゴリからあなたにぴったりの記事が見つかるWebマガジン。");
 
 const links = {
-  genre: isEnglish ? "Category" : "カテゴリ",
-  links: isEnglish ? "Links" : "リンク",
-  home: isEnglish ? "Home" : "ホーム",
-  allArticles: isEnglish ? "All Articles" : "すべての記事"
+  genre: isEnglish ? "Category" : (isHindi ? "श्रेणी" : "カテゴリ"),
+  links: isEnglish ? "Links" : (isHindi ? "लिंक" : "リンク"),
+  home: isEnglish ? "Home" : (isHindi ? "होम" : "ホーム"),
+  allArticles: isEnglish ? "All Articles" : (isHindi ? "सभी लेख" : "すべての記事")
 };
 
-const homePath = isEnglish ? "/en-us/" : "/";
-const articlesPath = isEnglish ? "/en-us/articles" : "/articles";
-const genrePrefix = isEnglish ? "/en-us/genre" : "/genre";
+const homePath = isEnglish ? "/en-us/" : (isHindi ? "/hi-in/" : "/");
+const articlesPath = isEnglish ? "/en-us/articles" : (isHindi ? "/hi-in/articles" : "/articles");
+const genrePrefix = isEnglish ? "/en-us/genre" : (isHindi ? "/hi-in/genre" : "/genre");
 ---
 
 <footer class="footer">

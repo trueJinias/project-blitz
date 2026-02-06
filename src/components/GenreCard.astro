@@ -10,22 +10,24 @@ const { genre, count = 0, delay = 0, lang = 'ja' } = Astro.props;
 
 const genreData = {
   tech: {
-    label: { ja: 'Tech', 'en-us': 'Tech', 'en-in': 'Tech' },
+    label: { ja: 'Tech', 'en-us': 'Tech', 'en-in': 'Tech', 'hi-in': 'टेक' },
     description: { 
       ja: 'テクノロジー・ガジェットの最新情報', 
       'en-us': 'Latest technology & gadget news',
-      'en-in': 'Latest technology & gadget news'
+      'en-in': 'Latest technology & gadget news',
+      'hi-in': 'नवीनतम तकनीक और गैजेट समाचार'
     },
     icon: '⚡',
     gradient: 'var(--gradient-tech)',
     color: 'var(--color-tech)',
   },
   lifestyle: {
-    label: { ja: 'Lifestyle', 'en-us': 'Lifestyle', 'en-in': 'Lifestyle' },
+    label: { ja: 'Lifestyle', 'en-us': 'Lifestyle', 'en-in': 'Lifestyle', 'hi-in': 'जीवन शैली' },
     description: { 
       ja: 'ライフスタイル・趣味・暮らしのヒント', 
       'en-us': 'Lifestyle, hobbies & living tips',
-      'en-in': 'Lifestyle, hobbies & living tips'
+      'en-in': 'Lifestyle, hobbies & living tips',
+      'hi-in': 'जीवन शैली, शौक और रहने के टिप्स'
     },
     icon: '✨',
     gradient: 'var(--gradient-lifestyle)',
@@ -33,11 +35,12 @@ const genreData = {
   },
 
   news: {
-    label: { ja: 'News', 'en-us': 'News', 'en-in': 'News' },
+    label: { ja: 'News', 'en-us': 'News', 'en-in': 'News', 'hi-in': 'समाचार' },
     description: { 
       ja: '政治・国際情勢・一般ニュース', 
       'en-us': 'Politics, World Affairs & General News',
-      'en-in': 'Politics, World Affairs & General News'
+      'en-in': 'Politics, World Affairs & General News',
+      'hi-in': 'राजनीति, विश्व मामले और सामान्य समाचार'
     },
     icon: '📰',
     gradient: 'var(--gradient-news)',
@@ -45,11 +48,12 @@ const genreData = {
   },
 
   economics: {
-    label: { ja: 'Economy', 'en-us': 'Economy', 'en-in': 'Economy' },
+    label: { ja: 'Economy', 'en-us': 'Economy', 'en-in': 'Economy', 'hi-in': 'अर्थव्यवस्था' },
     description: {
       ja: '金融・投資・ビジネス・マーケット',
       'en-us': 'Finance, Investment, Business & Markets',
-      'en-in': 'Finance, Investment, Business & Markets'
+      'en-in': 'Finance, Investment, Business & Markets',
+      'hi-in': 'वित्त, निवेश, व्यापार और बाजार'
     },
     icon: '📈',
     gradient: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
@@ -65,9 +69,9 @@ let countLabel = '記事';
 if (lang === 'en-us') {
   href = `/en-us/genre/${genre}`;
   countLabel = 'articles';
-} else if (lang === 'en-in') {
-  href = `/en-in/genre/${genre}`;
-  countLabel = 'articles';
+} else if (lang === 'hi-in') {
+  href = `/hi-in/genre/${genre}`;
+  countLabel = 'लेख';
 }
 ---
 
