@@ -34,21 +34,18 @@ product: Urban EDC 2026 Essentials
 スマホの背面にピタッとつくMagSafe対応ウォレットがあれば、免許証とメインのクレカ1枚で事足ります。
 
 **おすすめポイント：**
-- **MOFTやESR**のスタンド機能付きが最強。
-- デスクではスマホスタンドになり、移動中は財布になる。
-- 紛失防止タグ機能付きなら、さらに安心。
-
+- **ESR HaloLock Geo Wallet Stand**（Find My対応）や**MOFT**のスタンド機能付きが最強。
 
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">MagSafe ウォレット スタンド</span></span>
+    <span class="label-text">値段を確認: <span class="product-name">ESR MagSafe ウォレット（探す対応）</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=MagSafe+%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88+%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=ESR+MagSafe+%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88+%E6%8E%A2%E3%81%99&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FMagSafe%2520%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2588%2520%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2589" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FESR%2520MagSafe%2520%25E3%2582%25A6%25E3%2582%25A9%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2588%2520%25E6%258E%25A2%25E3%2581%2599" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -64,19 +61,18 @@ product: Urban EDC 2026 Essentials
 しかし、レンガみたいなACアダプタを持ち歩くのはスマートじゃない。
 
 窒化ガリウム（GaN）採用の充電器なら、ゴルフボールサイズでPCも充電できます。
-カフェのコンセントが埋まっていても、モバイルバッテリー機能付きの2-in-1タイプなら無敵です。
-
+**Anker 735 Charger (Nano II 65W)**など、モバイルバッテリー機能付きの2-in-1タイプなら無敵です。
 
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">GaN 急速充電器 2in1</span></span>
+    <span class="label-text">値段を確認: <span class="product-name">Anker 735 Charger (65W)</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=GaN+%E6%80%A5%E9%80%9F%E5%85%85%E9%9B%BB%E5%99%A8+2in1&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Anker+735+Charger&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FGaN%2520%25E6%2580%25A5%25E9%2580%259F%25E5%2585%2595%25E9%259B%25BB%25E5%2599%25A8%25202in1" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FAnker%2520735%2520Charger" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -87,19 +83,18 @@ product: Urban EDC 2026 Essentials
 
 「ジャラジャラ」音、させてませんか？
 鍵束をスマートに収納するキーオーガナイザーは、大人の嗜みです。
-2026年モデルでは、紛失防止タグ埋め込み型が標準になりつつあります。夜間の帰宅時に手元を照らす極小LED付きも便利。
-
+**Orbitkey Key Organizer Pro**なら、紛失防止タグも美しく収まります。夜間の帰宅時に手元を照らす極小LED付きも便利。
 
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">キーオーガナイザー LED</span></span>
+    <span class="label-text">値段を確認: <span class="product-name">Orbitkey キーオーガナイザー</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=%E3%82%AD%E3%83%BC%E3%82%AA%E3%83%BC%E3%82%AC%E3%83%8A%E3%82%A4%E3%82%B6%E3%83%BC+LED&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Orbitkey+Key+Organizer&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AD%25E3%2583%25BC%25E3%2582%25AA%25E3%2583%25BC%25E3%2582%25AC%25E3%2583%258A%25E3%2582%25A4%25E3%2582%25B6%25E3%2583%25BC%2520LED" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOrbitkey%2520%25E3%2582%25AD%25E3%2583%25BC%25E3%2582%25AA%25E3%2583%25BC%25E3%2582%25AC%25E3%2583%258A%25E3%2582%25A4%25E3%2582%25B6%25E3%2583%25BC" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -109,20 +104,18 @@ product: Urban EDC 2026 Essentials
 ## 4. オープンイヤー型ワイヤレスイヤホン
 
 都会のノイズは遮断したいけれど、必要な情報は逃したくない。
-骨伝導やオープンイヤー型のイヤホンは、音楽を聴きながらでも「部下の呼びかけ」や「駅のアナウンス」に気づけます。
-長時間つけていても耳が疲れないので、もはや体の一部と言っても過言ではありません。
-
+**Bose Ultra Open Earbuds**なら、最高級のサウンドと situational awareness を両立。長時間つけていても耳が疲れないので、もはや体の一部と言っても過言ではありません。
 
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">オープンイヤー イヤホン</span></span>
+    <span class="label-text">値段を確認: <span class="product-name">Bose Ultra Open Earbuds</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Bose+Ultra+Open+Earbuds&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2597%25E3%2582%25B3%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%2520%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%259B%25E3%2583%25B3" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBose%2520Ultra%2520Open%2520Earbuds" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -135,19 +128,18 @@ product: Urban EDC 2026 Essentials
 都会でナイフは持ち歩けません（銃刀法以前に、オフィスで出すと引かれます）。
 
 ハサミ、パッケージオープナー、プラスドライバー、栓抜き。
-これらが一体になった「ブレードレス（刃なし）」のマルチツールなら、飛行機の手荷物検査も安心（※製品によります）で、タグを切ったりネジを締めたりする日常の「ちょっとした困った」を解決してくれます。
-
+**Victorinox Jetsetter**のような「ブレードレス（刃なし）」のマルチツールなら、飛行機の手荷物検査も安心（※製品によります）で、タグを切ったりネジを締めたりする日常の「ちょっとした困った」を解決してくれます。
 
 <div class="product-links">
   <div class="product-label">
     <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">マルチツール ブレードレス</span></span>
+    <span class="label-text">値段を確認: <span class="product-name">ビクトリノックス ジェットセッター</span></span>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/s?k=%E3%83%9E%E3%83%AB%E3%83%83%E3%83%81%E3%83%BC%E3%83%AB+%E3%83%96%E3%83%AC%E3%83%BC%E3%83%89%E3%83%AC%E3%82%B9&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=%E3%83%93%E3%82%AF%E3%83%88%E3%83%AA%E3%83%8E%E3%83%83%E3%82%AF%E3%82%B9+%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%BB%E3%83%83%E3%82%BF%E3%83%BC&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%2520%25E3%2583%2596%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AC%25E3%2582%25B9" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2593%25E3%2582%25AF%25E3%2583%2588%25E3%2583%25AA%25E3%2583%258B%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%2520%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%2583%25E3%2583%2588%25E3%2582%25BB%25E3%2583%2583%25E3%2582%25BF%25E3%2583%25BC" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
