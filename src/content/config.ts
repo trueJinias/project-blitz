@@ -5,7 +5,7 @@ const articlesCollection = defineCollection({
     schema: z.object({
         title: z.string(),
         description: z.string(),
-        genre: z.enum(['tech', 'lifestyle', 'news', 'economics']),
+        genre: z.enum(['tech', 'lifestyle', 'news', 'economics', 'politics']),
         date: z.coerce.date(),
         image: z.string().optional(),
         tags: z.array(z.string()).optional(),
