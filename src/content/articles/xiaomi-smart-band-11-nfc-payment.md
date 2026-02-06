@@ -78,9 +78,17 @@ Xiaomiは近年、日本市場で急激に存在感を増しています。ス�
 現行の<strong>Xiaomi Smart Band 10</strong>は、決済機能を除けば、画面の明るさ、ヌルヌル動く操作感、バッテリー持ち、どれをとっても完成形に近いです。それが5,000円台で買えるのですから、2026年のBand 11を待つ間、1年間使い倒すだけでも十分に元は取れます。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">Xiaomi Smart Band 10</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/513PR-tfExL._AC_UL320_.jpg" alt="Xiaomi Smart Band 10" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Xiaomi Smart Band 10</div>
+    </div>
   </div>
   <div class="buttons">
     <a href="https://www.amazon.co.jp/dp/B0DFT29L8M?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">

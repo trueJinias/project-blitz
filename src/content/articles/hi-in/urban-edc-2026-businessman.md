@@ -35,9 +35,17 @@ draft: false
 
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">कीमत देखें: <span class="product-name">ESR MagSafe Wallet Stand (Find My)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71jy0XkFyzL._AC_SX679_.jpg" alt="ESR MagSafe Wallet" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">कीमत देखें:</span>
+      </div>
+      <div class="product-name">ESR MagSafe Wallet Stand (Find My)</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.in/dp/B0FVFGPP7N" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -59,9 +67,17 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 **Belkin 65W GaN Dual Port Charger** भारत में एक बेहतरीन विकल्प है जो आपके फोन और लैपटॉप दोनों को तेज़ी से चार्ज कर सकता है।
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">कीमत देखें: <span class="product-name">Belkin 65W GaN Dual Port Charger</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61vf1FCUlCL._AC_SX679_.jpg" alt="Belkin Charger" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">कीमत देखें:</span>
+      </div>
+      <div class="product-name">Belkin 65W GaN Dual Port Charger</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.in/dp/B0BCNQCWHS" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -78,9 +94,17 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 **Spigen Metallic Key Organizer** भारत में चाबियों को व्यवस्थित रखने के लिए एक प्रीमियम और मज़बूत विकल्प है।
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">कीमत देखें: <span class="product-name">Spigen Metallic Key Organizer</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61uN7n31G3L._AC_SX679_.jpg" alt="Spigen Key Organizer" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">कीमत देखें:</span>
+      </div>
+      <div class="product-name">Spigen Metallic Key Organizer</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.in/dp/B0B4TBJ2PY" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -97,9 +121,17 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 **Bose Ultra Open Earbuds** प्रीमियम साउंड और आराम के लिए सबसे बेहतरीन विकल्प हैं।
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">कीमत देखें: <span class="product-name">Bose Ultra Open Earbuds</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/51LyCgwzz9L._AC_SX679_.jpg" alt="Bose Ultra Open Earbuds" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">कीमत देखें:</span>
+      </div>
+      <div class="product-name">Bose Ultra Open Earbuds</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.in/dp/B0CWRKK2T8" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -118,9 +150,17 @@ Gallium Nitride (GaN) चार्जर अब गोल्फ-बॉल के
 **Victorinox SwissCard Classic** आपके वॉलेट में समा जाने वाला एक बेहतरीन टूलकिट है जो रोजमर्रा की छोटी समस्याओं को आसानी से हल करता है।
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">कीमत देखें: <span class="product-name">Victorinox SwissCard Classic</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61Cdurfxk2L._AC_SY450_.jpg" alt="Victorinox SwissCard" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">कीमत देखें:</span>
+      </div>
+      <div class="product-name">Victorinox SwissCard Classic</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.in/dp/B000AR79R0" target="_blank" rel="noopener noreferrer" class="btn amazon">

@@ -37,9 +37,17 @@ draft: false
 - **ESR HaloLock Geo Wallet Stand**（Find My対応）や**MOFT**のスタンド機能付きが最強。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">ESR MagSafe ウォレット（探す対応）</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71jy0XkFyzL._AC_SX679_.jpg" alt="ESR MagSafe ウォレット" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">ESR MagSafe ウォレット（探す対応）</div>
+    </div>
   </div>
   <div class="buttons">
     <a href="https://www.amazon.co.jp/dp/B0DWZQM9KD?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -65,9 +73,17 @@ draft: false
 モバイルバッテリー機能付きの2-in-1タイプなら無敵です。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">Anker 735 Charger (65W)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61vf1FCUlCL._AC_SX679_.jpg" alt="Anker 735 Charger" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Anker 735 Charger (65W)</div>
+    </div>
   </div>
   <div class="buttons">
     <a href="https://www.amazon.co.jp/dp/B09W9M89WS?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -87,9 +103,17 @@ draft: false
 **Orbitkey Key Organizer Pro**なら、紛失防止タグも美しく収まります。夜間の帰宅時に手元を照らす極小LED付きも便利。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">Orbitkey キーオーガナイザー</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61uN7n31G3L._AC_SX679_.jpg" alt="Orbitkey" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Orbitkey キーオーガナイザー</div>
+    </div>
   </div>
   <div class="buttons">
     <a href="https://www.amazon.co.jp/dp/B0FB38GZ8H?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -108,9 +132,17 @@ draft: false
 **Bose Ultra Open Earbuds**なら、最高級のサウンドと situational awareness を両立。長時間つけていても耳が疲れないので、もはや体の一部と言っても過言ではありません。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">Bose Ultra Open Earbuds</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/51LyCgwzz9L._AC_SX679_.jpg" alt="Bose Ultra Open Earbuds" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Bose Ultra Open Earbuds</div>
+    </div>
   </div>
   <div class="buttons">
     <a href="https://www.amazon.co.jp/dp/B0CSKFY1Q2?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -132,9 +164,17 @@ draft: false
 **Victorinox Jetsetter**のような「ブレードレス（刃なし）」のマルチツールなら、飛行機の手荷物検査も安心（※製品によります）で、タグを切ったりネジを締めたりする日常の「ちょっとした困った」を解決してくれます。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">ビクトリノックス ジェットセッター</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61Cdurfxk2L._AC_SY450_.jpg" alt="Victorinox Jetsetter" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">ビクトリノックス ジェットセッター</div>
+    </div>
   </div>
   <div class="buttons">
     <a href="https://www.amazon.co.jp/dp/B082FJ2WVQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">

@@ -1,5 +1,5 @@
 ---
-const { keyword } = Astro.props;
+const { keyword, imageUrl } = Astro.props;
 
 const amazonTag = import.meta.env.AMAZON_ASSOCIATE_TAG || 'blitz011-22';
 const rakutenId = import.meta.env.RAKUTEN_AFFILIATE_ID || '50b8fe39.c32fe89a.50b8fe3a.60c7ccae';
@@ -13,11 +13,9 @@ let amazonUrl = `https://www.amazon.co.jp/s?k=${encodeURIComponent(keyword)}&tag
 let buttonText = "値段を確認";
 
 if (region === 'US') {
-  // Amazon US Search
   amazonUrl = `https://www.amazon.com/s?k=${encodeURIComponent(keyword)}`; 
   buttonText = "Check Price";
 } else if (region === 'IN') {
-  // Amazon India Search
   amazonUrl = `https://www.amazon.in/s?k=${encodeURIComponent(keyword)}`;
   buttonText = "Check Price";
 }
@@ -29,10 +27,21 @@ const showRakuten = region === 'JP';
 ---
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">{buttonText}: <span class="product-name">{keyword}</span></span>
+  <div class="product-header">
+    {imageUrl && (
+      <div class="product-thumb">
+        <img src={imageUrl} alt={keyword} />
+      </div>
+    )}
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">{buttonText}:</span>
+      </div>
+      <div class="product-name">{keyword}</div>
+    </div>
   </div>
+  
   <div class:list={["buttons", { "single-col": !showRakuten }]}>
     <a href={amazonUrl} target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />

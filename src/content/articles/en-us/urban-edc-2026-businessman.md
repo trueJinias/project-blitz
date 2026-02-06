@@ -34,9 +34,17 @@ A MagSafe-compatible wallet that snaps onto the back of your phone is all you ne
 - **ESR Aura MagSafe Wallet & Stand** (supports "Find My") or **MOFT**'s stand-equipped versions are the gold standard.
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">Check Price: <span class="product-name">ESR MagSafe Wallet Stand (Find My)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71jy0XkFyzL._AC_SX679_.jpg" alt="ESR MagSafe Wallet" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">ESR MagSafe Wallet Stand (Find My)</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.com/dp/B0FSJLYZLP" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -58,9 +66,17 @@ Gallium Nitride (GaN) chargers are now golf-ball sized yet powerful enough to ch
 The **Anker 735 Charger (Nano II 65W)** is invincible even when cafe outlets are full.
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">Check Price: <span class="product-name">Anker 735 Charger (65W)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61vf1FCUlCL._AC_SX679_.jpg" alt="Anker 735 Charger" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Anker 735 Charger (65W)</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.com/dp/B09C5RG6KV" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -77,9 +93,17 @@ A key organizer that smartly stores your keys is a mark of a refined adult.
 The **Orbitkey Key Organizer Pro** lets you integrate tracking tags beautifully while keeping a slim profile.
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">Check Price: <span class="product-name">Orbitkey Key Organizer Pro</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61uN7n31G3L._AC_SX679_.jpg" alt="Orbitkey" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Orbitkey Key Organizer Pro</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.com/dp/B0D8WGJYH4" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -96,9 +120,17 @@ Bone conduction or open-ear earbuds let you listen to music while still noticing
 The **Bose Ultra Open Earbuds** offer premium sound and total situational awareness without ear fatigue.
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">Check Price: <span class="product-name">Bose Ultra Open Earbuds</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/51LyCgwzz9L._AC_SX679_.jpg" alt="Bose Ultra Open Earbuds" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Bose Ultra Open Earbuds</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.com/dp/B0CPFV77W4" target="_blank" rel="noopener noreferrer" class="btn amazon">
@@ -116,9 +148,17 @@ You can't carry a knife in the city (it scares people in the office, aside from 
 A "Bladeless" multi-tool like the **Victorinox Jetsetter** is safe for travel and solves those daily "little problems" like cutting tags or tightening screws.
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">Check Price: <span class="product-name">Victorinox Jetsetter (Bladeless)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61Cdurfxk2L._AC_SY450_.jpg" alt="Victorinox Jetsetter" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Victorinox Jetsetter (Bladeless)</div>
+    </div>
   </div>
   <div class="buttons single-col">
     <a href="https://www.amazon.com/dp/B006260SZO" target="_blank" rel="noopener noreferrer" class="btn amazon">

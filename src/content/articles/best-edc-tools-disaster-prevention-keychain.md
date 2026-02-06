@@ -63,15 +63,23 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - デザインがシンプルで「防災グッズ感」がない
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">チタン製ホイッスル（高周波）</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/41a7uleK6xL._AC_SY450_.jpg" alt="TITAN MANIA チタン製 ホイッスル" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">TITAN MANIA チタン製 ホイッスル</div>
+    </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B07L5P49W3?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B098RM5826?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmonomichi%2Ftiswh-01%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftitania%2Ftitan-whistle-01%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -88,15 +96,23 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - クリップ付きなら帽子のツバにつけてヘッドライト代わりになる
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">RovyVon Aurora A1 (超小型LEDライト)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61IDpTvL9OL._AC_SY450_.jpg" alt="RovyVon Aurora A1" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">RovyVon Aurora A1 (4th Gen)</div>
+    </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0CKZ1YV7S?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B0BN7T9K8Z?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fholkin-shop%2Frovyvon-a1-g4%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FRovyVon%2BAurora%2BA1%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -112,15 +128,23 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - いざという時の「栓抜き」としても活躍
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">Nite Ize DoohicKey (ブレードレス)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/516toMjh6TL._AC_SX679_.jpg" alt="Nite Ize DoohicKey" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Nite Ize ドゥーヒッキー</div>
+    </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0FIX126K?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B00FIX126K?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvic2rak%2Fniteize_0146%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FNite%2BIze%2BDoohicKey%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -137,15 +161,23 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - 友達に「充電器貸して」と言われた時にドヤ顔できる
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">inCharge X (キーホルダー型ケーブル)</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61rBLclyaTL._AC_UL320_.jpg" alt="inCharge X" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">inCharge X 6-in-1 ケーブル</div>
+    </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B09C2C39FQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B09KLN3Y5P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-shiz%2Frollingsquare-inchargex-all%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FinCharge%2BX%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
@@ -162,15 +194,23 @@ EDCツールを選ぶ際、絶対に気をつけなければならないのが**
 - 「隠し財産」を持っているようなスパイ気分が味わえる
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">防水キャッシュカプセル</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/81YxChEnw0L._AC_UL320_.jpg" alt="Waterproof Cache Capsule" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Waterproof Cache Capsule</div>
+    </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0C39LND5C?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B0CRVQ9SBN?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpuchi-ark%2Fss-030%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FWaterproof%2BCache%2BCapsule%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>

@@ -88,15 +88,23 @@ Xiaomi Mesh System BE3600 Proは、**「80点のWi-Fi 7体験を、30点の価�
 「とりあえずWi-Fi 7にしてみたい」という入門機としては、これ以上の選択肢は2026年現在でも存在しません。
 
 <div class="product-links">
-  <div class="product-label">
-    <span class="label-icon">🛍️</span>
-    <span class="label-text">値段を確認: <span class="product-name">Xiaomi Mesh System BE3600 Pro</span></span>
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/41Sdc-OaegL._AC_SX679_.jpg" alt="Xiaomi Mesh System BE3600 Pro" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Xiaomi Mesh System BE3600 Pro</div>
+    </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0DFT29L8M?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B0DWT4S64H?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fxiaomiofficial%2Fbe3600-pro%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FXiaomi%2BMesh%2BSystem%2BBE3600%2BPro%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
       <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
