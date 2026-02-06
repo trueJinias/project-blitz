@@ -68,3 +68,9 @@ node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
 node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
 ```
 ※ 米国版、インド版（ヒンディー語）の記事も同様に、それぞれのファイルパスを指定して実行すれば、自動的に対象国のアカウントで投稿されます。
+
+### 9. キーワード整理
+最後に、使用したキーワードをリストから削除して整理します：
+```powershell
+node scripts/manage-keywords.mjs remove "{今回のキーワード}"
+```
