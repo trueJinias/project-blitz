@@ -32,7 +32,7 @@ That's why the most cutting-edge EDC (Everyday Carry) setups this year are ditch
 *Photo by Jordan Rushton on Pexels*
 
 ### 1. The Death of Battery Anxiety
-We reached "Peak Wireless" in 2025. Now, we are seeing a `**Wired Revival**`.
+We reached "Peak Wireless" in 2025. Now, we are seeing a **Wired Revival**.
 USB-C EarPods and retractable cables are back. Why? Because a cable generally doesn't die.
 Eliminating the mental load of "did I charge my earbuds?" is the ultimate minimalist hack.
 
@@ -47,11 +47,11 @@ Forget heavy leather. The US EDC community has fully embraced technical fabrics.
 
 If you only carry three things, make it these:
 
-1.  **The Charger**: `**CIO NovaPort DUO II**`
+1.  **The Charger**: **CIO NovaPort DUO II**
     It's the size of an AirTag case but pumps out 65W. The definition of high density.
-2.  **The Cable**: `**Anker USB-C Reel**`
+2.  **The Cable**: **Anker USB-C Reel**
     Retractable cables used to be cheap junk. In 2026, they are premium engineered tools. No tangles, instant deployment.
-3.  **The Hub**: `**Hybrid SSD Hub**`
+3.  **The Hub**: **Hybrid SSD Hub**
     With local LLMs running on laptops, you need fast storage. A hub that doubles as an external drive is essential.
 
 ## Top 5 Pouch Loadouts
