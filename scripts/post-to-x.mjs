@@ -258,6 +258,18 @@ async function postToX() {
         }
 
         // Exit gracefully as "success" for the workflow, since we handled it manually
+        // Print a clean block for the user to copy
+        console.log('\n' + '#'.repeat(50));
+        console.log('📌 [MANUAL POSTING REQUIRED]');
+        console.log('Please copy the URL below to post to X:');
+        console.log('\n' + intentUrl + '\n');
+
+        if (localImagePath && fs.existsSync(localImagePath)) {
+            console.log('Please attach this image file:');
+            console.log(localImagePath);
+        }
+        console.log('#'.repeat(50) + '\n');
+
         process.exit(0);
     }
 }
