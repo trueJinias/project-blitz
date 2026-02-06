@@ -77,9 +77,7 @@ While that price tag isn't cheap, consider the context: the full-blooded Xiaomi 
 
 Based on current leaks, the Xiaomi 17T Pro appears tailor-made for the tech enthusiast who demands top-tier performance but isn't ready to pay the premium for a true "Ultra" flagship.
 
-**Quick Specs Summary:**
-
-*   **Launch:** February 2026 (Rumored MWC Debut)
+**Quick Specs Summary:*****Launch:** February 2026 (Rumored MWC Debut)
 *   **SoC:** MediaTek Dimensity 9500
 *   **Battery:** Up to 7,000mAh
 *   **Price:** ~$850 – $950 USD (Global/Import)

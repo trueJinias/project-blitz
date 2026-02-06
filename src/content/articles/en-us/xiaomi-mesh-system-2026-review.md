@@ -87,9 +87,7 @@ There is a web admin panel, but functionality is minimal. Professionals who want
 
 ## Conclusion
 
-The Xiaomi Mesh System BE3600 Pro is a monster machine that **"offers an 80/100 Wi-Fi 7 experience at a 30/100 price."**
-
-- **Buy if**: You value cost-performance, want mobile-only setup, have many IoT devices.
+The Xiaomi Mesh System BE3600 Pro is a monster machine that **"offers an 80/100 Wi-Fi 7 experience at a 30/100 price."**-**Buy if**: You value cost-performance, want mobile-only setup, have many IoT devices.
 - **Skip if**: Hardcore FPS gamer (6GHz is a must), Router setting maniac.
 
 As an entry-level machine to "just try Wi-Fi 7", there is no better choice even in 2026.

@@ -37,9 +37,7 @@ From MIUI to current HyperOS, the system has carried a massive amount of "old co
 
 "AI features" are common now, but HyperOS 4.0 is on a different level.
 
-Until now, AI did "what you asked." The next-gen **HyperAI** aims to do "what you need before you ask."
-
-**Imagine this future:**
+Until now, AI did "what you asked." The next-gen **HyperAI**aims to do "what you need before you ask."**Imagine this future:**
 - It detects you are commuting and pre-loads your news app before you even open it.
 - It senses you are in a meeting and automatically silences notifications to "minimal" mode.
 
@@ -58,8 +56,7 @@ Along with the "Zero-Legacy" renewal, there is a possibility that the massive am
 
 According to leaks, the release of HyperOS 4.0 is expected around **August 2026**.
 
-- **Courage to dump the past (Zero-Legacy)**
-- **AI that predicts the future (HyperAI)**
+- **Courage to dump the past (Zero-Legacy)**-**AI that predicts the future (HyperAI)**
 
 When these two combine, how will our smartphone experience change?
 It's definitely worth keeping an eye on Xiaomi's moves from now on!

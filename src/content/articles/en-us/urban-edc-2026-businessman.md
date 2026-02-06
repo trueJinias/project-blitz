@@ -30,8 +30,7 @@ Here are 5 EDC (Everyday Carry) items selected for the urban businessman in his 
 The era of carrying a bulky wallet is over.
 A MagSafe-compatible wallet that snaps onto the back of your phone is all you need for your ID and main credit card.
 
-**Why it's great:**
-- **ESR Aura MagSafe Wallet & Stand** (supports "Find My") or **MOFT**'s stand-equipped versions are the gold standard.
+**Why it's great:**-**ESR Aura MagSafe Wallet & Stand**(supports "Find My") or**MOFT**'s stand-equipped versions are the gold standard.
 
 <div class="product-links">
   <div class="product-header">

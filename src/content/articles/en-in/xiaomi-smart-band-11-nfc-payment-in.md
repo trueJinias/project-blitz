@@ -16,7 +16,7 @@ product: "Xiaomi Smart Band 10"
 
 Hello to all the Xiaomi fans in India who ask this every year. I'm Namo-ni.
 
-The **Xiaomi Smart Band 10** arrived in 2025. Stunning display, insane battery life, and a killer price tag. But again, **it lacked the crucial "NFC Payment" feature** for the Indian market.
+The **Xiaomi Smart Band 10**arrived in 2025. Stunning display, insane battery life, and a killer price tag. But again,**it lacked the crucial "NFC Payment" feature** for the Indian market.
 
 "If I could just tap to pay at the metro or coffee shop..."
 
@@ -63,7 +63,7 @@ Positioning it as a premium variant seems the most logical step. Considering com
 
 Verdict: NFC on Band 11 is a coin toss.
 
-If you're holding off buying the **Xiaomi Smart Band 10** just for this, **don't**. It's a fantastic device—bright screen, smooth UI (60Hz), and reliable tracking. At its current price, it offers immense value right now.
+If you're holding off buying the **Xiaomi Smart Band 10**just for this,**don't**. It's a fantastic device—bright screen, smooth UI (60Hz), and reliable tracking. At its current price, it offers immense value right now.
 
 Get the Band 10, enjoy the smart life, and let's see what 2026 brings.
 

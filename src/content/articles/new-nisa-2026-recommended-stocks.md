@@ -32,7 +32,7 @@ image: /images/articles/new-nisa-2026-recommended-stocks-thumbnail.jpg
 まず結論から言うと、ポートフォリオの核（コア）となる「eMAXIS Slim 全世界株式（オール・カントリー）」の優位性は2026年も揺らぎません。
 
 楽天証券やSBI証券のランキングでも依然として1位を独走中です。
-理由はシンプルで、**「究極の分散」**だからです。
+理由はシンプルで、「**究極の分散**」だからです。
 米国がこけても、他の国がカバーする。この安心感は、20年〜30年の長期投資において何よりも重要です。
 
 迷ったら、つみたて投資枠の8割はこれで埋めてOKです。
@@ -45,7 +45,7 @@ image: /images/articles/new-nisa-2026-recommended-stocks-thumbnail.jpg
 変化が起きているのは、残りの2割〜3割を使ってリターンを狙う「サテライト枠（主に成長投資枠）」です。
 
 2024年〜2025年は、GoogleやAmazonなどに集中投資する「FANG+」が人気でした。
-しかし2026年現在、多くの投資家が資金をシフトさせているのが**「インド株（Nifty50など）」**です。
+しかし2026年現在、多くの投資家が資金をシフトさせているのが「**インド株（Nifty50など）**」です。
 
 ### なぜ今、インドなのか？
 - **人口ボーナス**: 中国を抜いて世界一の人口大国となり、労働力が潤沢。
@@ -59,7 +59,7 @@ image: /images/articles/new-nisa-2026-recommended-stocks-thumbnail.jpg
 ![Cute pink piggy bank isolated on white background representing savings and finance concepts.](/images/articles/new-nisa-2026-recommended-stocks-3.jpg)
 *Photo by Ann H on Pexels*
 
-そして今年、制度面で最も大きいニュースが**「つみたて投資枠の対象拡大（未成年）」**です。
+そして今年、制度面で最も大きいニュースが「**つみたて投資枠の対象拡大（未成年）**」です。
 
 かつての「ジュニアNISA」の実質的な復活とも言えますが、今回はより使いやすく進化しました。
 - 対象：18歳未満（親が代理運用）
@@ -85,7 +85,7 @@ image: /images/articles/new-nisa-2026-recommended-stocks-thumbnail.jpg
 
 ## まとめ
 
-2026年の投資キーワードは**「脱・米国一点張り」**です。
+2026年の投資キーワードは「**脱・米国一点張り**」です。
 米国株は依然として強力ですが、それだけに依存するのはリスクが高まっています。
 
 インドという新しいエンジン、そして家族全員で枠を使い倒す制度改正。

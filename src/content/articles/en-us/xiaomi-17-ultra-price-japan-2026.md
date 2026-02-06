@@ -25,8 +25,7 @@ We've compiled the most credible overseas rumors, dissecting the anticipated rel
 
 For US consumers, the timeline focuses less on domestic carrier sales (which rarely happen for Xiaomi's true flagships) and more on the crucial import window.
 
-**Expected Global Announcement:** February 2026 (MWC)
-**Expected Import Availability:** March–April 2026
+**Expected Global Announcement:**February 2026 (MWC)**Expected Import Availability:** March–April 2026
 
 Rumors suggest the Chinese launch will occur late in December 2025. This timing is critical, as it means the global stage debut will almost certainly happen at the Mobile World Congress (MWC) in Barcelona in February 2026.
 
@@ -47,7 +46,7 @@ The most aggressive rumors peg the European starting price (for the highest-end 
 | Metric | Source Price | Estimated USD Conversion | Notes |
 | :--- | :--- | :--- | :--- |
 | European RRP | €1,499 | ~$1,605 | Direct exchange rate estimate. |
-| **Projected US Retail Price** | N/A | **$1,749 – $1,799** | Accounting for US import tariffs, shipping, component inflation (especially the 1-inch sensor and Gen 5 chip), and typical markup for this premium tier. |
+| **Projected US Retail Price**| N/A |**$1,749 – $1,799** | Accounting for US import tariffs, shipping, component inflation (especially the 1-inch sensor and Gen 5 chip), and typical markup for this premium tier. |
 
 This places the Xiaomi 17 Ultra not just in the "premium" bracket, but firmly in the **"Hyper-Premium"** category—a space currently dominated by the highest-spec Pro Max/Ultra models from Apple and Samsung.
 

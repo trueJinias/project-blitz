@@ -16,7 +16,7 @@ product: "Xiaomi Smart Band 10"
 
 Hello to all the Xiaomi fans who expect this every year only to be betrayed. I'm Namo-ni.
 
-The **Xiaomi Smart Band 10**, released in 2025. It has a beautiful screen, great battery life, and a bug-like price. But **it lacked the crucial "FeliCa (Osaifu-Keitai)" feature**.
+The **Xiaomi Smart Band 10**, released in 2025. It has a beautiful screen, great battery life, and a bug-like price. But**it lacked the crucial "FeliCa (Osaifu-Keitai)" feature**.
 
 "If only it could use Suica, it would be invincible..."
 
@@ -74,9 +74,7 @@ As you can see, the **"under 10,000 yen entry class" is a vacuum**. The only one
 
 In conclusion, Suica support in Xiaomi Smart Band 11 is **"fifty-fifty"**. However, if it is supported, it will be a moment that changes the history of the Japanese wearable market.
 
-If you thought, "Well, I'll wait until it comes out," **that's a loss.**
-
-The current **Xiaomi Smart Band 10**, barring payment functions, is close to perfection in terms of screen brightness, smooth operation, and battery life. Since you can buy it for the 5,000 yen range, just using it for a year while waiting for the 2026 Band 11 is enough to get your money's worth.
+If you thought, "Well, I'll wait until it comes out," **that's a loss.**The current**Xiaomi Smart Band 10**, barring payment functions, is close to perfection in terms of screen brightness, smooth operation, and battery life. Since you can buy it for the 5,000 yen range, just using it for a year while waiting for the 2026 Band 11 is enough to get your money's worth.
 
 First, get used to "life with a secretary on your wrist" with Band 10, and wait while dreaming of "ticket gate dashes" being added in Band 11. That might be the smartest behavior for a gadget lover.
 

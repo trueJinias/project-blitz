@@ -12,7 +12,7 @@ product: "Xiaomi 17 Ultra"
 
 ## Namaste Techies!
 
-The **Xiaomi 17 Ultra** is shaping up to be a beast. But for Indian fans, the big question is: **Will it come to India?**
+The **Xiaomi 17 Ultra**is shaping up to be a beast. But for Indian fans, the big question is:**Will it come to India?**
 After the 14 Ultra made a splash, expectations are high. But with a rumored global price hike, this might clearly be a "Ultra-Premium" device.
 
 ## 1. Expected Price in India
@@ -20,7 +20,7 @@ After the 14 Ultra made a splash, expectations are high. But with a rumored glob
 Hold your breath.
 Based on global leaks (€1,499) and Indian import duties:
 
-- **Expected Price**: **₹1,80,000 - ₹2,00,000**
+- **Expected Price**:**₹1,80,000 - ₹2,00,000**
 
 Yes, you could buy a decent bike for that price.
 Compared to the **Samsung Galaxy S26 Ultra** (expected ~₹1.4L), Xiaomi is positioning this purely for hardcore photography enthusiasts who would otherwise buy a Leica camera.
@@ -28,7 +28,7 @@ Compared to the **Samsung Galaxy S26 Ultra** (expected ~₹1.4L), Xiaomi is posi
 ## 2. Launch Date in India
 
 - **China Launch**: Dec 2025
-- **Global / India Launch**: **April 2026**
+- **Global / India Launch**:**April 2026**
 
 Xiaomi India usually brings the Ultra series a month or two after the global MWC announcement. Stocks are likely to be limited, effectively a "Limited Edition" drop.
 

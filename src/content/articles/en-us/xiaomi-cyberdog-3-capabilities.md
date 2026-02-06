@@ -48,7 +48,7 @@ Xiaomi is no longer just a phone company; they are now serious players in the el
 
 And guess what? They are planning to leverage that expensive, high-level autonomous driving tech for the CyberDog 3.
 
-Rumors suggest the new model will feature **Level 3/4 autonomous driving sensors**, specifically incorporating **Solid-State LiDAR**. This is a huge leap forward for domestic robotics navigation:
+Rumors suggest the new model will feature **Level 3/4 autonomous driving sensors**, specifically incorporating**Solid-State LiDAR**. This is a huge leap forward for domestic robotics navigation:
 
 1.  **Impenetrable Obstacle Avoidance:** Unlike your typical Roomba, which might get trapped by a tangle of charging cables or a rug fringe, Solid-State LiDAR allows the robot to build a highly accurate, 3D map of the environment. It can navigate low-light conditions and crowded floors (like those found in many US homes) without getting hopelessly stuck.
 2.  **Superior Traversal:** The chassis is also expected to get upgrades derived from EV suspension and movement algorithms, dramatically improving its ability to handle thresholds, steps, and uneven surfaces—transforming it from a showroom walker into a robot ready for real life.

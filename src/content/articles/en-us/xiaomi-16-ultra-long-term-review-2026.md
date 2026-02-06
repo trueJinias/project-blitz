@@ -96,9 +96,7 @@ For those of us currently tethered to a charger twice a day, this breakthrough a
 
 ## The Import Calculation: Is the Spec-Sheet Worth the Price Tag?
 
-It wouldn't be a flagship discussion without addressing the inevitable downside: **cost and availability.**
-
-Xiaomi Ultra phones are premium, often competing head-to-head with the highest-end Galaxy models. Given the technical advancements rumored here—particularly the exotic camera hardware and massive battery—we can safely estimate that the Xiaomi 16 Ultra will retail globally in the range of **$1,500 to $1,700 USD** upon its release.
+It wouldn't be a flagship discussion without addressing the inevitable downside: **cost and availability.**Xiaomi Ultra phones are premium, often competing head-to-head with the highest-end Galaxy models. Given the technical advancements rumored here—particularly the exotic camera hardware and massive battery—we can safely estimate that the Xiaomi 16 Ultra will retail globally in the range of**$1,500 to $1,700 USD** upon its release.
 
 This puts it firmly in the "luxury gadget" tier, demanding a price higher than many high-end laptops.
 

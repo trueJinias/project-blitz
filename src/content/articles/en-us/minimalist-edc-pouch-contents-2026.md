@@ -38,7 +38,7 @@ Eliminating the mental load of "did I charge my earbuds?" is the ultimate minima
 
 ### 2. X-Pac is the New Leather
 Forget heavy leather. The US EDC community has fully embraced technical fabrics.
-**X-Pac (VX21)** and **Dyneema**—originally used for racing sails—are now the gold standard. They are waterproof, impossibly light, and look incredible in a flat-lay photo.
+**X-Pac (VX21)**and**Dyneema**—originally used for racing sails—are now the gold standard. They are waterproof, impossibly light, and look incredible in a flat-lay photo.
 
 ## The Holy Trinity of 2026 Minimalist EDC 
 
@@ -47,7 +47,7 @@ Forget heavy leather. The US EDC community has fully embraced technical fabrics.
 
 If you only carry three things, make it these:
 
-1.  **The Charger**: **CIO NovaPort DUO II**
+1.  **The Charger**:**CIO NovaPort DUO II**
     It's the size of an AirTag case but pumps out 65W. The definition of high density.
     <div class="product-links">
       <div class="product-header">
@@ -68,7 +68,7 @@ If you only carry three things, make it these:
         </a>
       </div>
     </div>
-2.  **The Cable**: **Anker USB-C Reel**
+2.  **The Cable**:**Anker USB-C Reel**
     Retractable cables used to be cheap junk. In 2026, they are premium engineered tools. No tangles, instant deployment.
     <div class="product-links">
       <div class="product-header">
@@ -89,7 +89,7 @@ If you only carry three things, make it these:
         </a>
       </div>
     </div>
-3.  **The Hub**: **Hybrid SSD Hub**
+3.  **The Hub**:**Hybrid SSD Hub**
     With local LLMs running on laptops, you need fast storage. A hub that doubles as an external drive is essential.
 
 ## Top 5 Pouch Loadouts

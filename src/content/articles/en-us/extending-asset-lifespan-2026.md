@@ -64,8 +64,7 @@ The mental shift is crucial: "Since Social Security covers my basic needs until 
 
 What specific steps should you take right now?
 
-1.  **Re-evaluate the Three-Bucket Strategy**
-    *   **Short-Term (Cash):** Two years of living expenses.
+1.  **Re-evaluate the Three-Bucket Strategy*****Short-Term (Cash):** Two years of living expenses.
     *   **Mid-Term (Bonds/Fixed Income):** Five years of expenses. (*Crucially, 2026 allows you to operate this bucket with high-yield bonds/CDs, generating higher returns than previous decades.*)
     *   **Long-Term (Equities):** Everything else.
 2.  **Maximize Late-Stage Tax Advantages**

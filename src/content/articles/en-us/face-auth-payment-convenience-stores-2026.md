@@ -38,7 +38,7 @@ Just order your "Famichiki," smile at the camera, and you're done. That future i
 
 The king of conbini, Seven-Eleven, isn't sitting still.
 
-They are exploring a face authentication service linked to **Seven Bank ATMs**, targeting a launch around **2026**.
+They are exploring a face authentication service linked to **Seven Bank ATMs**, targeting a launch around**2026**.
 
 ### Different Strategies
 While FamilyMart focuses on "in-store payment," Seven-Eleven approaches it as "financial infrastructure."

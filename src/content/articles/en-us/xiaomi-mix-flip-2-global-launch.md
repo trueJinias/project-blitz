@@ -55,8 +55,7 @@ To compete with the Galaxy Z Flip, it is rumored to support official water and d
 
 ## 4. Release Date and Global Availability
 
-**Release Schedule (Prediction)**
-- **China Announcement**: June-July 2025
+**Release Schedule (Prediction)**-**China Announcement**: June-July 2025
 - **Global Launch**: Late 2025
 
 The original Mix Flip initially launched in China but later saw a global release.

@@ -72,9 +72,7 @@ Brands like RovyVon are popular choices. Just prioritize "small and powerful."
 
 ### 3. The Legal Bladeless Multitool
 
-This is a pure utility tool—no knife, no scissors. It’s for tasks like prying open a battery cover, tightening a loose screw, opening cardboard boxes, or popping bottle caps (surprisingly critical in a high-stress environment). In a disaster, you often need to **pry or twist**.
-
-**Why go bladeless:**
+This is a pure utility tool—no knife, no scissors. It’s for tasks like prying open a battery cover, tightening a loose screw, opening cardboard boxes, or popping bottle caps (surprisingly critical in a high-stress environment). In a disaster, you often need to **pry or twist**.**Why go bladeless:**
 - Zero worries about getting flagged by TSA or local police.
 - Great keychain form factor (brands like Nite Ize make great options).
 - Doubles as an emergency bottle opener (never underestimate the psychological benefits of a celebratory soda after surviving a tough day).
@@ -91,11 +89,7 @@ A keychain cable eliminates that risk entirely.
 
 ### 5. The Discreet Stash Capsule
 
-When the power is out, digital payment systems and ATMs are useless. **Cash is king.**
-
-Attaching a small, waterproof aluminum capsule to your keys allows you to stash a few folded emergency bills (think a couple of $20s or a $50).
-
-**The benefits of the emergency cash capsule:**
+When the power is out, digital payment systems and ATMs are useless. **Cash is king.**Attaching a small, waterproof aluminum capsule to your keys allows you to stash a few folded emergency bills (think a couple of $20s or a $50).**The benefits of the emergency cash capsule:**
 - Excellent backup if you forget your main wallet (you still have lunch money!).
 - Completely waterproof, ensuring your cash is safe even if you get drenched in a flood or heavy rain.
 - Gives you that James Bond feeling of having a secret reserve fund.

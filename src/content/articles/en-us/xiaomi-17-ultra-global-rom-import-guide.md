@@ -71,9 +71,7 @@ If you have decided the risks are worth the reward, stick to reputable, establis
 
 -   **TradingShenzhen:** Excellent reputation, meticulous packing, and often offers an optional tariff/customs compensation service. (Note: Support is usually in English/German, not Japanese or Chinese.)
 -   **Giztop:** Focused on speed. If you need the phone days after its release, Giztop is often the fastest option.
--   **Wonda Mobile:** Slightly pricier, but their customer service quality is considered top-tier among importers.
-
-**CRITICAL WARNING:** Avoid anonymous sellers on platforms like AliExpress. They frequently sell devices with "Fake Global ROMs" (also known as "Shop ROMs"). These heavily modified operating systems are unstable, buggy, and will *never* receive official updates.
+-   **Wonda Mobile:**Slightly pricier, but their customer service quality is considered top-tier among importers.**CRITICAL WARNING:** Avoid anonymous sellers on platforms like AliExpress. They frequently sell devices with "Fake Global ROMs" (also known as "Shop ROMs"). These heavily modified operating systems are unstable, buggy, and will *never* receive official updates.
 
 ## The Takeaway: You Pay for Peace of Mind
 

@@ -22,8 +22,7 @@ You wake up in the morning, and your phone battery is at 2%.
 Even in such a desperate situation, with Xiaomi's 200W charging, it hits 100% while you're brushing your teeth and washing your face. It feels like magic.
 
 But at the same time, don't you think this?
-**"Forcing that much electricity in... won't the phone break?"**
-**"Won't the battery die immediately?"**
+**"Forcing that much electricity in... won't the phone break?"****"Won't the battery die immediately?"**
 
 Honestly, I thought so too at first (it sounds explosive).
 This time, we will thoroughly verify the safety of this "200W charging" from the perspective of Xiaomi's technical specifications and physics.

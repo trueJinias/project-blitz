@@ -24,9 +24,7 @@ The Apple Watch Series 10 manages 18 hours. The Pixel Watch 3 gets about 24.
 The Xiaomi Watch S4?
 
 - **Standard Mode (Bluetooth):** ~12 Days (Real world)
-- **LTE Mode (Active):** **3-4 Days**
-
-Yes, you read that right. Even with LTE punishing the battery, it lasts **3x longer** than its US competitors. For a weekend camping trip to Joshua Tree, you can leave the charger at home.
+- **LTE Mode (Active):****3-4 Days**Yes, you read that right. Even with LTE punishing the battery, it lasts**3x longer** than its US competitors. For a weekend camping trip to Joshua Tree, you can leave the charger at home.
 
 ![Battery Chart](/images/articles/xiaomi-watch-s4-lte-battery-life-1.jpg)
 *It just keeps going.*
@@ -36,7 +34,7 @@ Yes, you read that right. Even with LTE punishing the battery, it lasts **3x lon
 This is the big question for importers.
 The bands supported are primarily Asian (B1, B3, B5, B8, B38, B40, B41).
 - **T-Mobile:** Partial success. You might get 4G in cities, but expect dropouts in rural areas.
-- **AT&T / Verizon:** Generally **not recommended** due to whitelist restrictions.
+- **AT&T / Verizon:**Generally**not recommended** due to whitelist restrictions.
 
 If you are buying this for standalone LTE in the States, proceed with caution. It works best as a Bluetooth companion with insane stamina.
 
