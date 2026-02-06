@@ -167,10 +167,29 @@ Return ONLY the localized Markdown content (including frontmatter).
             .replace(/\r?\n```$/, '')
             .trim();
 
+        // Parse the generated content to inject original metadata safely
+        const generatedMatter = matter(cleanText);
+
+        // Force override critical metadata from source if missing or placeholder
+        const finalData = {
+            ...generatedMatter.data,
+            image: frontmatter.image || generatedMatter.data.image, // Prefer original image if available
+            genre: frontmatter.genre || 'tech', // Keep original genre
+            date: frontmatter.date // Keep original date
+        };
+
+        const finalContent = matter.stringify(generatedMatter.content, finalData);
+
         // Determine output path
         const fileName = path.basename(filePath);
-        const baseName = fileName.replace(/-us\.md|-in\.md|\.md$/, ''); // Strip existing suffixes
-        const newFileName = `${baseName}${currentConfig.suffix}.md`;
+        // We want the same slug as the original for easier routing
+        // Remove .md extension, but DO NOT append suffix like -us or -in to the filename itself
+        // The directory structure (en-us/, hi-in/) already provides separation
+
+        // However, we need to handle if the INPUT file already had a suffix (if re-localizing?)
+        // Better to strip any existing regional suffixes just in case
+        const baseName = fileName.replace(/-us\.md|-in\.md|\.md$/, '');
+        const newFileName = `${baseName}.md`; // No suffix!
 
         const outputDir = path.join(process.cwd(), `src/content/articles/${locale}`);
 
@@ -179,7 +198,7 @@ Return ONLY the localized Markdown content (including frontmatter).
         }
 
         const outputPath = path.join(outputDir, newFileName);
-        fs.writeFileSync(outputPath, cleanText, 'utf-8');
+        fs.writeFileSync(outputPath, finalContent, 'utf-8');
 
         console.log(`✅ Localization complete! Saved to: ${outputPath}`);
 

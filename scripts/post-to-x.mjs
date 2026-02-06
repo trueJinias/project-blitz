@@ -245,10 +245,10 @@ async function postToX() {
 
         exec(process.platform === 'win32' ? winCommand : openCommand, (err) => {
             if (err) {
-                console.error('⚠️ Failed to open browser:', err);
-                console.log('🔗 Please open this URL manually:');
-                console.log(intentUrl);
+                console.error('⚠️ Failed to open browser automatically:', err);
             }
+            console.log('\n🔗 \x1b[32mCLICK OR COPY THIS URL TO POST:\x1b[0m');
+            console.log(intentUrl);
         });
 
         if (localImagePath && fs.existsSync(localImagePath)) {
