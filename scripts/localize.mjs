@@ -110,6 +110,7 @@ Your task is to **WRITE A BRAND NEW ARTICLE** for **${currentConfig.audience}** 
    - Keys must be strictly LOWERCASE.
    - **CRITICAL: "genre" MUST be EXACTLY "${frontmatter.genre || 'tech'}".**
    - "image" path must be exactly the same as original.
+   - **"product"**: Translate the product name for Amazon search in ${currentConfig.audience}. Remove usage of "(予想)" or Japanese characters. Example: "Xiaomi 16 Ultra (予想)" -> "Xiaomi 16 Ultra".
    - Generate a **NEW Title** and **Description** that clicks with ${currentConfig.audience}. **MUST BE QUOTED**.
    - Keep current date and author.
 
@@ -176,7 +177,7 @@ Return ONLY the localized Markdown content (including frontmatter).
             image: frontmatter.image || generatedMatter.data.image, // Prefer original image if available
             genre: frontmatter.genre || 'tech', // Keep original genre
             date: frontmatter.date, // Keep original date
-            product: frontmatter.product || generatedMatter.data.product // Keep product if exists
+            product: generatedMatter.data.product || frontmatter.product // Prefer generated product (localized) -> fallback to source
         };
 
         const finalContent = matter.stringify(generatedMatter.content, finalData);

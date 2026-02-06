@@ -10,7 +10,7 @@ author: John Doe
 date: 2026-02-06T00:00:00.000Z
 genre: tech
 image: /images/articles/xiaomi-16-ultra-long-term-review-2026-thumbnail.jpg
-product: Xiaomi 16 Ultra (予想)
+product: Xiaomi 16 Ultra
 ---
 
 ## The Android Camera Wars: Preparing for 2026
