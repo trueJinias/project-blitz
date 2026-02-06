@@ -96,7 +96,7 @@ const formattedDate = new Intl.DateTimeFormat(dateLocales[lang] || 'ja-JP', {
 
 <style>
   .article-layout {
-    padding-top: var(--spacing-20);
+    padding-top: calc(var(--spacing-20) + var(--spacing-12)); /* Increase top padding to clear fixed header */
     padding-bottom: var(--spacing-20);
   }
   
