@@ -188,14 +188,14 @@ interface BeamsProps {
 }
 
 export const BackgroundBeams: FC<BeamsProps> = ({
-    beamWidth = 1.2,
-    beamHeight = 100, // Increased to ensure it covers the screen
-    beamNumber = 60, // Increased count for better coverage
-    lightColor = '#999999',
-    speed = 4.7,
-    noiseIntensity = 1.75,
+    beamWidth = 0.5,
+    beamHeight = 150, // Longer to cover full rotation
+    beamNumber = 80, // High density
+    lightColor = '#ffffff', // Bright white light
+    speed = 4.0,
+    noiseIntensity = 1.0, // Reduced to prevent too much darkening
     scale = 0.2,
-    rotation = 35, // Slightly more rotation for dynamic feel
+    rotation = 35,
     className
 }) => {
     const meshRef = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
@@ -244,10 +244,10 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 },
                 material: { fog: true },
                 uniforms: {
-                    diffuse: new THREE.Color(...hexToNormalizedRGB('#000000')),
+                    diffuse: new THREE.Color(...hexToNormalizedRGB('#1a1a1a')),
                     time: { shared: true, mixed: true, linked: true, value: 0 },
-                    roughness: 0.3,
-                    metalness: 0.3,
+                    roughness: 0.2,
+                    metalness: 0.2,
                     uSpeed: { shared: true, mixed: true, linked: true, value: speed },
                     envMapIntensity: 10,
                     uNoiseIntensity: noiseIntensity,
@@ -350,7 +350,7 @@ const MergedPlanes = forwardRef<
     const mesh = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
     useImperativeHandle(ref, () => mesh.current);
     const geometry = useMemo(
-        () => createStackedPlanesBufferGeometry(count, width, height, 2.0, 100),
+        () => createStackedPlanesBufferGeometry(count, width, height, 0.8, 100),
         [count, width, height]
     );
     useFrame((_, delta) => {
