@@ -25,15 +25,13 @@ export const ArticleCardReact = ({ title, description, href, genre, date, image 
     const readMoreText = isEnglish ? "Read More" : (isHindi ? "और पढ़ें" : "続きを読む");
 
     return (
-        <a href={href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+        <a href={href} style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: '100%' }}>
             <TiltedCard
                 imageSrc={image || '/placeholder-pattern.png'}
                 altText={title}
                 captionText={readMoreText}
-                containerHeight="400px"
+                containerHeight="320px" // Better height for grid
                 containerWidth="100%"
-                imageHeight="400px"
-                imageWidth="100%"
                 rotateAmplitude={12}
                 scaleOnHover={1.05}
                 showMobileWarning={false}
@@ -42,57 +40,60 @@ export const ArticleCardReact = ({ title, description, href, genre, date, image 
                 overlayContent={
                     <div style={{
                         position: 'absolute',
-                        bottom: '20px',
-                        left: '20px',
-                        right: '20px',
-                        padding: '1.5rem',
-                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                        backdropFilter: 'blur(12px)',
-                        borderRadius: '16px',
-                        border: '1px solid rgba(255, 255, 255, 0.15)',
-                        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)',
-                        transform: 'translateZ(50px)',
+                        inset: '20px', // Use inset for guaranteed expansion
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '0.5rem'
+                        justifyContent: 'flex-end', // Align text to bottom
+                        padding: '1.25rem',
+                        background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)',
+                        backdropFilter: 'blur(8px)',
+                        borderRadius: '16px',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        transform: 'translateZ(60px)',
+                        boxShadow: '0 15px 35px rgba(0,0,0,0.5)',
+                        pointerEvents: 'none' // Link is handled by parent <a>
                     }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
                             <span style={{
-                                padding: '0.25rem 0.75rem',
+                                padding: '0.2rem 0.6rem',
                                 backgroundColor: genreColors[genre] || 'var(--color-tech)',
                                 color: 'black',
                                 fontSize: '0.65rem',
-                                fontWeight: '800',
+                                fontWeight: '900',
                                 borderRadius: '4px',
-                                textTransform: 'uppercase'
+                                textTransform: 'uppercase',
+                                letterSpacing: '0.05em'
                             }}>
                                 {genre}
                             </span>
-                            <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.6)' }}>{date}</span>
+                            <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.7)', fontWeight: '500' }}>{date}</span>
                         </div>
 
                         <h3 style={{
-                            fontSize: '1.25rem',
+                            fontSize: '1.15rem',
                             fontWeight: '800',
-                            margin: 0,
+                            margin: '0 0 0.5rem 0',
                             color: 'white',
                             lineHeight: '1.3',
                             display: '-webkit-box',
                             WebkitLineClamp: 2,
                             WebkitBoxOrient: 'vertical',
-                            overflow: 'hidden'
+                            textAlign: 'left',
+                            overflow: 'hidden',
+                            textShadow: '0 2px 4px rgba(0,0,0,0.5)'
                         }}>
                             {title}
                         </h3>
 
                         <p style={{
                             fontSize: '0.85rem',
-                            color: 'rgba(255,255,255,0.7)',
+                            color: 'rgba(255,255,255,0.8)',
                             margin: 0,
-                            lineHeight: '1.5',
+                            lineHeight: '1.4',
                             display: '-webkit-box',
                             WebkitLineClamp: 2,
                             WebkitBoxOrient: 'vertical',
+                            textAlign: 'left',
                             overflow: 'hidden'
                         }}>
                             {description}
