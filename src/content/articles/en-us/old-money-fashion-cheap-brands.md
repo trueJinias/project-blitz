@@ -72,9 +72,49 @@ The secret isn't the brand; it's the **Maintenance**.
 A wrinkled $500 shirt looks like a rag. A crisp $20 shirt looks like custom tailoring.
 Invest in a handheld steamer. It takes 30 seconds before a meeting and elevates your look instantly.
 
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/71r+tW+gOJL._AC_SL1500_.jpg" alt="Conair Handheld Steam Iron" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Conair Handheld Garment Steamer</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.com/dp/B0BNK9862S?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 ### 2. De-pill Your Knits
 Fuzz and pills on a sweater scream "old and cheap". Buy a **Fabric Shaver**.
 Running it over your Uniqlo sweater once a month keeps it looking brand new. This is the difference between "messy" and "classy".
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61+9+8+0+0L._AC_SL1000_.jpg" alt="Fabric Shaver" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Conair Fabric Shaver</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.com/dp/B008I25368?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
 
 ### 3. Upgrade Your Footwear
 Wear whatever you want, but keep your shoes clean. A simple pair of white leather sneakers (like Stan Smiths or Common Projects dupes) or clean loafers works wonders. Avoid dirty running shoes.

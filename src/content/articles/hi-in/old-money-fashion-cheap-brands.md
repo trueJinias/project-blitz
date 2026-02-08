@@ -69,8 +69,48 @@ draft: false
 ### 1. स्टीमर (Steamer) का इस्तेमाल करें
 एक मुड़ी-तुड़ी महंगी शर्ट भी सस्ती लगती है। एक स्टीमर खरीदें (Amazon पर 1500-2000 रुपये में मिल जाएगा)। पहनने से पहले 30 सेकंड स्टीम करें। फर्क साफ दिखेगा।
 
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61kRk-yl-WL._SL1000_.jpg" alt="Philips Handheld Steamer" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Philips Handheld Garment Steamer</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.in/dp/B08D9K58J2?tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 ### 2. रोएं (Lint) हटाएं
 स्वेटर या टी-शर्ट पर रोएं आ जाएं तो वह पुराना लगता है। एक **फैब्रिक शेवर (Fabric Shaver)** का इस्तेमाल करें। यह आपके पुराने कपड़ों को नया जैसा बना देगा।
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://m.media-amazon.com/images/I/61+9+8+0+0L._AC_SL1000_.jpg" alt="Fabric Shaver" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Nova Lint Remover</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.in/dp/B0CJQ6ZMC2?tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
 
 ### 3. जूतों पर ध्यान दें
 साफ जूते सब कुछ बदल देते हैं।
