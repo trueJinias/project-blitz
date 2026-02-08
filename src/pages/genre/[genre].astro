@@ -49,7 +49,7 @@ const genreData: Record<string, { label: string; description: string; color: str
 const currentGenre = genreData[genre as string] || genreData.tech;
 
 const articles = await getCollection('articles', ({ id, data }) => {
-  return !id.startsWith('en-us/') && !id.startsWith('en-in/') && !id.startsWith('hi-in/') && data.genre === genre && !data.draft;
+  return !id.includes('/') && data.genre === genre && !data.draft;
 });
 
 // Sort by date, newest first
