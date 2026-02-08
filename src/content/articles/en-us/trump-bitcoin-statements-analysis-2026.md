@@ -6,7 +6,7 @@ description: >-
   Trump once called Bitcoin a 'scam'. Now he's launching his own coin and
   pushing for a national BTC reserve. What changed, and what does it mean for
   investors?
-genre: economy
+genre: economics
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/trump-bitcoin-statements-analysis-2026-thumbnail.jpg
 tags:

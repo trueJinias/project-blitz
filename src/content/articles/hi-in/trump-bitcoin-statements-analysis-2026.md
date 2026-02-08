@@ -6,7 +6,7 @@ description: >-
   ट्रंप कभी बिटकॉइन को "स्कैम" बोलते थे। अब वो अमेरिका को "क्रिप्टो कैपिटल"
   बनाना चाहते हैं। ये बदलाव क्यों आया और भारतीय निवेशकों के लिए इसका क्या मतलब
   है?
-genre: economy
+genre: economics
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/trump-bitcoin-statements-analysis-2026-thumbnail.jpg
 tags:
