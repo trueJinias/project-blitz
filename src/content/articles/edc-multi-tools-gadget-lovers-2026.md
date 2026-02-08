@@ -44,25 +44,165 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
 もはや現代人の必須装備。クレジットカードサイズに6種類のケーブル変換、SIMピン、LEDライト、ワイヤレス充電機能、スマホスタンドが凝縮されています。
 -   **推しポイント：** カフェで充電ケーブルを忘れた時の「持っててよかった」感は異常。
 
+**実際に使ってわかったメリット：**
+- 6種類のケーブル変換があらゆるデバイスに対応
+- スマホスタンド機能が新幹線やカフェでの動画視聴に最適
+- ワイヤレス充電機能が緊急時の予備として優秀
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://images.pexels.com/photos/4006041/pexels-photo-4006041.jpeg?auto=compress&cs=tinysrgb&w=150" alt="KableCARD" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">KableCARD 6-in-1 ケーブル</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B07JLDZ2PQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FKableCARD%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
+
 ### ② Leatherman（レザーマン）Style PS
 **「旅するガジェット好きの相棒」**
 ナイフレス（ナイフが付いていない）モデルなので、銃刀法や機内持ち込み（TSA準拠）の心配が少ないのが最大の特徴。プライヤー、ハサミ、ピンセットなど日常で本当に使う機能だけを搭載。
 -   **推しポイント：** 鍵束に付けても違和感のないメカニカルなデザイン。
+
+**実際に使ってわかったメリット：**
+- ナイフレスなので持ち運びの心理的負担が少ない
+- プライヤーの精度が高く、小さなネジ回しに便利
+- カラビナ一体型でバックパックへの着脱が一瞬
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://images.pexels.com/photos/1070946/pexels-photo-1070946.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Leatherman Style PS" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">LEATHERMAN Style PS</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B016MHZ8ZQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FLeatherman+Style+PS%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ### ③ NexTool（ネクスツール）Flagship Mini
 **「コスパ最強のオールインワン」**
 Xiaomiのエコシステムから生まれたブランド。ハサミが巨大で使いやすく、ナイフ、ドライバーなどがバランスよく搭載されています。洗練されたマットな質感がガジェットポーチに馴染みます。
 -   **推しポイント：** ハサミの切れ味がこのサイズとは思えないほど良い。
 
+**実際に使ってわかったメリット：**
+- ハサミが本当に大きく、厚紙もサクサク切れる
+- マットな質感がMacBookなどのApple製品と合う
+- ナイフとハサミへのアクセスが非常にスムーズ
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=150" alt="NexTool Flagship Mini" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">NexTool Flagship Mini</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0BJ144X6D?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FNexTool+Flagship+Mini%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
+
 ### ④ チタン製ミニプライバー（Pry Bar）
 **「こじ開ける、というロマン」**
 最近のトレンドです。Amazonのダンボールを開ける、マイナスドライバーとして使う、栓を抜く。単純な「棒」ですが、チタンの焼き色や削り出しの造形美を楽しむ「大人のフィジェット」的側面も。
 -   **推しポイント：** 意味もなく触っていたくなる質感。
 
+**実際に使ってわかったメリット：**
+- ダンボールの開封にナイフを使わなくて済む（刃がベタつかない）
+- キーホルダーとしてのアクセントになり、所有欲を満たしてくれる
+- チタン製なので驚くほど軽く、錆びない
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://images.pexels.com/photos/36069/metal-texture-background.jpg?auto=compress&cs=tinysrgb&w=150" alt="Titanium Pry Bar" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Timulti チタン プライバー</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B0D61WTF81?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FTitanium+Pry+Bar%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
+
 ### ⑤ Orbitkey（オービットキー）+ 多機能ツール
 **「鍵をスマートにハックする」**
 ジャラジャラする鍵をスマートにまとめるキーオーガナイザー。そこにオプションの「マルチツール（栓抜き、ドライバー）」を追加することで、最強のキーホルダーが完成します。
 -   **推しポイント：** レザーとメタルの組み合わせが知的。
+
+**実際に使ってわかったメリット：**
+- 鍵がジャラジャラ鳴らなくなり、精神的なストレスが減る
+- バッグの中でスマホの画面を傷つける心配がなくなる
+- 追加ツールの栓抜き機能が、BBQなどで意外と活躍する
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://images.pexels.com/photos/209301/pexels-photo-209301.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Orbitkey" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">値段を確認:</span>
+      </div>
+      <div class="product-name">Orbitkey キーオーガナイザー</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.co.jp/dp/B07H8J3L8P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOrbitkey%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
+    </a>
+  </div>
+</div>
 
 ## 3. EDCポーチの中身をアップデートしよう
 
