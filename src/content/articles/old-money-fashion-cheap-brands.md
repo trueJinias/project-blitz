@@ -82,9 +82,6 @@ product: パナソニック 衣類スチーマー 360°スチーム
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="/images/products/panasonic-steamer.jpg" alt="パナソニック 衣類スチーマー" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -126,9 +123,6 @@ Amazonのプライベートブランドですが、アメリカのトラッド�
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="/images/products/hanes-beefy-t.jpg" alt="Hanes BEEFY-T 2枚組" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>

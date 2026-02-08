@@ -74,9 +74,6 @@ Invest in a handheld steamer. It takes 30 seconds before a meeting and elevates 
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="/images/products/conair-steamer.jpg" alt="Conair Handheld Steam Iron" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -98,9 +95,6 @@ Running it over your Uniqlo sweater once a month keeps it looking brand new. Thi
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="/images/products/conair-shaver.jpg" alt="Fabric Shaver" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>

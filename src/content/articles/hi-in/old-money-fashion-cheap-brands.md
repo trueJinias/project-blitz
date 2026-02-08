@@ -71,9 +71,6 @@ draft: false
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="/images/products/philips-steamer.jpg" alt="Philips Handheld Steamer" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -94,9 +91,6 @@ draft: false
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="/images/products/nova-shaver.jpg" alt="Fabric Shaver" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
