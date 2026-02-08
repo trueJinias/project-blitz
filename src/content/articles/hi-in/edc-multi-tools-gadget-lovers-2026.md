@@ -134,6 +134,31 @@ Xiaomi के ecosystem का यह tool भारत में बहुत p
 **"Budget Friendly Choice"**
 अगर आप ज्यादा खर्चा नहीं करना चाहते, तो Decathlon के tools बहुत sturdy और reliable होते हैं। Trekking और city use दोनों के लिए अच्छे हैं।
 
+**मैंने इस्तेमाल करके यह जाना (Pros):**
+- बहुत ही tough build quality है, गिरनी पर भी नहीं टूटता
+- Budget friendly है (Amazon/Store पर सस्ता मिलता है)
+- Outdoor rough usage के लिए perfect है
+
+<div class="product-links">
+  <div class="product-header">
+    <div class="product-thumb">
+      <img src="https://images.pexels.com/photos/36069/metal-texture-background.jpg?auto=compress&cs=tinysrgb&w=150" alt="Decathlon Tool" />
+    </div>
+    <div class="product-info">
+      <div class="product-label">
+        <span class="label-icon">🛍️</span>
+        <span class="label-text">Check Price:</span>
+      </div>
+      <div class="product-name">Decathlon Multi Tool</div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="https://www.amazon.in/s?k=Decathlon+Multi+Tool&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+      <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+  </div>
+</div>
+
 ### ⑤ Orbitkey Key Organiser
 **"Smart & Silent"**
 चाबियों की "छन-छन" आवाज़ को बंद करें। अपनी keys को एक smart stack में organize करें और साथ में एक multi-tool addon लगा लें।
