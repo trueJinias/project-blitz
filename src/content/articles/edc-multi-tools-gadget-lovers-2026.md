@@ -51,9 +51,6 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/4006041/pexels-photo-4006041.jpeg?auto=compress&cs=tinysrgb&w=150" alt="KableCARD" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -63,11 +60,8 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B07JLDZ2PQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B07JLDZ2PQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
-    </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FKableCARD%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
-      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -84,9 +78,6 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/1070946/pexels-photo-1070946.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Leatherman Style PS" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -96,11 +87,8 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B016MHZ8ZQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B016MHZ8ZQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
-    </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FLeatherman+Style+PS%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
-      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -117,9 +105,6 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=150" alt="NexTool Flagship Mini" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -129,11 +114,8 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0BJ144X6D?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B09VXSG29X?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
-    </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FNexTool+Flagship+Mini%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
-      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -150,9 +132,6 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/36069/metal-texture-background.jpg?auto=compress&cs=tinysrgb&w=150" alt="Titanium Pry Bar" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -162,11 +141,8 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0D61WTF81?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B0D61WTF81?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
-    </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FTitanium+Pry+Bar%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
-      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -183,9 +159,6 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/209301/pexels-photo-209301.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Orbitkey" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -195,11 +168,8 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B07H8J3L8P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B07H8J3L8P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
-    </a>
-    <a href="https://hb.afl.rakuten.co.jp/hgc/3a105f23.63001711.3a105f24.9650058e/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOrbitkey%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
-      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>

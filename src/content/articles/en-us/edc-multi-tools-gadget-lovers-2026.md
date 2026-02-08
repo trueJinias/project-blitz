@@ -53,9 +53,6 @@ The absolute essential for modern life. It’s the size of a credit card but pac
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/4006041/pexels-photo-4006041.jpeg?auto=compress&cs=tinysrgb&w=150" alt="KableCARD" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -83,9 +80,6 @@ A knifeless multi-tool that focuses on pliers, scissors, and tweezers. Because i
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/1070946/pexels-photo-1070946.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Leatherman Style PS" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -113,9 +107,6 @@ Often found in the Xiaomi ecosystem, this tool punches way above its weight. It 
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=150" alt="NexTool Flagship Mini" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -143,9 +134,6 @@ A rising trend in the EDC community. It’s a simple, solid piece of machined ti
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/36069/metal-texture-background.jpg?auto=compress&cs=tinysrgb&w=150" alt="Titanium Pry Bar" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -173,9 +161,6 @@ Stop the "jingle-jangle." Orbitkey organizes your keys into a silent stack. Add 
 
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <img src="https://images.pexels.com/photos/209301/pexels-photo-209301.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Orbitkey" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>

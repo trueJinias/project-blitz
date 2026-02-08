@@ -55,10 +55,6 @@ trigger: always_on
 ```html
 <div class="product-links">
   <div class="product-header">
-    <div class="product-thumb">
-      <!-- 商品ページのOGP画像など、背景が白の高品質な商品写真を使用 -->
-      <img src="https://m.media-amazon.com/images/I/XXXX.jpg" alt="商品名" />
-    </div>
     <div class="product-info">
       <div class="product-label">
         <span class="label-icon">🛍️</span>
@@ -69,11 +65,8 @@ trigger: always_on
   </div>
   <div class="buttons">
     <!-- 原則として「検索結果」ではなく「個別商品ページ」へ直通させる -->
-    <a href="https://www.amazon.co.jp/dp/ASINコード?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/ASINコード?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
-    </a>
-    <a href="楽天のアフィリエイトURL" target="_blank" rel="noopener noreferrer" class="btn rakuten">
-      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -86,7 +79,7 @@ trigger: always_on
 
 #### 3. デザイン原則
 - **プレミアム感**: `global.css`に定義されたスタイルを活かし、ホバーエフェクトや影の効果で高級感を演出します。
-- **画像選定**: 可能な限り背景が白く、商品が鮮明に写っている「OGP画像」または「メイン画像」を選定してください。
+- **プレミアム感**: `global.css`に定義されたスタイルを活かし、ホバーエフェクトや影の効果で高級感を演出します。
 
 ## 形式（例）
 ---
