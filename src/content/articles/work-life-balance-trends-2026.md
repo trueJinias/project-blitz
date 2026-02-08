@@ -13,9 +13,9 @@ author: なも兄
 draft: false
 ---
 
-## はじめに 
+## はじめに
 
-![A 3D abstract cube made of blue blocks floating on a dark background.](/images/articles/work-life-balance-trends-2026-1.jpg)
+![Intriguing 3D illustration of a hexagonal pattern forming a sphere with a deep red background.](/images/articles/work-life-balance-trends-2026-1.jpg)
 *Photo by Maxim Landolfi on Pexels*
 
 **2026年、働き方はどう変わる？**
@@ -26,10 +26,10 @@ draft: false
 
 今回は2026年のワークライフバランス最新トレンドを解説します。
 
-## 1. 労働基準法が40年ぶりの大改正へ 
+## 1. 労働基準法が40年ぶりの大改正へ
 
-![A digital rendering of a futuristic, abstract geometric shape on a blue gradient background.](/images/articles/work-life-balance-trends-2026-2.jpg)
-*Photo by Rostislav Uzunov on Pexels*
+![A warmly illuminated desk by night, featuring a laptop and cozy string lights.](/images/articles/work-life-balance-trends-2026-2.jpg)
+*Photo by Bich Tran on Pexels*
 
 2026年前後に**労働基準法が大幅改正**される見込みです。
 
@@ -44,10 +44,10 @@ draft: false
 
 約40年ぶりの大改正で、テレワークや副業など**多様な働き方に法律が追いつく**形になります。
 
-## 2. 週休3日制の本格普及 
+## 2. 週休3日制の本格普及
 
-![A digital rendering of a futuristic, abstract geometric shape on a blue gradient background.](/images/articles/work-life-balance-trends-2026-3.jpg)
-*Photo by Rostislav Uzunov on Pexels*
+![PlayStation 5 consoles and accessories on display in a sleek, futuristic showroom.](/images/articles/work-life-balance-trends-2026-3.jpg)
+*Photo by Sirius Df on Pexels*
 
 **東京都が導入**したことで話題になった週休3日制。2026年は民間企業への波及が進みます。
 

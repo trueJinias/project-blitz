@@ -210,19 +210,23 @@ async function searchUnsplash(query) {
     return null;
 }
 
-async function searchPexels(query) {
+async function searchPexels(query, offset = 0) {
     const apiKey = process.env.PEXELS_API_KEY;
     if (!apiKey) return null;
     try {
-        const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`;
+        // Request multiple photos and pick based on offset to avoid duplicates
+        const perPage = Math.max(5, offset + 1);
+        const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=landscape`;
         const res = await fetch(url, { headers: { Authorization: apiKey } });
         if (!res.ok) return null;
         const data = await res.json();
-        if (data.photos?.[0]) {
+        // Pick photo at offset position, fallback to first if not available
+        const photoIndex = Math.min(offset, (data.photos?.length || 1) - 1);
+        if (data.photos?.[photoIndex]) {
             return {
-                url: data.photos[0].src.large,
-                alt: data.photos[0].alt || query,
-                credit: `Photo by ${data.photos[0].photographer} on Pexels`
+                url: data.photos[photoIndex].src.large,
+                alt: data.photos[photoIndex].alt || query,
+                credit: `Photo by ${data.photos[photoIndex].photographer} on Pexels`
             };
         }
     } catch (e) { console.error('Pexels Error:', e.message); }
@@ -248,14 +252,14 @@ async function searchPixabay(query) {
     return null;
 }
 
-async function searchImage(query) {
-    console.log(`🔍 Searching Stock Photos: "${query}"`);
-    let res = await searchUnsplash(query) || await searchPexels(query) || await searchPixabay(query);
+async function searchImage(query, offset = 0) {
+    console.log(`🔍 Searching Stock Photos: "${query}" (offset: ${offset})`);
+    let res = await searchUnsplash(query) || await searchPexels(query, offset) || await searchPixabay(query);
 
     if (!res) {
         console.log('🤖 Generating fallback image...');
         return {
-            url: `https://image.pollinations.ai/prompt/${encodeURIComponent(query)}?width=800&height=600&nologo=true`,
+            url: `https://image.pollinations.ai/prompt/${encodeURIComponent(query + ' variation ' + offset)}?width=800&height=600&nologo=true`,
             alt: `${query} (AI Generated)`,
             credit: 'AI Generated'
         };
@@ -390,17 +394,30 @@ async function main() {
         const cleanHeader = headerText.replace(/^##\s*/, '').trim();
         const headerRegex = new RegExp(`^##\\s+${cleanHeader.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}.*$`, 'm');
 
-        if (headerRegex.test(modifiedContent) && !modifiedContent.includes(query)) {
-            // For inline images, we usually stick to stock photos as product shots might be repetitive
-            // unless the section is about a specific feature that stock photos cover well.
-            const img = await searchImage(query);
-            const savedPath = await downloadStockImage(img, `${slug}-${sectionCount + 1}`);
+        if (headerRegex.test(modifiedContent)) {
+            // Check if image already exists after the header
+            const match = modifiedContent.match(headerRegex);
+            const postHeaderContent = modifiedContent.slice(match.index + match[0].length);
+            const firstNonEmptyLine = postHeaderContent.split('\n').find(l => l.trim().length > 0);
 
-            modifiedContent = modifiedContent.replace(
-                headerRegex,
-                `$& \n\n![${img.alt}](${savedPath})\n*${img.credit}*`
-            );
-            sectionCount++;
+            if (firstNonEmptyLine && firstNonEmptyLine.trim().startsWith('![')) {
+                console.log(`⏭️ Skipping section "${cleanHeader}" (Image already exists)`);
+                continue;
+            }
+
+            if (!modifiedContent.includes(query)) {
+                // For inline images, we usually stick to stock photos as product shots might be repetitive
+                // unless the section is about a specific feature that stock photos cover well.
+                // Pass sectionCount + 1 as offset to ensure different images if queries are similar
+                const img = await searchImage(query, sectionCount + 1);
+                const savedPath = await downloadStockImage(img, `${slug}-${sectionCount + 1}`);
+
+                modifiedContent = modifiedContent.replace(
+                    headerRegex,
+                    `$& \n\n![${img.alt}](${savedPath})\n*${img.credit}*`
+                );
+                sectionCount++;
+            }
         }
     }
 
