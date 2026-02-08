@@ -95,13 +95,40 @@ node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
 node scripts/manage-keywords.mjs remove "{今回のキーワード}"
 ```
 
-### 10. 完了報告（必須）
-ワークフロー完了時には、以下の形式でSNS投稿用のリンクを必ず出力する：
-- **公開記事URL**: `https://project-blitz.vercel.app/articles/{slug}`
-- **X投稿推奨文**: 記事のタイトル + URL
-- **(推奨) AI要約付き投稿リンク生成**:
-    以下のコマンドを実行すると、「読みたくなる一文」を含んだX投稿リンク（Intent URL）が生成されます。
-    ```powershell
-    node scripts/post-to-x.mjs src/content/articles/{生成したファイル名}.md
-    ```
+### 10. 完了報告（必須・貼り忘れ厳禁）
 
+**⚠️ この報告を貼らずにワークフローを終了することは禁止です。**
+
+以下の形式を**そのままコピー**して、notify_userで出力すること：
+
+```
+# 記事生成ワークフロー完了
+
+**キーワード:** `{使用したキーワード}`
+
+**成果物:**
+- 🇯🇵 [日本語版](https://project-blitz.vercel.app/articles/{slug})
+- 🇺🇸 [米国版](https://project-blitz.vercel.app/en-us/articles/{slug})
+- 🇮🇳 [インド版](https://project-blitz.vercel.app/hi-in/articles/{slug})
+
+**タグ確認:** {タグが適切かどうかの確認結果}
+**画像確認:** {画像が適切かどうかの確認結果}
+
+---
+
+## 📢 SNS投稿用リンク
+
+### 日本語版
+https://twitter.com/intent/tweet?text={エンコード済みタイトル}%0A%0Ahttps://project-blitz.vercel.app/articles/{slug}
+
+### 米国版
+https://twitter.com/intent/tweet?text={エンコード済みタイトル}%0A%0Ahttps://project-blitz.vercel.app/en-us/articles/{slug}
+
+### インド版
+https://twitter.com/intent/tweet?text={エンコード済みタイトル}%0A%0Ahttps://project-blitz.vercel.app/hi-in/articles/{slug}
+```
+
+**チェックリスト（すべて満たすこと）:**
+- [ ] 公開記事URL 3つを貼った
+- [ ] SNS投稿用Intent URL 3つを貼った
+- [ ] タグと画像の確認結果を記載した
