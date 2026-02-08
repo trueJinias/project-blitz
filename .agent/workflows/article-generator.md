@@ -61,6 +61,11 @@ node scripts/add-images.mjs src/content/articles/en-us/{生成したファイル
 node scripts/add-images.mjs src/content/articles/hi-in/{生成したファイル名}.md
 ```
 
+**⚠️ 画像確認ルール（必須）:**
+- 画像挿入後、各記事のfrontmatterの`tags`が記事内容に合っているか確認すること
+- タグが`Tech, Gadget`になっている場合、経済記事には不適切なのでスクリプトが失敗している
+- 挿入された画像が記事内容と無関係（肉の画像、Teslaの画像など）の場合、手動で適切な画像に差し替えること
+
 ### 8. デプロイ（公開）
 最後にデプロイコマンドを実行して公開完了：
 ```powershell

@@ -1,25 +1,24 @@
 ---
-title: >-
-  Fed Rate Cuts in 2026: When Will the FOMC Finally Move? (And What It Means for
-  Your Portfolio)
+title: "Fed Rate Cuts in 2026: When Will the FOMC Finally Move? (And What It Means for Your Portfolio)"
 description: >-
-  The Fed held rates steady for the third straight meeting in January 2026.
-  Here's what investors need to know about the outlook for rate cuts and the US
-  dollar.
+  The Fed held rates steady for the third straight meeting in January 2026. Here's what investors need to know about the outlook for rate cuts and the US dollar.
 genre: economics
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/fomc-rate-cut-usdjpy-outlook-2026-thumbnail.jpg
 tags:
-  - Tech
-  - Gadget
+  - Federal Reserve
+  - FOMC
+  - Interest Rates
+  - US Dollar
+  - Investing Strategy
 author: Namo-ni
 draft: false
 ---
 
-## Introduction 
+## Introduction
 
-![A 3D abstract cube made of blue blocks floating on a dark background.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-1.jpg)
-*Photo by Maxim Landolfi on Pexels*
+![Federal Reserve building in Washington D.C.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-1.jpg)
+*Photo by Kelly on Pexels*
 
 "Higher for longer" was the story of 2024 and 2025. In 2026, investors are still waiting for the Fed to cut rates.
 
@@ -27,10 +26,7 @@ The January 2026 FOMC meeting came and went with **no rate cut**—the third con
 
 So when will the Fed finally cut? And what does it mean for your investments? Let's break it down.
 
-## 1. What Happened at the January FOMC 
-
-![A range of raw meat cuts on display in a butcher shop, featuring labels for each type.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-2.jpg)
-*Photo by Dana Sredojevic on Pexels*
+## 1. What Happened at the January FOMC
 
 Key takeaways from the January 27-28 meeting:
 
@@ -40,10 +36,10 @@ Key takeaways from the January 27-28 meeting:
 
 Translation: We're not in a hurry.
 
-## 2. When Will the Fed Cut Rates? 
+## 2. When Will the Fed Cut Rates?
 
-![A range of raw meat cuts on display in a butcher shop, featuring labels for each type.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-3.jpg)
-*Photo by Dana Sredojevic on Pexels*
+![Financial analyst reviewing market data](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-2.jpg)
+*Photo from Pexels*
 
 Wall Street is divided:
 
@@ -70,6 +66,9 @@ The US dollar has remained strong, with USD/JPY around 157 (as of early February
 But if Trump explicitly endorses a weaker dollar, expect volatility.
 
 ## 4. Investing Strategy: What to Do Now
+
+![White House in Washington D.C.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-3.jpg)
+*Photo from Pexels*
 
 **What NOT to do:**
 -   Don't try to time the Fed. Even the experts get it wrong.

@@ -109,16 +109,41 @@ Return ONLY valid JSON.
  */
 function fallbackAnalysis(title, content) {
     // 1. Generate Tags from Title (Simple matching)
-    const knownTags = ['Tech', 'Lifestyle', 'Review', 'Rumors', 'Guide', 'AI', 'Battery', 'Camera', 'Gadget'];
-    const tags = knownTags.filter(tag => title.toLowerCase().includes(tag.toLowerCase()));
-    if (tags.length === 0) tags.push('Tech', 'Gadget'); // Default tags
+    const knownTags = [
+        'Tech', 'Lifestyle', 'Review', 'Rumors', 'Guide', 'AI', 'Battery', 'Camera', 'Gadget',
+        // Economics/Finance keywords
+        'FOMC', 'Fed', '利下げ', '利上げ', 'ドル円', '為替', '投資', '金融', 'FRB', '金利',
+        'Economics', 'Finance', 'Dollar', 'Yen', 'Currency', 'Investment', 'Stock', 'Bitcoin', 'Crypto',
+        // Fashion keywords
+        'オールドマネー', 'ファッション', 'コーデ', 'スタイル', 'Fashion', 'Style'
+    ];
 
-    // 2. Thumbnail Query
-    // Use the file slug if possible, otherwise generic. 
-    // Since we don't have the slug here yet, we'll try to extract English words from title or default.
-    // Actually, the caller has the title. Let's send a generic "tech" query + extracted English words.
-    const englishWords = title.match(/[a-zA-Z0-9]+/g) || [];
-    const thumbnailQuery = englishWords.length > 0 ? `${englishWords.join(' ')} tech` : 'smartphone technology concept';
+    const combinedText = (title + ' ' + content.substring(0, 500)).toLowerCase();
+    const tags = knownTags.filter(tag => combinedText.includes(tag.toLowerCase()));
+
+    // Determine category based on content
+    let category = 'Tech';
+    if (combinedText.includes('fomc') || combinedText.includes('利下げ') || combinedText.includes('ドル円') ||
+        combinedText.includes('fed') || combinedText.includes('金利') || combinedText.includes('為替')) {
+        category = 'Economics';
+        if (tags.length === 0) tags.push('金融', '投資', '経済');
+    } else if (combinedText.includes('ファッション') || combinedText.includes('コーデ') || combinedText.includes('オールドマネー')) {
+        category = 'Lifestyle';
+        if (tags.length === 0) tags.push('ファッション', 'ライフスタイル');
+    } else {
+        if (tags.length === 0) tags.push('Tech', 'Gadget');
+    }
+
+    // 2. Thumbnail Query based on category
+    let thumbnailQuery;
+    if (category === 'Economics') {
+        thumbnailQuery = 'stock market chart finance business';
+    } else if (category === 'Lifestyle') {
+        thumbnailQuery = 'fashion lifestyle elegant';
+    } else {
+        const englishWords = title.match(/[a-zA-Z0-9]+/g) || [];
+        thumbnailQuery = englishWords.length > 0 ? `${englishWords.join(' ')} tech` : 'smartphone technology concept';
+    }
 
     // 3. Section Queries
     const sectionQueries = {};
@@ -127,8 +152,17 @@ function fallbackAnalysis(title, content) {
     for (const header of headers) {
         let query = 'technology minimalist background'; // Default
 
-        // Simple Dictionary Mapping
-        if (header.includes('はじめに') || header.includes('Introduction')) query = 'futuristic technology abstract';
+        // Economics/Finance mappings
+        if (header.includes('FOMC') || header.includes('利下げ') || header.includes('Fed')) query = 'federal reserve building washington';
+        else if (header.includes('ドル円') || header.includes('為替') || header.includes('相場')) query = 'currency exchange rate chart';
+        else if (header.includes('投資') || header.includes('戦略') || header.includes('Strategy')) query = 'investment strategy planning';
+        else if (header.includes('トランプ') || header.includes('Trump')) query = 'white house politics';
+        else if (header.includes('専門家') || header.includes('見解')) query = 'financial analyst expert';
+        // Fashion mappings
+        else if (header.includes('ユニクロ') || header.includes('Uniqlo')) query = 'minimalist fashion shirt';
+        else if (header.includes('オールドマネー') || header.includes('Old Money')) query = 'luxury classic fashion men';
+        // Tech mappings
+        else if (header.includes('はじめに') || header.includes('Introduction')) query = 'futuristic technology abstract';
         else if (header.includes('まとめ') || header.includes('Conclusion')) query = 'coffee workspace laptop';
         else if (header.includes('バッテリー') || header.includes('Battery')) query = 'battery charging icon';
         else if (header.includes('カメラ') || header.includes('Camera')) query = 'camera lens photography';
@@ -145,9 +179,9 @@ function fallbackAnalysis(title, content) {
     }
 
     return {
-        tags: tags,
+        tags: tags.slice(0, 5), // Limit to 5 tags
         is_product_review: title.includes('レビュー') || title.includes('Review'),
-        product_name: null, // Hard to extract reliably without AI
+        product_name: null,
         thumbnail_query: thumbnailQuery,
         section_queries: sectionQueries
     };

@@ -1,20 +1,24 @@
 ---
 title: 【2026年2月】FOMC利下げはいつ？ドル円相場の今後を徹底予想
-description: 2026年1月FOMCは3会合連続で利下げ見送り。次の利下げ時期はいつ？ドル円相場への影響と、個人投資家が取るべき戦略を解説します。
+description: >-
+  2026年1月FOMCは3会合連続で利下げ見送り。次の利下げ時期はいつ？ドル円相場への影響と、個人投資家が取るべき戦略を解説します。
 genre: economics
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/fomc-rate-cut-usdjpy-outlook-2026-thumbnail.jpg
 tags:
-  - Tech
-  - Gadget
+  - FOMC
+  - 利下げ
+  - ドル円
+  - 投資
+  - FRB
 author: なも兄
 draft: false
 ---
 
-## はじめに 
+## はじめに
 
-![A 3D abstract cube made of blue blocks floating on a dark background.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-1.jpg)
-*Photo by Maxim Landolfi on Pexels*
+![Federal Reserve building in Washington D.C.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-1.jpg)
+*Photo by Kelly on Pexels*
 
 「FRBはいつ利下げするのか？」
 
@@ -24,10 +28,7 @@ draft: false
 
 この記事では、FOMCの利下げ時期の見通しと、ドル円相場への影響を解説します。
 
-## 1. 2026年1月FOMC：何が決まった？ 
-
-![Young man charging a Tesla Model 3 at an outdoor electric vehicle station during the day.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-2.jpg)
-*Photo by 04iraq on Pexels*
+## 1. 2026年1月FOMC：何が決まった？
 
 1月27-28日のFOMCでの決定内容：
 
@@ -37,10 +38,10 @@ draft: false
 
 要するに「今は動かない、様子を見る」というスタンスです。
 
-## 2. 次の利下げはいつ？専門家の見解 
+## 2. 次の利下げはいつ？専門家の見解
 
-![Young man charging a Tesla Model 3 at an outdoor electric vehicle station during the day.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-3.jpg)
-*Photo by 04iraq on Pexels*
+![Financial analyst reviewing market data](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-2.jpg)
+*Photo from Pexels*
 
 各金融機関の予想は分かれています：
 
@@ -67,6 +68,9 @@ draft: false
 ただし、これは**FRBが利下げ、日銀が利上げを継続した場合**のシナリオです。
 
 ## 4. トランプ発言に要注意
+
+![White House in Washington D.C.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-3.jpg)
+*Photo from Pexels*
 
 為替市場で最も警戒すべきは**トランプ大統領の発言**です。
 

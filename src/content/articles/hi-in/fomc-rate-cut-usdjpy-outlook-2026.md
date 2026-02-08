@@ -1,22 +1,24 @@
 ---
 title: 'Fed ब्याज दर कटौती 2026: आम भारतीय निवेशक के लिए इसका क्या मतलब है?'
 description: >-
-  अमेरिकी Fed ने जनवरी 2026 में ब्याज दरें स्थिर रखीं। डॉलर और भारतीय शेयर
-  बाज़ार पर इसका क्या असर होगा?
+  अमेरिकी Fed ने जनवरी 2026 में ब्याज दरें स्थिर रखीं। डॉलर और भारतीय शेयर बाज़ार पर इसका क्या असर होगा?
 genre: economics
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/fomc-rate-cut-usdjpy-outlook-2026-thumbnail.jpg
 tags:
-  - Tech
-  - Gadget
+  - Federal Reserve
+  - ब्याज दर
+  - डॉलर
+  - भारतीय निवेशक
+  - 2026 आउटलुक
 author: Namo-ni
 draft: false
 ---
 
-## परिचय 
+## परिचय
 
-![A range of raw meat cuts on display in a butcher shop, featuring labels for each type.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-1.jpg)
-*Photo by Dana Sredojevic on Pexels*
+![Federal Reserve building in Washington D.C.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-1.jpg)
+*Photo by Kelly on Pexels*
 
 "Fed कब ब्याज दरें कम करेगा?"
 
@@ -26,10 +28,7 @@ draft: false
 
 इस आर्टिकल में समझते हैं कि Fed के फैसले का भारत पर क्या असर होगा।
 
-## 1. जनवरी 2026 में Fed ने क्या किया? 
-
-![A range of raw meat cuts on display in a butcher shop, featuring labels for each type.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-2.jpg)
-*Photo by Dana Sredojevic on Pexels*
+## 1. जनवरी 2026 में Fed ने क्या किया?
 
 -   **ब्याज दर**: 3.50–3.75% पर स्थिर
 -   **वजह**: अमेरिकी अर्थव्यवस्था मज़बूत है, महंगाई अभी भी टारगेट से ऊपर
@@ -37,10 +36,10 @@ draft: false
 
 सीधे शब्दों में: रेट कट अभी नहीं होगी।
 
-## 2. भारत पर क्या असर? 
+## 2. भारत पर क्या असर?
 
-![A range of raw meat cuts on display in a butcher shop, featuring labels for each type.](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-3.jpg)
-*Photo by Dana Sredojevic on Pexels*
+![Currency exchange rates on display](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-2.jpg)
+*Photo from Pexels*
 
 ### डॉलर की मज़बूती
 
@@ -65,6 +64,9 @@ draft: false
 | ट्रंप ने डॉलर कमज़ोर करने की बात कही | अचानक डॉलर गिरे, वोलैटिलिटी बढ़े |
 
 ## 4. भारतीय निवेशक के लिए सलाह
+
+![Investment planning and strategy](/images/articles/fomc-rate-cut-usdjpy-outlook-2026-3.jpg)
+*Photo from Pexels*
 
 **क्या ना करें:**
 -   "Fed मीटिंग के बाद मार्केट ऊपर जाएगा" मानकर ट्रेड ना करें
