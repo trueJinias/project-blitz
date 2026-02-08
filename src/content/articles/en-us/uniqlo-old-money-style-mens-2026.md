@@ -7,9 +7,11 @@ genre: lifestyle
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/uniqlo-old-money-style-mens-2026-thumbnail.jpg
 tags:
-  - Guide
-  - AI
-  - Dollar
+  - Old Money
+  - Uniqlo
+  - Men's Fashion
+  - Style Guide
+  - Budget Fashion
 author: Namo-ni
 draft: false
 ---
