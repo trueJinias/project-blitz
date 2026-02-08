@@ -246,8 +246,8 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 uniforms: {
                     diffuse: new THREE.Color(...hexToNormalizedRGB('#0a0a0a')),
                     time: { shared: true, mixed: true, linked: true, value: 0 },
-                    roughness: 0.4, // Increased roughness to catch more light from angles
-                    metalness: 0.1, // Reduced metalness to be less dependent on direct reflection
+                    roughness: 0.2, // Lower roughness for sharper highlights (stronger shading)
+                    metalness: 0.8, // Higher metalness for darker shadows and metallic contrast
                     uSpeed: { shared: true, mixed: true, linked: true, value: speed },
                     envMapIntensity: 10,
                     uNoiseIntensity: noiseIntensity,
@@ -278,7 +278,7 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                     <DirLight color={lightColor} position={[-10, 3, 10]} /> {/* Left auxiliary light */}
                     <DirLight color={lightColor} position={[10, 3, 10]} />  {/* Right auxiliary light */}
                 </group>
-                <ambientLight intensity={1} />
+                <ambientLight intensity={0.2} /> {/* Drastically reduced from 1.0 to create heavy shadows */}
                 <color attach="background" args={['#000000']} />
                 <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={45} />
             </CanvasWrapper>
