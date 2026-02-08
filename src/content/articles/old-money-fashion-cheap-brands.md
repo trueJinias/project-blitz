@@ -94,7 +94,7 @@ product: パナソニック 衣類スチーマー 360°スチーム
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0BWLD2N5M?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%8A%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF+%E8%A1%A3%E9%A1%9E%E3%82%B9%E3%83%81%E3%83%BC%E3%83%9E%E3%83%BC&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://search.rakuten.co.jp/search/mall/パナソニック+衣類スチーマー/" target="_blank" rel="noopener noreferrer" class="btn rakuten">
@@ -138,7 +138,7 @@ Amazonのプライベートブランドですが、アメリカのトラッド�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B01M3Q8Q8A?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Hanes+BEEFY-T&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://search.rakuten.co.jp/search/mall/Hanes+BEEFY-T/" target="_blank" rel="noopener noreferrer" class="btn rakuten">

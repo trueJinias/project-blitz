@@ -83,7 +83,7 @@ draft: false
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B0CXHMXYGR?tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/s?k=Philips+Handheld+Garment+Steamer&tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -106,7 +106,7 @@ draft: false
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B0CJQ6ZMC2?tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/s?k=Nova+Lint+Remover&tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>

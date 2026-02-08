@@ -86,7 +86,7 @@ Invest in a handheld steamer. It takes 30 seconds before a meeting and elevates 
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B0935BS6DZ?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/s?k=Conair+Handheld+Garment+Steamer&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -110,7 +110,7 @@ Running it over your Uniqlo sweater once a month keeps it looking brand new. Thi
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B008I25368?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/s?k=Conair+Fabric+Shaver&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
