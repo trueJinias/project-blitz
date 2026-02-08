@@ -179,9 +179,9 @@ interface BeamsProps {
 }
 
 export const BackgroundBeams: FC<BeamsProps> = ({
-    beamWidth = 2.6,
-    beamHeight = 11,
-    beamNumber = 20,
+    beamWidth = 3,
+    beamHeight = 60, // Increased to ensure it covers the screen
+    beamNumber = 30, // Increased count for better coverage
     lightColor = '#999999',
     speed = 4.7,
     noiseIntensity = 1.75,
@@ -249,7 +249,7 @@ export const BackgroundBeams: FC<BeamsProps> = ({
     );
 
     return (
-        <div className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}>
+        <div className={`fixed inset-0 w-full h-full pointer-events-none -z-10 ${className}`}>
             <CanvasWrapper>
                 <group rotation={[0, 0, (rotation * Math.PI) / 180]}>
                     <PlaneNoise ref={meshRef} material={beamMaterial} count={beamNumber} width={beamWidth} height={beamHeight} />
@@ -257,7 +257,7 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 </group>
                 <ambientLight intensity={1} />
                 <color attach="background" args={['#000000']} />
-                <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={30} />
+                <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={45} />
             </CanvasWrapper>
         </div>
     );

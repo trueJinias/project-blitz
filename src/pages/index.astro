@@ -23,9 +23,7 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   
   <main class="home">
     <section class="hero">
-      <div class="hero-bg-container">
-        <BackgroundBeams client:load />
-      </div>
+      <BackgroundBeams client:load />
       
       <div class="hero-badge">
         <span class="badge-icon">✨</span>
@@ -94,12 +92,7 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
     padding-top: var(--spacing-20);
   }
 
-  .hero-bg-container {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
+
 
   .hero-badge {
     position: relative;
