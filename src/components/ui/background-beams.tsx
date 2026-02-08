@@ -188,12 +188,12 @@ interface BeamsProps {
 }
 
 export const BackgroundBeams: FC<BeamsProps> = ({
-    beamWidth = 0.5,
+    beamWidth = 1.0,
     beamHeight = 150, // Longer to cover full rotation
-    beamNumber = 80, // High density
+    beamNumber = 60, // Reduced from 80 but wider
     lightColor = '#ffffff', // Bright white light
     speed = 4.0,
-    noiseIntensity = 1.0, // Reduced to prevent too much darkening
+    noiseIntensity = 0.5, // Reduced to prevent darkening
     scale = 0.2,
     rotation = 35,
     className
@@ -244,7 +244,7 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 },
                 material: { fog: true },
                 uniforms: {
-                    diffuse: new THREE.Color(...hexToNormalizedRGB('#1a1a1a')),
+                    diffuse: new THREE.Color(...hexToNormalizedRGB('#444444')),
                     time: { shared: true, mixed: true, linked: true, value: 0 },
                     roughness: 0.2,
                     metalness: 0.2,
@@ -350,7 +350,7 @@ const MergedPlanes = forwardRef<
     const mesh = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
     useImperativeHandle(ref, () => mesh.current);
     const geometry = useMemo(
-        () => createStackedPlanesBufferGeometry(count, width, height, 0.8, 100),
+        () => createStackedPlanesBufferGeometry(count, width, height, 2.0, 100),
         [count, width, height]
     );
     useFrame((_, delta) => {
