@@ -25,31 +25,21 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
     <section class="hero">
       <BackgroundBeams client:load />
       
-      <div class="emoji-decoration">
-        <span class="emoji" style="top: 15%; left: 5%;">⚡</span>
-        <span class="emoji" style="top: 25%; right: 8%;">📱</span>
-        <span class="emoji" style="top: 40%; left: 3%;">💻</span>
-        <span class="emoji" style="top: 55%; right: 5%;">🎯</span>
-        <span class="emoji" style="top: 70%; left: 10%;">✨</span>
-        <span class="emoji" style="top: 85%; right: 12%;">📰</span>
-        <span class="emoji" style="top: 10%; right: 10%;">🎮</span>
-        <span class="emoji" style="top: 30%; left: 90%;">📷</span>
-        <span class="emoji" style="top: 50%; left: 95%;">🚀</span>
-        <span class="emoji" style="top: 75%; right: 3%;">⌚</span>
-        <span class="emoji" style="top: 20%; left: 15%;">🎧</span>
-        <span class="emoji" style="top: 60%; right: 15%;">⌨️</span>
-        <span class="emoji" style="top: 35%; left: 8%;">🖱</span>
-        <span class="emoji" style="top: 80%; left: 20%;">💡</span>
-      </div>
+
       
       <div class="hero-content">
         <h1 class="hero-title">
-          <span class="title-line title-highlight">トレンディな</span>
+          <span class="title-line title-highlight">Radiant</span>
           <span class="title-line">Wikipedia</span>
         </h1>
         <p class="hero-description">
-          スクロールしてカテゴリから探す
+          creative user interfaces
         </p>
+        
+        <div class="hero-actions">
+          <a href="#explore" class="btn btn-primary">Get Started</a>
+          <a href="#learn" class="btn btn-outline">Learn More</a>
+        </div>
         
         <div class="scroll-indicator">
           <span>Scroll</span>
@@ -97,44 +87,7 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   
   /* Hero Background styles removed in favor of BackgroundBeams component */
   
-  .emoji-decoration {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-  }
-  
-  .emoji {
-    position: absolute;
-    font-size: 3rem;
-    opacity: 0.4;
-    animation: floatEmoji 4s ease-in-out infinite;
-    filter: blur(0.5px);
-  }
-  
-  .emoji:nth-child(1) { animation-delay: 0s; }
-  .emoji:nth-child(2) { animation-delay: 0.4s; }
-  .emoji:nth-child(3) { animation-delay: 0.8s; }
-  .emoji:nth-child(4) { animation-delay: 1.2s; }
-  .emoji:nth-child(5) { animation-delay: 1.6s; }
-  .emoji:nth-child(6) { animation-delay: 2s; }
-  .emoji:nth-child(7) { animation-delay: 2.4s; }
-  .emoji:nth-child(8) { animation-delay: 2.8s; }
-  .emoji:nth-child(9) { animation-delay: 3.2s; }
-  .emoji:nth-child(10) { animation-delay: 3.6s; }
-  .emoji:nth-child(11) { animation-delay: 0.2s; }
-  .emoji:nth-child(12) { animation-delay: 0.6s; }
-  .emoji:nth-child(13) { animation-delay: 1s; }
-  .emoji:nth-child(14) { animation-delay: 1.4s; }
-  
-  @keyframes floatEmoji {
-    0%, 100% {
-      transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-      transform: translateY(-30px) rotate(10deg);
-    }
-  }
+
   
   .hero-content {
     position: relative;
@@ -165,8 +118,39 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   .hero-description {
     font-size: var(--font-size-xl);
     color: var(--color-text-secondary);
-    max-width: 500px;
-    margin: 0 auto var(--spacing-12);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-8);
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+    margin-bottom: var(--spacing-12);
+  }
+
+  .btn {
+    padding: var(--spacing-3) var(--spacing-8);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-medium);
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background: #fff;
+    color: #000;
+  }
+
+  .btn-outline {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
   .scroll-indicator {
