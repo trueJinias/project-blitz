@@ -95,27 +95,26 @@ export default function TiltedCard({
             style={{
                 height: containerHeight,
                 width: containerWidth,
-                perspective: '800px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                position: 'relative'
+                perspective: '1000px',
+                display: 'block',
+                position: 'relative',
+                margin: 0,
+                padding: 0
             }}
             onMouseMove={handleMouse}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             {showMobileWarning && (
-                <div style={{ position: 'absolute', top: '16px', textAlign: 'center', fontSize: '0.875rem' }} className="sm:hidden">
+                <div style={{ position: 'absolute', top: '16px', left: 0, right: 0, textAlign: 'center', fontSize: '0.875rem', zIndex: 10 }} className="sm:hidden">
                     This effect is not optimized for mobile. Check on desktop.
                 </div>
             )}
 
             <motion.div
                 style={{
-                    width: imageWidth,
-                    height: imageHeight,
+                    width: '100%',
+                    height: '100%',
                     rotateX,
                     rotateY,
                     scale,
@@ -127,19 +126,26 @@ export default function TiltedCard({
                     src={imageSrc}
                     alt={altText}
                     style={{
-                        width: imageWidth,
-                        height: imageHeight,
+                        width: '100%',
+                        height: '100%',
                         position: 'absolute',
                         top: 0,
                         left: 0,
                         objectFit: 'cover',
-                        borderRadius: '15px',
-                        transform: 'translateZ(0)'
+                        borderRadius: '20px',
+                        transform: 'translateZ(0)',
+                        boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
                     }}
                 />
 
                 {displayOverlayContent && overlayContent && (
-                    <motion.div style={{ position: 'absolute', top: 0, left: 0, zIndex: 2, transform: 'translateZ(30px)' }}>
+                    <motion.div style={{
+                        position: 'absolute',
+                        inset: 0,
+                        zIndex: 2,
+                        transform: 'translateZ(40px)',
+                        transformStyle: 'preserve-3d'
+                    }}>
                         {overlayContent}
                     </motion.div>
                 )}
