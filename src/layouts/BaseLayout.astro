@@ -7,6 +7,7 @@ interface Props {
 }
 
 import { ClientRouter } from 'astro:transitions';
+import Analytics from '@vercel/analytics/astro';
 
 const {
   title,
@@ -63,7 +64,7 @@ const ogLocale = lang === 'en-us' ? 'en_US' : (lang === 'hi-in' ? 'hi_IN' : 'ja_
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528984947357055" crossorigin="anonymous"></script>
   </head>
-  <body>
     <slot />
+    <Analytics />
   </body>
 </html>
