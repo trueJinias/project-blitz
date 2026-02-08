@@ -2,12 +2,14 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   // デプロイ後に実際のURLに更新してください
   // 例: 'https://your-project.vercel.app' または 'https://yourdomain.com'
   site: 'https://project-blitz.vercel.app',
-  integrations: [sitemap()],
+  integrations: [sitemap(), react()],
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja', 'en-us', 'hi-in'],

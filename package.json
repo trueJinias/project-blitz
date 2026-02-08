@@ -14,18 +14,26 @@
     "localize": "node scripts/localize.mjs"
   },
   "dependencies": {
+    "@astrojs/react": "^4.4.2",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@google/generative-ai": "^0.24.1",
     "@imgly/background-removal-node": "^1.4.5",
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
     "@vercel/analytics": "^1.6.1",
     "astro": "^5.17.1",
     "astro-i18next": "^1.0.0-beta.21",
+    "clsx": "^2.1.1",
     "deepl-node": "^1.24.0",
     "dotenv": "^16.6.1",
+    "framer-motion": "^12.33.0",
     "gray-matter": "^4.0.3",
     "i18next": "^25.8.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "sharp": "^0.34.5",
+    "tailwind-merge": "^3.4.0",
     "twitter-api-v2": "^1.29.0"
   }
 }

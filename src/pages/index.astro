@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import GenreCard from '../components/GenreCard.astro';
 import { getCollection } from 'astro:content';
+import { BackgroundBeams } from '../components/ui/background-beams';
 
 // Get article counts per genre (Japanese only)
 const allArticles = await getCollection('articles', ({ id, data }) => !id.startsWith('en-us/') && !id.startsWith('en-in/') && !id.startsWith('hi-in/') && !data.draft);
@@ -22,10 +23,7 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   
   <main class="home">
     <section class="hero">
-      <div class="hero-bg">
-        <div class="hero-gradient"></div>
-        <div class="hero-particles"></div>
-      </div>
+      <BackgroundBeams client:load />
       
       <div class="emoji-decoration">
         <span class="emoji" style="top: 15%; left: 5%;">⚡</span>
@@ -97,32 +95,7 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
     overflow: hidden;
   }
   
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-  
-  .hero-gradient {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
-    animation: pulse-glow 4s ease-in-out infinite;
-  }
-  
-  .hero-particles {
-    position: absolute;
-    inset: 0;
-    background-image: 
-      radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 100px 100px, 150px 150px, 200px 200px;
-  }
+  /* Hero Background styles removed in favor of BackgroundBeams component */
   
   .emoji-decoration {
     position: absolute;
