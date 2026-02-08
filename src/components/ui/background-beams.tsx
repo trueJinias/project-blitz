@@ -179,14 +179,14 @@ interface BeamsProps {
 }
 
 export const BackgroundBeams: FC<BeamsProps> = ({
-    beamWidth = 5, // Increased for a more 'radiant' feel
-    beamHeight = 40,
-    beamNumber = 10,
-    lightColor = '#ffffff',
-    speed = 1.5,
-    noiseIntensity = 2.0,
-    scale = 0.15,
-    rotation = 25,
+    beamWidth = 2.6,
+    beamHeight = 11,
+    beamNumber = 20,
+    lightColor = '#999999',
+    speed = 4.7,
+    noiseIntensity = 1.75,
+    scale = 0.2,
+    rotation = 30,
     className
 }) => {
     const meshRef = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
@@ -231,16 +231,16 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 fragment: {
                     '#include <dithering_fragment>': `
     float randomNoise = noise(gl_FragCoord.xy);
-    gl_FragColor.rgb -= randomNoise / 12. * uNoiseIntensity;`
+    gl_FragColor.rgb -= randomNoise / 15. * uNoiseIntensity;`
                 },
                 material: { fog: true },
                 uniforms: {
                     diffuse: new THREE.Color(...hexToNormalizedRGB('#000000')),
                     time: { shared: true, mixed: true, linked: true, value: 0 },
-                    roughness: 0.2,
-                    metalness: 0.1,
+                    roughness: 0.3,
+                    metalness: 0.3,
                     uSpeed: { shared: true, mixed: true, linked: true, value: speed },
-                    envMapIntensity: 15,
+                    envMapIntensity: 10,
                     uNoiseIntensity: noiseIntensity,
                     uScale: scale
                 }
@@ -255,9 +255,9 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                     <PlaneNoise ref={meshRef} material={beamMaterial} count={beamNumber} width={beamWidth} height={beamHeight} />
                     <DirLight color={lightColor} position={[0, 3, 10]} />
                 </group>
-                <ambientLight intensity={1.5} />
+                <ambientLight intensity={1} />
                 <color attach="background" args={['#000000']} />
-                <PerspectiveCamera makeDefault position={[0, 0, 30]} fov={40} />
+                <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={30} />
             </CanvasWrapper>
         </div>
     );
