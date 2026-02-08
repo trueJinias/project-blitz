@@ -72,7 +72,7 @@ draft: false
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/61kRk-yl-WL._SL1000_.jpg" alt="Philips Handheld Steamer" />
+      <img src="/images/products/philips-steamer.jpg" alt="Philips Handheld Steamer" />
     </div>
     <div class="product-info">
       <div class="product-label">
@@ -83,7 +83,7 @@ draft: false
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B08D9K58J2?tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/dp/B0CXHMXYGR?tag=blitz011-21" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -95,7 +95,7 @@ draft: false
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/61+9+8+0+0L._AC_SL1000_.jpg" alt="Fabric Shaver" />
+      <img src="/images/products/nova-shaver.jpg" alt="Fabric Shaver" />
     </div>
     <div class="product-info">
       <div class="product-label">

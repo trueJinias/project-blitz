@@ -127,7 +127,7 @@ Amazonのプライベートブランドですが、アメリカのトラッド�
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/71N-w+c+oDL._AC_SY879_.jpg" alt="Hanes BEEFY-T 2枚組" />
+      <img src="/images/products/hanes-beefy-t.jpg" alt="Hanes BEEFY-T 2枚組" />
     </div>
     <div class="product-info">
       <div class="product-label">
@@ -138,7 +138,7 @@ Amazonのプライベートブランドですが、アメリカのトラッド�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B002KNI640?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/dp/B01M3Q8Q8A?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://search.rakuten.co.jp/search/mall/Hanes+BEEFY-T/" target="_blank" rel="noopener noreferrer" class="btn rakuten">

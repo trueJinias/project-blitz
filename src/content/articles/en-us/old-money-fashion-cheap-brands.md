@@ -75,7 +75,7 @@ Invest in a handheld steamer. It takes 30 seconds before a meeting and elevates 
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/71r+tW+gOJL._AC_SL1500_.jpg" alt="Conair Handheld Steam Iron" />
+      <img src="/images/products/conair-steamer.jpg" alt="Conair Handheld Steam Iron" />
     </div>
     <div class="product-info">
       <div class="product-label">
@@ -86,7 +86,7 @@ Invest in a handheld steamer. It takes 30 seconds before a meeting and elevates 
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B0BNK9862S?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/dp/B0935BS6DZ?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -99,7 +99,7 @@ Running it over your Uniqlo sweater once a month keeps it looking brand new. Thi
 <div class="product-links">
   <div class="product-header">
     <div class="product-thumb">
-      <img src="https://m.media-amazon.com/images/I/61+9+8+0+0L._AC_SL1000_.jpg" alt="Fabric Shaver" />
+      <img src="/images/products/conair-shaver.jpg" alt="Fabric Shaver" />
     </div>
     <div class="product-info">
       <div class="product-label">
