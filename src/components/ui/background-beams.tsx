@@ -190,7 +190,7 @@ interface BeamsProps {
 export const BackgroundBeams: FC<BeamsProps> = ({
     beamWidth = 3,
     beamHeight = 60, // Increased to ensure it covers the screen
-    beamNumber = 30, // Increased count for better coverage
+    beamNumber = 60, // Increased count for better coverage
     lightColor = '#999999',
     speed = 4.7,
     noiseIntensity = 1.75,
@@ -350,7 +350,7 @@ const MergedPlanes = forwardRef<
     const mesh = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
     useImperativeHandle(ref, () => mesh.current);
     const geometry = useMemo(
-        () => createStackedPlanesBufferGeometry(count, width, height, width * 0, 100),
+        () => createStackedPlanesBufferGeometry(count, width, height, width * 4, 100),
         [count, width, height]
     );
     useFrame((_, delta) => {
