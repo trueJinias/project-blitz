@@ -249,7 +249,19 @@ export const BackgroundBeams: FC<BeamsProps> = ({
     );
 
     return (
-        <div className={`fixed inset-0 w-full h-full pointer-events-none -z-10 ${className}`}>
+        <div
+            className={className}
+            style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100vw',
+                height: '100vh',
+                pointerEvents: 'none',
+                zIndex: -10,
+                backgroundColor: '#000'
+            }}
+        >
             <CanvasWrapper>
                 <group rotation={[0, 0, (rotation * Math.PI) / 180]}>
                     <PlaneNoise ref={meshRef} material={beamMaterial} count={beamNumber} width={beamWidth} height={beamHeight} />
