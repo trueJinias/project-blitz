@@ -7,11 +7,10 @@ genre: economics
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/gold-investment-beginners-2026-thumbnail.jpg
 tags:
-  - सोना निवेश
-  - गोल्ड
-  - 2026
-  - शुरुआती
-  - पोर्टफोलियो
+  - Gold Investment
+  - Gold
+  - Beginner
+  - Portfolio
 author: Namo-ni
 draft: false
 ---

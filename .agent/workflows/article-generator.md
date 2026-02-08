@@ -66,6 +66,13 @@ node scripts/add-images.mjs src/content/articles/hi-in/{生成したファイル
 - タグが`Tech, Gadget`になっている場合、経済記事には不適切なのでスクリプトが失敗している
 - 挿入された画像が記事内容と無関係（肉の画像、Teslaの画像など）の場合、手動で適切な画像に差し替えること
 
+**🚨 タグのルール（ビルドエラー防止・超重要）:**
+- **タグは必ず英語のみで記述すること**（日本語・ヒンディー語NG）
+- 数字のみのタグ（`2026`など）は禁止
+- ❌ NG例: `सोना निवेश`, `投資`, `2026`
+- ✅ OK例: `Gold Investment`, `Crypto`, `Fashion`
+- これを守らないとAstroビルドエラー（invalid-content-entry-data-error）が発生する
+
 ### 8. デプロイ（公開）
 最後にデプロイコマンドを実行して公開完了：
 ```powershell
