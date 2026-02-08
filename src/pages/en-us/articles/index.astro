@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
+import { ArticleCardReact } from '../../../components/ui/ArticleCardReact';
 import { getCollection } from 'astro:content';
 
 // Get all EN-US articles, sorted by date
@@ -28,14 +29,14 @@ const description = "Browse all articles covering gadgets, lifestyle, and news."
       <div class="container">
         <div class="article-grid">
           {sortedArticles.map((article, index) => (
-            <ArticleCard 
+            <ArticleCardReact
+              client:load
               title={article.data.title}
               description={article.data.description}
               href={`/en-us/articles/${article.slug.replace('en-us/', '')}`}
               genre={article.data.genre}
-              date={article.data.date}
+              date={new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).format(article.data.date)}
               image={article.data.image}
-              delay={index * 0.05} 
             />
           ))}
         </div>
