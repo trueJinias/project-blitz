@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
+import { ArticleCardReact } from '../../../components/ui/ArticleCardReact';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -89,14 +90,13 @@ const sortedArticles = articles.sort((a, b) =>
         {sortedArticles.length > 0 ? (
           <div class="articles-grid">
             {sortedArticles.map((article, index) => (
-              <ArticleCard
+              <ArticleCardReact
+                client:load
                 title={article.data.title}
                 description={article.data.description}
                 href={`/hi-in/articles/${article.slug.replace('hi-in/', '')}`}
                 genre={article.data.genre}
-                date={article.data.date}
-                image={article.data.image}
-                delay={index * 0.1}
+                date={new Intl.DateTimeFormat('hi-IN', { year: 'numeric', month: 'short', day: 'numeric' }).format(article.data.date)}
               />
             ))}
           </div>
