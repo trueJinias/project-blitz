@@ -329,7 +329,7 @@ const MergedPlanes = forwardRef<
     const mesh = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
     useImperativeHandle(ref, () => mesh.current);
     const geometry = useMemo(
-        () => createStackedPlanesBufferGeometry(count, width, height, width * 0.5, 120),
+        () => createStackedPlanesBufferGeometry(count, width, height, width * 0, 100),
         [count, width, height]
     );
     useFrame((_, delta) => {
@@ -370,7 +370,7 @@ const DirLight: FC<{ position: [number, number, number]; color: string }> = ({ p
         cam.far = 64;
         dir.current.shadow.bias = -0.004;
     }, []);
-    return <directionalLight ref={dir} color={color} intensity={2} position={position} />;
+    return <directionalLight ref={dir} color={color} intensity={1} position={position} />;
 };
 
 export default BackgroundBeams;

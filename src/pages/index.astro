@@ -23,7 +23,14 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   
   <main class="home">
     <section class="hero">
-      <BackgroundBeams client:load />
+      <div class="hero-bg-container">
+        <BackgroundBeams client:load />
+      </div>
+      
+      <div class="hero-badge">
+        <span class="badge-icon">✨</span>
+        <span class="badge-text">New Background</span>
+      </div>
       
 
       
@@ -80,9 +87,43 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
     position: relative;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding-top: var(--spacing-20);
+  }
+
+  .hero-bg-container {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero-badge {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-4);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--spacing-8);
+    animation: fadeInDown 1s ease forwards;
+  }
+
+  .badge-icon {
+    font-size: 0.9rem;
+  }
+
+  .badge-text {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
   }
   
   /* Hero Background styles removed in favor of BackgroundBeams component */
@@ -91,17 +132,18 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   
   .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     text-align: center;
     padding: var(--spacing-6);
     animation: fadeIn 1s ease forwards;
   }
-  
+
   .hero-title {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: var(--font-weight-bold);
-    line-height: 1.1;
-    margin-bottom: var(--spacing-6);
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: var(--spacing-8);
+    letter-spacing: -0.02em;
   }
   
   .title-line {
@@ -109,7 +151,7 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
   }
   
   .title-highlight {
-    background: linear-gradient(135deg, var(--color-tech) 0%, var(--color-review) 50%, var(--color-lifestyle) 100%);
+    background: linear-gradient(to right, #fff, #999);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -213,3 +255,12 @@ const genres = ['tech', 'lifestyle', 'news', 'economics'] as const;
     }
   }
 </style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
