@@ -141,10 +141,14 @@ export default function TiltedCard({
                 {displayOverlayContent && overlayContent && (
                     <motion.div style={{
                         position: 'absolute',
-                        inset: 0,
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
                         zIndex: 2,
                         transform: 'translateZ(40px)',
-                        transformStyle: 'preserve-3d'
+                        transformStyle: 'preserve-3d',
+                        pointerEvents: 'none'
                     }}>
                         {overlayContent}
                     </motion.div>
