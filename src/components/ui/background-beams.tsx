@@ -188,14 +188,14 @@ interface BeamsProps {
 }
 
 export const BackgroundBeams: FC<BeamsProps> = ({
-    beamWidth = 4.0, // Thick but balanced
+    beamWidth = 3.5, // Matches screenshot
     beamHeight = 150,
-    beamNumber = 40, // Increased count for full coverage at new width
-    lightColor = '#777777', // Reverting to elegant dimmer light
-    speed = 3.0,
-    noiseIntensity = 0.6,
-    scale = 0.2,
-    rotation = 30,
+    beamNumber = 30, // Matches approximate count for full coverage (Screenshot says 26 but need slightly more for wide screens)
+    lightColor = '#ffffff', // Brighter light for clarity
+    speed = 3.9,
+    noiseIntensity = 2.55, // Matches screenshot (much higher distortion)
+    scale = 0.2, // Matches screenshot
+    rotation = 30, // Matches screenshot
     className
 }) => {
     const meshRef = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
@@ -246,8 +246,8 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 uniforms: {
                     diffuse: new THREE.Color(...hexToNormalizedRGB('#0a0a0a')),
                     time: { shared: true, mixed: true, linked: true, value: 0 },
-                    roughness: 0.4, // Increased roughness for softer highlights
-                    metalness: 0.1, // Reduced metalness for less harsh reflections
+                    roughness: 0.5, // Standard roughness
+                    metalness: 0.5, // Standard metalness
                     uSpeed: { shared: true, mixed: true, linked: true, value: speed },
                     envMapIntensity: 10,
                     uNoiseIntensity: noiseIntensity,
@@ -278,7 +278,7 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                     <DirLight color={lightColor} position={[-10, 3, 10]} /> {/* Left auxiliary light */}
                     <DirLight color={lightColor} position={[10, 3, 10]} />  {/* Right auxiliary light */}
                 </group>
-                <ambientLight intensity={0.3} /> {/* Lowered to 0.3 per user request for more contrast */}
+                <ambientLight intensity={0.5} /> {/* Balanced ambient light for texture visibility */}
                 <color attach="background" args={['#000000']} />
                 <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={45} />
             </CanvasWrapper>
