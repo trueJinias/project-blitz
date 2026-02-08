@@ -60,7 +60,7 @@ For the busy professional moving between meetings in Bengaluru or Mumbai, a bulk
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B09L7G1W3L?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/s?k=Bellroy+Hide+Seek&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -87,7 +87,7 @@ Say goodbye to the noisy jingle of keys. Orbitkey transforms your stack of keys 
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B07H8J3L8P?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/s?k=Orbitkey+Key+Organiser&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -114,7 +114,7 @@ Whether you are jotting down startup ideas or travel memories, the Traveler's No
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B01BVJPP0I?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/s?k=TRAVELER'S+Notebook+Passport&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -168,7 +168,7 @@ In a dusty or humid environment, leather needs care. Collonil 1909 is a luxury c
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.in/dp/B002TCCM62?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.in/s?k=Collonil+1909+Supreme+Creme&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>

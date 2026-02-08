@@ -63,7 +63,7 @@ In a cashless world, we still need a home for our cards and emergency cash. Bell
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B09L7G1W3L?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/s?k=Bellroy+Hide+Seek&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -90,7 +90,7 @@ A chaotic keychain is the enemy of a refined carry. Orbitkey stacks your keys in
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B07H8J3L8P?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/s?k=Orbitkey+Key+Organiser&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -117,7 +117,7 @@ This isn't just a notebook; it's a cult classic. The rough-cut leather cover is 
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B01BVJPP0I?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/s?k=TRAVELER'S+Notebook+Passport&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>
@@ -171,7 +171,7 @@ Leather care is not a chore; it's a ritual. Collonil 1909 is the gold standard f
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.com/dp/B002TCCM62?tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.com/s?k=Collonil+1909+Supreme+Creme&tag=blitz011-20" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
   </div>

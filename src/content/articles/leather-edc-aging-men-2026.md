@@ -63,7 +63,7 @@ product: レザーEDC小物5選
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B09L7G1W3L?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Bellroy+Hide+Seek&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FBellroy%2BHide%2BSeek%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
@@ -93,7 +93,7 @@ product: レザーEDC小物5選
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B07H8J3L8P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Orbitkey&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOrbitkey%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
@@ -123,7 +123,7 @@ product: レザーEDC小物5選
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B01BVJPP0I?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Traveler's+Notebook+Passport&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FTraveler%27s%2BNotebook%2BPassport%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
@@ -153,7 +153,7 @@ product: レザーEDC小物5選
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0014R5S6E?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Staedtler+Leather+Pen+Case&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FStaedtler%2BLeather%2BPen%2BCase%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
@@ -183,7 +183,7 @@ product: レザーEDC小物5選
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B002TCCM62?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <a href="https://www.amazon.co.jp/s?k=Collonil+1909+Supreme+Creme&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FCollonil%2B1909%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">

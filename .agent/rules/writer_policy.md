@@ -65,7 +65,8 @@ trigger: always_on
   </div>
   <div class="buttons">
     <!-- 原則として「検索結果」ではなく「個別商品ページ」へ直通させる -->
-    <a href="https://www.amazon.co.jp/dp/ASINコード?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
+    <!-- Amazonリンク: 検索結果ページへ -->
+    <a href="https://www.amazon.co.jp/s?k=商品名キーワード&tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
     </a>
     <!-- 楽天リンク作成用ID: 50b8fe39.c32fe89a.50b8fe3a.60c7ccae -->
@@ -77,9 +78,9 @@ trigger: always_on
 ```
 
 #### 2. リンクのルール
-- **個別ページ優先 (Amazon)**: 検索結果（/s?k=...）ではなく、ASIN指定の個別商品ページ（/dp/...）を優先的に使用してください。必ずクリックしてリンク切れがないか確認すること。
+- **検索結果ページリンク (Amazon)**: 在庫切れやリンク切れを防ぐため、原則として検索結果ページ（`/s?k=商品名`）へのリンクを使用してください。
 - **正いい楽天IDを使用**: 楽天リンクは必ず `50b8fe39.c32fe89a.50b8fe3a.60c7ccae` を使用してください。プレースホルダーや他のIDは使用禁止。
-- **マルチリージョン対応**: 日本、US、インドでそれぞれ現地のAmazon、または適切な代替品へのリンクを設定してください。
+- **マルチリージョン対応**: 日本、US、インドでそれぞれ現地のAmazonサイトの検索結果へリンクしてください。
 - **Rakutenの扱い**: 日本版（src/content/articles/*.md）のみRakutenボタンを表示し、US/インド版はAmazonボタン1つ（`single-col`クラス付き）とします。
 
 #### 3. デザイン原則
