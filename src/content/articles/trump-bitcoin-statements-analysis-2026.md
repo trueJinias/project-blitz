@@ -2,7 +2,7 @@
 title: 【2026年最新】トランプ大統領のビットコイン発言を徹底分析｜なぜ態度を180度転換したのか？
 description: >-
   かつてビットコインを「詐欺」と呼んだトランプ氏が、なぜ今「暗号資産の首都」を目指すのか。戦略的ビットコイン備蓄、TRUMPコイン発行の真意と、投資家が知るべきリスクを解説します。
-genre: tech
+genre: economy
 date: 2026-02-09T00:00:00.000Z
 image: /images/articles/trump-bitcoin-statements-analysis-2026-thumbnail.jpg
 tags:
