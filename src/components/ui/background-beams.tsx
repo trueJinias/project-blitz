@@ -278,7 +278,7 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                     <DirLight color={lightColor} position={[-10, 3, 10]} /> {/* Left auxiliary light */}
                     <DirLight color={lightColor} position={[10, 3, 10]} />  {/* Right auxiliary light */}
                 </group>
-                <ambientLight intensity={0.6} /> {/* Lowered to 0.6 per user request for slightly more contrast */}
+                <ambientLight intensity={0.3} /> {/* Lowered to 0.3 per user request for more contrast */}
                 <color attach="background" args={['#000000']} />
                 <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={45} />
             </CanvasWrapper>
