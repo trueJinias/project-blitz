@@ -97,6 +97,7 @@ const sortedArticles = articles.sort((a, b) =>
                 href={`/hi-in/articles/${article.slug.replace('hi-in/', '')}`}
                 genre={article.data.genre}
                 date={new Intl.DateTimeFormat('hi-IN', { year: 'numeric', month: 'short', day: 'numeric' }).format(article.data.date)}
+                image={article.data.image}
               />
             ))}
           </div>
