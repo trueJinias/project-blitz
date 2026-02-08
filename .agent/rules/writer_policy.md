@@ -65,8 +65,11 @@ trigger: always_on
   </div>
   <div class="buttons">
     <!-- 原則として「検索結果」ではなく「個別商品ページ」へ直通させる -->
-    <a href="https://www.amazon.co.jp/dp/ASINコード?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.co.jp/dp/ASINコード?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="楽天のアフィリエイトURL" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>

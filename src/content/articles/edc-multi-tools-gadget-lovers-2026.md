@@ -60,8 +60,11 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B07JLDZ2PQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.co.jp/dp/B07JLDZ2PQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FKableCARD%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -87,8 +90,11 @@ EDC（Every Day Carry＝日々持ち歩くモノ）の中でも、**マルチツ
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B016MHZ8ZQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.co.jp/dp/B016MHZ8ZQ?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FLeatherman+Style+PS%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -114,8 +120,11 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B09VXSG29X?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.co.jp/dp/B09VXSG29X?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FNexTool+Flagship+Mini%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -141,8 +150,11 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B0D61WTF81?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.co.jp/dp/B0D61WTF81?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FTitanium+Pry+Bar%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
@@ -168,8 +180,11 @@ Xiaomiのエコシステムから生まれたブランド。ハサミが巨大�
     </div>
   </div>
   <div class="buttons">
-    <a href="https://www.amazon.co.jp/dp/B07H8J3L8P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon single-col">
+    <a href="https://www.amazon.co.jp/dp/B07H8J3L8P?tag=blitz011-22" target="_blank" rel="noopener noreferrer" class="btn amazon">
       <img src="/images/amazon-logo.png" alt="Amazon" class="logo-img amazon-img" />
+    </a>
+    <a href="https://hb.afl.rakuten.co.jp/hgc/50b8fe39.c32fe89a.50b8fe3a.60c7ccae/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FOrbitkey%2F" target="_blank" rel="noopener noreferrer" class="btn rakuten">
+      <img src="/images/rakuten-logo.png" alt="Rakuten" class="logo-img rakuten-img" />
     </a>
   </div>
 </div>
