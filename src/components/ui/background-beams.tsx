@@ -246,8 +246,8 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 uniforms: {
                     diffuse: new THREE.Color(...hexToNormalizedRGB('#0a0a0a')),
                     time: { shared: true, mixed: true, linked: true, value: 0 },
-                    roughness: 0.2,
-                    metalness: 0.2,
+                    roughness: 0.4, // Increased roughness to catch more light from angles
+                    metalness: 0.1, // Reduced metalness to be less dependent on direct reflection
                     uSpeed: { shared: true, mixed: true, linked: true, value: speed },
                     envMapIntensity: 10,
                     uNoiseIntensity: noiseIntensity,
@@ -275,6 +275,8 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                 <group rotation={[0, 0, (rotation * Math.PI) / 180]}>
                     <PlaneNoise ref={meshRef} material={beamMaterial} count={beamNumber} width={beamWidth} height={beamHeight} />
                     <DirLight color={lightColor} position={[0, 3, 10]} />
+                    <DirLight color={lightColor} position={[-10, 3, 10]} /> {/* Left auxiliary light */}
+                    <DirLight color={lightColor} position={[10, 3, 10]} />  {/* Right auxiliary light */}
                 </group>
                 <ambientLight intensity={1} />
                 <color attach="background" args={['#000000']} />
