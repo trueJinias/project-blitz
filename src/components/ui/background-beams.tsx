@@ -278,11 +278,12 @@ export const BackgroundBeams: FC<BeamsProps> = ({
                     <DirLight color={lightColor} position={[-10, 3, 10]} /> {/* Left auxiliary light */}
                     <DirLight color={lightColor} position={[10, 3, 10]} />  {/* Right auxiliary light */}
                 </group>
-                <ambientLight intensity={0.2} /> {/* Drastically reduced from 1.0 to create heavy shadows */}
-                <color attach="background" args={['#000000']} />
-                <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={45} />
-            </CanvasWrapper>
-        </div>
+            </group>
+            <ambientLight intensity={0.6} /> {/* Adjusted to 0.6 per user request to balance shadow and visibility */}
+            <color attach="background" args={['#000000']} />
+            <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={45} />
+        </CanvasWrapper>
+        </div >
     );
 };
 
