@@ -6,8 +6,8 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import { ArticleCardReact } from '../../components/ui/ArticleCardReact';
 import { getCollection } from 'astro:content';
 
-// Get all Japanese articles, sorted by date
-const allArticles = await getCollection('articles', ({ id, data }) => !id.startsWith('en-us/') && !id.startsWith('en-in/') && !data.draft);
+// Get all Japanese articles (root level), sorted by date
+const allArticles = await getCollection('articles', ({ id, data }) => !id.includes('/') && !data.draft);
 const sortedArticles = allArticles.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const title = "すべての記事";
