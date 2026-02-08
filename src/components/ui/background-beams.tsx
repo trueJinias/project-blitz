@@ -188,14 +188,14 @@ interface BeamsProps {
 }
 
 export const BackgroundBeams: FC<BeamsProps> = ({
-    beamWidth = 3,
-    beamHeight = 60, // Increased to ensure it covers the screen
+    beamWidth = 1.2,
+    beamHeight = 100, // Increased to ensure it covers the screen
     beamNumber = 60, // Increased count for better coverage
     lightColor = '#999999',
     speed = 4.7,
     noiseIntensity = 1.75,
     scale = 0.2,
-    rotation = 30,
+    rotation = 35, // Slightly more rotation for dynamic feel
     className
 }) => {
     const meshRef = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
@@ -350,7 +350,7 @@ const MergedPlanes = forwardRef<
     const mesh = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.ShaderMaterial>>(null!);
     useImperativeHandle(ref, () => mesh.current);
     const geometry = useMemo(
-        () => createStackedPlanesBufferGeometry(count, width, height, width * 4, 100),
+        () => createStackedPlanesBufferGeometry(count, width, height, 2.0, 100),
         [count, width, height]
     );
     useFrame((_, delta) => {
@@ -384,12 +384,12 @@ const DirLight: FC<{ position: [number, number, number]; color: string }> = ({ p
             right: number;
             far: number;
         };
-        cam.top = 24;
-        cam.bottom = -24;
-        cam.left = -24;
-        cam.right = 24;
-        cam.far = 64;
-        dir.current.shadow.bias = -0.004;
+        cam.top = 100;
+        cam.bottom = -100;
+        cam.left = -100;
+        cam.right = 100;
+        cam.far = 200;
+        dir.current.shadow.bias = -0.001;
     }, []);
     return <directionalLight ref={dir} color={color} intensity={1} position={position} />;
 };
