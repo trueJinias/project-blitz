@@ -25,14 +25,14 @@ export const ArticleCardReact = ({ title, description, href, genre, date, image 
     const readMoreText = isEnglish ? "Read More" : (isHindi ? "और पढ़ें" : "続きを読む");
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%' }}>
+        <a href={href} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
             <TiltedCard
                 imageSrc={image || '/placeholder-pattern.png'}
                 altText={title}
                 captionText={readMoreText}
-                containerHeight="250px"
+                containerHeight="400px"
                 containerWidth="100%"
-                imageHeight="250px"
+                imageHeight="400px"
                 imageWidth="100%"
                 rotateAmplitude={12}
                 scaleOnHover={1.05}
@@ -41,56 +41,65 @@ export const ArticleCardReact = ({ title, description, href, genre, date, image 
                 displayOverlayContent={true}
                 overlayContent={
                     <div style={{
-                        padding: '0.5rem 1rem',
-                        backgroundColor: 'rgba(0,0,0,0.5)',
-                        backdropFilter: 'blur(4px)',
-                        borderRadius: '8px',
-                        color: 'white',
-                        fontSize: '0.75rem',
-                        fontWeight: 'bold',
-                        border: '1px solid rgba(255,255,255,0.2)'
+                        position: 'absolute',
+                        bottom: '20px',
+                        left: '20px',
+                        right: '20px',
+                        padding: '1.5rem',
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        backdropFilter: 'blur(12px)',
+                        borderRadius: '16px',
+                        border: '1px solid rgba(255, 255, 255, 0.15)',
+                        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)',
+                        transform: 'translateZ(50px)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '0.5rem'
                     }}>
-                        {genre.toUpperCase()}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                            <span style={{
+                                padding: '0.25rem 0.75rem',
+                                backgroundColor: genreColors[genre] || 'var(--color-tech)',
+                                color: 'black',
+                                fontSize: '0.65rem',
+                                fontWeight: '800',
+                                borderRadius: '4px',
+                                textTransform: 'uppercase'
+                            }}>
+                                {genre}
+                            </span>
+                            <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.6)' }}>{date}</span>
+                        </div>
+
+                        <h3 style={{
+                            fontSize: '1.25rem',
+                            fontWeight: '800',
+                            margin: 0,
+                            color: 'white',
+                            lineHeight: '1.3',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            overflow: 'hidden'
+                        }}>
+                            {title}
+                        </h3>
+
+                        <p style={{
+                            fontSize: '0.85rem',
+                            color: 'rgba(255,255,255,0.7)',
+                            margin: 0,
+                            lineHeight: '1.5',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            overflow: 'hidden'
+                        }}>
+                            {description}
+                        </p>
                     </div>
                 }
             />
-
-            <a href={href} style={{ textDecoration: 'none', color: 'inherit', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <div style={{ marginBottom: '0.5rem' }}>
-                    <span style={{
-                        fontSize: '0.75rem',
-                        color: 'var(--color-text-muted)',
-                        display: 'block',
-                        marginBottom: '0.25rem'
-                    }}>
-                        {date}
-                    </span>
-                    <h3 style={{
-                        fontSize: '1.25rem',
-                        fontWeight: 'bold',
-                        margin: '0 0 0.5rem 0',
-                        lineHeight: '1.2',
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden'
-                    }}>
-                        {title}
-                    </h3>
-                    <p style={{
-                        fontSize: '0.875rem',
-                        color: 'var(--color-text-secondary)',
-                        margin: 0,
-                        lineHeight: '1.5',
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden'
-                    }}>
-                        {description}
-                    </p>
-                </div>
-            </a >
-        </div >
+        </a>
     );
 };
