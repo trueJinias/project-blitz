@@ -1,20 +1,10 @@
 ---
-tags:
-  - ユニクロ
-  - オールドマネー スタイル
-  - 夏 ファッション
-  - プチプラ
-  - ライフスタイル
-image: /images/articles/summer-old-money-men-2026-thumbnail.jpg
----
-
----
 title: 'गर्मियों में "Old Money" लुक: Uniqlo और Amazon से बजट में पाइए रईस स्टाइल (2026)'
 description: >-
   भारत की गर्मी में भी दिखें क्लासी और कूल। Uniqlo और Amazon से बजट-फ्रेंडली "Old Money" स्टाइल गाइड। लिनेन शर्ट और लोफर्स के साथ अपने समर लुक को अपग्रेड करें।
 genre: lifestyle
 date: 2026-02-09T00:00:00.000Z
-image: ""
+image: /images/articles/summer-old-money-men-2026-thumbnail.jpg
 tags:
   - समर फैशन
   - Old Money स्टाइल
@@ -28,7 +18,6 @@ draft: false
 ## परिचय 
 
 ![Male bartender presenting a cocktail in a stylish setting, creating a welcoming bar atmosphere.](/images/articles/summer-old-money-men-2026-1.jpg)
-*Photo by Antoni Shkraba Studio on Pexels*
 
 भारत की गर्मियों में अक्सर हम स्टाइल छोड़कर सिर्फ आराम देखते हैं। टी-शर्ट और शॉर्ट्स ही हमारी यूनिफॉर्म बन जाती है।
 

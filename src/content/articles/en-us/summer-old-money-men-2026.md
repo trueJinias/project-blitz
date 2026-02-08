@@ -1,20 +1,10 @@
 ---
-tags:
-  - ユニクロメンズ
-  - オールドマネー
-  - 夏コーデ
-  - プチプラ
-  - メンズファッション
-image: /images/articles/summer-old-money-men-2026-thumbnail.jpg
----
-
----
 title: 'Summer 2026: The Ultimate "Budget Old Money" Guide for Men (Uniqlo Edition)'
 description: >-
   Don't let the heat ruin your style. Master the "Old Money" aesthetic this summer using affordable pieces from Uniqlo and Amazon. A guide for the modern man to look rich without spending a fortune.
 genre: lifestyle
 date: 2026-02-09T00:00:00.000Z
-image: ""
+image: /images/articles/summer-old-money-men-2026-thumbnail.jpg
 tags:
   - Old Money Aesthetic
   - Summer Style
@@ -28,7 +18,6 @@ draft: false
 ## Introduction 
 
 ![Portrait of a young man wearing black glasses, showcasing modern fashion in a studio setting.](/images/articles/summer-old-money-men-2026-1.jpg)
-*Photo by GlassesShop GS on Pexels*
 
 Summer fashion often devolves into "cargo shorts and a graphic tee."
 

@@ -1,21 +1,10 @@
 ---
-tags:
-  - オールドマネー
-  - ユニクロ
-  - メンズファッション
-  - 夏コーデ
-  - プチプラ
-product: HARUTA メンズ ローファー 本革
-image: /images/articles/summer-old-money-men-2026-thumbnail.jpg
----
-
----
 title: 【2026夏】ユニクロで完成！「オールドマネー」なメンズ夏コーデの正解
 description: >-
   暑い夏こそ「品格」で差をつける。ユニクロのリネンシャツやHARUTAのローファーを使って、涼しいのにリッチに見える「オールドマネー」な夏コーデを低予算で実現する方法を解説します。
 genre: lifestyle
 date: 2026-02-09T00:00:00.000Z
-image: ""
+image: /images/articles/summer-old-money-men-2026-thumbnail.jpg
 tags:
   - 夏コーデ
   - オールドマネー
@@ -29,7 +18,6 @@ draft: false
 ## はじめに 
 
 ![A tattooed man in shorts leans against a vintage car outdoors surrounded by trees.](/images/articles/summer-old-money-men-2026-1.jpg)
-*Photo by cottonbro studio on Pexels*
 
 夏のメンズファッション、**「Tシャツに短パン」で思考停止していませんか？**
 
