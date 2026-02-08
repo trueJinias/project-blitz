@@ -17,9 +17,9 @@ draft: false
 
 ## はじめに
 
-2017年、トランプ氏は大統領として**「ビットコインは詐欺だ」**と断言し、暗号資産に対して明確な敵対姿勢を示していました。
+2017年、トランプ氏は大統領として「ビットコインは詐欺だ」と断言し、暗号資産に対して明確な敵対姿勢を示していました。
 
-それが2026年の今、彼は**「アメリカを暗号資産の首都にする」**と公約を掲げ、自らの名を冠したミームコイン「TRUMPコイン」まで発行しています。
+それが2026年の今、彼は「アメリカを暗号資産の首都にする」と公約を掲げ、自らの名を冠したミームコイン「TRUMPコイン」まで発行しています。
 
 **一体何があったのか？**
 
@@ -53,7 +53,7 @@ draft: false
 ![Scrabble tiles arranged to spell 'FED' on a marble surface, symbolizing finance.](/images/articles/trump-bitcoin-statements-analysis-2026-3.jpg)
 *Photo by Markus Winkler on Pexels*
 
-トランプ政権の目玉政策が**「戦略的ビットコイン備蓄（Strategic Bitcoin Reserve）」**です。
+トランプ政権の目玉政策が**戦略的ビットコイン備蓄（Strategic Bitcoin Reserve）**です。
 
 これは、FBIなどが犯罪捜査などで押収したビットコイン（約19万8,000BTC、2025年8月時点）を**売却せずに国家資産として保有し続ける**というもの。
 
@@ -66,7 +66,7 @@ draft: false
 
 ## 4. 自ら発行「TRUMPコイン」の闇
 
-2025年1月、トランプ氏は公式ミームコイン**「$TRUMP（OFFICIAL TRUMP）」**を発行しました。
+2025年1月、トランプ氏は公式ミームコイン **$TRUMP（OFFICIAL TRUMP）** を発行しました。
 
 発行直後は価格が急騰しましたが、ここには**利益相反の問題**が指摘されています。
 
