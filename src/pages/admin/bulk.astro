@@ -1,0 +1,157 @@
+---
+// Bulk Paste Mode - 一括ペーストモード
+---
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一括ペーストモード | BLITZ Admin</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin-styles.css" />
+</head>
+<body>
+  <div class="admin-bg"></div>
+  <div class="admin-wrapper">
+    <header class="admin-header">
+      <div class="admin-logo">BLITZ<span class="dot">.</span><span class="badge">Admin</span></div>
+      <a href="/admin/" class="back-btn">← ダッシュボード</a>
+    </header>
+    <h1 class="page-title">🚀 一括ペーストモード</h1>
+    <p class="page-desc">AIで作成した3ヵ国分の記事（Markdownフロントマター含む）をペーストして同時公開</p>
+
+    <div class="meta-section">
+      <h3>📋 共通メタデータ</h3>
+      <div class="meta-grid">
+        <div class="meta-field">
+          <label for="slug">スラッグ（ファイル名）</label>
+          <input type="text" id="slug" placeholder="例: xiaomi-17-review" />
+        </div>
+        <div class="meta-field">
+          <label for="genre">ジャンル</label>
+          <select id="genre">
+            <option value="tech">Tech</option>
+            <option value="lifestyle">Lifestyle</option>
+            <option value="review">Review</option>
+            <option value="news">News</option>
+            <option value="economics">Economics</option>
+          </select>
+        </div>
+        <div class="meta-field">
+          <label for="date">公開日</label>
+          <input type="date" id="date" />
+        </div>
+      </div>
+    </div>
+
+    <div class="editors-grid">
+      <div class="editor-panel">
+        <div class="editor-label"><span class="flag">🇯🇵</span> 日本語版</div>
+        <textarea id="editorJP" placeholder="Markdown全文をここにペースト..."></textarea>
+        <div class="char-count" id="countJP">0 文字</div>
+      </div>
+      <div class="editor-panel">
+        <div class="editor-label"><span class="flag">🇺🇸</span> US英語版</div>
+        <textarea id="editorUS" placeholder="Paste full Markdown here..."></textarea>
+        <div class="char-count" id="countUS">0 文字</div>
+      </div>
+      <div class="editor-panel">
+        <div class="editor-label"><span class="flag">🇮🇳</span> インド版</div>
+        <textarea id="editorIN" placeholder="Paste full Markdown here..."></textarea>
+        <div class="char-count" id="countIN">0 文字</div>
+      </div>
+    </div>
+
+    <div class="publish-section">
+      <div class="publish-info"><strong>3ファイル</strong>をGitHubにコミット → Vercel自動ビルド</div>
+      <button class="publish-btn" id="publishBtn">🚀 一括公開</button>
+    </div>
+  </div>
+
+  <div class="progress-overlay" id="progressOverlay">
+    <div class="progress-card">
+      <h3 id="progressTitle">📤 公開中...</h3>
+      <div class="progress-bar-bg"><div class="progress-bar" id="progressBar"></div></div>
+      <p class="progress-status" id="progressStatus">準備中...</p>
+      <div class="progress-result" id="progressResult"></div>
+      <button class="progress-close" id="progressClose">✅ ダッシュボードへ</button>
+    </div>
+  </div>
+
+  <script type="module">
+    if (sessionStorage.getItem('blitz_admin_auth') !== 'true') window.location.href = '/admin/login';
+    document.getElementById('date').value = new Date().toISOString().split('T')[0];
+
+    ['JP','US','IN'].forEach(l => {
+      const e = document.getElementById(`editor${l}`);
+      const c = document.getElementById(`count${l}`);
+      e.addEventListener('input', () => { c.textContent = `${e.value.length} 文字`; });
+    });
+
+    const OWNER = 'trueJinias', REPO = 'project-blitz';
+
+    async function commitFile(path, content, msg, token) {
+      const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
+      let sha = null;
+      try {
+        const r = await fetch(url, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }});
+        if (r.ok) sha = (await r.json()).sha;
+      } catch(e) {}
+      const body = { message: msg, content: btoa(unescape(encodeURIComponent(content))), branch: 'main' };
+      if (sha) body.sha = sha;
+      const res = await fetch(url, {
+        method: 'PUT',
+        headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      if (!res.ok) throw new Error((await res.json()).message || res.statusText);
+      return res.json();
+    }
+
+    document.getElementById('publishBtn').addEventListener('click', async () => {
+      const slug = document.getElementById('slug').value.trim();
+      if (!slug) { alert('スラッグを入力してください'); return; }
+      const token = localStorage.getItem('blitz_gh_token');
+      if (!token) { alert('ダッシュボード → ⚙️設定 からGitHub Tokenを入力してください'); return; }
+
+      const jp = document.getElementById('editorJP').value;
+      const us = document.getElementById('editorUS').value;
+      const ind = document.getElementById('editorIN').value;
+      if (!jp && !us && !ind) { alert('少なくとも1つの記事を入力してください'); return; }
+
+      const files = [];
+      if (jp) files.push({ path: `src/content/articles/${slug}.md`, content: jp, label: '🇯🇵 JP' });
+      if (us) files.push({ path: `src/content/articles/en-us/${slug}.md`, content: us, label: '🇺🇸 US' });
+      if (ind) files.push({ path: `src/content/articles/hi-in/${slug}.md`, content: ind, label: '🇮🇳 IN' });
+
+      const overlay = document.getElementById('progressOverlay');
+      const bar = document.getElementById('progressBar');
+      const status = document.getElementById('progressStatus');
+      const result = document.getElementById('progressResult');
+      const closeBtn = document.getElementById('progressClose');
+      const title = document.getElementById('progressTitle');
+      overlay.classList.add('visible');
+      result.innerHTML = ''; result.classList.remove('visible'); closeBtn.classList.remove('visible');
+
+      const msg = `Add article: ${slug}`;
+      let ok = 0, html = '';
+      for (let i = 0; i < files.length; i++) {
+        bar.style.width = `${Math.round((i/files.length)*100)}%`;
+        status.textContent = `${files[i].label} をコミット中...`;
+        try {
+          await commitFile(files[i].path, files[i].content, msg, token);
+          html += `<div class="result-item success">✅ ${files[i].label} 成功</div>`; ok++;
+        } catch(e) {
+          html += `<div class="result-item fail">❌ ${files[i].label} ${e.message}</div>`;
+        }
+      }
+      bar.style.width = '100%';
+      title.textContent = ok === files.length ? '🎉 公開完了！' : '⚠️ 一部エラー';
+      status.textContent = `${ok}/${files.length} 件成功`;
+      result.innerHTML = html; result.classList.add('visible'); closeBtn.classList.add('visible');
+    });
+
+    document.getElementById('progressClose').addEventListener('click', () => { window.location.href = '/admin/'; });
+  </script>
+</body>
+</html>

@@ -59,6 +59,7 @@ const genrePrefix = isEnglish ? "/en-us/genre" : (isHindi ? "/hi-in/genre" : "/g
     <div class="footer-bottom">
       <p class="copyright">
         © {currentYear} BLITZ. All rights reserved.
+        <a href="/admin/login" class="admin-lock" title="Admin">🔒</a>
       </p>
     </div>
   </div>
@@ -153,7 +154,21 @@ const genrePrefix = isEnglish ? "/en-us/genre" : (isHindi ? "/hi-in/genre" : "/g
     font-size: var(--font-size-xs);
     margin: 0;
   }
-  
+
+  .admin-lock {
+    margin-left: 0.5rem;
+    opacity: 0.25;
+    font-size: 0.65rem;
+    transition: opacity var(--transition-fast);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .admin-lock:hover {
+    opacity: 0.7;
+    color: inherit;
+  }
+
   @media (max-width: 768px) {
     .footer-main {
       grid-template-columns: 1fr;

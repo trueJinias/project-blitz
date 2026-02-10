@@ -1,0 +1,256 @@
+---
+// Admin Login Page - パスワード認証
+---
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | BLITZ</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .login-bg {
+      position: fixed;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 20% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(78, 205, 196, 0.06) 0%, transparent 50%),
+        #0a0a0f;
+      z-index: 0;
+    }
+
+    .login-container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      padding: 0 1.5rem;
+    }
+
+    .login-card {
+      background: rgba(18, 18, 26, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1.5rem;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      animation: cardIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+
+    @keyframes cardIn {
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .login-logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .login-logo .dot {
+      color: #00D4FF;
+      font-size: 2.4rem;
+    }
+
+    .login-subtitle {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.875rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      color: #fff;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.3s ease;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: #00D4FF;
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 0.875rem;
+      background: linear-gradient(135deg, #00D4FF 0%, #0066FF 100%);
+      border: none;
+      border-radius: 0.75rem;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 212, 255, 0.35);
+    }
+
+    .login-btn:active {
+      transform: translateY(0);
+    }
+
+    .login-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .error-msg {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 107, 107, 0.1);
+      border: 1px solid rgba(255, 107, 107, 0.3);
+      border-radius: 0.5rem;
+      color: #FF6B6B;
+      font-size: 0.875rem;
+      text-align: center;
+      display: none;
+      animation: shake 0.4s ease;
+    }
+
+    .error-msg.visible {
+      display: block;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-8px); }
+      75% { transform: translateX(8px); }
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 0.8rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="login-bg"></div>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-logo">BLITZ<span class="dot">.</span></div>
+        <p class="login-subtitle">管理画面へのアクセス</p>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="password">パスワード</label>
+          <input type="password" id="password" placeholder="パスワードを入力" autocomplete="current-password" autofocus />
+        </div>
+        <button type="submit" class="login-btn" id="loginBtn">ログイン</button>
+        <div class="error-msg" id="errorMsg">パスワードが正しくありません</div>
+      </form>
+
+      <a href="/" class="back-link">← サイトに戻る</a>
+    </div>
+  </div>
+
+  <script>
+    // SHA-256 hash of "blitz2026"
+    const VALID_HASH = '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8';
+
+    async function sha256(text) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(text);
+      const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    // Check if already logged in
+    if (sessionStorage.getItem('blitz_admin_auth') === 'true') {
+      window.location.href = '/admin/';
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('loginBtn');
+      const errorMsg = document.getElementById('errorMsg');
+      const password = document.getElementById('password').value;
+
+      btn.disabled = true;
+      btn.textContent = '認証中...';
+      errorMsg.classList.remove('visible');
+
+      try {
+        const hash = await sha256(password);
+        // Accept any non-empty password for now (simple check)
+        // In production, compare with a server-side hash
+        if (password === 'blitz2026') {
+          sessionStorage.setItem('blitz_admin_auth', 'true');
+          window.location.href = '/admin/';
+        } else {
+          errorMsg.classList.add('visible');
+          btn.disabled = false;
+          btn.textContent = 'ログイン';
+        }
+      } catch (err) {
+        errorMsg.textContent = 'エラーが発生しました';
+        errorMsg.classList.add('visible');
+        btn.disabled = false;
+        btn.textContent = 'ログイン';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,674 @@
+---
+// Create Mode - 個別作成モード（note風リッチエディタ付き）
+---
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個別作成モード | BLITZ Admin</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin-styles.css" />
+  <style>
+    /* === note風エディタ ツールバー === */
+    .editor-wrapper {
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background: rgba(0,0,0,0.2);
+      transition: border-color 0.2s;
+    }
+    .editor-wrapper:focus-within {
+      border-color: #00D4FF;
+    }
+
+    .editor-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      padding: 0.5rem 0.75rem;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      flex-wrap: wrap;
+    }
+
+    .toolbar-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 32px;
+      border: none;
+      border-radius: 0.35rem;
+      background: transparent;
+      color: rgba(255,255,255,0.55);
+      font-size: 0.85rem;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.15s;
+      position: relative;
+    }
+    .toolbar-btn:hover {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+    }
+    .toolbar-btn:active {
+      background: rgba(0, 212, 255, 0.15);
+      color: #00D4FF;
+    }
+    .toolbar-btn.active {
+      background: rgba(0, 212, 255, 0.12);
+      color: #00D4FF;
+    }
+    .toolbar-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    .toolbar-btn .btn-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .toolbar-sep {
+      width: 1px;
+      height: 20px;
+      background: rgba(255,255,255,0.1);
+      margin: 0 6px;
+    }
+
+    .toolbar-dropdown {
+      position: relative;
+    }
+    .toolbar-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 4px;
+      background: #1a1a25;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 0.5rem;
+      padding: 0.35rem;
+      z-index: 100;
+      min-width: 160px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+    .toolbar-dropdown-menu.visible {
+      display: block;
+      animation: dropIn 0.15s ease;
+    }
+    @keyframes dropIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .dropdown-item {
+      display: block;
+      width: 100%;
+      padding: 0.45rem 0.75rem;
+      border: none;
+      border-radius: 0.3rem;
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .dropdown-item:hover {
+      background: rgba(0, 212, 255, 0.1);
+      color: #00D4FF;
+    }
+    .dropdown-item .item-preview {
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+    .dropdown-item.h2 .item-preview { font-size: 1rem; }
+    .dropdown-item.h3 .item-preview { font-size: 0.9rem; }
+    .dropdown-item.h4 .item-preview { font-size: 0.85rem; }
+
+    .editor-wrapper textarea {
+      width: 100%;
+      min-height: 400px;
+      padding: 1rem 1.25rem;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      line-height: 1.8;
+      resize: vertical;
+      outline: none;
+    }
+    .editor-wrapper textarea::placeholder {
+      color: rgba(255,255,255,0.2);
+    }
+
+    .editor-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0.75rem;
+      background: rgba(255,255,255,0.02);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .shortcut-hint {
+      display: flex;
+      gap: 0.75rem;
+    }
+    .shortcut-hint kbd {
+      display: inline-block;
+      padding: 0.1rem 0.4rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0.2rem;
+      font-size: 0.65rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Tooltip */
+    .toolbar-btn[data-tooltip]:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a1a25;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.65rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.25rem;
+      white-space: nowrap;
+      z-index: 50;
+      border: 1px solid rgba(255,255,255,0.1);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-bg"></div>
+  <div class="admin-wrapper">
+    <header class="admin-header">
+      <div class="admin-logo">BLITZ<span class="dot">.</span><span class="badge">Admin</span></div>
+      <a href="/admin/" class="back-btn">← ダッシュボード</a>
+    </header>
+    <h1 class="page-title">✍️ 個別作成モード</h1>
+    <p class="page-desc">国ごとにタブを切り替えて記事を手動作成・公開</p>
+
+    <div class="country-tabs">
+      <button class="country-tab active" data-tab="jp">🇯🇵 日本語</button>
+      <button class="country-tab" data-tab="us">🇺🇸 US English</button>
+      <button class="country-tab" data-tab="in">🇮🇳 India</button>
+    </div>
+
+    <!-- JP Tab -->
+    <div class="tab-content active" id="tab-jp">
+      <div class="form-section">
+        <h3>📝 記事メタデータ</h3>
+        <div class="form-grid">
+          <div class="form-field full"><label>スラッグ</label><input type="text" id="jp-slug" placeholder="例: xiaomi-17-review" /></div>
+          <div class="form-field"><label>タイトル</label><input type="text" id="jp-title" placeholder="記事タイトル" /></div>
+          <div class="form-field"><label>説明</label><input type="text" id="jp-desc" placeholder="簡潔な概要" /></div>
+          <div class="form-field"><label>ジャンル</label>
+            <select id="jp-genre"><option value="tech">Tech</option><option value="lifestyle">Lifestyle</option><option value="review">Review</option><option value="news">News</option><option value="economics">Economics</option></select>
+          </div>
+          <div class="form-field"><label>公開日</label><input type="date" id="jp-date" /></div>
+          <div class="form-field"><label>タグ（カンマ区切り）</label><input type="text" id="jp-tags" placeholder="Xiaomi, Review" /></div>
+          <div class="form-field"><label>著者</label><input type="text" id="jp-author" value="なも兄" /></div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>📄 本文</h3>
+        <div class="editor-wrapper">
+          <div class="editor-toolbar" data-target="jp-body">
+            <div class="toolbar-dropdown">
+              <button class="toolbar-btn" data-tooltip="見出し" onclick="toggleHeadingMenu(this)">
+                <span class="btn-label">H</span>
+              </button>
+              <div class="toolbar-dropdown-menu">
+                <button class="dropdown-item h2" onclick="insertHeading('jp-body', 2, this)"><span class="item-preview">H2</span> 大見出し</button>
+                <button class="dropdown-item h3" onclick="insertHeading('jp-body', 3, this)"><span class="item-preview">H3</span> 中見出し</button>
+                <button class="dropdown-item h4" onclick="insertHeading('jp-body', 4, this)"><span class="item-preview">H4</span> 小見出し</button>
+              </div>
+            </div>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="太字 (Ctrl+B)" onclick="wrapSelection('jp-body', '**', '**')"><span class="btn-label" style="font-weight:900;">B</span></button>
+            <button class="toolbar-btn" data-tooltip="斜体 (Ctrl+I)" onclick="wrapSelection('jp-body', '*', '*')"><span class="btn-label" style="font-style:italic;">I</span></button>
+            <button class="toolbar-btn" data-tooltip="下線" onclick="wrapSelection('jp-body', '<u>', '</u>')"><span class="btn-label" style="text-decoration:underline;">U</span></button>
+            <button class="toolbar-btn" data-tooltip="取り消し線" onclick="wrapSelection('jp-body', '~~', '~~')"><span class="btn-label" style="text-decoration:line-through;">S</span></button>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="リンク" onclick="insertLink('jp-body')">🔗</button>
+            <button class="toolbar-btn" data-tooltip="画像" onclick="insertImage('jp-body')">🖼️</button>
+            <button class="toolbar-btn" data-tooltip="引用" onclick="insertPrefix('jp-body', '> ')">💬</button>
+            <button class="toolbar-btn" data-tooltip="箇条書き" onclick="insertPrefix('jp-body', '- ')">•</button>
+            <button class="toolbar-btn" data-tooltip="番号付き" onclick="insertPrefix('jp-body', '1. ')">1.</button>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="区切り線" onclick="insertText('jp-body', '\n\n---\n\n')">―</button>
+          </div>
+          <textarea id="jp-body" placeholder="ここに記事を書きましょう..."></textarea>
+          <div class="editor-footer">
+            <div class="char-count" id="jp-count">0 文字</div>
+            <div class="shortcut-hint">
+              <span><kbd>Ctrl</kbd>+<kbd>B</kbd> 太字</span>
+              <span><kbd>Ctrl</kbd>+<kbd>I</kbd> 斜体</span>
+              <span><kbd>Ctrl</kbd>+<kbd>U</kbd> 下線</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="publish-section">
+        <div class="publish-info">🇯🇵 日本語版を公開</div>
+        <button class="publish-btn" onclick="publishArticle('jp')">📤 公開</button>
+      </div>
+    </div>
+
+    <!-- US Tab -->
+    <div class="tab-content" id="tab-us">
+      <div class="form-section">
+        <h3>📝 Article Metadata</h3>
+        <div class="form-grid">
+          <div class="form-field full"><label>Slug</label><input type="text" id="us-slug" placeholder="e.g. xiaomi-17-review" /></div>
+          <div class="form-field"><label>Title</label><input type="text" id="us-title" placeholder="Article Title" /></div>
+          <div class="form-field"><label>Description</label><input type="text" id="us-desc" placeholder="Brief summary" /></div>
+          <div class="form-field"><label>Genre</label>
+            <select id="us-genre"><option value="tech">Tech</option><option value="lifestyle">Lifestyle</option><option value="review">Review</option><option value="news">News</option><option value="economics">Economics</option></select>
+          </div>
+          <div class="form-field"><label>Date</label><input type="date" id="us-date" /></div>
+          <div class="form-field"><label>Tags (comma-separated)</label><input type="text" id="us-tags" placeholder="Xiaomi, Review" /></div>
+          <div class="form-field"><label>Author</label><input type="text" id="us-author" value="John Smith" /></div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>📄 Body</h3>
+        <div class="editor-wrapper">
+          <div class="editor-toolbar" data-target="us-body">
+            <div class="toolbar-dropdown">
+              <button class="toolbar-btn" data-tooltip="Heading" onclick="toggleHeadingMenu(this)"><span class="btn-label">H</span></button>
+              <div class="toolbar-dropdown-menu">
+                <button class="dropdown-item h2" onclick="insertHeading('us-body', 2, this)"><span class="item-preview">H2</span> Heading</button>
+                <button class="dropdown-item h3" onclick="insertHeading('us-body', 3, this)"><span class="item-preview">H3</span> Subheading</button>
+                <button class="dropdown-item h4" onclick="insertHeading('us-body', 4, this)"><span class="item-preview">H4</span> Small</button>
+              </div>
+            </div>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="Bold" onclick="wrapSelection('us-body', '**', '**')"><span class="btn-label" style="font-weight:900;">B</span></button>
+            <button class="toolbar-btn" data-tooltip="Italic" onclick="wrapSelection('us-body', '*', '*')"><span class="btn-label" style="font-style:italic;">I</span></button>
+            <button class="toolbar-btn" data-tooltip="Underline" onclick="wrapSelection('us-body', '<u>', '</u>')"><span class="btn-label" style="text-decoration:underline;">U</span></button>
+            <button class="toolbar-btn" data-tooltip="Strikethrough" onclick="wrapSelection('us-body', '~~', '~~')"><span class="btn-label" style="text-decoration:line-through;">S</span></button>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="Link" onclick="insertLink('us-body')">🔗</button>
+            <button class="toolbar-btn" data-tooltip="Image" onclick="insertImage('us-body')">🖼️</button>
+            <button class="toolbar-btn" data-tooltip="Quote" onclick="insertPrefix('us-body', '> ')">💬</button>
+            <button class="toolbar-btn" data-tooltip="Bullet" onclick="insertPrefix('us-body', '- ')">•</button>
+            <button class="toolbar-btn" data-tooltip="Numbered" onclick="insertPrefix('us-body', '1. ')">1.</button>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="Divider" onclick="insertText('us-body', '\n\n---\n\n')">―</button>
+          </div>
+          <textarea id="us-body" placeholder="Write your article here..."></textarea>
+          <div class="editor-footer">
+            <div class="char-count" id="us-count">0 chars</div>
+            <div class="shortcut-hint">
+              <span><kbd>Ctrl</kbd>+<kbd>B</kbd> Bold</span>
+              <span><kbd>Ctrl</kbd>+<kbd>I</kbd> Italic</span>
+              <span><kbd>Ctrl</kbd>+<kbd>U</kbd> Underline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="publish-section">
+        <div class="publish-info">🇺🇸 US English version</div>
+        <button class="publish-btn" onclick="publishArticle('us')">📤 Publish</button>
+      </div>
+    </div>
+
+    <!-- IN Tab -->
+    <div class="tab-content" id="tab-in">
+      <div class="form-section">
+        <h3>📝 Article Metadata</h3>
+        <div class="form-grid">
+          <div class="form-field full"><label>Slug</label><input type="text" id="in-slug" placeholder="e.g. xiaomi-17-review" /></div>
+          <div class="form-field"><label>Title</label><input type="text" id="in-title" placeholder="Article Title" /></div>
+          <div class="form-field"><label>Description</label><input type="text" id="in-desc" placeholder="Brief summary" /></div>
+          <div class="form-field"><label>Genre</label>
+            <select id="in-genre"><option value="tech">Tech</option><option value="lifestyle">Lifestyle</option><option value="review">Review</option><option value="news">News</option><option value="economics">Economics</option></select>
+          </div>
+          <div class="form-field"><label>Date</label><input type="date" id="in-date" /></div>
+          <div class="form-field"><label>Tags (comma-separated)</label><input type="text" id="in-tags" placeholder="Xiaomi, Review" /></div>
+          <div class="form-field"><label>Author</label><input type="text" id="in-author" value="Raj Patel" /></div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>📄 Body</h3>
+        <div class="editor-wrapper">
+          <div class="editor-toolbar" data-target="in-body">
+            <div class="toolbar-dropdown">
+              <button class="toolbar-btn" data-tooltip="Heading" onclick="toggleHeadingMenu(this)"><span class="btn-label">H</span></button>
+              <div class="toolbar-dropdown-menu">
+                <button class="dropdown-item h2" onclick="insertHeading('in-body', 2, this)"><span class="item-preview">H2</span> Heading</button>
+                <button class="dropdown-item h3" onclick="insertHeading('in-body', 3, this)"><span class="item-preview">H3</span> Subheading</button>
+                <button class="dropdown-item h4" onclick="insertHeading('in-body', 4, this)"><span class="item-preview">H4</span> Small</button>
+              </div>
+            </div>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="Bold" onclick="wrapSelection('in-body', '**', '**')"><span class="btn-label" style="font-weight:900;">B</span></button>
+            <button class="toolbar-btn" data-tooltip="Italic" onclick="wrapSelection('in-body', '*', '*')"><span class="btn-label" style="font-style:italic;">I</span></button>
+            <button class="toolbar-btn" data-tooltip="Underline" onclick="wrapSelection('in-body', '<u>', '</u>')"><span class="btn-label" style="text-decoration:underline;">U</span></button>
+            <button class="toolbar-btn" data-tooltip="Strikethrough" onclick="wrapSelection('in-body', '~~', '~~')"><span class="btn-label" style="text-decoration:line-through;">S</span></button>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="Link" onclick="insertLink('in-body')">🔗</button>
+            <button class="toolbar-btn" data-tooltip="Image" onclick="insertImage('in-body')">🖼️</button>
+            <button class="toolbar-btn" data-tooltip="Quote" onclick="insertPrefix('in-body', '> ')">💬</button>
+            <button class="toolbar-btn" data-tooltip="Bullet" onclick="insertPrefix('in-body', '- ')">•</button>
+            <button class="toolbar-btn" data-tooltip="Numbered" onclick="insertPrefix('in-body', '1. ')">1.</button>
+            <span class="toolbar-sep"></span>
+            <button class="toolbar-btn" data-tooltip="Divider" onclick="insertText('in-body', '\n\n---\n\n')">―</button>
+          </div>
+          <textarea id="in-body" placeholder="Write your article here..."></textarea>
+          <div class="editor-footer">
+            <div class="char-count" id="in-count">0 chars</div>
+            <div class="shortcut-hint">
+              <span><kbd>Ctrl</kbd>+<kbd>B</kbd> Bold</span>
+              <span><kbd>Ctrl</kbd>+<kbd>I</kbd> Italic</span>
+              <span><kbd>Ctrl</kbd>+<kbd>U</kbd> Underline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="publish-section">
+        <div class="publish-info">🇮🇳 India version</div>
+        <button class="publish-btn" onclick="publishArticle('in')">📤 Publish</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-overlay" id="progressOverlay">
+    <div class="progress-card">
+      <h3 id="progressTitle">📤 公開中...</h3>
+      <div class="progress-bar-bg"><div class="progress-bar" id="progressBar"></div></div>
+      <p class="progress-status" id="progressStatus">準備中...</p>
+      <div class="progress-result" id="progressResult"></div>
+      <button class="progress-close" id="progressClose">✅ ダッシュボードへ</button>
+    </div>
+  </div>
+
+  <script>
+    if (sessionStorage.getItem('blitz_admin_auth') !== 'true') window.location.href = '/admin/login';
+
+    const today = new Date().toISOString().split('T')[0];
+    ['jp','us','in'].forEach(t => { const d = document.getElementById(`${t}-date`); if(d) d.value = today; });
+
+    // Character count
+    ['jp','us','in'].forEach(t => {
+      const el = document.getElementById(`${t}-body`);
+      const ct = document.getElementById(`${t}-count`);
+      if (el && ct) {
+        el.addEventListener('input', () => { ct.textContent = `${el.value.length} 文字`; });
+      }
+    });
+
+    // Tab switching
+    document.querySelectorAll('.country-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.country-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(`tab-${tab.dataset.tab}`).classList.add('active');
+      });
+    });
+
+    // ========== エディタ ツールバー機能 ==========
+
+    // 選択テキストをラップ（太字、斜体、下線、取り消し線）
+    window.wrapSelection = function(id, before, after) {
+      const ta = document.getElementById(id);
+      const start = ta.selectionStart;
+      const end = ta.selectionEnd;
+      const text = ta.value;
+      const selected = text.substring(start, end);
+
+      if (selected) {
+        // 既にラップされていたら解除
+        const bLen = before.length;
+        const aLen = after.length;
+        const prevStart = Math.max(0, start - bLen);
+        const nextEnd = Math.min(text.length, end + aLen);
+        if (text.substring(prevStart, start) === before && text.substring(end, nextEnd) === after) {
+          ta.value = text.substring(0, prevStart) + selected + text.substring(nextEnd);
+          ta.selectionStart = prevStart;
+          ta.selectionEnd = prevStart + selected.length;
+        } else {
+          ta.value = text.substring(0, start) + before + selected + after + text.substring(end);
+          ta.selectionStart = start + bLen;
+          ta.selectionEnd = end + bLen;
+        }
+      } else {
+        // 選択なしならプレースホルダーを挿入
+        const placeholder = before === '**' ? 'テキスト' : (before === '*' ? 'テキスト' : (before === '<u>' ? 'テキスト' : 'テキスト'));
+        ta.value = text.substring(0, start) + before + placeholder + after + text.substring(end);
+        ta.selectionStart = start + before.length;
+        ta.selectionEnd = start + before.length + placeholder.length;
+      }
+      ta.focus();
+      ta.dispatchEvent(new Event('input'));
+    };
+
+    // 見出しメニュー開閉
+    window.toggleHeadingMenu = function(btn) {
+      const menu = btn.nextElementSibling;
+      document.querySelectorAll('.toolbar-dropdown-menu').forEach(m => {
+        if (m !== menu) m.classList.remove('visible');
+      });
+      menu.classList.toggle('visible');
+    };
+
+    // 見出し挿入
+    window.insertHeading = function(id, level, btn) {
+      const ta = document.getElementById(id);
+      const start = ta.selectionStart;
+      const text = ta.value;
+      const prefix = '#'.repeat(level) + ' ';
+
+      // 現在の行頭を探す
+      const lineStart = text.lastIndexOf('\n', start - 1) + 1;
+      const lineEnd = text.indexOf('\n', start);
+      const actualEnd = lineEnd === -1 ? text.length : lineEnd;
+      const currentLine = text.substring(lineStart, actualEnd);
+
+      // 既存の見出しマークを除去
+      const cleaned = currentLine.replace(/^#{1,6}\s*/, '');
+
+      if (cleaned) {
+        ta.value = text.substring(0, lineStart) + prefix + cleaned + text.substring(actualEnd);
+      } else {
+        ta.value = text.substring(0, start) + '\n' + prefix + '見出し' + '\n' + text.substring(start);
+      }
+      ta.focus();
+      ta.dispatchEvent(new Event('input'));
+
+      // メニューを閉じる
+      btn.closest('.toolbar-dropdown-menu').classList.remove('visible');
+    };
+
+    // テキスト挿入
+    window.insertText = function(id, text) {
+      const ta = document.getElementById(id);
+      const start = ta.selectionStart;
+      const val = ta.value;
+      ta.value = val.substring(0, start) + text + val.substring(start);
+      ta.selectionStart = ta.selectionEnd = start + text.length;
+      ta.focus();
+      ta.dispatchEvent(new Event('input'));
+    };
+
+    // 行頭にプレフィックス（引用、箇条書き、番号付き）
+    window.insertPrefix = function(id, prefix) {
+      const ta = document.getElementById(id);
+      const start = ta.selectionStart;
+      const end = ta.selectionEnd;
+      const text = ta.value;
+
+      if (start === end) {
+        // 選択なし：カーソル位置に挿入
+        ta.value = text.substring(0, start) + '\n' + prefix + text.substring(start);
+        ta.selectionStart = ta.selectionEnd = start + 1 + prefix.length;
+      } else {
+        // 選択行にプレフィックス追加
+        const selected = text.substring(start, end);
+        const lines = selected.split('\n').map(l => prefix + l).join('\n');
+        ta.value = text.substring(0, start) + lines + text.substring(end);
+        ta.selectionStart = start;
+        ta.selectionEnd = start + lines.length;
+      }
+      ta.focus();
+      ta.dispatchEvent(new Event('input'));
+    };
+
+    // リンク挿入
+    window.insertLink = function(id) {
+      const ta = document.getElementById(id);
+      const start = ta.selectionStart;
+      const end = ta.selectionEnd;
+      const text = ta.value;
+      const selected = text.substring(start, end);
+
+      if (selected) {
+        ta.value = text.substring(0, start) + `[${selected}](url)` + text.substring(end);
+        ta.selectionStart = start + selected.length + 3;
+        ta.selectionEnd = start + selected.length + 6;
+      } else {
+        ta.value = text.substring(0, start) + '[リンクテキスト](url)' + text.substring(end);
+        ta.selectionStart = start + 1;
+        ta.selectionEnd = start + 7;
+      }
+      ta.focus();
+      ta.dispatchEvent(new Event('input'));
+    };
+
+    // 画像挿入
+    window.insertImage = function(id) {
+      const ta = document.getElementById(id);
+      const start = ta.selectionStart;
+      const text = ta.value;
+      const imgMd = '\n![画像の説明](/images/articles/)\n';
+      ta.value = text.substring(0, start) + imgMd + text.substring(start);
+      ta.selectionStart = start + 3;
+      ta.selectionEnd = start + 8;
+      ta.focus();
+      ta.dispatchEvent(new Event('input'));
+    };
+
+    // キーボードショートカット
+    document.querySelectorAll('.editor-wrapper textarea').forEach(ta => {
+      ta.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && !e.shiftKey) {
+          if (e.key === 'b') { e.preventDefault(); wrapSelection(ta.id, '**', '**'); }
+          if (e.key === 'i') { e.preventDefault(); wrapSelection(ta.id, '*', '*'); }
+          if (e.key === 'u') { e.preventDefault(); wrapSelection(ta.id, '<u>', '</u>'); }
+        }
+      });
+    });
+
+    // クリック外でドロップダウン閉じる
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.toolbar-dropdown')) {
+        document.querySelectorAll('.toolbar-dropdown-menu').forEach(m => m.classList.remove('visible'));
+      }
+    });
+
+    // ========== GitHub API & Publish ==========
+    const OWNER = 'trueJinias', REPO = 'project-blitz';
+
+    async function commitFile(path, content, msg, token) {
+      const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`;
+      let sha = null;
+      try {
+        const r = await fetch(url, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }});
+        if (r.ok) sha = (await r.json()).sha;
+      } catch(e) {}
+      const body = { message: msg, content: btoa(unescape(encodeURIComponent(content))), branch: 'main' };
+      if (sha) body.sha = sha;
+      const res = await fetch(url, {
+        method: 'PUT',
+        headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      if (!res.ok) throw new Error((await res.json()).message || res.statusText);
+      return res.json();
+    }
+
+    function buildFrontmatter(lang) {
+      const slug = document.getElementById(`${lang}-slug`).value.trim();
+      const title = document.getElementById(`${lang}-title`).value.trim();
+      const desc = document.getElementById(`${lang}-desc`).value.trim();
+      const genre = document.getElementById(`${lang}-genre`).value;
+      const date = document.getElementById(`${lang}-date`).value;
+      const tagsRaw = document.getElementById(`${lang}-tags`).value.trim();
+      const author = document.getElementById(`${lang}-author`).value.trim();
+      const body = document.getElementById(`${lang}-body`).value;
+
+      const tags = tagsRaw ? tagsRaw.split(',').map(t => `  - ${t.trim()}`).join('\n') : '';
+      const fm = [
+        '---',
+        `title: "${title}"`,
+        `description: "${desc}"`,
+        `genre: ${genre}`,
+        `date: ${date}T00:00:00.000Z`,
+        `image: ""`,
+        tags ? `tags:\n${tags}` : 'tags: []',
+        `author: "${author}"`,
+        'draft: false',
+        '---',
+        '',
+        body
+      ].join('\n');
+      return { slug, content: fm };
+    }
+
+    window.publishArticle = async function(lang) {
+      const token = localStorage.getItem('blitz_gh_token');
+      if (!token) { alert('ダッシュボード → ⚙️設定 からGitHub Tokenを入力してください'); return; }
+      const { slug, content } = buildFrontmatter(lang);
+      if (!slug) { alert('スラッグを入力してください'); return; }
+      if (!content || content.length < 50) { alert('記事内容を入力してください'); return; }
+
+      const pathMap = { jp: `src/content/articles/${slug}.md`, us: `src/content/articles/en-us/${slug}.md`, 'in': `src/content/articles/hi-in/${slug}.md` };
+      const labelMap = { jp: '🇯🇵 日本語版', us: '🇺🇸 US版', 'in': '🇮🇳 インド版' };
+
+      const overlay = document.getElementById('progressOverlay');
+      const bar = document.getElementById('progressBar');
+      const status = document.getElementById('progressStatus');
+      const result = document.getElementById('progressResult');
+      const closeBtn = document.getElementById('progressClose');
+      const ptitle = document.getElementById('progressTitle');
+
+      overlay.classList.add('visible');
+      bar.style.width = '30%';
+      status.textContent = `${labelMap[lang]} をコミット中...`;
+      result.innerHTML = ''; result.classList.remove('visible'); closeBtn.classList.remove('visible');
+
+      try {
+        await commitFile(pathMap[lang], content, `Add article: ${slug} (${lang})`, token);
+        bar.style.width = '100%';
+        ptitle.textContent = '🎉 公開完了！';
+        status.textContent = 'Vercelが自動でビルドします';
+        result.innerHTML = `<div class="result-item success">✅ ${labelMap[lang]} — ${pathMap[lang]}</div>`;
+        result.classList.add('visible');
+      } catch(e) {
+        bar.style.width = '100%';
+        ptitle.textContent = '❌ エラー';
+        status.textContent = e.message;
+        result.innerHTML = `<div class="result-item fail">❌ ${e.message}</div>`;
+        result.classList.add('visible');
+      }
+      closeBtn.classList.add('visible');
+    };
+
+    document.getElementById('progressClose').addEventListener('click', () => { window.location.href = '/admin/'; });
+  </script>
+</body>
+</html>
