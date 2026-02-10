@@ -105,8 +105,8 @@
 
     .mode-cards {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.25rem;
       margin-bottom: 3rem;
     }
 
@@ -196,6 +196,14 @@
     .create .mode-tag {
       background: rgba(78, 205, 196, 0.15);
       color: #4ECDC4;
+    }
+
+    .ai-mode::before {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(109, 40, 217, 0.05) 100%);
+    }
+    .ai-mode .mode-tag {
+      background: rgba(139, 92, 246, 0.15);
+      color: #8B5CF6;
     }
 
     /* Settings Modal */
@@ -307,8 +315,10 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 900px) {
       .mode-cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
       .admin-header { flex-direction: column; gap: 1rem; align-items: flex-start; }
     }
   </style>
@@ -345,6 +355,13 @@
         <h2>個別作成モード</h2>
         <p>国ごとにタブを切り替えて、1つずつ記事を手動で作成・公開</p>
         <span class="mode-tag">手動エディタ</span>
+      </a>
+
+      <a href="/admin/ai" class="mode-card ai-mode">
+        <span class="mode-icon">🤖</span>
+        <h2>AI生成モード</h2>
+        <p>キーワードを入力するだけで3ヵ国分の記事をAIが自動生成</p>
+        <span class="mode-tag">📱 スマホ対応</span>
       </a>
     </div>
   </div>
