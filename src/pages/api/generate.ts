@@ -128,7 +128,7 @@ Output strictly as ONE VALID JSON object:
 // --- Helpers ---
 
 async function callGemini(prompt: string, apiKey: string): Promise<string> {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
     const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -147,8 +147,8 @@ async function callGemini(prompt: string, apiKey: string): Promise<string> {
             throw new Error('Rate Limit (429)');
         }
         const err = await res.text();
-        console.error('Gemini Error Text:', err);
-        throw new Error(`Gemini Error: ${res.status}`);
+        console.error('Gemini API Error:', res.status, res.statusText, err);
+        throw new Error(`Gemini Error: ${res.status} - ${err.substring(0, 100)}...`);
     }
 
     const data = await res.json();

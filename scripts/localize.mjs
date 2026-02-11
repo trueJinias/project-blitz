@@ -7,7 +7,7 @@ import matter from 'gray-matter';
 dotenv.config();
 
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = 'gemini-flash-latest';
+const MODEL = 'gemini-1.5-flash';
 
 if (!API_KEY) {
     console.error('❌ Error: GEMINI_API_KEY not found in .env');
