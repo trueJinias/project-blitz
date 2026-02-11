@@ -121,14 +121,15 @@ Output strictly as ONE VALID JSON object:
 
     } catch (error: unknown) {
         const msg = error instanceof Error ? error.message : 'Internal error';
-        return new Response(JSON.stringify({ error: msg }), { status: 500, headers: { 'Content-Type': 'application/json' } });
+        const status = msg.includes('429') || msg.includes('Rate Limit') ? 429 : 500;
+        return new Response(JSON.stringify({ error: msg }), { status, headers: { 'Content-Type': 'application/json' } });
     }
 };
 
 // --- Helpers ---
 
 async function callGemini(prompt: string, apiKey: string): Promise<string> {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent?key=${apiKey}`;
     const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -148,6 +149,9 @@ async function callGemini(prompt: string, apiKey: string): Promise<string> {
         }
         const err = await res.text();
         console.error('Gemini API Error:', res.status, res.statusText, err);
+        if (res.status === 429) {
+            throw new Error('Rate Limit (429)');
+        }
         throw new Error(`Gemini Error: ${res.status} - ${err.substring(0, 100)}...`);
     }
 
